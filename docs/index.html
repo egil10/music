@@ -13,9 +13,15 @@
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
-  <!-- Chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-dayjs@1.0.1/dist/chartjs-adapter-dayjs.bundle.min.js"></script>
+      <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-dayjs@1.0.1/dist/chartjs-adapter-dayjs.bundle.min.js"></script>
+    
+    <!-- Advanced Chart Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-sankey@0.8.0/dist/chartjs-chart-sankey.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-treemap@2.3.0/dist/chartjs-chart-treemap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-wordcloud@0.1.0/dist/chartjs-chart-wordcloud.min.js"></script>
   
   <style>
     :root {
@@ -433,6 +439,119 @@
       text-align: center;
       line-height: 1.6;
     }
+
+    /* Search Section Styles */
+    .search-section {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .search-container {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .search-input {
+      flex: 1;
+      padding: 16px 20px;
+      border: 2px solid var(--spotify-gray);
+      border-radius: 12px;
+      background: var(--glass-bg);
+      color: var(--spotify-white);
+      font-size: 16px;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--spotify-green);
+      box-shadow: 0 0 0 3px rgba(30, 215, 96, 0.1);
+    }
+
+    .search-input::placeholder {
+      color: var(--spotify-gray);
+    }
+
+    .search-button {
+      padding: 16px 24px;
+      background: var(--gradient-primary);
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .search-button:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .search-results {
+      background: var(--glass-bg);
+      border-radius: 16px;
+      padding: 24px;
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--glass-border);
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--spotify-gray);
+      font-style: italic;
+    }
+
+    .search-results.has-results {
+      align-items: flex-start;
+      justify-content: flex-start;
+      color: var(--spotify-white);
+      font-style: normal;
+    }
+
+    .result-item {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 12px;
+      border-left: 4px solid var(--spotify-green);
+      transition: all 0.3s ease;
+    }
+
+    .result-item:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateX(4px);
+    }
+
+    .result-title {
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: var(--spotify-white);
+    }
+
+    .result-subtitle {
+      color: var(--spotify-gray);
+      font-size: 14px;
+    }
+
+    .result-stats {
+      display: flex;
+      gap: 16px;
+      margin-top: 8px;
+      font-size: 12px;
+      color: var(--spotify-gray);
+    }
+
+    .result-stat {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
   </style>
 </head>
 <body>
@@ -549,6 +668,63 @@
           </div>
         </div>
       </section>
+
+      <!-- Advanced Visualizations -->
+      <section class="section">
+        <h2 class="section-title">Advanced Visualizations</h2>
+        <div class="charts-grid">
+          <div class="chart-container">
+            <h3 class="chart-title">Genre Diversity Treemap</h3>
+            <div class="chart-wrapper">
+              <canvas id="genreTreemapChart"></canvas>
+            </div>
+          </div>
+          <div class="chart-container">
+            <h3 class="chart-title">Listening Time Pyramid</h3>
+            <div class="chart-wrapper">
+              <canvas id="listeningPyramidChart"></canvas>
+            </div>
+          </div>
+          <div class="chart-container">
+            <h3 class="chart-title">Peak Hours Polar Chart</h3>
+            <div class="chart-wrapper">
+              <canvas id="peakHoursPolarChart"></canvas>
+            </div>
+          </div>
+          <div class="chart-container">
+            <h3 class="chart-title">Binge Sessions Histogram</h3>
+            <div class="chart-wrapper">
+              <canvas id="bingeSessionsHistogram"></canvas>
+            </div>
+          </div>
+          <div class="chart-container">
+            <h3 class="chart-title">Artist Longevity Trends</h3>
+            <div class="chart-wrapper">
+              <canvas id="artistLongevityChart"></canvas>
+            </div>
+          </div>
+          <div class="chart-container">
+            <h3 class="chart-title">Mood Balance Quadrant</h3>
+            <div class="chart-wrapper">
+              <canvas id="moodQuadrantChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Music Library Explorer -->
+      <section class="section">
+        <h2 class="section-title">Music Library Explorer</h2>
+        <div class="search-section">
+          <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search artists, albums, or tracks..." class="search-input">
+            <button id="searchButton" class="search-button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div id="searchResults" class="search-results"></div>
+        </div>
+      </section>
     </div>
   </main>
 
@@ -648,6 +824,17 @@
         createDayOfWeekChart(byDayOfWeek);
         createMonthlyChart(byMonth);
         createTopTracksChart(topTracksAllTime);
+
+        // Create advanced charts
+        createGenreTreemapChart(genreBreakdown);
+        createListeningPyramidChart(byYear);
+        createPeakHoursPolarChart(byHour);
+        createBingeSessionsHistogram(bingeSessions);
+        createArtistLongevityChart(topArtistsByYear);
+        createMoodQuadrantChart(topTracksAllTime);
+
+        // Initialize search functionality
+        initializeSearch(topArtistsAllTime, topTracksAllTime, topAlbums);
 
         // Smooth scroll to dashboard
         document.querySelector('.dashboard').scrollIntoView({ 
@@ -1038,6 +1225,409 @@
           }
         }
       });
+    }
+
+    // Advanced Chart Functions
+    function createGenreTreemapChart(genreBreakdown) {
+      const ctx = document.getElementById('genreTreemapChart').getContext('2d');
+      const topGenres = genreBreakdown.slice(0, 20);
+      
+      new Chart(ctx, {
+        type: 'treemap',
+        data: {
+          datasets: [{
+            tree: topGenres.map(g => ({
+              value: g.hours,
+              label: g.genre,
+              parent: 'root'
+            })),
+            key: 'value',
+            groups: ['parent'],
+            spacing: 2,
+            backgroundColor: (ctx) => {
+              const colors = [
+                '#1DB954', '#1ed760', '#2ECC71', '#27AE60',
+                '#16A085', '#138D75', '#117A65', '#0E6655',
+                '#0B5345', '#0A3D2E', '#1ABC9C', '#17A589',
+                '#148F77', '#117864', '#0E6655', '#0B5345',
+                '#0A3D2E', '#0A3D2E', '#0A3D2E', '#0A3D2E'
+              ];
+              return colors[ctx.dataIndex % colors.length];
+            },
+            labels: {
+              display: true,
+              formatter: (ctx) => {
+                return [
+                  ctx.raw.label,
+                  `${ctx.raw.value.toFixed(1)}h`
+                ];
+              }
+            }
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            },
+            tooltip: {
+              callbacks: {
+                title: (items) => items[0].raw.label,
+                label: (item) => `${item.raw.value.toFixed(1)} hours`
+              }
+            }
+          }
+        }
+      });
+    }
+
+    function createListeningPyramidChart(byYear) {
+      const ctx = document.getElementById('listeningPyramidChart').getContext('2d');
+      const years = Object.keys(byYear).sort();
+      const hours = years.map(y => byYear[y].hours);
+      
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: years,
+          datasets: [{
+            label: 'Hours',
+            data: hours,
+            backgroundColor: years.map((_, i) => {
+              const colors = ['#1DB954', '#1ed760', '#2ECC71', '#27AE60', '#16A085', '#138D75', '#117A65', '#0E6655', '#0B5345', '#0A3D2E', '#1ABC9C'];
+              return colors[i % colors.length];
+            }),
+            borderColor: '#1DB954',
+            borderWidth: 2,
+            borderRadius: 8,
+            borderSkipped: false,
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          indexAxis: 'x',
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            x: {
+              grid: {
+                color: 'rgba(64, 64, 64, 0.3)'
+              }
+            },
+            y: {
+              beginAtZero: true,
+              grid: {
+                color: 'rgba(64, 64, 64, 0.3)'
+              },
+              ticks: {
+                callback: function(value) {
+                  return value + 'h';
+                }
+              }
+            }
+          }
+        }
+      });
+    }
+
+    function createPeakHoursPolarChart(byHour) {
+      const ctx = document.getElementById('peakHoursPolarChart').getContext('2d');
+      
+      new Chart(ctx, {
+        type: 'polarArea',
+        data: {
+          labels: byHour.map(h => `${h.hour}:00`),
+          datasets: [{
+            data: byHour.map(h => h.hours),
+            backgroundColor: byHour.map((_, i) => {
+              const colors = ['#1DB954', '#1ed760', '#2ECC71', '#27AE60', '#16A085', '#138D75', '#117A65', '#0E6655', '#0B5345', '#0A3D2E', '#1ABC9C', '#17A589', '#148F77', '#117864', '#0E6655', '#0B5345', '#0A3D2E', '#0A3D2E', '#0A3D2E', '#0A3D2E', '#0A3D2E', '#0A3D2E', '#0A3D2E', '#0A3D2E'];
+              return colors[i % colors.length];
+            }),
+            borderWidth: 2,
+            borderColor: '#FFFFFF'
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                padding: 20,
+                usePointStyle: true
+              }
+            }
+          },
+          scales: {
+            r: {
+              ticks: {
+                callback: function(value) {
+                  return value + 'h';
+                }
+              }
+            }
+          }
+        }
+      });
+    }
+
+    function createBingeSessionsHistogram(bingeSessions) {
+      const ctx = document.getElementById('bingeSessionsHistogram').getContext('2d');
+      
+      // Create bins for session durations
+      const bins = {
+        '0-1h': 0, '1-2h': 0, '2-3h': 0, '3-4h': 0, '4-5h': 0, '5h+': 0
+      };
+      
+      bingeSessions.forEach(session => {
+        const hours = session.totalHours;
+        if (hours < 1) bins['0-1h']++;
+        else if (hours < 2) bins['1-2h']++;
+        else if (hours < 3) bins['2-3h']++;
+        else if (hours < 4) bins['3-4h']++;
+        else if (hours < 5) bins['4-5h']++;
+        else bins['5h+']++;
+      });
+      
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: Object.keys(bins),
+          datasets: [{
+            label: 'Number of Sessions',
+            data: Object.values(bins),
+            backgroundColor: 'rgba(29, 185, 84, 0.8)',
+            borderColor: '#1DB954',
+            borderWidth: 2,
+            borderRadius: 8,
+            borderSkipped: false,
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grid: {
+                color: 'rgba(64, 64, 64, 0.3)'
+              }
+            },
+            x: {
+              grid: {
+                color: 'rgba(64, 64, 64, 0.3)'
+              }
+            }
+          }
+        }
+      });
+    }
+
+    function createArtistLongevityChart(topArtistsByYear) {
+      const ctx = document.getElementById('artistLongevityChart').getContext('2d');
+      
+      // Get top 5 artists across all years
+      const allArtists = new Map();
+      Object.values(topArtistsByYear).forEach(yearArtists => {
+        yearArtists.slice(0, 10).forEach(artist => {
+          if (!allArtists.has(artist.artist)) {
+            allArtists.set(artist.artist, { artist: artist.artist, years: [], hours: [] });
+          }
+          const entry = allArtists.get(artist.artist);
+          entry.years.push(artist.artist);
+          entry.hours.push(artist.hours);
+        });
+      });
+      
+      const topArtists = Array.from(allArtists.values())
+        .sort((a, b) => b.hours.reduce((sum, h) => sum + h, 0) - a.hours.reduce((sum, h) => sum + h, 0))
+        .slice(0, 5);
+      
+      const years = Object.keys(topArtistsByYear).sort();
+      
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: years,
+          datasets: topArtists.map((artist, i) => ({
+            label: artist.artist,
+            data: years.map(year => {
+              const yearArtist = topArtistsByYear[year]?.find(a => a.artist === artist.artist);
+              return yearArtist ? yearArtist.hours : 0;
+            }),
+            borderColor: ['#1DB954', '#1ed760', '#2ECC71', '#27AE60', '#16A085'][i % 5],
+            backgroundColor: 'transparent',
+            borderWidth: 3,
+            tension: 0.4,
+            pointRadius: 6,
+            pointHoverRadius: 8
+          }))
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                padding: 20,
+                usePointStyle: true
+              }
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grid: {
+                color: 'rgba(64, 64, 64, 0.3)'
+              },
+              ticks: {
+                callback: function(value) {
+                  return value + 'h';
+                }
+              }
+            },
+            x: {
+              grid: {
+                color: 'rgba(64, 64, 64, 0.3)'
+              }
+            }
+          }
+        }
+      });
+    }
+
+    function createMoodQuadrantChart(topTracksAllTime) {
+      const ctx = document.getElementById('moodQuadrantChart').getContext('2d');
+      
+      // Simulate mood data (in real implementation, this would come from Spotify API)
+      const moodData = topTracksAllTime.slice(0, 50).map((track, i) => ({
+        x: Math.random() * 100, // Energy (simulated)
+        y: Math.random() * 100, // Valence (simulated)
+        r: track.hours / 10, // Size based on listening time
+        label: `${track.artist} - ${track.track}`
+      }));
+      
+      new Chart(ctx, {
+        type: 'bubble',
+        data: {
+          datasets: [{
+            label: 'Tracks by Mood',
+            data: moodData,
+            backgroundColor: 'rgba(29, 185, 84, 0.6)',
+            borderColor: '#1DB954',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            },
+            tooltip: {
+              callbacks: {
+                label: (context) => context.raw.label
+              }
+            }
+          },
+          scales: {
+            x: {
+              title: {
+                display: true,
+                text: 'Energy'
+              },
+              grid: {
+                color: 'rgba(64, 64, 64, 0.3)'
+              }
+            },
+            y: {
+              title: {
+                display: true,
+                text: 'Valence (Happiness)'
+              },
+              grid: {
+                color: 'rgba(64, 64, 64, 0.3)'
+              }
+            }
+          }
+        }
+      });
+    }
+
+    // Search functionality
+    function initializeSearch(topArtistsAllTime, topTracksAllTime, topAlbums) {
+      const searchInput = document.getElementById('searchInput');
+      const searchButton = document.getElementById('searchButton');
+      const searchResults = document.getElementById('searchResults');
+      
+      const allData = [
+        ...topArtistsAllTime.map(item => ({ ...item, type: 'artist' })),
+        ...topTracksAllTime.map(item => ({ ...item, type: 'track' })),
+        ...topAlbums.map(item => ({ ...item, type: 'album' }))
+      ];
+      
+      function performSearch(query) {
+        if (!query.trim()) {
+          searchResults.innerHTML = '<p>Enter a search term to find artists, tracks, or albums...</p>';
+          searchResults.classList.remove('has-results');
+          return;
+        }
+        
+        const results = allData.filter(item => 
+          item.artist.toLowerCase().includes(query.toLowerCase()) ||
+          (item.track && item.track.toLowerCase().includes(query.toLowerCase())) ||
+          (item.album && item.album.toLowerCase().includes(query.toLowerCase()))
+        ).slice(0, 10);
+        
+        if (results.length === 0) {
+          searchResults.innerHTML = '<p>No results found. Try a different search term.</p>';
+          searchResults.classList.remove('has-results');
+          return;
+        }
+        
+        searchResults.innerHTML = results.map(item => `
+          <div class="result-item">
+            <div class="result-title">${item.type === 'artist' ? item.artist : item.type === 'track' ? `${item.artist} - ${item.track}` : `${item.artist} - ${item.album}`}</div>
+            <div class="result-subtitle">${item.type.charAt(0).toUpperCase() + item.type.slice(1)}</div>
+            <div class="result-stats">
+              <div class="result-stat">
+                <i class="fas fa-clock"></i>
+                ${item.hours} hours
+              </div>
+              <div class="result-stat">
+                <i class="fas fa-play"></i>
+                ${item.plays} plays
+              </div>
+            </div>
+          </div>
+        `).join('');
+        
+        searchResults.classList.add('has-results');
+      }
+      
+      searchButton.addEventListener('click', () => performSearch(searchInput.value));
+      searchInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          performSearch(searchInput.value);
+        }
+      });
+      
+      // Initialize with empty state
+      searchResults.innerHTML = '<p>Enter a search term to find artists, tracks, or albums...</p>';
     }
 
     // Start the dashboard
