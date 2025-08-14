@@ -1,0 +1,44 @@
+[
+  {
+    "day": 0,
+    "dayName": "Sunday",
+    "hours": 1591.31,
+    "plays": 47362
+  },
+  {
+    "day": 1,
+    "dayName": "Monday",
+    "hours": 1742.37,
+    "plays": 52185
+  },
+  {
+    "day": 2,
+    "dayName": "Tuesday",
+    "hours": 1757.39,
+    "plays": 50422
+  },
+  {
+    "day": 3,
+    "dayName": "Wednesday",
+    "hours": 1760.55,
+    "plays": 49412
+  },
+  {
+    "day": 4,
+    "dayName": "Thursday",
+    "hours": 1590.98,
+    "plays": 48346
+  },
+  {
+    "day": 5,
+    "dayName": "Friday",
+    "hours": 1654.24,
+    "plays": 47600
+  },
+  {
+    "day": 6,
+    "dayName": "Saturday",
+    "hours": 1538.1,
+    "plays": 46899
+  }
+]

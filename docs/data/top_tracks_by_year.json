@@ -1,606 +1,4424 @@
 {
+  "2015": [
+    {
+      "artist": "Unknown Artist",
+      "track": "Divine Sorrow",
+      "plays": 118,
+      "hours": 4.46,
+      "firstPlay": "2015-07-02T20:30:14Z",
+      "lastPlay": "2015-11-28T00:20:13Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Hello",
+      "plays": 60,
+      "hours": 2.91,
+      "firstPlay": "2015-06-14T17:06:46Z",
+      "lastPlay": "2015-12-29T23:23:49Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Nothing Left (feat. Will Heard)",
+      "plays": 66,
+      "hours": 2.47,
+      "firstPlay": "2015-08-01T16:02:40Z",
+      "lastPlay": "2015-12-31T19:36:17Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I'm Not The Only One - Radio Edit",
+      "plays": 63,
+      "hours": 2.46,
+      "firstPlay": "2015-09-05T18:19:29Z",
+      "lastPlay": "2015-12-31T19:33:30Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I'm Sorry",
+      "plays": 73,
+      "hours": 2.37,
+      "firstPlay": "2015-10-12T13:22:02Z",
+      "lastPlay": "2015-12-30T23:04:01Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Red Red Wine",
+      "plays": 79,
+      "hours": 2.36,
+      "firstPlay": "2015-08-02T16:42:20Z",
+      "lastPlay": "2015-12-19T13:52:52Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Ohio - filous Remix",
+      "plays": 63,
+      "hours": 2.19,
+      "firstPlay": "2015-06-11T22:03:02Z",
+      "lastPlay": "2015-12-31T19:33:32Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Banana Pancakes",
+      "plays": 61,
+      "hours": 2.16,
+      "firstPlay": "2015-10-12T13:24:18Z",
+      "lastPlay": "2015-12-26T18:01:23Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Catch & Release (Deepend remix)",
+      "plays": 68,
+      "hours": 1.96,
+      "firstPlay": "2015-09-28T10:42:46Z",
+      "lastPlay": "2015-12-29T23:23:34Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Reality (feat. Janieck Devy) - Radio Edit",
+      "plays": 86,
+      "hours": 1.94,
+      "firstPlay": "2015-08-09T14:04:49Z",
+      "lastPlay": "2015-12-31T07:10:40Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Africa",
+      "plays": 45,
+      "hours": 1.94,
+      "firstPlay": "2015-10-08T14:32:10Z",
+      "lastPlay": "2015-12-26T18:05:59Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Shots - Broiler Remix",
+      "plays": 74,
+      "hours": 1.91,
+      "firstPlay": "2015-06-05T14:14:16Z",
+      "lastPlay": "2015-11-28T22:00:58Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Writing's On The Wall",
+      "plays": 45,
+      "hours": 1.83,
+      "firstPlay": "2015-10-30T20:48:18Z",
+      "lastPlay": "2015-12-26T20:29:00Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Forever Alone",
+      "plays": 48,
+      "hours": 1.82,
+      "firstPlay": "2015-06-07T00:42:13Z",
+      "lastPlay": "2015-12-30T22:48:59Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "When It's Alright (feat. Sam Smith) - Radio Edit",
+      "plays": 58,
+      "hours": 1.82,
+      "firstPlay": "2015-09-02T16:44:41Z",
+      "lastPlay": "2015-12-25T15:20:48Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Latch",
+      "plays": 51,
+      "hours": 1.81,
+      "firstPlay": "2015-08-15T20:01:49Z",
+      "lastPlay": "2015-12-26T19:41:33Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Are You With Me - Radio Edit",
+      "plays": 96,
+      "hours": 1.79,
+      "firstPlay": "2015-06-07T23:01:08Z",
+      "lastPlay": "2015-11-22T19:00:03Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "What Do You Mean?",
+      "plays": 57,
+      "hours": 1.76,
+      "firstPlay": "2015-08-29T11:26:01Z",
+      "lastPlay": "2015-12-30T07:26:00Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Hotline Bling",
+      "plays": 44,
+      "hours": 1.7,
+      "firstPlay": "2015-10-12T12:55:29Z",
+      "lastPlay": "2015-12-29T18:27:56Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Omen - Radio Edit",
+      "plays": 63,
+      "hours": 1.69,
+      "firstPlay": "2015-08-01T16:17:36Z",
+      "lastPlay": "2015-12-31T19:36:18Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Fly By Night",
+      "plays": 58,
+      "hours": 1.69,
+      "firstPlay": "2015-08-29T11:26:03Z",
+      "lastPlay": "2015-11-09T21:22:56Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Sexual Healing - Kygo Remix",
+      "plays": 51,
+      "hours": 1.68,
+      "firstPlay": "2015-08-03T23:01:02Z",
+      "lastPlay": "2015-12-31T07:10:40Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Catch & Release",
+      "plays": 58,
+      "hours": 1.68,
+      "firstPlay": "2015-09-28T19:44:49Z",
+      "lastPlay": "2015-12-31T19:33:16Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Could You Be Loved",
+      "plays": 42,
+      "hours": 1.63,
+      "firstPlay": "2015-08-02T16:39:16Z",
+      "lastPlay": "2015-12-13T11:59:38Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "You Make Me Feel Good - Original Mix",
+      "plays": 37,
+      "hours": 1.61,
+      "firstPlay": "2015-09-02T16:41:13Z",
+      "lastPlay": "2015-10-07T17:23:55Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "No Woman, No Cry - Live At The Lyceum, London/1975",
+      "plays": 33,
+      "hours": 1.6,
+      "firstPlay": "2015-08-08T01:23:43Z",
+      "lastPlay": "2015-12-13T11:59:39Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Can't Feel My Face",
+      "plays": 76,
+      "hours": 1.56,
+      "firstPlay": "2015-06-16T14:39:40Z",
+      "lastPlay": "2015-12-07T18:27:21Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Buffalo Soldier",
+      "plays": 54,
+      "hours": 1.54,
+      "firstPlay": "2015-09-02T16:50:00Z",
+      "lastPlay": "2015-12-31T19:40:36Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Sugar (feat. Francesco Yates)",
+      "plays": 65,
+      "hours": 1.53,
+      "firstPlay": "2015-07-26T17:09:12Z",
+      "lastPlay": "2015-12-19T22:49:07Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Old Thing Back (feat. Ja Rule and Ralph Tresvant)",
+      "plays": 43,
+      "hours": 1.5,
+      "firstPlay": "2015-06-05T14:26:18Z",
+      "lastPlay": "2015-10-25T16:12:07Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Love Yourself",
+      "plays": 36,
+      "hours": 1.5,
+      "firstPlay": "2015-11-14T20:48:24Z",
+      "lastPlay": "2015-12-26T21:15:28Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Californication",
+      "plays": 47,
+      "hours": 1.45,
+      "firstPlay": "2015-09-03T20:54:24Z",
+      "lastPlay": "2015-12-26T19:41:33Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Is This Love - Montmartre Remix",
+      "plays": 34,
+      "hours": 1.44,
+      "firstPlay": "2015-09-05T23:57:52Z",
+      "lastPlay": "2015-12-19T13:50:45Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "For You (feat. Tin Sparrow) - Radio Edit",
+      "plays": 52,
+      "hours": 1.43,
+      "firstPlay": "2015-08-09T14:20:57Z",
+      "lastPlay": "2015-10-29T09:28:58Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Shine",
+      "plays": 59,
+      "hours": 1.42,
+      "firstPlay": "2015-06-29T20:40:38Z",
+      "lastPlay": "2015-12-19T22:18:54Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Snow (Hey Oh)",
+      "plays": 43,
+      "hours": 1.42,
+      "firstPlay": "2015-09-03T20:54:31Z",
+      "lastPlay": "2015-11-17T17:29:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "It's You - Broiler Remix",
+      "plays": 49,
+      "hours": 1.39,
+      "firstPlay": "2015-06-11T21:40:01Z",
+      "lastPlay": "2015-10-10T21:09:23Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Rap God",
+      "plays": 36,
+      "hours": 1.37,
+      "firstPlay": "2015-08-30T15:29:21Z",
+      "lastPlay": "2015-12-31T19:44:19Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Everyday (feat. Rod Stewart, Miguel & Mark Ronson)",
+      "plays": 42,
+      "hours": 1.35,
+      "firstPlay": "2015-06-14T10:14:06Z",
+      "lastPlay": "2015-11-08T19:33:10Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "How Deep Is Your Love",
+      "plays": 55,
+      "hours": 1.31,
+      "firstPlay": "2015-08-01T16:06:13Z",
+      "lastPlay": "2015-10-27T13:03:46Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "The Hills",
+      "plays": 32,
+      "hours": 1.3,
+      "firstPlay": "2015-09-29T19:31:50Z",
+      "lastPlay": "2015-12-31T07:20:13Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Dreamer",
+      "plays": 35,
+      "hours": 1.29,
+      "firstPlay": "2015-06-13T21:35:29Z",
+      "lastPlay": "2015-11-08T19:25:13Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Gold - Thomas Jack Radio Edit",
+      "plays": 58,
+      "hours": 1.29,
+      "firstPlay": "2015-07-02T21:02:05Z",
+      "lastPlay": "2015-12-01T13:26:45Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Fantasy - Felix Jaehn Remix",
+      "plays": 45,
+      "hours": 1.27,
+      "firstPlay": "2015-08-13T15:09:30Z",
+      "lastPlay": "2015-11-28T09:35:58Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Never Let You Down",
+      "plays": 50,
+      "hours": 1.27,
+      "firstPlay": "2015-08-17T06:57:01Z",
+      "lastPlay": "2015-12-25T18:30:51Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Øynene lukket",
+      "plays": 37,
+      "hours": 1.23,
+      "firstPlay": "2015-06-07T00:35:23Z",
+      "lastPlay": "2015-12-19T22:09:56Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Another You (feat. Mr. Probz) - Radio Edit",
+      "plays": 46,
+      "hours": 1.22,
+      "firstPlay": "2015-09-02T18:52:42Z",
+      "lastPlay": "2015-12-19T22:49:09Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "You & Me - Flume Remix",
+      "plays": 35,
+      "hours": 1.21,
+      "firstPlay": "2015-06-12T09:47:28Z",
+      "lastPlay": "2015-11-16T15:17:07Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Fuck You",
+      "plays": 47,
+      "hours": 1.21,
+      "firstPlay": "2015-10-07T10:06:50Z",
+      "lastPlay": "2015-12-30T08:59:31Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Little Wing",
+      "plays": 56,
+      "hours": 1.17,
+      "firstPlay": "2015-09-02T19:05:12Z",
+      "lastPlay": "2015-12-25T22:48:14Z"
+    }
+  ],
+  "2016": [
+    {
+      "artist": "Unknown Artist",
+      "track": "Tell Your Friends",
+      "plays": 158,
+      "hours": 7.82,
+      "firstPlay": "2016-03-05T18:55:03Z",
+      "lastPlay": "2016-12-29T19:12:50Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "White Iverson",
+      "plays": 151,
+      "hours": 6.61,
+      "firstPlay": "2016-04-16T07:34:35Z",
+      "lastPlay": "2016-12-31T16:04:49Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Stolen Dance",
+      "plays": 139,
+      "hours": 6.27,
+      "firstPlay": "2016-01-21T06:27:25Z",
+      "lastPlay": "2016-12-31T16:13:12Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Flashed Junk Mind",
+      "plays": 121,
+      "hours": 4.92,
+      "firstPlay": "2016-02-04T17:09:17Z",
+      "lastPlay": "2016-12-31T15:15:56Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Stay (feat. Maty Noyes)",
+      "plays": 168,
+      "hours": 4.85,
+      "firstPlay": "2016-01-02T19:03:35Z",
+      "lastPlay": "2016-09-04T13:03:55Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Help Me Lose My Mind",
+      "plays": 108,
+      "hours": 4.78,
+      "firstPlay": "2016-03-05T23:39:43Z",
+      "lastPlay": "2016-12-31T21:49:39Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "7 Years",
+      "plays": 125,
+      "hours": 4.59,
+      "firstPlay": "2016-02-07T22:03:39Z",
+      "lastPlay": "2016-12-15T23:15:26Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Firestone",
+      "plays": 101,
+      "hours": 4.58,
+      "firstPlay": "2016-01-02T19:11:52Z",
+      "lastPlay": "2016-12-11T01:26:54Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Catch & Release (Deepend remix)",
+      "plays": 120,
+      "hours": 4.15,
+      "firstPlay": "2016-01-06T20:17:28Z",
+      "lastPlay": "2016-12-31T16:54:50Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Fade",
+      "plays": 95,
+      "hours": 4.14,
+      "firstPlay": "2016-01-01T23:23:16Z",
+      "lastPlay": "2016-12-19T19:48:09Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Jesus, Etc.",
+      "plays": 115,
+      "hours": 4.1,
+      "firstPlay": "2016-05-25T16:35:44Z",
+      "lastPlay": "2016-12-25T11:30:30Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Shooting Stars",
+      "plays": 87,
+      "hours": 4.03,
+      "firstPlay": "2016-01-06T20:43:25Z",
+      "lastPlay": "2016-08-28T18:49:11Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Gold",
+      "plays": 130,
+      "hours": 3.99,
+      "firstPlay": "2016-02-07T15:13:27Z",
+      "lastPlay": "2016-12-23T13:42:19Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I'm Not The Only One",
+      "plays": 99,
+      "hours": 3.76,
+      "firstPlay": "2016-01-01T17:05:20Z",
+      "lastPlay": "2016-12-12T17:28:34Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Fragile",
+      "plays": 96,
+      "hours": 3.74,
+      "firstPlay": "2016-03-18T19:53:59Z",
+      "lastPlay": "2016-12-31T09:28:17Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Cut To Black",
+      "plays": 117,
+      "hours": 3.72,
+      "firstPlay": "2016-01-17T18:57:31Z",
+      "lastPlay": "2016-12-31T14:56:09Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Continuum",
+      "plays": 65,
+      "hours": 3.62,
+      "firstPlay": "2016-06-19T20:40:50Z",
+      "lastPlay": "2016-12-31T22:02:57Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I Feel It Coming",
+      "plays": 60,
+      "hours": 3.49,
+      "firstPlay": "2016-11-25T14:23:11Z",
+      "lastPlay": "2016-12-31T14:52:13Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Sexual Healing - Kygo Remix",
+      "plays": 68,
+      "hours": 3.48,
+      "firstPlay": "2016-01-11T10:50:29Z",
+      "lastPlay": "2016-10-03T07:52:40Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Home",
+      "plays": 109,
+      "hours": 3.44,
+      "firstPlay": "2016-01-01T13:06:23Z",
+      "lastPlay": "2016-12-15T17:12:31Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Young You",
+      "plays": 114,
+      "hours": 3.44,
+      "firstPlay": "2016-01-17T16:44:03Z",
+      "lastPlay": "2016-12-14T14:50:11Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Dark Times",
+      "plays": 72,
+      "hours": 3.43,
+      "firstPlay": "2016-03-06T08:46:44Z",
+      "lastPlay": "2016-12-15T23:05:47Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Forever Alone",
+      "plays": 70,
+      "hours": 3.27,
+      "firstPlay": "2016-01-02T15:37:29Z",
+      "lastPlay": "2016-12-31T21:57:35Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Stole the Show",
+      "plays": 92,
+      "hours": 3.16,
+      "firstPlay": "2016-01-01T15:26:04Z",
+      "lastPlay": "2016-08-29T21:19:59Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Starboy",
+      "plays": 80,
+      "hours": 3.15,
+      "firstPlay": "2016-09-22T07:56:03Z",
+      "lastPlay": "2016-12-31T20:58:36Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Fairytale",
+      "plays": 71,
+      "hours": 3.14,
+      "firstPlay": "2016-03-03T22:33:23Z",
+      "lastPlay": "2016-11-12T17:17:31Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "The Morning",
+      "plays": 54,
+      "hours": 3.12,
+      "firstPlay": "2016-05-18T20:46:33Z",
+      "lastPlay": "2016-12-31T16:13:16Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Here for You (feat. Ella Henderson)",
+      "plays": 84,
+      "hours": 3.07,
+      "firstPlay": "2016-01-01T17:03:25Z",
+      "lastPlay": "2016-12-19T19:29:12Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Love Yourself",
+      "plays": 89,
+      "hours": 3.04,
+      "firstPlay": "2016-01-06T20:11:19Z",
+      "lastPlay": "2016-12-19T19:33:07Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Deja Vu",
+      "plays": 67,
+      "hours": 2.94,
+      "firstPlay": "2016-09-12T15:43:52Z",
+      "lastPlay": "2016-12-31T20:22:33Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Nothing Left (feat. Will Heard)",
+      "plays": 81,
+      "hours": 2.92,
+      "firstPlay": "2016-01-01T15:30:01Z",
+      "lastPlay": "2016-12-15T17:28:58Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Raging (feat. Kodaline)",
+      "plays": 99,
+      "hours": 2.92,
+      "firstPlay": "2016-04-01T18:02:42Z",
+      "lastPlay": "2016-12-11T01:59:53Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Never Be Like You",
+      "plays": 91,
+      "hours": 2.9,
+      "firstPlay": "2016-03-05T23:39:14Z",
+      "lastPlay": "2016-12-31T16:44:50Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Igjen og igjen",
+      "plays": 67,
+      "hours": 2.8,
+      "firstPlay": "2016-01-04T18:27:46Z",
+      "lastPlay": "2016-12-11T02:09:25Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Lianer",
+      "plays": 73,
+      "hours": 2.8,
+      "firstPlay": "2016-02-04T17:06:23Z",
+      "lastPlay": "2016-12-31T15:53:56Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Stunner",
+      "plays": 61,
+      "hours": 2.8,
+      "firstPlay": "2016-04-06T14:12:56Z",
+      "lastPlay": "2016-11-03T17:12:57Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Closer",
+      "plays": 93,
+      "hours": 2.74,
+      "firstPlay": "2016-02-14T23:03:32Z",
+      "lastPlay": "2016-12-03T18:41:41Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Angel",
+      "plays": 45,
+      "hours": 2.74,
+      "firstPlay": "2016-03-05T22:31:28Z",
+      "lastPlay": "2016-11-11T02:19:10Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Instant Crush (feat. Julian Casablancas)",
+      "plays": 54,
+      "hours": 2.7,
+      "firstPlay": "2016-04-27T18:47:39Z",
+      "lastPlay": "2016-12-31T18:58:55Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Saint Pablo",
+      "plays": 72,
+      "hours": 2.7,
+      "firstPlay": "2016-06-27T15:03:54Z",
+      "lastPlay": "2016-12-13T10:14:34Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Drowning Shadows",
+      "plays": 70,
+      "hours": 2.69,
+      "firstPlay": "2016-01-01T18:05:08Z",
+      "lastPlay": "2016-12-31T16:19:47Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "The Hills",
+      "plays": 86,
+      "hours": 2.67,
+      "firstPlay": "2016-01-01T18:05:10Z",
+      "lastPlay": "2016-12-15T17:20:39Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "White Ferrari",
+      "plays": 57,
+      "hours": 2.67,
+      "firstPlay": "2016-09-18T12:48:11Z",
+      "lastPlay": "2016-12-29T19:12:50Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Stay With Me",
+      "plays": 102,
+      "hours": 2.65,
+      "firstPlay": "2016-01-01T17:03:30Z",
+      "lastPlay": "2016-12-14T21:32:41Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Ivy",
+      "plays": 74,
+      "hours": 2.65,
+      "firstPlay": "2016-09-18T12:11:00Z",
+      "lastPlay": "2016-12-22T12:28:43Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Broeders Bloeden Samen",
+      "plays": 58,
+      "hours": 2.63,
+      "firstPlay": "2016-10-29T00:11:04Z",
+      "lastPlay": "2016-12-31T20:45:59Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Congratulations",
+      "plays": 58,
+      "hours": 2.63,
+      "firstPlay": "2016-11-07T15:04:35Z",
+      "lastPlay": "2016-12-31T21:49:36Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I Took A Pill In Ibiza - Seeb Remix",
+      "plays": 89,
+      "hours": 2.62,
+      "firstPlay": "2016-02-04T16:08:31Z",
+      "lastPlay": "2016-09-13T16:09:39Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Baby Blue (feat. Chance the Rapper)",
+      "plays": 72,
+      "hours": 2.62,
+      "firstPlay": "2016-06-18T16:40:43Z",
+      "lastPlay": "2016-12-31T15:15:56Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Futura Free",
+      "plays": 33,
+      "hours": 2.62,
+      "firstPlay": "2016-09-18T12:24:35Z",
+      "lastPlay": "2016-12-16T16:32:13Z"
+    }
+  ],
+  "2017": [
+    {
+      "artist": "Unknown Artist",
+      "track": "Unknown Track",
+      "plays": 238,
+      "hours": 47.53,
+      "firstPlay": "2017-06-06T23:40:35Z",
+      "lastPlay": "2017-12-31T19:33:46Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "November Rain",
+      "plays": 84,
+      "hours": 8.48,
+      "firstPlay": "2017-02-24T21:17:33Z",
+      "lastPlay": "2017-12-30T09:32:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Freedom Fighter",
+      "plays": 72,
+      "hours": 7.39,
+      "firstPlay": "2017-09-11T13:46:07Z",
+      "lastPlay": "2017-12-30T09:32:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Slide (feat. Frank Ocean & Migos)",
+      "plays": 216,
+      "hours": 6.6,
+      "firstPlay": "2017-03-01T10:39:55Z",
+      "lastPlay": "2017-12-15T17:33:45Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Stairway to Heaven - Remaster",
+      "plays": 73,
+      "hours": 6.33,
+      "firstPlay": "2017-07-18T15:57:50Z",
+      "lastPlay": "2017-12-30T09:32:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Bohemian Rhapsody - Remastered 2011",
+      "plays": 102,
+      "hours": 6,
+      "firstPlay": "2017-02-10T17:28:10Z",
+      "lastPlay": "2017-12-30T09:32:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I Feel It Coming",
+      "plays": 169,
+      "hours": 5.93,
+      "firstPlay": "2017-01-04T15:07:26Z",
+      "lastPlay": "2017-12-27T18:24:53Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Provider",
+      "plays": 151,
+      "hours": 5.54,
+      "firstPlay": "2017-08-28T07:35:06Z",
+      "lastPlay": "2017-12-29T14:45:58Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Knockin' On Heaven's Door",
+      "plays": 80,
+      "hours": 5.39,
+      "firstPlay": "2017-01-19T09:02:38Z",
+      "lastPlay": "2017-12-30T09:32:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Hotel California - 2013 Remaster",
+      "plays": 68,
+      "hours": 5.38,
+      "firstPlay": "2017-07-19T14:41:58Z",
+      "lastPlay": "2017-12-30T09:32:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Seigfried",
+      "plays": 141,
+      "hours": 5.34,
+      "firstPlay": "2017-01-01T12:03:24Z",
+      "lastPlay": "2017-12-22T18:08:29Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Er dette alt (feat. Chirag)",
+      "plays": 108,
+      "hours": 5.33,
+      "firstPlay": "2017-10-06T20:07:53Z",
+      "lastPlay": "2017-12-21T19:25:58Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Wish You Were Here - 2011 Remastered Version",
+      "plays": 73,
+      "hours": 5.21,
+      "firstPlay": "2017-04-05T07:17:13Z",
+      "lastPlay": "2017-12-30T09:32:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Passionfruit",
+      "plays": 160,
+      "hours": 5.06,
+      "firstPlay": "2017-03-20T20:29:51Z",
+      "lastPlay": "2017-12-31T19:33:46Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Paradise City",
+      "plays": 50,
+      "hours": 5.03,
+      "firstPlay": "2017-07-18T16:09:04Z",
+      "lastPlay": "2017-12-30T09:32:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Hey You - 2011 Remastered Version",
+      "plays": 80,
+      "hours": 5.02,
+      "firstPlay": "2017-04-05T16:34:43Z",
+      "lastPlay": "2017-12-30T09:32:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Jeg bare synes du skulle ha hørt på meg (feat. Unge Ferrari)",
+      "plays": 124,
+      "hours": 4.95,
+      "firstPlay": "2017-10-06T20:19:18Z",
+      "lastPlay": "2017-12-31T19:33:46Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Sweet Child O' Mine",
+      "plays": 65,
+      "hours": 4.9,
+      "firstPlay": "2017-02-24T20:29:33Z",
+      "lastPlay": "2017-12-30T09:32:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Self Control",
+      "plays": 157,
+      "hours": 4.89,
+      "firstPlay": "2017-01-01T00:40:38Z",
+      "lastPlay": "2017-12-15T18:04:17Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Futura Free",
+      "plays": 87,
+      "hours": 4.79,
+      "firstPlay": "2017-01-04T15:07:26Z",
+      "lastPlay": "2017-12-31T19:33:46Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Unforgettable",
+      "plays": 161,
+      "hours": 4.78,
+      "firstPlay": "2017-04-07T10:50:27Z",
+      "lastPlay": "2017-12-15T22:15:17Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Smoke On The Water - Remastered 2012",
+      "plays": 57,
+      "hours": 4.64,
+      "firstPlay": "2017-03-22T13:34:47Z",
+      "lastPlay": "2017-12-30T09:32:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Not Afraid",
+      "plays": 89,
+      "hours": 4.53,
+      "firstPlay": "2017-07-18T15:52:26Z",
+      "lastPlay": "2017-12-30T09:32:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "飄向北方",
+      "plays": 83,
+      "hours": 4.39,
+      "firstPlay": "2017-03-15T21:28:27Z",
+      "lastPlay": "2017-12-17T18:35:50Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "8TEEN",
+      "plays": 118,
+      "hours": 4.31,
+      "firstPlay": "2017-04-02T16:42:59Z",
+      "lastPlay": "2017-12-15T18:06:29Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Children of the Sun",
+      "plays": 50,
+      "hours": 4.27,
+      "firstPlay": "2017-09-11T13:46:29Z",
+      "lastPlay": "2017-12-30T09:32:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Lens",
+      "plays": 149,
+      "hours": 4.25,
+      "firstPlay": "2017-04-25T14:23:57Z",
+      "lastPlay": "2017-12-29T10:45:43Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Nikes",
+      "plays": 117,
+      "hours": 4.2,
+      "firstPlay": "2017-01-01T00:17:36Z",
+      "lastPlay": "2017-12-31T19:33:46Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "White Iverson",
+      "plays": 145,
+      "hours": 4.2,
+      "firstPlay": "2017-01-04T15:07:26Z",
+      "lastPlay": "2017-12-22T20:59:59Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Money - 2011 Remastered Version",
+      "plays": 60,
+      "hours": 4.15,
+      "firstPlay": "2017-04-05T07:23:35Z",
+      "lastPlay": "2017-12-30T21:57:34Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I Fall Apart",
+      "plays": 136,
+      "hours": 4.1,
+      "firstPlay": "2017-01-13T18:34:28Z",
+      "lastPlay": "2017-12-31T19:33:46Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Words of Wisdom",
+      "plays": 76,
+      "hours": 4.06,
+      "firstPlay": "2017-09-12T15:28:18Z",
+      "lastPlay": "2017-12-30T09:32:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "rockstar",
+      "plays": 161,
+      "hours": 4.04,
+      "firstPlay": "2017-09-17T18:42:57Z",
+      "lastPlay": "2017-12-26T17:20:50Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Young Dumb & Broke",
+      "plays": 131,
+      "hours": 3.94,
+      "firstPlay": "2017-03-05T21:58:57Z",
+      "lastPlay": "2017-12-21T18:57:01Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Nothing Else Matters",
+      "plays": 53,
+      "hours": 3.86,
+      "firstPlay": "2017-03-22T13:36:00Z",
+      "lastPlay": "2017-12-31T10:10:40Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Congratulations",
+      "plays": 145,
+      "hours": 3.85,
+      "firstPlay": "2017-01-01T00:17:28Z",
+      "lastPlay": "2017-12-22T22:34:44Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Redbone",
+      "plays": 125,
+      "hours": 3.83,
+      "firstPlay": "2017-01-24T23:11:04Z",
+      "lastPlay": "2017-12-21T17:23:24Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Lose Yourself - From \"8 Mile\" Soundtrack",
+      "plays": 53,
+      "hours": 3.81,
+      "firstPlay": "2017-05-13T11:59:55Z",
+      "lastPlay": "2017-12-30T09:32:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Nights",
+      "plays": 87,
+      "hours": 3.79,
+      "firstPlay": "2017-01-01T00:46:56Z",
+      "lastPlay": "2017-12-06T21:13:32Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Rollin (feat. Future & Khalid)",
+      "plays": 109,
+      "hours": 3.73,
+      "firstPlay": "2017-05-12T06:51:51Z",
+      "lastPlay": "2017-12-21T22:45:02Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Sultans Of Swing",
+      "plays": 59,
+      "hours": 3.6,
+      "firstPlay": "2017-03-22T13:33:16Z",
+      "lastPlay": "2017-12-30T09:32:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Vi er perfekt men verden er ikke det",
+      "plays": 132,
+      "hours": 3.6,
+      "firstPlay": "2017-06-02T16:15:31Z",
+      "lastPlay": "2017-12-17T18:35:50Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Location",
+      "plays": 136,
+      "hours": 3.5,
+      "firstPlay": "2017-01-26T17:39:35Z",
+      "lastPlay": "2017-12-22T18:08:29Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "The Unforgiven",
+      "plays": 37,
+      "hours": 3.48,
+      "firstPlay": "2017-06-26T06:24:11Z",
+      "lastPlay": "2017-12-31T10:24:35Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Ivy",
+      "plays": 109,
+      "hours": 3.42,
+      "firstPlay": "2017-01-01T00:21:45Z",
+      "lastPlay": "2017-12-05T17:52:46Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Don't Let Me Down - Remastered",
+      "plays": 98,
+      "hours": 3.42,
+      "firstPlay": "2017-01-22T23:49:46Z",
+      "lastPlay": "2017-12-22T18:17:26Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Instant Crush (feat. Julian Casablancas)",
+      "plays": 95,
+      "hours": 3.4,
+      "firstPlay": "2017-01-04T15:07:26Z",
+      "lastPlay": "2017-12-31T19:33:46Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Cyclone of Emotion",
+      "plays": 56,
+      "hours": 3.38,
+      "firstPlay": "2017-09-11T13:46:29Z",
+      "lastPlay": "2017-12-30T09:32:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Chanel",
+      "plays": 138,
+      "hours": 3.37,
+      "firstPlay": "2017-03-13T09:09:26Z",
+      "lastPlay": "2017-12-31T19:33:46Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "White Ferrari",
+      "plays": 98,
+      "hours": 3.23,
+      "firstPlay": "2017-01-01T11:31:29Z",
+      "lastPlay": "2017-12-02T20:15:18Z"
+    }
+  ],
+  "2018": [
+    {
+      "artist": "Unknown Artist",
+      "track": "Unknown Track",
+      "plays": 615,
+      "hours": 182.1,
+      "firstPlay": "2018-01-03T00:43:49Z",
+      "lastPlay": "2018-12-31T18:33:04Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Racer",
+      "plays": 361,
+      "hours": 14.53,
+      "firstPlay": "2018-11-30T13:21:40Z",
+      "lastPlay": "2018-12-31T18:33:04Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Sultans Of Swing",
+      "plays": 122,
+      "hours": 6.68,
+      "firstPlay": "2018-01-08T18:36:47Z",
+      "lastPlay": "2018-12-11T17:18:03Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Television / So Far So Good",
+      "plays": 118,
+      "hours": 5.21,
+      "firstPlay": "2018-01-29T17:27:36Z",
+      "lastPlay": "2018-12-31T18:33:04Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I'm Just Snacking",
+      "plays": 171,
+      "hours": 4.9,
+      "firstPlay": "2018-01-29T16:57:11Z",
+      "lastPlay": "2018-12-10T22:05:26Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Prune, You Talk Funny",
+      "plays": 142,
+      "hours": 4.23,
+      "firstPlay": "2018-02-20T12:33:44Z",
+      "lastPlay": "2018-12-31T18:33:04Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Er dette alt (feat. Chirag)",
+      "plays": 91,
+      "hours": 3.76,
+      "firstPlay": "2018-01-01T00:57:28Z",
+      "lastPlay": "2018-12-02T11:40:42Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Ninety",
+      "plays": 77,
+      "hours": 3.63,
+      "firstPlay": "2018-01-01T13:31:40Z",
+      "lastPlay": "2018-11-14T11:23:31Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Like a Rolling Stone",
+      "plays": 110,
+      "hours": 3.34,
+      "firstPlay": "2018-01-09T00:28:45Z",
+      "lastPlay": "2018-12-04T00:13:07Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Stairway to Heaven - Remaster",
+      "plays": 52,
+      "hours": 3.01,
+      "firstPlay": "2018-01-14T14:49:04Z",
+      "lastPlay": "2018-12-31T18:33:04Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Provider",
+      "plays": 106,
+      "hours": 2.96,
+      "firstPlay": "2018-01-02T21:28:00Z",
+      "lastPlay": "2018-12-10T22:05:26Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Ditch",
+      "plays": 88,
+      "hours": 2.93,
+      "firstPlay": "2018-05-02T13:36:25Z",
+      "lastPlay": "2018-12-11T23:02:38Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "HOTTIE",
+      "plays": 103,
+      "hours": 2.83,
+      "firstPlay": "2018-01-02T21:36:46Z",
+      "lastPlay": "2018-12-11T23:02:38Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Everytime",
+      "plays": 136,
+      "hours": 2.83,
+      "firstPlay": "2018-01-04T22:43:08Z",
+      "lastPlay": "2018-11-30T13:17:16Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Down To The Waterline",
+      "plays": 86,
+      "hours": 2.83,
+      "firstPlay": "2018-03-18T18:18:39Z",
+      "lastPlay": "2018-12-06T20:24:18Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Instant Crush (feat. Julian Casablancas)",
+      "plays": 56,
+      "hours": 2.75,
+      "firstPlay": "2018-01-01T16:55:34Z",
+      "lastPlay": "2018-12-20T18:06:12Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Money For Nothing",
+      "plays": 39,
+      "hours": 2.74,
+      "firstPlay": "2018-01-14T14:49:04Z",
+      "lastPlay": "2018-12-28T19:25:00Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I Feel It Coming",
+      "plays": 65,
+      "hours": 2.72,
+      "firstPlay": "2018-02-02T12:13:52Z",
+      "lastPlay": "2018-12-31T21:29:42Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Friday Morning",
+      "plays": 50,
+      "hours": 2.69,
+      "firstPlay": "2018-05-31T08:21:31Z",
+      "lastPlay": "2018-12-31T18:33:04Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I Want To Break Free - Single Remix",
+      "plays": 63,
+      "hours": 2.6,
+      "firstPlay": "2018-01-22T08:24:10Z",
+      "lastPlay": "2018-12-04T00:13:00Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "He's the Greatest Dancer - 2006 Remaster",
+      "plays": 60,
+      "hours": 2.59,
+      "firstPlay": "2018-06-25T08:07:43Z",
+      "lastPlay": "2018-12-31T18:33:04Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Jeg bare synes du skulle ha hørt på meg (feat. Unge Ferrari)",
+      "plays": 82,
+      "hours": 2.55,
+      "firstPlay": "2018-01-01T01:09:27Z",
+      "lastPlay": "2018-12-02T12:26:51Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "BLEACH",
+      "plays": 77,
+      "hours": 2.49,
+      "firstPlay": "2018-01-02T21:38:36Z",
+      "lastPlay": "2018-11-03T22:15:02Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Dance, Baby!",
+      "plays": 103,
+      "hours": 2.39,
+      "firstPlay": "2018-01-04T21:57:38Z",
+      "lastPlay": "2018-11-04T14:13:43Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "The Ways (with Swae Lee)",
+      "plays": 72,
+      "hours": 2.39,
+      "firstPlay": "2018-02-24T21:57:27Z",
+      "lastPlay": "2018-12-10T22:05:26Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Fallen",
+      "plays": 66,
+      "hours": 2.38,
+      "firstPlay": "2018-01-10T08:59:39Z",
+      "lastPlay": "2018-11-27T19:36:02Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Alene",
+      "plays": 86,
+      "hours": 2.37,
+      "firstPlay": "2018-01-02T09:11:07Z",
+      "lastPlay": "2018-10-24T04:56:21Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "A Little While",
+      "plays": 70,
+      "hours": 2.36,
+      "firstPlay": "2018-03-30T12:01:34Z",
+      "lastPlay": "2018-12-11T23:02:38Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "As Long As We're Together",
+      "plays": 46,
+      "hours": 2.36,
+      "firstPlay": "2018-08-08T13:52:01Z",
+      "lastPlay": "2018-11-16T20:49:49Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Get Lucky (feat. Pharrell Williams and Nile Rodgers)",
+      "plays": 66,
+      "hours": 2.34,
+      "firstPlay": "2018-01-09T00:39:41Z",
+      "lastPlay": "2018-12-30T17:58:48Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Electric U",
+      "plays": 101,
+      "hours": 2.33,
+      "firstPlay": "2018-03-12T10:33:50Z",
+      "lastPlay": "2018-12-31T18:33:04Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Plage d'or",
+      "plays": 87,
+      "hours": 2.3,
+      "firstPlay": "2018-05-05T10:14:00Z",
+      "lastPlay": "2018-12-31T18:33:04Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Welcome To The Jungle",
+      "plays": 62,
+      "hours": 2.28,
+      "firstPlay": "2018-01-14T14:49:03Z",
+      "lastPlay": "2018-12-02T19:23:57Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Slide (feat. Frank Ocean & Migos)",
+      "plays": 80,
+      "hours": 2.26,
+      "firstPlay": "2018-01-11T11:49:07Z",
+      "lastPlay": "2018-12-31T21:50:30Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Losing You",
+      "plays": 78,
+      "hours": 2.26,
+      "firstPlay": "2018-03-23T18:58:32Z",
+      "lastPlay": "2018-12-10T11:28:14Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Faller",
+      "plays": 77,
+      "hours": 2.24,
+      "firstPlay": "2018-01-01T16:25:15Z",
+      "lastPlay": "2018-11-03T13:51:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Ready / Problems",
+      "plays": 82,
+      "hours": 2.24,
+      "firstPlay": "2018-01-08T18:36:47Z",
+      "lastPlay": "2018-12-10T22:05:26Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Icon",
+      "plays": 85,
+      "hours": 2.24,
+      "firstPlay": "2018-02-02T12:10:00Z",
+      "lastPlay": "2018-12-10T22:05:26Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Lose Yourself - From \"8 Mile\" Soundtrack",
+      "plays": 33,
+      "hours": 2.17,
+      "firstPlay": "2018-01-02T12:40:53Z",
+      "lastPlay": "2018-08-29T07:42:34Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "RENTAL",
+      "plays": 89,
+      "hours": 2.16,
+      "firstPlay": "2018-01-02T21:39:35Z",
+      "lastPlay": "2018-10-17T09:42:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Loving Is Easy (feat. Benny Sings)",
+      "plays": 92,
+      "hours": 2.15,
+      "firstPlay": "2018-01-04T22:00:24Z",
+      "lastPlay": "2018-12-04T00:12:10Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Nothing Else Matters",
+      "plays": 35,
+      "hours": 2.14,
+      "firstPlay": "2018-01-23T13:14:15Z",
+      "lastPlay": "2018-12-31T18:33:04Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Lady and Man",
+      "plays": 42,
+      "hours": 2.08,
+      "firstPlay": "2018-05-31T06:02:47Z",
+      "lastPlay": "2018-12-20T21:29:59Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Ingenting blir det samme men samme for meg",
+      "plays": 71,
+      "hours": 2.07,
+      "firstPlay": "2018-01-01T01:05:22Z",
+      "lastPlay": "2018-12-11T23:02:38Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Amadelle With Love",
+      "plays": 67,
+      "hours": 2.05,
+      "firstPlay": "2018-04-15T15:17:52Z",
+      "lastPlay": "2018-12-20T21:29:59Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Pretty Girl",
+      "plays": 81,
+      "hours": 2.04,
+      "firstPlay": "2018-01-09T00:40:20Z",
+      "lastPlay": "2018-12-10T22:05:26Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Comfortably Numb - 2011 Remastered Version",
+      "plays": 28,
+      "hours": 2.04,
+      "firstPlay": "2018-01-14T14:49:03Z",
+      "lastPlay": "2018-12-17T23:19:07Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I Fall Apart",
+      "plays": 84,
+      "hours": 2,
+      "firstPlay": "2018-01-01T16:55:34Z",
+      "lastPlay": "2018-12-31T18:33:04Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Psycho (feat. Ty Dolla $ign)",
+      "plays": 75,
+      "hours": 2,
+      "firstPlay": "2018-02-24T19:03:53Z",
+      "lastPlay": "2018-10-19T03:38:51Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Oh Devil",
+      "plays": 49,
+      "hours": 1.99,
+      "firstPlay": "2018-01-02T21:49:26Z",
+      "lastPlay": "2018-11-27T19:46:25Z"
+    }
+  ],
+  "2019": [
+    {
+      "artist": "Unknown Artist",
+      "track": "Unknown Track",
+      "plays": 612,
+      "hours": 167.58,
+      "firstPlay": "2019-01-02T23:48:25Z",
+      "lastPlay": "2019-12-30T13:56:55Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Mary Plays the Piano",
+      "plays": 1205,
+      "hours": 19.8,
+      "firstPlay": "2019-08-20T09:18:09Z",
+      "lastPlay": "2019-11-29T02:52:00Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Slide",
+      "plays": 214,
+      "hours": 7.35,
+      "firstPlay": "2019-08-09T16:57:47Z",
+      "lastPlay": "2019-12-17T21:56:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Thinking of a Place",
+      "plays": 92,
+      "hours": 6.65,
+      "firstPlay": "2019-03-10T19:01:10Z",
+      "lastPlay": "2019-12-16T22:55:27Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Racer",
+      "plays": 153,
+      "hours": 5.2,
+      "firstPlay": "2019-01-01T01:15:38Z",
+      "lastPlay": "2019-10-29T13:37:56Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Autumn Leaves",
+      "plays": 102,
+      "hours": 4.65,
+      "firstPlay": "2019-01-01T23:50:58Z",
+      "lastPlay": "2019-12-08T18:13:52Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "花心",
+      "plays": 104,
+      "hours": 4.13,
+      "firstPlay": "2019-02-19T11:49:06Z",
+      "lastPlay": "2019-12-08T16:10:23Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "How Deep Is Your Love",
+      "plays": 103,
+      "hours": 3.53,
+      "firstPlay": "2019-01-15T09:31:39Z",
+      "lastPlay": "2019-12-28T19:35:39Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Hotel California - 2013 Remaster",
+      "plays": 72,
+      "hours": 3.51,
+      "firstPlay": "2019-01-01T23:50:58Z",
+      "lastPlay": "2019-12-20T13:54:26Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Night Fever - From \"Saturday Night Fever\" Soundtrack",
+      "plays": 93,
+      "hours": 3.37,
+      "firstPlay": "2019-01-06T01:24:12Z",
+      "lastPlay": "2019-08-19T13:00:32Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "You Can Get By - 2018 Remaster",
+      "plays": 74,
+      "hours": 3.36,
+      "firstPlay": "2019-01-19T12:40:23Z",
+      "lastPlay": "2019-12-25T18:59:29Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "One of These Nights - 2013 Remaster",
+      "plays": 63,
+      "hours": 3.31,
+      "firstPlay": "2019-01-01T01:17:41Z",
+      "lastPlay": "2019-12-06T22:32:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Rosanna",
+      "plays": 66,
+      "hours": 3.16,
+      "firstPlay": "2019-03-22T12:07:21Z",
+      "lastPlay": "2019-12-06T23:01:52Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I Feel It Coming",
+      "plays": 81,
+      "hours": 3.12,
+      "firstPlay": "2019-01-10T11:49:43Z",
+      "lastPlay": "2019-12-07T23:58:55Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "How Can You Mend A Broken Heart",
+      "plays": 75,
+      "hours": 3.07,
+      "firstPlay": "2019-02-05T11:40:56Z",
+      "lastPlay": "2019-12-08T12:15:23Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Everybody Dance - 12\" Mix",
+      "plays": 53,
+      "hours": 2.97,
+      "firstPlay": "2019-01-06T01:25:54Z",
+      "lastPlay": "2019-12-12T00:25:00Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Time - 2011 Remastered Version",
+      "plays": 61,
+      "hours": 2.94,
+      "firstPlay": "2019-01-01T12:19:37Z",
+      "lastPlay": "2019-12-25T19:02:19Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Good Times",
+      "plays": 78,
+      "hours": 2.92,
+      "firstPlay": "2019-01-25T19:18:03Z",
+      "lastPlay": "2019-12-20T13:54:26Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Baby I'm Yours",
+      "plays": 105,
+      "hours": 2.91,
+      "firstPlay": "2019-01-01T13:57:24Z",
+      "lastPlay": "2019-12-26T14:37:37Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Give Life Back to Music",
+      "plays": 78,
+      "hours": 2.89,
+      "firstPlay": "2019-01-25T19:18:03Z",
+      "lastPlay": "2019-10-28T12:03:54Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "New Kid in Town - 2013 Remaster",
+      "plays": 48,
+      "hours": 2.83,
+      "firstPlay": "2019-04-18T07:02:26Z",
+      "lastPlay": "2019-12-05T17:30:39Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Get Lucky (feat. Pharrell Williams and Nile Rodgers)",
+      "plays": 63,
+      "hours": 2.82,
+      "firstPlay": "2019-01-25T19:51:04Z",
+      "lastPlay": "2019-12-12T00:25:00Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Comfortably Numb - 2011 Remastered Version",
+      "plays": 36,
+      "hours": 2.69,
+      "firstPlay": "2019-05-09T20:56:06Z",
+      "lastPlay": "2019-12-12T00:25:00Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I Fall In Love Too Easily",
+      "plays": 103,
+      "hours": 2.68,
+      "firstPlay": "2019-01-15T20:32:02Z",
+      "lastPlay": "2019-12-12T00:25:00Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Est-Ce Que C'est Chic - 2018 Remaster",
+      "plays": 64,
+      "hours": 2.66,
+      "firstPlay": "2019-01-20T14:24:44Z",
+      "lastPlay": "2019-12-08T09:36:34Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Sweet Caroline",
+      "plays": 78,
+      "hours": 2.61,
+      "firstPlay": "2019-03-20T19:14:58Z",
+      "lastPlay": "2019-12-16T22:25:49Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Rain And Tears",
+      "plays": 73,
+      "hours": 2.54,
+      "firstPlay": "2019-03-25T21:19:58Z",
+      "lastPlay": "2019-12-11T10:43:08Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I Want Your Love - 2018 Remaster",
+      "plays": 55,
+      "hours": 2.47,
+      "firstPlay": "2019-01-15T21:33:31Z",
+      "lastPlay": "2019-12-12T00:25:00Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "It's Always You - Vocal Version",
+      "plays": 74,
+      "hours": 2.45,
+      "firstPlay": "2019-01-02T00:49:46Z",
+      "lastPlay": "2019-12-04T20:44:16Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Band On The Run - 2010 Remaster",
+      "plays": 56,
+      "hours": 2.45,
+      "firstPlay": "2019-03-21T12:48:57Z",
+      "lastPlay": "2019-12-08T08:05:52Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Mockingbird",
+      "plays": 50,
+      "hours": 2.44,
+      "firstPlay": "2019-09-08T21:56:15Z",
+      "lastPlay": "2019-11-18T20:59:23Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Hey Jude - Remastered 2015",
+      "plays": 44,
+      "hours": 2.36,
+      "firstPlay": "2019-01-02T21:28:07Z",
+      "lastPlay": "2019-12-16T22:25:49Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Changes",
+      "plays": 67,
+      "hours": 2.36,
+      "firstPlay": "2019-04-12T11:57:23Z",
+      "lastPlay": "2019-12-12T23:49:25Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I Guess I Just Feel Like",
+      "plays": 63,
+      "hours": 2.33,
+      "firstPlay": "2019-02-26T14:30:52Z",
+      "lastPlay": "2019-12-04T22:10:25Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Till I Collapse",
+      "plays": 41,
+      "hours": 2.33,
+      "firstPlay": "2019-04-16T17:05:26Z",
+      "lastPlay": "2019-10-09T09:20:56Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Laugh, I Nearly Died - Remastered",
+      "plays": 49,
+      "hours": 2.26,
+      "firstPlay": "2019-03-25T21:19:58Z",
+      "lastPlay": "2019-12-20T13:54:26Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Don't Stop (feat. Tiffany Austin)",
+      "plays": 62,
+      "hours": 2.25,
+      "firstPlay": "2019-01-03T15:51:09Z",
+      "lastPlay": "2019-12-16T22:25:49Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Always On My Mind",
+      "plays": 69,
+      "hours": 2.25,
+      "firstPlay": "2019-01-14T22:14:35Z",
+      "lastPlay": "2019-12-08T12:25:33Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Sin",
+      "plays": 66,
+      "hours": 2.24,
+      "firstPlay": "2019-03-22T08:43:27Z",
+      "lastPlay": "2019-12-25T18:48:40Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "The Veldt",
+      "plays": 33,
+      "hours": 2.24,
+      "firstPlay": "2019-04-21T11:06:58Z",
+      "lastPlay": "2019-12-16T22:25:49Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Keep On Truckin'",
+      "plays": 49,
+      "hours": 2.19,
+      "firstPlay": "2019-03-24T18:21:08Z",
+      "lastPlay": "2019-12-08T18:13:52Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Are You Ready For Love? - Remastered",
+      "plays": 65,
+      "hours": 2.16,
+      "firstPlay": "2019-04-27T17:38:41Z",
+      "lastPlay": "2019-11-30T17:44:16Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Polka Dots and Moonbeams - Live",
+      "plays": 44,
+      "hours": 2.14,
+      "firstPlay": "2019-03-22T11:10:13Z",
+      "lastPlay": "2019-11-30T17:44:16Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Lucid Dreams",
+      "plays": 69,
+      "hours": 2.13,
+      "firstPlay": "2019-02-13T09:33:31Z",
+      "lastPlay": "2019-12-11T21:50:30Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "The Way Life Goes (feat. Oh Wonder)",
+      "plays": 61,
+      "hours": 2.12,
+      "firstPlay": "2019-02-25T16:38:47Z",
+      "lastPlay": "2019-12-16T22:25:49Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Star Treatment",
+      "plays": 42,
+      "hours": 2.12,
+      "firstPlay": "2019-03-01T10:15:47Z",
+      "lastPlay": "2019-12-08T12:42:23Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Strobe",
+      "plays": 51,
+      "hours": 2.1,
+      "firstPlay": "2019-04-23T17:53:30Z",
+      "lastPlay": "2019-12-16T23:00:15Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Go Robot",
+      "plays": 62,
+      "hours": 2.06,
+      "firstPlay": "2019-04-23T17:51:49Z",
+      "lastPlay": "2019-12-01T15:44:28Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I Started A Joke",
+      "plays": 57,
+      "hours": 2.05,
+      "firstPlay": "2019-01-15T09:32:39Z",
+      "lastPlay": "2019-12-12T00:25:00Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Television / So Far So Good",
+      "plays": 86,
+      "hours": 2.02,
+      "firstPlay": "2019-01-01T23:50:58Z",
+      "lastPlay": "2019-10-09T17:05:50Z"
+    }
+  ],
+  "2020": [
+    {
+      "artist": "Unknown Artist",
+      "track": "Unknown Track",
+      "plays": 433,
+      "hours": 123.04,
+      "firstPlay": "2020-01-02T08:00:04Z",
+      "lastPlay": "2020-12-30T13:25:48Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "SAS PLUS / SAS PUSSY",
+      "plays": 42,
+      "hours": 6.36,
+      "firstPlay": "2020-02-08T04:44:59Z",
+      "lastPlay": "2020-07-17T12:48:59Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "My Song",
+      "plays": 67,
+      "hours": 3.32,
+      "firstPlay": "2020-01-12T00:06:20Z",
+      "lastPlay": "2020-12-21T02:18:35Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Godzilla (feat. Juice WRLD)",
+      "plays": 76,
+      "hours": 2.75,
+      "firstPlay": "2020-01-17T09:57:37Z",
+      "lastPlay": "2020-12-09T14:47:12Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Life Is Good (feat. Drake)",
+      "plays": 68,
+      "hours": 2.69,
+      "firstPlay": "2020-01-21T10:33:35Z",
+      "lastPlay": "2020-12-15T14:51:07Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Unnagjort",
+      "plays": 54,
+      "hours": 2.51,
+      "firstPlay": "2020-04-02T23:56:46Z",
+      "lastPlay": "2020-10-18T17:57:44Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "What You Won't Do for Love",
+      "plays": 55,
+      "hours": 2.48,
+      "firstPlay": "2020-01-24T23:15:32Z",
+      "lastPlay": "2020-12-20T01:39:23Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "We Are The People",
+      "plays": 57,
+      "hours": 2.44,
+      "firstPlay": "2020-01-08T00:22:07Z",
+      "lastPlay": "2020-12-06T17:19:24Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Jeg Lover Deg",
+      "plays": 40,
+      "hours": 2.4,
+      "firstPlay": "2020-01-08T00:12:56Z",
+      "lastPlay": "2020-12-20T01:39:23Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Althea - 2013 Remaster",
+      "plays": 24,
+      "hours": 2.32,
+      "firstPlay": "2020-10-20T10:03:55Z",
+      "lastPlay": "2020-12-21T02:18:35Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Hotline Bling",
+      "plays": 52,
+      "hours": 2.31,
+      "firstPlay": "2020-01-08T16:46:11Z",
+      "lastPlay": "2020-12-09T14:57:12Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Harvest Moon",
+      "plays": 41,
+      "hours": 2.19,
+      "firstPlay": "2020-04-20T22:54:23Z",
+      "lastPlay": "2020-12-22T00:41:43Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "HALLO",
+      "plays": 82,
+      "hours": 2.16,
+      "firstPlay": "2020-01-02T21:04:01Z",
+      "lastPlay": "2020-11-18T06:45:36Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "TROLLZ (with Nicki Minaj)",
+      "plays": 77,
+      "hours": 2.16,
+      "firstPlay": "2020-06-16T20:54:49Z",
+      "lastPlay": "2020-09-11T09:11:43Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Still D.R.E.",
+      "plays": 48,
+      "hours": 2.14,
+      "firstPlay": "2020-01-01T16:05:24Z",
+      "lastPlay": "2020-03-11T14:42:19Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Kjeresten Te Wenche",
+      "plays": 46,
+      "hours": 2.13,
+      "firstPlay": "2020-08-22T20:33:02Z",
+      "lastPlay": "2020-12-22T00:41:43Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Nights",
+      "plays": 44,
+      "hours": 2.1,
+      "firstPlay": "2020-01-01T15:31:36Z",
+      "lastPlay": "2020-12-10T18:58:00Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Sukiyaki",
+      "plays": 62,
+      "hours": 2.1,
+      "firstPlay": "2020-01-20T08:00:04Z",
+      "lastPlay": "2020-12-20T01:39:23Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Blinding Lights",
+      "plays": 74,
+      "hours": 2.07,
+      "firstPlay": "2020-01-21T10:33:42Z",
+      "lastPlay": "2020-12-24T16:17:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Oh Honey",
+      "plays": 44,
+      "hours": 2.06,
+      "firstPlay": "2020-01-08T17:48:32Z",
+      "lastPlay": "2020-12-21T20:42:45Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I Can't Tell You Why - 2013 Remaster",
+      "plays": 38,
+      "hours": 2.03,
+      "firstPlay": "2020-09-24T19:11:40Z",
+      "lastPlay": "2020-12-20T01:39:23Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Mang Slags Kjærlighet",
+      "plays": 47,
+      "hours": 1.94,
+      "firstPlay": "2020-08-25T21:22:55Z",
+      "lastPlay": "2020-12-22T00:41:43Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Ambivalencia",
+      "plays": 44,
+      "hours": 1.86,
+      "firstPlay": "2020-08-23T17:53:15Z",
+      "lastPlay": "2020-12-24T16:17:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "GOOBA",
+      "plays": 109,
+      "hours": 1.85,
+      "firstPlay": "2020-05-22T19:39:41Z",
+      "lastPlay": "2020-09-08T19:17:43Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Everybody Wants To Rule The World",
+      "plays": 38,
+      "hours": 1.84,
+      "firstPlay": "2020-08-21T10:30:39Z",
+      "lastPlay": "2020-12-20T01:39:23Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Empire State Of Mind",
+      "plays": 40,
+      "hours": 1.83,
+      "firstPlay": "2020-01-04T01:20:02Z",
+      "lastPlay": "2020-09-07T20:08:15Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "American Boy",
+      "plays": 49,
+      "hours": 1.82,
+      "firstPlay": "2020-01-02T21:03:44Z",
+      "lastPlay": "2020-07-24T13:39:00Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Litt Lenger",
+      "plays": 37,
+      "hours": 1.82,
+      "firstPlay": "2020-01-08T00:12:56Z",
+      "lastPlay": "2020-12-21T20:42:45Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Kort Opphold",
+      "plays": 37,
+      "hours": 1.81,
+      "firstPlay": "2020-02-28T18:55:00Z",
+      "lastPlay": "2020-12-24T16:17:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Snitch Nigga",
+      "plays": 66,
+      "hours": 1.8,
+      "firstPlay": "2020-01-20T08:29:40Z",
+      "lastPlay": "2020-12-09T14:52:45Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "You Can Call Me Al",
+      "plays": 36,
+      "hours": 1.76,
+      "firstPlay": "2020-05-03T16:33:01Z",
+      "lastPlay": "2020-12-21T02:18:35Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "everything i wanted",
+      "plays": 46,
+      "hours": 1.72,
+      "firstPlay": "2020-01-23T21:25:38Z",
+      "lastPlay": "2020-12-14T15:45:32Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "On the Beach - 2016 Remaster",
+      "plays": 20,
+      "hours": 1.7,
+      "firstPlay": "2020-10-20T11:23:59Z",
+      "lastPlay": "2020-12-24T16:17:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Kjære Halvbror",
+      "plays": 37,
+      "hours": 1.65,
+      "firstPlay": "2020-01-04T01:20:02Z",
+      "lastPlay": "2020-12-18T15:22:11Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Toya",
+      "plays": 54,
+      "hours": 1.65,
+      "firstPlay": "2020-02-15T14:03:32Z",
+      "lastPlay": "2020-12-20T01:39:23Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Grimaser (Idiomer for idioter)",
+      "plays": 62,
+      "hours": 1.65,
+      "firstPlay": "2020-04-03T18:56:24Z",
+      "lastPlay": "2020-12-10T19:20:54Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Tears in Heaven - Acoustic; Live at MTV Unplugged, Bray Film Studios, Windsor, England, UK, 1/16/1992; 2013 Remaster",
+      "plays": 34,
+      "hours": 1.65,
+      "firstPlay": "2020-09-24T19:51:14Z",
+      "lastPlay": "2020-12-30T15:00:51Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Hon Elsker Han",
+      "plays": 30,
+      "hours": 1.64,
+      "firstPlay": "2020-01-04T06:57:39Z",
+      "lastPlay": "2020-11-09T14:32:45Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Hus Forbi",
+      "plays": 30,
+      "hours": 1.61,
+      "firstPlay": "2020-01-04T10:12:44Z",
+      "lastPlay": "2020-11-09T14:32:45Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Michelle - Remastered 2009",
+      "plays": 55,
+      "hours": 1.6,
+      "firstPlay": "2020-04-28T21:51:57Z",
+      "lastPlay": "2020-12-24T16:17:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Futsal Shuffle 2020",
+      "plays": 36,
+      "hours": 1.58,
+      "firstPlay": "2020-01-19T19:15:34Z",
+      "lastPlay": "2020-03-11T14:25:43Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Suicidal",
+      "plays": 36,
+      "hours": 1.58,
+      "firstPlay": "2020-01-25T18:12:28Z",
+      "lastPlay": "2020-12-09T15:08:56Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Texas Sun",
+      "plays": 46,
+      "hours": 1.56,
+      "firstPlay": "2020-01-08T00:29:15Z",
+      "lastPlay": "2020-12-24T16:17:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "People Everywhere (Still Alive)",
+      "plays": 57,
+      "hours": 1.54,
+      "firstPlay": "2020-01-12T00:06:20Z",
+      "lastPlay": "2020-12-04T15:31:04Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Go In",
+      "plays": 28,
+      "hours": 1.53,
+      "firstPlay": "2020-02-07T18:47:52Z",
+      "lastPlay": "2020-12-14T15:54:29Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Den rette",
+      "plays": 39,
+      "hours": 1.52,
+      "firstPlay": "2020-08-23T07:48:06Z",
+      "lastPlay": "2020-12-22T00:41:43Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Toosie Slide",
+      "plays": 40,
+      "hours": 1.51,
+      "firstPlay": "2020-04-04T23:53:57Z",
+      "lastPlay": "2020-11-27T18:20:16Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Heroes - 2017 Remaster",
+      "plays": 35,
+      "hours": 1.51,
+      "firstPlay": "2020-07-12T23:15:26Z",
+      "lastPlay": "2020-12-22T00:41:43Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Herside Story",
+      "plays": 38,
+      "hours": 1.5,
+      "firstPlay": "2020-01-22T13:08:52Z",
+      "lastPlay": "2020-11-27T18:20:16Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Money In The Grave (Drake ft. Rick Ross)",
+      "plays": 41,
+      "hours": 1.46,
+      "firstPlay": "2020-01-16T16:11:19Z",
+      "lastPlay": "2020-12-10T19:10:29Z"
+    }
+  ],
+  "2021": [
+    {
+      "artist": "Unknown Artist",
+      "track": "Unknown Track",
+      "plays": 703,
+      "hours": 183.88,
+      "firstPlay": "2021-01-01T18:46:23Z",
+      "lastPlay": "2021-12-31T20:34:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Miroirs: III. Une barque sur l'océan",
+      "plays": 64,
+      "hours": 4.92,
+      "firstPlay": "2021-10-01T06:28:36Z",
+      "lastPlay": "2021-12-26T17:02:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Deux arabesques, L. 66: No. 1 Andante con moto",
+      "plays": 68,
+      "hours": 4.06,
+      "firstPlay": "2021-05-31T12:14:51Z",
+      "lastPlay": "2021-12-26T17:02:10Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Symphony No. 4 in E Minor, Op. 98: I. Allegro non troppo",
+      "plays": 29,
+      "hours": 3.29,
+      "firstPlay": "2021-02-05T08:26:25Z",
+      "lastPlay": "2021-12-11T13:29:14Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I Was a Fool to Care - 2019 Remaster",
+      "plays": 86,
+      "hours": 3.17,
+      "firstPlay": "2021-01-03T15:17:20Z",
+      "lastPlay": "2021-12-26T21:30:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Outta My Head (with John Mayer)",
+      "plays": 82,
+      "hours": 2.75,
+      "firstPlay": "2021-07-27T13:07:19Z",
+      "lastPlay": "2021-12-29T17:46:21Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Sometimes You Win - 2018 Remaster",
+      "plays": 52,
+      "hours": 2.69,
+      "firstPlay": "2021-01-24T13:41:30Z",
+      "lastPlay": "2021-12-29T17:46:21Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "3 Études de Concert, S. 144: No. 3 in D-Flat Major \"Un sospiro\"",
+      "plays": 40,
+      "hours": 2.66,
+      "firstPlay": "2021-02-18T11:42:14Z",
+      "lastPlay": "2021-12-26T17:02:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Oh Honey",
+      "plays": 45,
+      "hours": 2.61,
+      "firstPlay": "2021-01-02T16:29:28Z",
+      "lastPlay": "2021-12-21T17:32:22Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "New Light",
+      "plays": 63,
+      "hours": 2.61,
+      "firstPlay": "2021-04-16T22:34:10Z",
+      "lastPlay": "2021-12-20T22:47:54Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Dream A Little Dream Of Me",
+      "plays": 67,
+      "hours": 2.59,
+      "firstPlay": "2021-10-23T21:39:29Z",
+      "lastPlay": "2021-12-22T11:23:48Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I Can't Tell You Why - 2013 Remaster",
+      "plays": 98,
+      "hours": 2.54,
+      "firstPlay": "2021-01-02T16:29:28Z",
+      "lastPlay": "2021-12-20T20:35:44Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Liebestraum No. 3 in A-Flat Major, S. 541 / 3",
+      "plays": 57,
+      "hours": 2.43,
+      "firstPlay": "2021-02-18T11:42:14Z",
+      "lastPlay": "2021-12-26T17:02:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "12 Lieder von Schubert, S. 558: Schubert - 12 Lieder, S. 558/R. 243: No. 12, Ave Maria",
+      "plays": 44,
+      "hours": 2.4,
+      "firstPlay": "2021-03-11T13:17:23Z",
+      "lastPlay": "2021-12-24T11:53:21Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Closetowhy - from Hansa Studios, Berlin",
+      "plays": 67,
+      "hours": 2.22,
+      "firstPlay": "2021-01-16T14:46:53Z",
+      "lastPlay": "2021-12-31T12:44:21Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "How Sweet It Is (To Be Loved By You) - 2019 Remaster",
+      "plays": 65,
+      "hours": 2.22,
+      "firstPlay": "2021-07-29T21:17:28Z",
+      "lastPlay": "2021-12-26T21:30:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "一翦梅",
+      "plays": 43,
+      "hours": 2.21,
+      "firstPlay": "2021-07-06T08:54:27Z",
+      "lastPlay": "2021-12-24T11:53:21Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Slowly",
+      "plays": 40,
+      "hours": 2.18,
+      "firstPlay": "2021-11-19T08:01:06Z",
+      "lastPlay": "2021-12-18T15:19:00Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Da Ya Think I'm Sexy?",
+      "plays": 43,
+      "hours": 2.14,
+      "firstPlay": "2021-01-01T18:56:10Z",
+      "lastPlay": "2021-12-25T08:47:11Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "More Than A Woman",
+      "plays": 56,
+      "hours": 2.02,
+      "firstPlay": "2021-01-17T21:05:34Z",
+      "lastPlay": "2021-12-31T18:16:40Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Kiss Me More (feat. SZA)",
+      "plays": 52,
+      "hours": 2,
+      "firstPlay": "2021-05-14T22:22:38Z",
+      "lastPlay": "2021-12-17T14:15:49Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Free - Single Version",
+      "plays": 66,
+      "hours": 1.99,
+      "firstPlay": "2021-07-04T12:12:46Z",
+      "lastPlay": "2021-12-26T17:14:35Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Annees de pelerinage, 2nd year, Italy, S. 161/R. 10b, No. 7. Apres une lecture du Dante: Annees de pelerinage, 2nd year, Italy, S. 161/R. 10b: No. 7, Apres une lecture du Dante (Arr. V. Bresciani for 2 pianos)",
+      "plays": 9,
+      "hours": 1.98,
+      "firstPlay": "2021-02-19T12:57:55Z",
+      "lastPlay": "2021-05-22T19:17:55Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Ninety",
+      "plays": 34,
+      "hours": 1.95,
+      "firstPlay": "2021-02-14T21:43:11Z",
+      "lastPlay": "2021-12-12T11:14:09Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "So We Won't Forget",
+      "plays": 38,
+      "hours": 1.92,
+      "firstPlay": "2021-04-24T21:19:12Z",
+      "lastPlay": "2021-12-31T10:27:00Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "The Man in Me",
+      "plays": 50,
+      "hours": 1.89,
+      "firstPlay": "2021-01-15T23:30:32Z",
+      "lastPlay": "2021-12-25T09:31:36Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Rock with You - Single Version",
+      "plays": 54,
+      "hours": 1.89,
+      "firstPlay": "2021-01-23T20:41:55Z",
+      "lastPlay": "2021-12-31T10:27:00Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "The Flower Garden",
+      "plays": 50,
+      "hours": 1.86,
+      "firstPlay": "2021-07-15T15:46:13Z",
+      "lastPlay": "2021-12-24T11:53:21Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "In Autumn, Op. 11",
+      "plays": 11,
+      "hours": 1.81,
+      "firstPlay": "2021-04-28T07:13:59Z",
+      "lastPlay": "2021-08-02T11:02:33Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "The Girl Is Mine (with Paul McCartney)",
+      "plays": 39,
+      "hours": 1.8,
+      "firstPlay": "2021-01-23T20:38:56Z",
+      "lastPlay": "2021-12-31T13:24:07Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Lovely Day",
+      "plays": 57,
+      "hours": 1.78,
+      "firstPlay": "2021-03-18T10:31:57Z",
+      "lastPlay": "2021-12-25T08:47:11Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "What You Won't Do for Love",
+      "plays": 40,
+      "hours": 1.72,
+      "firstPlay": "2021-01-01T18:46:23Z",
+      "lastPlay": "2021-12-21T17:32:22Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "American Remains",
+      "plays": 36,
+      "hours": 1.69,
+      "firstPlay": "2021-04-12T19:14:34Z",
+      "lastPlay": "2021-12-14T13:46:37Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Connaissais de Face",
+      "plays": 42,
+      "hours": 1.64,
+      "firstPlay": "2021-04-24T21:19:12Z",
+      "lastPlay": "2021-12-30T09:41:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "6 Orchestral Songs, EG 177: No. 2, Solveig's Cradle Song",
+      "plays": 34,
+      "hours": 1.63,
+      "firstPlay": "2021-04-28T07:43:38Z",
+      "lastPlay": "2021-12-26T17:02:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Agitations tropicales",
+      "plays": 40,
+      "hours": 1.63,
+      "firstPlay": "2021-07-10T09:49:28Z",
+      "lastPlay": "2021-12-22T11:23:48Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "You've Got a Friend",
+      "plays": 35,
+      "hours": 1.62,
+      "firstPlay": "2021-03-16T17:13:50Z",
+      "lastPlay": "2021-12-18T15:18:58Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "6 Impromptus, Op. 5: Impromptu VI",
+      "plays": 18,
+      "hours": 1.61,
+      "firstPlay": "2021-10-01T09:32:26Z",
+      "lastPlay": "2021-12-26T17:02:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Still Crazy After All These Years",
+      "plays": 36,
+      "hours": 1.57,
+      "firstPlay": "2021-01-02T16:29:28Z",
+      "lastPlay": "2021-12-21T17:32:22Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Someone New",
+      "plays": 43,
+      "hours": 1.54,
+      "firstPlay": "2021-09-02T07:37:34Z",
+      "lastPlay": "2021-12-25T09:26:24Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Midnight Train to Georgia",
+      "plays": 34,
+      "hours": 1.54,
+      "firstPlay": "2021-10-23T21:45:37Z",
+      "lastPlay": "2021-12-22T11:23:48Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "BLEACH",
+      "plays": 31,
+      "hours": 1.54,
+      "firstPlay": "2021-11-06T11:54:24Z",
+      "lastPlay": "2021-12-13T10:37:12Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Adelaide, S. 466 (After Beethoven's Op. 46)",
+      "plays": 10,
+      "hours": 1.51,
+      "firstPlay": "2021-04-06T10:24:22Z",
+      "lastPlay": "2021-05-28T10:45:36Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Rêverie, L. 68",
+      "plays": 25,
+      "hours": 1.51,
+      "firstPlay": "2021-08-19T13:20:18Z",
+      "lastPlay": "2021-12-18T15:19:00Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "GOLD",
+      "plays": 32,
+      "hours": 1.51,
+      "firstPlay": "2021-11-06T11:55:09Z",
+      "lastPlay": "2021-12-13T10:32:28Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "My Way",
+      "plays": 31,
+      "hours": 1.5,
+      "firstPlay": "2021-01-20T12:42:40Z",
+      "lastPlay": "2021-12-31T13:24:07Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Symphony No. 4 in E Minor, Op. 98: II. Andante moderato",
+      "plays": 16,
+      "hours": 1.49,
+      "firstPlay": "2021-02-03T20:05:18Z",
+      "lastPlay": "2021-09-12T16:04:33Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Pavane Pour Une Infante Défunte",
+      "plays": 22,
+      "hours": 1.48,
+      "firstPlay": "2021-10-01T09:20:14Z",
+      "lastPlay": "2021-12-24T12:16:44Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Overnight - from Hansa Studios, Berlin",
+      "plays": 40,
+      "hours": 1.47,
+      "firstPlay": "2021-01-16T14:46:53Z",
+      "lastPlay": "2021-12-30T09:41:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Ce qu'on entend sur la montagne (What Is Heard on the Mountain), S. 95/R. 412",
+      "plays": 5,
+      "hours": 1.45,
+      "firstPlay": "2021-04-11T13:11:05Z",
+      "lastPlay": "2021-05-13T10:28:48Z"
+    }
+  ],
+  "2022": [
+    {
+      "artist": "Unknown Artist",
+      "track": "Unknown Track",
+      "plays": 660,
+      "hours": 166.27,
+      "firstPlay": "2022-01-02T11:22:12Z",
+      "lastPlay": "2022-12-31T03:17:48Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Thinking of a Place",
+      "plays": 26,
+      "hours": 2.91,
+      "firstPlay": "2022-02-19T10:53:30Z",
+      "lastPlay": "2022-12-31T15:46:51Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Me Va, Me Va",
+      "plays": 33,
+      "hours": 2.82,
+      "firstPlay": "2022-10-14T11:37:46Z",
+      "lastPlay": "2022-11-30T15:20:29Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Someone New",
+      "plays": 81,
+      "hours": 2.81,
+      "firstPlay": "2022-04-10T23:20:34Z",
+      "lastPlay": "2022-12-31T15:59:25Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Orphée Suite: VI. Orphée's Return",
+      "plays": 31,
+      "hours": 2.72,
+      "firstPlay": "2022-01-14T22:59:50Z",
+      "lastPlay": "2022-12-01T23:31:54Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Liebestraum",
+      "plays": 37,
+      "hours": 2.37,
+      "firstPlay": "2022-01-14T23:00:28Z",
+      "lastPlay": "2022-11-15T23:55:20Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Lightenup - from Hansa Studios, Berlin",
+      "plays": 40,
+      "hours": 2.31,
+      "firstPlay": "2022-01-01T15:32:40Z",
+      "lastPlay": "2022-12-16T19:56:29Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Clean Living",
+      "plays": 30,
+      "hours": 2.25,
+      "firstPlay": "2022-02-19T10:33:50Z",
+      "lastPlay": "2022-12-19T09:23:27Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Young",
+      "plays": 57,
+      "hours": 2.24,
+      "firstPlay": "2022-04-11T11:50:41Z",
+      "lastPlay": "2022-12-09T11:21:18Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "All About You",
+      "plays": 36,
+      "hours": 2.23,
+      "firstPlay": "2022-04-11T12:06:30Z",
+      "lastPlay": "2022-12-09T13:43:19Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Mr. Blue Sky",
+      "plays": 44,
+      "hours": 2.18,
+      "firstPlay": "2022-01-08T19:54:45Z",
+      "lastPlay": "2022-12-09T19:35:16Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Fooled Around And Fell In Love",
+      "plays": 42,
+      "hours": 2.14,
+      "firstPlay": "2022-03-08T13:47:21Z",
+      "lastPlay": "2022-12-11T20:40:23Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Ninety",
+      "plays": 23,
+      "hours": 2.07,
+      "firstPlay": "2022-01-03T19:56:28Z",
+      "lastPlay": "2022-12-16T20:11:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Forever Alone",
+      "plays": 44,
+      "hours": 2.03,
+      "firstPlay": "2022-04-11T11:58:26Z",
+      "lastPlay": "2022-12-31T17:44:18Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "מאה מדרגות",
+      "plays": 36,
+      "hours": 2.03,
+      "firstPlay": "2022-10-06T13:17:09Z",
+      "lastPlay": "2022-12-07T13:37:04Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Musetta's Waltz",
+      "plays": 43,
+      "hours": 2.02,
+      "firstPlay": "2022-01-14T23:00:39Z",
+      "lastPlay": "2022-11-30T14:33:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Up All Night",
+      "plays": 29,
+      "hours": 1.99,
+      "firstPlay": "2022-05-14T11:00:21Z",
+      "lastPlay": "2022-12-19T09:59:25Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Stolen Dance",
+      "plays": 30,
+      "hours": 1.88,
+      "firstPlay": "2022-01-08T19:54:45Z",
+      "lastPlay": "2022-12-01T23:07:42Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Nothing to Find",
+      "plays": 21,
+      "hours": 1.86,
+      "firstPlay": "2022-01-07T22:43:45Z",
+      "lastPlay": "2022-12-24T10:03:52Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Strangest Thing",
+      "plays": 25,
+      "hours": 1.84,
+      "firstPlay": "2022-02-15T23:17:25Z",
+      "lastPlay": "2022-12-19T09:41:50Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Så mange kvinner",
+      "plays": 39,
+      "hours": 1.84,
+      "firstPlay": "2022-06-04T06:59:33Z",
+      "lastPlay": "2022-12-19T21:30:18Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "House of Woodcock",
+      "plays": 44,
+      "hours": 1.83,
+      "firstPlay": "2022-01-14T14:29:12Z",
+      "lastPlay": "2022-11-30T14:11:08Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Symphony No. 2: III. Adagio",
+      "plays": 12,
+      "hours": 1.82,
+      "firstPlay": "2022-02-14T09:15:47Z",
+      "lastPlay": "2022-09-06T07:58:02Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Smuler Fra De Rikes Bord",
+      "plays": 31,
+      "hours": 1.82,
+      "firstPlay": "2022-06-04T09:01:10Z",
+      "lastPlay": "2022-12-19T20:30:28Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "GOLD",
+      "plays": 33,
+      "hours": 1.78,
+      "firstPlay": "2022-01-03T19:34:15Z",
+      "lastPlay": "2022-12-05T14:02:33Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Gianni Schicchi: O mio babbino caro",
+      "plays": 49,
+      "hours": 1.78,
+      "firstPlay": "2022-01-14T23:02:48Z",
+      "lastPlay": "2022-09-06T19:04:03Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Je te veux",
+      "plays": 30,
+      "hours": 1.78,
+      "firstPlay": "2022-01-25T19:29:31Z",
+      "lastPlay": "2022-12-05T13:06:59Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I Can't Tell You Why - 2013 Remaster",
+      "plays": 48,
+      "hours": 1.77,
+      "firstPlay": "2022-01-07T22:43:45Z",
+      "lastPlay": "2022-12-30T11:32:21Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Pain",
+      "plays": 24,
+      "hours": 1.75,
+      "firstPlay": "2022-02-03T19:24:28Z",
+      "lastPlay": "2022-12-19T09:35:09Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Never Friends",
+      "plays": 27,
+      "hours": 1.75,
+      "firstPlay": "2022-04-11T12:11:23Z",
+      "lastPlay": "2022-11-21T12:46:20Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Overnight - from Hansa Studios, Berlin",
+      "plays": 36,
+      "hours": 1.74,
+      "firstPlay": "2022-01-03T19:17:38Z",
+      "lastPlay": "2022-12-05T15:25:29Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "In Chains",
+      "plays": 19,
+      "hours": 1.74,
+      "firstPlay": "2022-08-19T19:37:25Z",
+      "lastPlay": "2022-12-20T16:03:54Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Lie",
+      "plays": 32,
+      "hours": 1.7,
+      "firstPlay": "2022-04-11T11:34:47Z",
+      "lastPlay": "2022-12-01T22:50:29Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Closetowhy - from Hansa Studios, Berlin",
+      "plays": 32,
+      "hours": 1.68,
+      "firstPlay": "2022-01-01T11:28:23Z",
+      "lastPlay": "2022-12-19T17:16:51Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Stay With Me",
+      "plays": 34,
+      "hours": 1.68,
+      "firstPlay": "2022-05-03T05:29:40Z",
+      "lastPlay": "2022-12-21T11:57:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Bill Clinton",
+      "plays": 34,
+      "hours": 1.66,
+      "firstPlay": "2022-04-11T11:47:06Z",
+      "lastPlay": "2022-12-09T11:34:01Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "What Once Was",
+      "plays": 38,
+      "hours": 1.66,
+      "firstPlay": "2022-05-07T06:02:38Z",
+      "lastPlay": "2022-12-16T20:27:32Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Everyroad - from Hansa Studios, Berlin",
+      "plays": 23,
+      "hours": 1.64,
+      "firstPlay": "2022-01-07T22:43:45Z",
+      "lastPlay": "2022-11-23T12:12:24Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Holding On",
+      "plays": 22,
+      "hours": 1.64,
+      "firstPlay": "2022-05-14T11:06:13Z",
+      "lastPlay": "2022-12-19T09:16:58Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Comedown - from Hansa Studios, Berlin",
+      "plays": 33,
+      "hours": 1.62,
+      "firstPlay": "2022-01-04T12:38:21Z",
+      "lastPlay": "2022-12-15T14:39:48Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I Fall In Love Too Easily",
+      "plays": 36,
+      "hours": 1.62,
+      "firstPlay": "2022-01-12T18:35:45Z",
+      "lastPlay": "2022-11-28T09:12:04Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Rêverie, L. 68",
+      "plays": 32,
+      "hours": 1.61,
+      "firstPlay": "2022-01-04T11:46:36Z",
+      "lastPlay": "2022-12-01T23:18:58Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "How Deep Is Your Love",
+      "plays": 35,
+      "hours": 1.6,
+      "firstPlay": "2022-01-07T22:43:45Z",
+      "lastPlay": "2022-12-18T19:06:35Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Reason To Stay",
+      "plays": 37,
+      "hours": 1.59,
+      "firstPlay": "2022-02-14T09:46:52Z",
+      "lastPlay": "2022-12-05T14:19:15Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Gangsta No More",
+      "plays": 34,
+      "hours": 1.59,
+      "firstPlay": "2022-04-11T11:54:10Z",
+      "lastPlay": "2022-11-21T12:49:47Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "BLEACH",
+      "plays": 27,
+      "hours": 1.57,
+      "firstPlay": "2022-01-03T19:53:56Z",
+      "lastPlay": "2022-09-06T19:04:03Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "På'an igjen",
+      "plays": 29,
+      "hours": 1.56,
+      "firstPlay": "2022-01-07T22:43:45Z",
+      "lastPlay": "2022-12-16T12:17:51Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Beat It",
+      "plays": 31,
+      "hours": 1.52,
+      "firstPlay": "2022-01-07T22:43:45Z",
+      "lastPlay": "2022-12-15T13:30:04Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Somethinggreater",
+      "plays": 24,
+      "hours": 1.52,
+      "firstPlay": "2022-01-24T11:39:51Z",
+      "lastPlay": "2022-11-29T14:16:14Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Nights On Broadway",
+      "plays": 32,
+      "hours": 1.52,
+      "firstPlay": "2022-02-15T23:14:59Z",
+      "lastPlay": "2022-12-15T14:55:26Z"
+    }
+  ],
+  "2023": [
+    {
+      "artist": "Unknown Artist",
+      "track": "Unknown Track",
+      "plays": 1216,
+      "hours": 298.3,
+      "firstPlay": "2023-01-01T06:48:43Z",
+      "lastPlay": "2023-12-31T03:05:53Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "今天妳要嫁給我",
+      "plays": 67,
+      "hours": 3.91,
+      "firstPlay": "2023-09-18T21:06:35Z",
+      "lastPlay": "2023-12-31T21:44:51Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "山歌好比春江水",
+      "plays": 100,
+      "hours": 3.35,
+      "firstPlay": "2023-08-23T12:30:21Z",
+      "lastPlay": "2023-12-31T21:40:39Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Sign of the Times",
+      "plays": 48,
+      "hours": 3.25,
+      "firstPlay": "2023-02-28T00:08:01Z",
+      "lastPlay": "2023-12-27T01:38:30Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "一翦梅",
+      "plays": 70,
+      "hours": 3.03,
+      "firstPlay": "2023-01-02T13:01:10Z",
+      "lastPlay": "2023-12-30T12:12:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "It Will Come in Time",
+      "plays": 68,
+      "hours": 2.78,
+      "firstPlay": "2023-05-01T17:12:44Z",
+      "lastPlay": "2023-12-27T23:25:27Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Passionfruit",
+      "plays": 58,
+      "hours": 2.7,
+      "firstPlay": "2023-02-04T11:24:09Z",
+      "lastPlay": "2023-12-25T20:18:53Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "In The Army Now",
+      "plays": 44,
+      "hours": 2.7,
+      "firstPlay": "2023-08-05T14:43:32Z",
+      "lastPlay": "2023-12-21T19:57:17Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Unnagjort",
+      "plays": 45,
+      "hours": 2.41,
+      "firstPlay": "2023-01-28T08:03:11Z",
+      "lastPlay": "2023-12-31T19:11:54Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Roll the Dice (Radio Edit) - Urban Contact Remix",
+      "plays": 52,
+      "hours": 2.28,
+      "firstPlay": "2023-02-19T00:58:57Z",
+      "lastPlay": "2023-12-20T12:46:48Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Toya",
+      "plays": 51,
+      "hours": 2.26,
+      "firstPlay": "2023-01-03T21:47:08Z",
+      "lastPlay": "2023-12-26T17:14:18Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Don't Let Me Down",
+      "plays": 42,
+      "hours": 2.2,
+      "firstPlay": "2023-04-27T12:41:24Z",
+      "lastPlay": "2023-12-30T12:07:00Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Smuler Fra De Rikes Bord",
+      "plays": 33,
+      "hours": 2.17,
+      "firstPlay": "2023-01-17T15:09:47Z",
+      "lastPlay": "2023-12-31T19:03:26Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Skyfri himmel",
+      "plays": 56,
+      "hours": 2.16,
+      "firstPlay": "2023-01-15T23:13:25Z",
+      "lastPlay": "2023-11-25T23:33:13Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Adagio in G Minor \"Albinoni's Adagio\"",
+      "plays": 18,
+      "hours": 2.11,
+      "firstPlay": "2023-02-04T18:20:38Z",
+      "lastPlay": "2023-12-27T18:01:24Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Suite bergamasque, L. 75: III. Clair de lune",
+      "plays": 26,
+      "hours": 2.08,
+      "firstPlay": "2023-02-19T23:27:42Z",
+      "lastPlay": "2023-10-09T13:05:02Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Águas De Março",
+      "plays": 45,
+      "hours": 2.05,
+      "firstPlay": "2023-04-04T17:14:20Z",
+      "lastPlay": "2023-12-11T19:38:30Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Deux arabesques, L. 66: No. 1 Andante con moto",
+      "plays": 33,
+      "hours": 1.97,
+      "firstPlay": "2023-01-27T22:24:30Z",
+      "lastPlay": "2023-11-15T15:27:05Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Cold Heart - PNAU Remix",
+      "plays": 44,
+      "hours": 1.97,
+      "firstPlay": "2023-02-11T17:20:37Z",
+      "lastPlay": "2023-12-19T16:01:02Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Loser",
+      "plays": 41,
+      "hours": 1.97,
+      "firstPlay": "2023-02-28T00:20:25Z",
+      "lastPlay": "2023-12-27T10:13:29Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Bad Law",
+      "plays": 47,
+      "hours": 1.93,
+      "firstPlay": "2023-01-04T13:39:32Z",
+      "lastPlay": "2023-10-09T23:09:43Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Sentimentalist",
+      "plays": 32,
+      "hours": 1.87,
+      "firstPlay": "2023-01-04T13:27:50Z",
+      "lastPlay": "2023-10-23T23:21:03Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Sometimes",
+      "plays": 47,
+      "hours": 1.87,
+      "firstPlay": "2023-01-15T22:55:45Z",
+      "lastPlay": "2023-12-27T10:13:28Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Try",
+      "plays": 29,
+      "hours": 1.8,
+      "firstPlay": "2023-01-29T01:07:22Z",
+      "lastPlay": "2023-12-27T23:19:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "新贵妃醉酒（原版）",
+      "plays": 30,
+      "hours": 1.79,
+      "firstPlay": "2023-12-09T11:21:28Z",
+      "lastPlay": "2023-12-31T21:40:28Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "E det bare vinen",
+      "plays": 27,
+      "hours": 1.77,
+      "firstPlay": "2023-03-04T08:13:43Z",
+      "lastPlay": "2023-11-13T11:22:48Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "As It Was",
+      "plays": 48,
+      "hours": 1.72,
+      "firstPlay": "2023-01-13T16:29:31Z",
+      "lastPlay": "2023-11-04T11:48:23Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Mang Slags Kjærlighet",
+      "plays": 43,
+      "hours": 1.71,
+      "firstPlay": "2023-02-04T18:59:39Z",
+      "lastPlay": "2023-12-20T21:59:39Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Rêverie, L. 68",
+      "plays": 23,
+      "hours": 1.69,
+      "firstPlay": "2023-02-19T23:22:08Z",
+      "lastPlay": "2023-10-09T12:58:44Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Du kjenner ikkje meg",
+      "plays": 32,
+      "hours": 1.66,
+      "firstPlay": "2023-01-03T22:04:26Z",
+      "lastPlay": "2023-12-07T01:55:07Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "What You Know",
+      "plays": 45,
+      "hours": 1.64,
+      "firstPlay": "2023-03-08T08:09:05Z",
+      "lastPlay": "2023-11-21T23:39:04Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "When You Feel the Time Is Right",
+      "plays": 23,
+      "hours": 1.64,
+      "firstPlay": "2023-05-24T21:32:24Z",
+      "lastPlay": "2023-12-18T01:43:57Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Flowers",
+      "plays": 49,
+      "hours": 1.61,
+      "firstPlay": "2023-02-04T16:33:35Z",
+      "lastPlay": "2023-11-27T19:50:15Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "The Riddle",
+      "plays": 39,
+      "hours": 1.61,
+      "firstPlay": "2023-08-04T13:30:12Z",
+      "lastPlay": "2023-12-31T22:35:36Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Clint Eastwood",
+      "plays": 28,
+      "hours": 1.6,
+      "firstPlay": "2023-01-12T16:32:48Z",
+      "lastPlay": "2023-12-25T19:32:10Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Ambitions",
+      "plays": 42,
+      "hours": 1.59,
+      "firstPlay": "2023-01-15T22:49:54Z",
+      "lastPlay": "2023-12-19T20:42:23Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Forever Alone",
+      "plays": 32,
+      "hours": 1.59,
+      "firstPlay": "2023-01-27T09:58:49Z",
+      "lastPlay": "2023-12-20T22:21:57Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "De Skulle Begrave En Konge Stor",
+      "plays": 45,
+      "hours": 1.57,
+      "firstPlay": "2023-01-17T09:16:00Z",
+      "lastPlay": "2023-12-30T15:28:06Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Bare Ein Mann",
+      "plays": 31,
+      "hours": 1.55,
+      "firstPlay": "2023-01-16T23:02:21Z",
+      "lastPlay": "2023-11-09T11:59:46Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Prune, You Talk Funny",
+      "plays": 39,
+      "hours": 1.55,
+      "firstPlay": "2023-02-26T16:24:29Z",
+      "lastPlay": "2023-12-30T12:06:23Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Alarmen Går",
+      "plays": 53,
+      "hours": 1.53,
+      "firstPlay": "2023-01-17T15:15:26Z",
+      "lastPlay": "2023-12-20T22:11:21Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Heal the World",
+      "plays": 25,
+      "hours": 1.53,
+      "firstPlay": "2023-04-23T17:31:35Z",
+      "lastPlay": "2023-12-25T23:42:21Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Heksedans",
+      "plays": 33,
+      "hours": 1.49,
+      "firstPlay": "2023-01-20T15:12:13Z",
+      "lastPlay": "2023-11-20T21:39:34Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Young Person's Guide To The Orchestra",
+      "plays": 9,
+      "hours": 1.46,
+      "firstPlay": "2023-05-11T10:58:05Z",
+      "lastPlay": "2023-12-21T15:50:42Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Stay With Me",
+      "plays": 32,
+      "hours": 1.44,
+      "firstPlay": "2023-01-04T13:15:55Z",
+      "lastPlay": "2023-12-29T19:59:09Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Get Lucky (feat. Pharrell Williams and Nile Rodgers)",
+      "plays": 22,
+      "hours": 1.44,
+      "firstPlay": "2023-03-01T15:22:39Z",
+      "lastPlay": "2023-11-23T11:43:13Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Ouda",
+      "plays": 32,
+      "hours": 1.43,
+      "firstPlay": "2023-04-02T14:49:29Z",
+      "lastPlay": "2023-12-04T06:34:35Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "You and I",
+      "plays": 38,
+      "hours": 1.38,
+      "firstPlay": "2023-01-13T16:56:42Z",
+      "lastPlay": "2023-12-26T12:52:17Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "那个那个老外",
+      "plays": 44,
+      "hours": 1.38,
+      "firstPlay": "2023-05-05T16:47:26Z",
+      "lastPlay": "2023-12-25T13:22:47Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "White Wedding",
+      "plays": 19,
+      "hours": 1.38,
+      "firstPlay": "2023-08-05T19:50:32Z",
+      "lastPlay": "2023-10-14T18:04:08Z"
+    }
+  ],
   "2024": [
+    {
+      "artist": "Unknown Artist",
+      "track": "Unknown Track",
+      "plays": 1248,
+      "hours": 402.25,
+      "firstPlay": "2024-01-02T02:01:12Z",
+      "lastPlay": "2024-12-31T16:45:24Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "May Ninth",
+      "plays": 95,
+      "hours": 3.98,
+      "firstPlay": "2024-02-25T14:55:10Z",
+      "lastPlay": "2024-12-21T16:11:17Z"
+    },
     {
       "artist": "Khruangbin",
       "track": "May Ninth",
       "plays": 75,
-      "hours": 2.98
+      "hours": 2.98,
+      "firstPlay": "2024-03-17 08:15",
+      "lastPlay": "2024-12-21 16:11"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Prune, You Talk Funny",
+      "plays": 70,
+      "hours": 2.93,
+      "firstPlay": "2024-01-04T07:10:10Z",
+      "lastPlay": "2024-12-13T16:52:48Z"
     },
     {
       "artist": "St. Paul & The Broken Bones",
       "track": "Apollo",
+      "plays": 40,
+      "hours": 2.72,
+      "firstPlay": "2024-05-06 17:34",
+      "lastPlay": "2024-12-08 12:06"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Apollo",
       "plays": 41,
-      "hours": 2.72
+      "hours": 2.72,
+      "firstPlay": "2024-05-06T17:34:34Z",
+      "lastPlay": "2024-12-08T12:06:57Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Distance",
+      "plays": 56,
+      "hours": 2.71,
+      "firstPlay": "2024-01-11T20:08:46Z",
+      "lastPlay": "2024-12-27T23:16:47Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Brothers In Arms",
+      "plays": 29,
+      "hours": 2.67,
+      "firstPlay": "2024-01-12T16:47:21Z",
+      "lastPlay": "2024-12-09T12:40:11Z"
     },
     {
       "artist": "Dire Straits",
       "track": "Brothers In Arms",
       "plays": 28,
-      "hours": 2.55
+      "hours": 2.55,
+      "firstPlay": "2024-03-29 11:33",
+      "lastPlay": "2024-12-09 12:40"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "What You Won't Do for Love",
+      "plays": 66,
+      "hours": 2.51,
+      "firstPlay": "2024-01-01T03:06:48Z",
+      "lastPlay": "2024-12-17T16:06:50Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Theatrical State of Mind",
+      "plays": 70,
+      "hours": 2.43,
+      "firstPlay": "2024-02-10T16:53:41Z",
+      "lastPlay": "2024-12-16T01:04:49Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "山歌好比春江水",
+      "plays": 50,
+      "hours": 2.42,
+      "firstPlay": "2024-01-04T07:08:13Z",
+      "lastPlay": "2024-12-20T12:21:26Z"
     },
     {
       "artist": "Röyksopp",
       "track": "Oh, Lover (feat. Susanne Sundfør)",
-      "plays": 39,
-      "hours": 2.42
+      "plays": 37,
+      "hours": 2.42,
+      "firstPlay": "2024-06-21 05:46",
+      "lastPlay": "2024-12-12 19:14"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "难却 - DJ细霖版",
+      "plays": 50,
+      "hours": 2.38,
+      "firstPlay": "2024-01-04T09:51:20Z",
+      "lastPlay": "2024-12-12T16:31:00Z"
     },
     {
       "artist": "Fagernes Yacht Klubb",
       "track": "Closed in By Now",
       "plays": 38,
-      "hours": 2.28
+      "hours": 2.28,
+      "firstPlay": "2024-05-15 01:57",
+      "lastPlay": "2024-12-27 20:33"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Closed in By Now",
+      "plays": 38,
+      "hours": 2.28,
+      "firstPlay": "2024-05-15T01:57:29Z",
+      "lastPlay": "2024-12-27T20:33:29Z"
     },
     {
       "artist": "Papooz",
       "track": "Theatrical State of Mind",
       "plays": 66,
-      "hours": 2.21
+      "hours": 2.21,
+      "firstPlay": "2024-03-22 03:40",
+      "lastPlay": "2024-12-16 01:04"
     },
     {
       "artist": "Chicago",
       "track": "If You Leave Me Now",
       "plays": 43,
-      "hours": 2.21
+      "hours": 2.21,
+      "firstPlay": "2024-05-13 09:09",
+      "lastPlay": "2024-12-08 11:40"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "If You Leave Me Now",
+      "plays": 43,
+      "hours": 2.21,
+      "firstPlay": "2024-05-13T09:09:36Z",
+      "lastPlay": "2024-12-08T11:40:00Z"
     },
     {
       "artist": "Benny Sings",
       "track": "Distance",
       "plays": 47,
-      "hours": 2.2
+      "hours": 2.2,
+      "firstPlay": "2024-03-28 12:23",
+      "lastPlay": "2024-12-27 23:16"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Ayonha",
+      "plays": 40,
+      "hours": 2.19,
+      "firstPlay": "2024-01-12T16:22:17Z",
+      "lastPlay": "2024-12-20T12:28:34Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "A Love International",
+      "plays": 45,
+      "hours": 2.1,
+      "firstPlay": "2024-02-13T14:40:43Z",
+      "lastPlay": "2024-12-16T11:34:42Z"
     },
     {
       "artist": "Susanne Sundfør",
       "track": "I Resign",
       "plays": 39,
-      "hours": 2.08
+      "hours": 2.08,
+      "firstPlay": "2024-06-23 13:22",
+      "lastPlay": "2024-12-15 12:07"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "I Resign",
+      "plays": 39,
+      "hours": 2.08,
+      "firstPlay": "2024-06-23T13:22:55Z",
+      "lastPlay": "2024-12-15T12:07:55Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Symphony No. 4 in E Minor, Op. 98: I. Allegro non troppo",
+      "plays": 16,
+      "hours": 2.05,
+      "firstPlay": "2024-01-17T18:43:38Z",
+      "lastPlay": "2024-11-24T19:03:14Z"
     },
     {
       "artist": "Johannes Brahms",
       "track": "Symphony No. 4 in E Minor, Op. 98: I. Allegro non troppo",
       "plays": 16,
-      "hours": 2.02
+      "hours": 2.02,
+      "firstPlay": "2024-05-22 02:31",
+      "lastPlay": "2024-11-24 19:03"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Murder On The Dancefloor",
+      "plays": 44,
+      "hours": 1.92,
+      "firstPlay": "2024-01-11T15:50:22Z",
+      "lastPlay": "2024-12-30T12:15:39Z"
     },
     {
       "artist": "Khruangbin",
       "track": "A Love International",
       "plays": 38,
-      "hours": 1.87
+      "hours": 1.87,
+      "firstPlay": "2024-03-24 13:10",
+      "lastPlay": "2024-12-16 11:34"
     },
     {
-      "artist": "Dire Straits",
+      "artist": "Unknown Artist",
       "track": "Your Latest Trick - Remastered 1996",
       "plays": 28,
-      "hours": 1.87
+      "hours": 1.87,
+      "firstPlay": "2024-04-14T15:27:28Z",
+      "lastPlay": "2024-12-06T10:58:31Z"
     },
     {
       "artist": "Khruangbin",
       "track": "Three From Two",
       "plays": 40,
-      "hours": 1.84
+      "hours": 1.84,
+      "firstPlay": "2024-04-06 05:47",
+      "lastPlay": "2024-12-08 11:36"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Three From Two",
+      "plays": 40,
+      "hours": 1.84,
+      "firstPlay": "2024-04-06T05:47:49Z",
+      "lastPlay": "2024-12-08T11:36:04Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Uranium Heart",
+      "plays": 34,
+      "hours": 1.82,
+      "firstPlay": "2024-02-06T15:40:59Z",
+      "lastPlay": "2024-12-19T22:22:38Z"
     },
     {
       "artist": "Khruangbin",
       "track": "Fifteen Fifty-Three",
       "plays": 37,
-      "hours": 1.82
+      "hours": 1.82,
+      "firstPlay": "2024-04-05 02:44",
+      "lastPlay": "2024-12-12 16:39"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Fifteen Fifty-Three",
+      "plays": 37,
+      "hours": 1.82,
+      "firstPlay": "2024-04-05T02:44:09Z",
+      "lastPlay": "2024-12-12T16:39:37Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Yes Man",
+      "plays": 39,
+      "hours": 1.81,
+      "firstPlay": "2024-01-11T20:11:59Z",
+      "lastPlay": "2024-12-08T11:43:14Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Glock, Glock, Glock",
+      "plays": 28,
+      "hours": 1.78,
+      "firstPlay": "2024-01-14T18:36:37Z",
+      "lastPlay": "2024-12-28T16:39:21Z"
+    },
+    {
+      "artist": "Dire Straits",
+      "track": "Your Latest Trick - Remastered 1996",
+      "plays": 27,
+      "hours": 1.77,
+      "firstPlay": "2024-04-14 15:27",
+      "lastPlay": "2024-12-06 10:58"
     },
     {
       "artist": "Susanne Sundfør",
       "track": "fare thee well",
       "plays": 31,
-      "hours": 1.77
+      "hours": 1.77,
+      "firstPlay": "2024-06-21 23:44",
+      "lastPlay": "2024-12-07 14:04"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "fare thee well",
+      "plays": 31,
+      "hours": 1.77,
+      "firstPlay": "2024-06-21T23:44:39Z",
+      "lastPlay": "2024-12-07T14:04:24Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Gravity",
+      "plays": 27,
+      "hours": 1.76,
+      "firstPlay": "2024-04-23T07:39:45Z",
+      "lastPlay": "2024-12-02T14:39:33Z"
     },
     {
       "artist": "Dire Straits",
       "track": "Brothers In Arms - Remastered 1996",
       "plays": 21,
-      "hours": 1.74
+      "hours": 1.74,
+      "firstPlay": "2024-09-24 09:59",
+      "lastPlay": "2024-12-08 11:21"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Brothers In Arms - Remastered 1996",
+      "plays": 21,
+      "hours": 1.74,
+      "firstPlay": "2024-09-24T09:59:56Z",
+      "lastPlay": "2024-12-08T11:21:27Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Toya",
+      "plays": 40,
+      "hours": 1.73,
+      "firstPlay": "2024-01-07T22:03:45Z",
+      "lastPlay": "2024-12-19T23:14:07Z"
     },
     {
       "artist": "Benny Sings",
       "track": "Party",
       "plays": 37,
-      "hours": 1.69
+      "hours": 1.69,
+      "firstPlay": "2024-08-15 21:45",
+      "lastPlay": "2024-12-20 12:22"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Party",
+      "plays": 37,
+      "hours": 1.69,
+      "firstPlay": "2024-08-15T21:45:51Z",
+      "lastPlay": "2024-12-20T12:22:15Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Unnagjort",
+      "plays": 38,
+      "hours": 1.65,
+      "firstPlay": "2024-01-07T22:23:51Z",
+      "lastPlay": "2024-12-09T19:07:12Z"
     },
     {
       "artist": "Gus Dapperton",
       "track": "Prune, You Talk Funny",
       "plays": 43,
-      "hours": 1.64
+      "hours": 1.64,
+      "firstPlay": "2024-03-17 08:05",
+      "lastPlay": "2024-12-13 16:52"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Give Life Back to Music",
+      "plays": 37,
+      "hours": 1.62,
+      "firstPlay": "2024-01-28T02:12:31Z",
+      "lastPlay": "2024-12-21T15:57:28Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Compromised",
+      "plays": 35,
+      "hours": 1.61,
+      "firstPlay": "2024-01-14T03:22:30Z",
+      "lastPlay": "2024-12-30T12:15:11Z"
     },
     {
       "artist": "Pish",
       "track": "Compromised",
       "plays": 34,
-      "hours": 1.61
-    },
-    {
-      "artist": "Jonas Alaska",
-      "track": "October",
-      "plays": 31,
-      "hours": 1.57
-    },
-    {
-      "artist": "Highasakite",
-      "track": "Uranium Heart",
-      "plays": 29,
-      "hours": 1.56
-    },
-    {
-      "artist": "Johannes Brahms",
-      "track": "Symphony No. 4 in E Minor, Op. 98: II. Andante moderato",
-      "plays": 11,
-      "hours": 1.56
-    },
-    {
-      "artist": "Jonas Alaska",
-      "track": "In the Backseat",
-      "plays": 45,
-      "hours": 1.56
-    },
-    {
-      "artist": "Khruangbin",
-      "track": "Todavía Viva",
-      "plays": 30,
-      "hours": 1.54
-    },
-    {
-      "artist": "Susanne Sundfør",
-      "track": "Gravity",
-      "plays": 24,
-      "hours": 1.53
-    },
-    {
-      "artist": "Jan Eggum",
-      "track": "Toya",
-      "plays": 35,
-      "hours": 1.46
-    },
-    {
-      "artist": "Khruangbin",
-      "track": "Hold Me Up (Thank You)",
-      "plays": 35,
-      "hours": 1.44
-    },
-    {
-      "artist": "Khruangbin",
-      "track": "Les Petits Gris",
-      "plays": 35,
-      "hours": 1.43
-    },
-    {
-      "artist": "Khruangbin",
-      "track": "Ada Jean",
-      "plays": 40,
-      "hours": 1.41
-    },
-    {
-      "artist": "The War On Drugs",
-      "track": "Thinking of a Place",
-      "plays": 21,
-      "hours": 1.4
-    },
-    {
-      "artist": "Bobby Caldwell",
-      "track": "What You Won't Do for Love",
-      "plays": 42,
-      "hours": 1.38
-    },
-    {
-      "artist": "Bobby Caldwell",
-      "track": "My Flame",
-      "plays": 34,
-      "hours": 1.37
-    },
-    {
-      "artist": "Jonas Alaska",
-      "track": "The Moon & The Steeple",
-      "plays": 25,
-      "hours": 1.37
-    },
-    {
-      "artist": "Hamid Al Shaeri",
-      "track": "Ayonha",
-      "plays": 24,
-      "hours": 1.33
-    },
-    {
-      "artist": "Khruangbin",
-      "track": "Pon Pón",
-      "plays": 35,
-      "hours": 1.32
-    },
-    {
-      "artist": "Jonas Alaska",
-      "track": "Love You Right",
-      "plays": 30,
-      "hours": 1.31
-    },
-    {
-      "artist": "Fagernes Yacht Klubb",
-      "track": "Gotta Go Back",
-      "plays": 31,
-      "hours": 1.3
-    },
-    {
-      "artist": "Papooz",
-      "track": "About Felix",
-      "plays": 29,
-      "hours": 1.29
-    },
-    {
-      "artist": "Ludwig Göransson",
-      "track": "Meeting Kitty",
-      "plays": 15,
-      "hours": 1.25
-    },
-    {
-      "artist": "Jonas Alaska",
-      "track": "All Coming Down Today",
-      "plays": 22,
-      "hours": 1.2
-    },
-    {
-      "artist": "The War On Drugs",
-      "track": "In Chains",
-      "plays": 18,
-      "hours": 1.18
-    },
-    {
-      "artist": "Jan Eggum",
-      "track": "De Skulle Begrave En Konge Stor",
-      "plays": 32,
-      "hours": 1.17
-    },
-    {
-      "artist": "Daft Punk",
-      "track": "Give Life Back to Music",
-      "plays": 30,
-      "hours": 1.16
-    },
-    {
-      "artist": "Bee Gees",
-      "track": "Love You Inside Out",
-      "plays": 27,
-      "hours": 1.16
-    },
-    {
-      "artist": "Jan Eggum",
-      "track": "Unnagjort",
-      "plays": 27,
-      "hours": 1.15
-    },
-    {
-      "artist": "Leon Bridges",
-      "track": "Laredo",
-      "plays": 25,
-      "hours": 1.13
-    },
-    {
-      "artist": "The War On Drugs",
-      "track": "Clean Living",
-      "plays": 20,
-      "hours": 1.12
-    },
-    {
-      "artist": "Eli Rygg",
-      "track": "For Siste Gang",
-      "plays": 32,
-      "hours": 1.11
-    },
-    {
-      "artist": "Home",
-      "track": "Resonance",
-      "plays": 36,
-      "hours": 1.1
-    },
-    {
-      "artist": "Gilbert O'Sullivan",
-      "track": "Alone Again (Naturally)",
-      "plays": 21,
-      "hours": 1.08
+      "hours": 1.61,
+      "firstPlay": "2024-05-06 17:23",
+      "lastPlay": "2024-12-30 12:15"
     }
   ],
   "2025": [
     {
+      "artist": "Unknown Artist",
+      "track": "Unknown Track",
+      "plays": 387,
+      "hours": 132.22,
+      "firstPlay": "2025-01-01T18:53:45Z",
+      "lastPlay": "2025-03-11T23:41:39Z"
+    },
+    {
       "artist": "Augustine",
       "track": "Friend's House Party",
+      "plays": 45,
+      "hours": 2.42,
+      "firstPlay": "2025-01-05 16:55",
+      "lastPlay": "2025-03-02 15:13"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Friend's House Party",
       "plays": 46,
-      "hours": 2.42
+      "hours": 2.42,
+      "firstPlay": "2025-01-05T16:55:34Z",
+      "lastPlay": "2025-03-02T15:13:18Z"
     },
     {
       "artist": "Connan Mockasin",
       "track": "Charlotte's Thong",
       "plays": 16,
-      "hours": 1.52
+      "hours": 1.52,
+      "firstPlay": "2025-02-10 15:42",
+      "lastPlay": "2025-03-07 19:34"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Charlotte's Thong",
+      "plays": 16,
+      "hours": 1.52,
+      "firstPlay": "2025-02-10T15:42:31Z",
+      "lastPlay": "2025-03-07T19:34:52Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Woman",
+      "plays": 39,
+      "hours": 1.51,
+      "firstPlay": "2025-01-03T14:24:10Z",
+      "lastPlay": "2025-03-09T08:38:15Z"
     },
     {
       "artist": "Augustine",
       "track": "Viola",
       "plays": 30,
-      "hours": 1.4
+      "hours": 1.4,
+      "firstPlay": "2025-01-03 14:28",
+      "lastPlay": "2025-02-23 18:09"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Viola",
+      "plays": 30,
+      "hours": 1.4,
+      "firstPlay": "2025-01-03T14:28:50Z",
+      "lastPlay": "2025-02-23T18:09:42Z"
     },
     {
       "artist": "Augustine",
       "track": "A Scent of Lily",
       "plays": 27,
-      "hours": 1.4
+      "hours": 1.4,
+      "firstPlay": "2025-01-05 17:34",
+      "lastPlay": "2025-02-23 18:05"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "A Scent of Lily",
+      "plays": 27,
+      "hours": 1.4,
+      "firstPlay": "2025-01-05T17:34:24Z",
+      "lastPlay": "2025-02-23T18:05:50Z"
     },
     {
       "artist": "Augustine",
       "track": "Mary Cookins",
+      "plays": 37,
+      "hours": 1.37,
+      "firstPlay": "2025-01-03 14:28",
+      "lastPlay": "2025-02-23 18:17"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Mary Cookins",
       "plays": 39,
-      "hours": 1.37
+      "hours": 1.37,
+      "firstPlay": "2025-01-03T14:28:22Z",
+      "lastPlay": "2025-02-23T18:17:06Z"
     },
     {
       "artist": "Augustine",
       "track": "Woman",
       "plays": 33,
-      "hours": 1.3
+      "hours": 1.3,
+      "firstPlay": "2025-01-05 16:09",
+      "lastPlay": "2025-02-23 14:44"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Backseat",
+      "plays": 39,
+      "hours": 1.28,
+      "firstPlay": "2025-01-01T19:01:51Z",
+      "lastPlay": "2025-03-10T00:39:15Z"
     },
     {
       "artist": "Augustine",
       "track": "Backseat",
-      "plays": 39,
-      "hours": 1.28
+      "plays": 37,
+      "hours": 1.27,
+      "firstPlay": "2025-01-01 19:01",
+      "lastPlay": "2025-03-10 00:39"
     },
     {
       "artist": "Augustine",
       "track": "Coast",
       "plays": 33,
-      "hours": 1.25
+      "hours": 1.25,
+      "firstPlay": "2025-01-01 19:00",
+      "lastPlay": "2025-03-02 13:37"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Coast",
+      "plays": 33,
+      "hours": 1.25,
+      "firstPlay": "2025-01-01T19:00:07Z",
+      "lastPlay": "2025-03-02T13:37:11Z"
     },
     {
       "artist": "Oddny",
       "track": "Oktober, Bergen by",
-      "plays": 23,
-      "hours": 1.24
+      "plays": 21,
+      "hours": 1.24,
+      "firstPlay": "2025-01-09 21:58",
+      "lastPlay": "2025-03-14 18:30"
     },
     {
       "artist": "Augustine",
       "track": "Sun In Her Eyes",
       "plays": 34,
-      "hours": 1.19
+      "hours": 1.19,
+      "firstPlay": "2025-01-01 18:57",
+      "lastPlay": "2025-02-21 13:36"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Sun In Her Eyes",
+      "plays": 34,
+      "hours": 1.19,
+      "firstPlay": "2025-01-01T18:57:15Z",
+      "lastPlay": "2025-02-21T13:36:51Z"
     },
     {
       "artist": "Augustine",
       "track": "Fragrance",
       "plays": 39,
-      "hours": 1.16
+      "hours": 1.16,
+      "firstPlay": "2025-01-05 17:22",
+      "lastPlay": "2025-02-21 13:45"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Fragrance",
+      "plays": 39,
+      "hours": 1.16,
+      "firstPlay": "2025-01-05T17:22:23Z",
+      "lastPlay": "2025-02-21T13:45:57Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Oktober, Bergen by",
+      "plays": 21,
+      "hours": 1.16,
+      "firstPlay": "2025-01-09T21:58:33Z",
+      "lastPlay": "2025-03-09T09:04:01Z"
     },
     {
       "artist": "Augustine",
       "track": "Luzon",
       "plays": 33,
-      "hours": 1.15
+      "hours": 1.15,
+      "firstPlay": "2025-01-03 14:28",
+      "lastPlay": "2025-02-23 18:02"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Luzon",
+      "plays": 33,
+      "hours": 1.15,
+      "firstPlay": "2025-01-03T14:28:42Z",
+      "lastPlay": "2025-02-23T18:02:20Z"
     },
     {
       "artist": "Augustine",
       "track": "For The Moment",
       "plays": 31,
-      "hours": 1.15
+      "hours": 1.15,
+      "firstPlay": "2025-01-05 16:48",
+      "lastPlay": "2025-02-23 18:16"
     },
     {
       "artist": "Augustine",
       "track": "Guts",
       "plays": 29,
-      "hours": 1.15
+      "hours": 1.15,
+      "firstPlay": "2025-01-05 16:51",
+      "lastPlay": "2025-02-23 13:46"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "For The Moment",
+      "plays": 31,
+      "hours": 1.15,
+      "firstPlay": "2025-01-05T16:48:09Z",
+      "lastPlay": "2025-02-23T18:16:21Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Guts",
+      "plays": 29,
+      "hours": 1.15,
+      "firstPlay": "2025-01-05T16:51:35Z",
+      "lastPlay": "2025-02-23T13:46:47Z"
     },
     {
       "artist": "Augustine",
       "track": "Fever",
       "plays": 29,
-      "hours": 1.13
+      "hours": 1.13,
+      "firstPlay": "2025-01-05 17:16",
+      "lastPlay": "2025-02-23 13:43"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Fever",
+      "plays": 29,
+      "hours": 1.13,
+      "firstPlay": "2025-01-05T17:16:49Z",
+      "lastPlay": "2025-02-23T13:43:22Z"
     },
     {
       "artist": "Augustine",
       "track": "Slacks",
       "plays": 30,
-      "hours": 1.08
+      "hours": 1.08,
+      "firstPlay": "2025-01-05 16:35",
+      "lastPlay": "2025-03-02 18:20"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Slacks",
+      "plays": 30,
+      "hours": 1.08,
+      "firstPlay": "2025-01-05T16:35:25Z",
+      "lastPlay": "2025-03-02T18:20:52Z"
     },
     {
       "artist": "Augustine",
       "track": "Wishful Thinking",
+      "plays": 26,
+      "hours": 1.05,
+      "firstPlay": "2025-01-05 16:42",
+      "lastPlay": "2025-02-23 18:13"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Wishful Thinking",
       "plays": 28,
-      "hours": 1.05
+      "hours": 1.05,
+      "firstPlay": "2025-01-05T16:42:38Z",
+      "lastPlay": "2025-02-23T18:13:03Z"
     },
     {
       "artist": "Augustine",
       "track": "Campus",
       "plays": 32,
-      "hours": 1.04
+      "hours": 1.04,
+      "firstPlay": "2025-01-05 17:01",
+      "lastPlay": "2025-03-02 18:20"
     },
     {
-      "artist": "Lucky Lo",
-      "track": "Through The Eyes Of A Woman",
-      "plays": 17,
-      "hours": 1.01
+      "artist": "Unknown Artist",
+      "track": "Campus",
+      "plays": 32,
+      "hours": 1.04,
+      "firstPlay": "2025-01-05T17:01:03Z",
+      "lastPlay": "2025-03-02T18:20:10Z"
     },
     {
       "artist": "Augustine",
       "track": "Sweet Love",
       "plays": 36,
-      "hours": 0.99
+      "hours": 0.99,
+      "firstPlay": "2025-01-01 18:56",
+      "lastPlay": "2025-02-24 11:50"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Sweet Love",
+      "plays": 36,
+      "hours": 0.99,
+      "firstPlay": "2025-01-01T18:56:18Z",
+      "lastPlay": "2025-02-24T11:50:30Z"
     },
     {
       "artist": "Augustine",
       "track": "Teach Me",
+      "plays": 30,
+      "hours": 0.98,
+      "firstPlay": "2025-01-03 14:28",
+      "lastPlay": "2025-02-23 17:56"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Teach Me",
       "plays": 32,
-      "hours": 0.98
+      "hours": 0.98,
+      "firstPlay": "2025-01-03T14:28:23Z",
+      "lastPlay": "2025-02-23T17:56:13Z"
+    },
+    {
+      "artist": "Lucky Lo",
+      "track": "Through The Eyes Of A Woman",
+      "plays": 16,
+      "hours": 0.97,
+      "firstPlay": "2025-03-11 16:06",
+      "lastPlay": "2025-03-15 17:51"
     },
     {
       "artist": "Augustine",
       "track": "Spacer (Reimagined)",
       "plays": 25,
-      "hours": 0.89
+      "hours": 0.89,
+      "firstPlay": "2025-01-03 14:28",
+      "lastPlay": "2025-02-24 11:53"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Spacer (Reimagined)",
+      "plays": 25,
+      "hours": 0.89,
+      "firstPlay": "2025-01-03T14:28:39Z",
+      "lastPlay": "2025-02-24T11:53:39Z"
     },
     {
       "artist": "Broken Bells",
       "track": "Love On The Run",
       "plays": 10,
-      "hours": 0.8
+      "hours": 0.8,
+      "firstPlay": "2025-02-11 14:27",
+      "lastPlay": "2025-02-17 22:19"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Love On The Run",
+      "plays": 10,
+      "hours": 0.8,
+      "firstPlay": "2025-02-11T14:27:54Z",
+      "lastPlay": "2025-02-17T22:19:29Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Prom",
+      "plays": 33,
+      "hours": 0.76,
+      "firstPlay": "2025-01-05T16:45:26Z",
+      "lastPlay": "2025-02-20T15:54:42Z"
     },
     {
       "artist": "Augustine",
       "track": "Prom",
-      "plays": 33,
-      "hours": 0.76
+      "plays": 31,
+      "hours": 0.75,
+      "firstPlay": "2025-01-05 16:45",
+      "lastPlay": "2025-02-20 15:54"
     },
     {
       "artist": "Augustine",
       "track": "New World Coming",
       "plays": 30,
-      "hours": 0.7
+      "hours": 0.7,
+      "firstPlay": "2025-01-05 17:07",
+      "lastPlay": "2025-02-18 07:55"
     },
     {
-      "artist": "Donald Fagen",
-      "track": "I.G.Y.",
-      "plays": 8,
-      "hours": 0.68
-    },
-    {
-      "artist": "Serge Gainsbourg",
-      "track": "Je suis venu te dire que je m'en vais",
-      "plays": 17,
-      "hours": 0.57
-    },
-    {
-      "artist": "Gregory Porter",
-      "track": "Hey Laura",
-      "plays": 12,
-      "hours": 0.55
-    },
-    {
-      "artist": "Frazey Ford",
-      "track": "Done",
-      "plays": 8,
-      "hours": 0.55
-    },
-    {
-      "artist": "RAYE",
-      "track": "Worth It. - Radio Edit",
-      "plays": 12,
-      "hours": 0.5
-    },
-    {
-      "artist": "M83",
-      "track": "Go!",
-      "plays": 9,
-      "hours": 0.49
-    },
-    {
-      "artist": "Midnight Generation",
-      "track": "Young Girl",
-      "plays": 14,
-      "hours": 0.48
-    },
-    {
-      "artist": "Johann Sebastian Bach",
-      "track": "Toccata and Fugue in D minor",
-      "plays": 3,
-      "hours": 0.47
-    },
-    {
-      "artist": "Lord Echo",
-      "track": "Thinking Of You",
-      "plays": 10,
-      "hours": 0.43
-    },
-    {
-      "artist": "Maurice Ravel",
-      "track": "Pavane pour une infante défunte, M. 19a",
-      "plays": 6,
-      "hours": 0.4
-    },
-    {
-      "artist": "Sophie Ellis-Bextor",
-      "track": "Murder On The Dancefloor",
-      "plays": 11,
-      "hours": 0.4
-    },
-    {
-      "artist": "The Shacks",
-      "track": "Crimson & Clover",
-      "plays": 10,
-      "hours": 0.4
-    },
-    {
-      "artist": "Khruangbin",
-      "track": "May Ninth",
-      "plays": 9,
-      "hours": 0.38
-    },
-    {
-      "artist": "Charlotte Gainsbourg",
-      "track": "Deadly Valentine",
-      "plays": 6,
-      "hours": 0.38
-    },
-    {
-      "artist": "Khruangbin",
-      "track": "Christmas Time Is Here",
-      "plays": 12,
-      "hours": 0.35
-    },
-    {
-      "artist": "Eagles",
-      "track": "I Can't Tell You Why - 2013 Remaster",
-      "plays": 21,
-      "hours": 0.35
-    },
-    {
-      "artist": "Midnight Generation",
-      "track": "Good Intentions",
-      "plays": 6,
-      "hours": 0.34
-    },
-    {
-      "artist": "Lindsey Lomis",
-      "track": "Simple Love",
-      "plays": 8,
-      "hours": 0.33
-    },
-    {
-      "artist": "Coco",
-      "track": "Last of the Loving",
-      "plays": 9,
-      "hours": 0.33
-    },
-    {
-      "artist": "Midnight Generation",
-      "track": "Forever",
-      "plays": 6,
-      "hours": 0.32
-    },
-    {
-      "artist": "SAULT",
-      "track": "Free",
-      "plays": 6,
-      "hours": 0.32
-    },
-    {
-      "artist": "Rakkere",
-      "track": "24/7",
-      "plays": 9,
-      "hours": 0.31
-    },
-    {
-      "artist": "Midnight Generation",
-      "track": "Ghosts",
-      "plays": 4,
-      "hours": 0.31
-    },
-    {
-      "artist": "Chicago",
-      "track": "You Are on My Mind",
-      "plays": 7,
-      "hours": 0.31
-    },
-    {
-      "artist": "Hubbabubbaklubb",
-      "track": "Mopedbart",
-      "plays": 8,
-      "hours": 0.31
+      "artist": "Unknown Artist",
+      "track": "New World Coming",
+      "plays": 30,
+      "hours": 0.7,
+      "firstPlay": "2025-01-05T17:07:45Z",
+      "lastPlay": "2025-02-18T07:55:56Z"
     }
   ]
 }

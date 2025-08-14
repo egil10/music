@@ -1,0 +1,352 @@
+[
+  {
+    "artist": "Unknown Artist",
+    "album": "Unknown Album",
+    "plays": 6116,
+    "hours": 1704.2,
+    "uniqueTracks": 1
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Blonde",
+    "plays": 3540,
+    "hours": 102.65,
+    "uniqueTracks": 17
+  },
+  {
+    "artist": "Jan Eggum",
+    "album": "Unknown Album",
+    "plays": 2916,
+    "hours": 101.55,
+    "uniqueTracks": 339
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Random Access Memories",
+    "plays": 2037,
+    "hours": 70.92,
+    "uniqueTracks": 22
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Starboy",
+    "plays": 1822,
+    "hours": 57.57,
+    "uniqueTracks": 22
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Six Months Is a Long Time",
+    "plays": 1475,
+    "hours": 54.61,
+    "uniqueTracks": 11
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "A Deeper Understanding",
+    "plays": 884,
+    "hours": 53.16,
+    "uniqueTracks": 10
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Kjærlighet & Ærlighet 3",
+    "plays": 1155,
+    "hours": 52.45,
+    "uniqueTracks": 21
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Sadnecessary",
+    "plays": 1594,
+    "hours": 51.72,
+    "uniqueTracks": 19
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Noen ganger og andre",
+    "plays": 1556,
+    "hours": 46.54,
+    "uniqueTracks": 13
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Kjærlighet & Ærlighet 2",
+    "plays": 1023,
+    "hours": 46.47,
+    "uniqueTracks": 20
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Mang Slags Kjærlighet",
+    "plays": 1172,
+    "hours": 46.46,
+    "uniqueTracks": 40
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "American Teen",
+    "plays": 1471,
+    "hours": 44.84,
+    "uniqueTracks": 15
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "In The Lonely Hour",
+    "plays": 1460,
+    "hours": 44.58,
+    "uniqueTracks": 20
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Beauty Behind The Madness",
+    "plays": 1276,
+    "hours": 44.16,
+    "uniqueTracks": 13
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Stoney",
+    "plays": 1554,
+    "hours": 42.75,
+    "uniqueTracks": 18
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Live Vol. 1",
+    "plays": 1247,
+    "hours": 41.66,
+    "uniqueTracks": 18
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "SYRE",
+    "plays": 1261,
+    "hours": 40.16,
+    "uniqueTracks": 18
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Con Todo El Mundo",
+    "plays": 1081,
+    "hours": 40.09,
+    "uniqueTracks": 10
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Chet Baker Sings",
+    "plays": 1169,
+    "hours": 37.59,
+    "uniqueTracks": 14
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Kjærlighet & Ærlighet 1",
+    "plays": 916,
+    "hours": 36.28,
+    "uniqueTracks": 20
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Mordechai",
+    "plays": 907,
+    "hours": 35.65,
+    "uniqueTracks": 10
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Black Solution",
+    "plays": 609,
+    "hours": 35.18,
+    "uniqueTracks": 8
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Alt, akkurat nå",
+    "plays": 834,
+    "hours": 34.26,
+    "uniqueTracks": 12
+  },
+  {
+    "artist": "Jonas Alaska",
+    "album": "Unknown Album",
+    "plays": 863,
+    "hours": 34.22,
+    "uniqueTracks": 79
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "30/ 30",
+    "plays": 771,
+    "hours": 33.75,
+    "uniqueTracks": 30
+  },
+  {
+    "artist": "Khruangbin",
+    "album": "Unknown Album",
+    "plays": 858,
+    "hours": 33.7,
+    "uniqueTracks": 115
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "The Dark Side Of The Moon",
+    "plays": 620,
+    "hours": 29.66,
+    "uniqueTracks": 16
+  },
+  {
+    "artist": "Benny Sings",
+    "album": "Unknown Album",
+    "plays": 828,
+    "hours": 27.2,
+    "uniqueTracks": 146
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "En Natt Forbi",
+    "plays": 591,
+    "hours": 27.07,
+    "uniqueTracks": 10
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "More Life",
+    "plays": 965,
+    "hours": 27,
+    "uniqueTracks": 22
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Abbey Road",
+    "plays": 1137,
+    "hours": 26.5,
+    "uniqueTracks": 61
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Ekte Eggum",
+    "plays": 651,
+    "hours": 26.06,
+    "uniqueTracks": 16
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "E.G.G.U.M.",
+    "plays": 635,
+    "hours": 26,
+    "uniqueTracks": 10
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Clair de lune",
+    "plays": 410,
+    "hours": 25.83,
+    "uniqueTracks": 13
+  },
+  {
+    "artist": "Augustine",
+    "album": "Unknown Album",
+    "plays": 710,
+    "hours": 25.61,
+    "uniqueTracks": 24
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Hest",
+    "plays": 808,
+    "hours": 25.52,
+    "uniqueTracks": 10
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Dire Straits",
+    "plays": 605,
+    "hours": 25.47,
+    "uniqueTracks": 9
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "RIO",
+    "plays": 634,
+    "hours": 24.73,
+    "uniqueTracks": 12
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "The Divine Feminine",
+    "plays": 768,
+    "hours": 24.04,
+    "uniqueTracks": 10
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Discovery",
+    "plays": 767,
+    "hours": 22.57,
+    "uniqueTracks": 16
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "The Life Of Pablo",
+    "plays": 994,
+    "hours": 22.35,
+    "uniqueTracks": 20
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "KMF",
+    "plays": 796,
+    "hours": 22.26,
+    "uniqueTracks": 13
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Hjerteknuser",
+    "plays": 565,
+    "hours": 21.71,
+    "uniqueTracks": 11
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Racer",
+    "plays": 586,
+    "hours": 21.7,
+    "uniqueTracks": 1
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Heksedans",
+    "plays": 517,
+    "hours": 21.05,
+    "uniqueTracks": 12
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Tales From The Brothers Gibb",
+    "plays": 605,
+    "hours": 20.9,
+    "uniqueTracks": 44
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Please",
+    "plays": 548,
+    "hours": 20.67,
+    "uniqueTracks": 14
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "17",
+    "plays": 1095,
+    "hours": 20.63,
+    "uniqueTracks": 11
+  },
+  {
+    "artist": "Unknown Artist",
+    "album": "Brothers In Arms",
+    "plays": 473,
+    "hours": 20.59,
+    "uniqueTracks": 15
+  }
+]

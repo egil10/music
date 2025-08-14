@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
-    "build:data": "node scripts/build-spotify-simple.js"
+    "build:data": "node scripts/build-spotify-complete.js"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.5",

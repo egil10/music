@@ -1,784 +1,1047 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>My Spotify Wrapped</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-      :root {
-        --spotify-green: #1DB954;
-        --spotify-black: #191414;
-        --spotify-dark: #121212;
-        --spotify-gray: #282828;
-        --spotify-light-gray: #B3B3B3;
-        --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-        --gradient-success: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-        --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.1);
-        --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.15);
-        --border-radius: 16px;
-        --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Complete Spotify Journey (2015-2025)</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-dayjs@1.0.1/dist/chartjs-adapter-dayjs.bundle.min.js"></script>
+  
+  <style>
+    :root {
+      /* Spotify Colors */
+      --spotify-green: #1DB954;
+      --spotify-dark: #121212;
+      --spotify-light: #282828;
+      --spotify-lighter: #404040;
+      --spotify-text: #FFFFFF;
+      --spotify-text-secondary: #B3B3B3;
+      
+      /* Gradients */
+      --gradient-primary: linear-gradient(135deg, #1DB954 0%, #1ed760 100%);
+      --gradient-secondary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      --gradient-dark: linear-gradient(135deg, #121212 0%, #282828 100%);
+      
+      /* Shadows */
+      --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+      --shadow-md: 0 4px 8px rgba(0,0,0,0.15);
+      --shadow-lg: 0 8px 16px rgba(0,0,0,0.2);
+      --shadow-xl: 0 20px 40px rgba(0,0,0,0.3);
+      
+      /* Transitions */
+      --transition-fast: 0.2s ease;
+      --transition-normal: 0.3s ease;
+      --transition-slow: 0.5s ease;
+    }
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-      body { 
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        background: var(--spotify-black);
-        color: white;
-        line-height: 1.6;
-        overflow-x: hidden;
-      }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--spotify-dark);
+      color: var(--spotify-text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
 
-      /* Hero Section */
-      .hero {
-        position: relative;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: var(--gradient-primary);
-        overflow: hidden;
-      }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--spotify-light);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--spotify-green);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #1ed760;
+    }
 
-      .hero::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-        opacity: 0.3;
-      }
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      background: var(--gradient-dark);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
 
-      .hero-content {
-        text-align: center;
-        z-index: 2;
-        max-width: 800px;
-        padding: 0 20px;
-      }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%231DB954" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+      opacity: 0.3;
+    }
 
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 900;
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+      animation: fadeInUp 1s ease;
+    }
+
+    .hero p {
+      font-size: clamp(1.2rem, 3vw, 1.8rem);
+      color: var(--spotify-text-secondary);
+      margin-bottom: 2rem;
+      animation: fadeInUp 1s ease 0.2s both;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: bounce 2s infinite;
+      color: var(--spotify-green);
+      font-size: 2rem;
+    }
+
+    /* Main Dashboard */
+    .dashboard {
+      padding: 4rem 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .section {
+      margin-bottom: 4rem;
+      animation: fadeInUp 0.8s ease;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      text-align: center;
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .stat-card {
+      background: var(--spotify-light);
+      border-radius: 16px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition-normal);
+      border: 1px solid var(--spotify-lighter);
+    }
+
+    .stat-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+      border-color: var(--spotify-green);
+    }
+
+    .stat-icon {
+      font-size: 3rem;
+      color: var(--spotify-green);
+      margin-bottom: 1rem;
+    }
+
+    .stat-value {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      color: var(--spotify-text);
+    }
+
+    .stat-label {
+      color: var(--spotify-text-secondary);
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    /* Chart Containers */
+    .charts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .chart-container {
+      background: var(--spotify-light);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition-normal);
+      border: 1px solid var(--spotify-lighter);
+    }
+
+    .chart-container:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--spotify-green);
+    }
+
+    .chart-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: var(--spotify-text);
+    }
+
+    .chart-wrapper {
+      position: relative;
+      height: 300px;
+    }
+
+    /* Loading States */
+    .loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem;
+      color: var(--spotify-text-secondary);
+    }
+
+    .loading-spinner {
+      width: 50px;
+      height: 50px;
+      border: 4px solid var(--spotify-lighter);
+      border-top: 4px solid var(--spotify-green);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 1rem;
+    }
+
+    /* Error States */
+    .error-state {
+      text-align: center;
+      padding: 4rem 2rem;
+      color: var(--spotify-text);
+    }
+
+    .error-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .error-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--spotify-text);
+    }
+
+    .error-message {
+      font-size: 1.1rem;
+      color: var(--spotify-text-secondary);
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .retry-button {
+      background: var(--gradient-primary);
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition-normal);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .retry-button:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+      }
+      40% {
+        transform: translateX(-50%) translateY(-10px);
+      }
+      60% {
+        transform: translateX(-50%) translateY(-5px);
+      }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
       .hero h1 {
-        font-size: clamp(3rem, 8vw, 6rem);
-        font-weight: 800;
-        margin-bottom: 1rem;
-        background: linear-gradient(45deg, #fff, #1DB954);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        animation: fadeInUp 1s ease-out;
-      }
-
-      .hero-subtitle {
-        font-size: clamp(1.2rem, 3vw, 1.8rem);
-        font-weight: 300;
-        margin-bottom: 2rem;
-        opacity: 0.9;
-        animation: fadeInUp 1s ease-out 0.2s both;
-      }
-
-      .scroll-indicator {
-        position: absolute;
-        bottom: 2rem;
-        left: 50%;
-        transform: translateX(-50%);
-        animation: bounce 2s infinite;
-        cursor: pointer;
-        z-index: 2;
-      }
-
-      .scroll-indicator i {
-        font-size: 2rem;
-        color: white;
-        opacity: 0.7;
-      }
-
-      /* Main Content */
-      .main-content {
-        background: var(--spotify-dark);
-        position: relative;
-        z-index: 1;
-      }
-
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-      }
-
-      /* Stats Grid */
-      .stats-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-        padding: 4rem 0;
-        animation: fadeInUp 1s ease-out 0.4s both;
-      }
-
-      .stat-card {
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(20px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: var(--border-radius);
-        padding: 2rem;
-        text-align: center;
-        transition: var(--transition);
-        position: relative;
-        overflow: hidden;
-      }
-
-      .stat-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-        transition: left 0.5s;
-      }
-
-      .stat-card:hover::before {
-        left: 100%;
-      }
-
-      .stat-card:hover {
-        transform: translateY(-8px);
-        box-shadow: var(--shadow-hover);
-        border-color: var(--spotify-green);
-      }
-
-      .stat-icon {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-        color: var(--spotify-green);
-      }
-
-      .stat-number {
         font-size: 3rem;
-        font-weight: 800;
-        margin-bottom: 0.5rem;
-        background: linear-gradient(45deg, #fff, var(--spotify-green));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
       }
-
-      .stat-label {
-        font-size: 1rem;
-        font-weight: 500;
-        color: var(--spotify-light-gray);
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-
-      /* Charts Section */
-      .charts-section {
-        padding: 4rem 0;
-      }
-
-      .section-title {
-        font-size: 2.5rem;
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 3rem;
-        background: linear-gradient(45deg, #fff, var(--spotify-green));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-
-      .charts-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-        gap: 2rem;
-        margin-bottom: 3rem;
-      }
-
-      .chart-container {
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(20px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: var(--border-radius);
-        padding: 2rem;
-        transition: var(--transition);
-      }
-
-      .chart-container:hover {
-        transform: translateY(-4px);
-        box-shadow: var(--shadow-hover);
-      }
-
-      .chart-title {
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin-bottom: 1.5rem;
-        color: white;
-      }
-
-      .chart-wrapper {
-        position: relative;
-        height: 400px;
-      }
-
-      canvas {
-        max-width: 100%;
-        height: 100% !important;
-      }
-
-      /* Select Styling */
-      select {
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        color: white;
-        padding: 0.75rem 1rem;
-        border-radius: 8px;
-        font-size: 1rem;
-        font-weight: 500;
-        margin-bottom: 1rem;
-        transition: var(--transition);
-        cursor: pointer;
-      }
-
-      select:focus {
-        outline: none;
-        border-color: var(--spotify-green);
-        box-shadow: 0 0 0 3px rgba(29, 185, 84, 0.1);
-      }
-
-      select option {
-        background: var(--spotify-gray);
-        color: white;
-      }
-
-      /* Loading State */
-      .loading {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 400px;
+      
+      .hero p {
         font-size: 1.2rem;
-        color: var(--spotify-light-gray);
       }
-
-      .loading-spinner {
-        width: 40px;
-        height: 40px;
-        border: 3px solid rgba(255, 255, 255, 0.1);
-        border-top: 3px solid var(--spotify-green);
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-        margin-right: 1rem;
+      
+      .dashboard {
+        padding: 2rem 1rem;
       }
-
-      /* Error State */
-      .error-state {
-        text-align: center;
-        padding: 4rem 2rem;
-        background: rgba(255, 255, 255, 0.05);
-        border-radius: var(--border-radius);
-        margin: 2rem 0;
+      
+      .charts-grid {
+        grid-template-columns: 1fr;
       }
-
-      .error-icon {
-        font-size: 4rem;
-        color: #ff6b6b;
-        margin-bottom: 1rem;
+      
+      .chart-container {
+        padding: 1.5rem;
       }
-
-      .error-title {
+      
+      .chart-wrapper {
+        height: 250px;
+      }
+      
+      .section-title {
         font-size: 2rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-        color: white;
       }
+    }
 
-      .error-message {
-        font-size: 1.1rem;
-        color: var(--spotify-light-gray);
-        margin-bottom: 2rem;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    /* Year Selector */
+    .year-selector {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
 
-      .retry-button {
-        background: var(--spotify-green);
-        color: white;
-        border: none;
-        padding: 1rem 2rem;
-        border-radius: 8px;
-        font-size: 1rem;
-        font-weight: 600;
-        cursor: pointer;
-        transition: var(--transition);
-      }
+    .year-btn {
+      background: var(--spotify-lighter);
+      color: var(--spotify-text-secondary);
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: var(--transition-fast);
+      font-weight: 500;
+    }
 
-      .retry-button:hover {
-        background: #1ed760;
-        transform: translateY(-2px);
-      }
+    .year-btn.active {
+      background: var(--spotify-green);
+      color: white;
+    }
 
-      /* Animations */
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
+    .year-btn:hover {
+      background: var(--spotify-green);
+      color: white;
+    }
 
-      @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-          transform: translateX(-50%) translateY(0);
-        }
-        40% {
-          transform: translateX(-50%) translateY(-10px);
-        }
-        60% {
-          transform: translateX(-50%) translateY(-5px);
-        }
-      }
+    /* Feature Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
 
-      @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
+    .feature-card {
+      background: var(--spotify-light);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition-normal);
+      border: 1px solid var(--spotify-lighter);
+    }
 
-      /* Responsive Design */
-      @media (max-width: 768px) {
-        .charts-grid {
-          grid-template-columns: 1fr;
-        }
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--spotify-green);
+    }
 
-        .stats-grid {
-          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-          gap: 1rem;
-        }
+    .feature-icon {
+      font-size: 2.5rem;
+      color: var(--spotify-green);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
 
-        .stat-card {
-          padding: 1.5rem;
-        }
+    .feature-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
 
-        .stat-number {
-          font-size: 2rem;
-        }
+    .feature-description {
+      color: var(--spotify-text-secondary);
+      text-align: center;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Your Spotify Journey</h1>
+      <p>10+ years of music, memories, and moments</p>
+    </div>
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
 
-        .chart-container {
-          padding: 1rem;
-        }
+  <!-- Main Dashboard -->
+  <main class="dashboard">
+    <!-- Loading State -->
+    <div id="loading" class="loading">
+      <div class="loading-spinner"></div>
+      <p>Loading your complete music history...</p>
+    </div>
 
-        .chart-wrapper {
-          height: 300px;
-        }
-      }
-
-      /* Smooth Scrolling */
-      html {
-        scroll-behavior: smooth;
-      }
-
-      /* Custom Scrollbar */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-
-      ::-webkit-scrollbar-track {
-        background: var(--spotify-dark);
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background: var(--spotify-green);
-        border-radius: 4px;
-      }
-
-      ::-webkit-scrollbar-thumb:hover {
-        background: #1ed760;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1>🎵 My Spotify Wrapped</h1>
-        <p class="hero-subtitle">Your 2024 Music Journey</p>
-      </div>
-      <div class="scroll-indicator" onclick="document.querySelector('.main-content').scrollIntoView({behavior: 'smooth'})">
-        <i class="fas fa-chevron-down"></i>
-      </div>
-    </section>
-
-    <!-- Main Content -->
-    <main class="main-content">
-      <div class="container">
-        <!-- Stats Grid -->
-        <div class="stats-grid" id="stats">
-          <!-- Stats will be populated by JavaScript -->
+    <!-- Dashboard Content -->
+    <div id="dashboard-content" style="display: none;">
+      <!-- Stats Overview -->
+      <section class="section">
+        <h2 class="section-title">Your Music Stats</h2>
+        <div class="stats-grid" id="stats-grid">
+          <!-- Stats will be populated here -->
         </div>
+      </section>
 
-        <!-- Charts Section -->
-        <section class="charts-section">
-          <h2 class="section-title">Your Listening Patterns</h2>
-          
-          <div class="charts-grid">
-            <div class="chart-container">
-              <h3 class="chart-title">📊 Hours by Year</h3>
-              <div class="chart-wrapper">
-                <canvas id="hoursByYear"></canvas>
-              </div>
-            </div>
-            
-            <div class="chart-container">
-              <h3 class="chart-title">🎤 Top Artists</h3>
-              <select id="yearSelect"></select>
-              <div class="chart-wrapper">
-                <canvas id="topArtists"></canvas>
-              </div>
-            </div>
-            
-            <div class="chart-container">
-              <h3 class="chart-title">🎵 Top Tracks</h3>
-              <select id="trackYearSelect"></select>
-              <div class="chart-wrapper">
-                <canvas id="topTracks"></canvas>
-              </div>
-            </div>
-            
-            <div class="chart-container">
-              <h3 class="chart-title">📈 Daily Listening Pattern</h3>
-              <div class="chart-wrapper">
-                <canvas id="dailyPattern"></canvas>
-              </div>
+      <!-- Year Selector -->
+      <section class="section">
+        <div class="year-selector" id="year-selector">
+          <!-- Year buttons will be populated here -->
+        </div>
+      </section>
+
+      <!-- Charts Grid -->
+      <section class="section">
+        <h2 class="section-title">Your Listening Patterns</h2>
+        <div class="charts-grid">
+          <div class="chart-container">
+            <h3 class="chart-title">Listening Hours by Year</h3>
+            <div class="chart-wrapper">
+              <canvas id="hoursByYearChart"></canvas>
             </div>
           </div>
-        </section>
-      </div>
-    </main>
-
-    <script type="module">
-      async function getJSON(url){ 
-        try {
-          const r = await fetch(url); 
-          if (!r.ok) throw new Error(`HTTP ${r.status}`);
-          return r.json(); 
-        } catch (error) {
-          console.error(`Failed to load ${url}:`, error);
-          throw error;
-        }
-      }
-
-      // Main function to load and display data
-      async function loadDashboard() {
-        try {
-          // Show loading state
-          document.getElementById('stats').innerHTML = `
-            <div class="loading">
-              <div class="loading-spinner"></div>
-              Loading your music data...
-            </div>
-          `;
-
-          const [summary, byYear, topArtistsByYear, topTracksByYear] = await Promise.all([
-            getJSON("./data/summary.json"),
-            getJSON("./data/listening_by_year.json"),
-            getJSON("./data/top_artists_by_year.json"),
-            getJSON("./data/top_tracks_by_year.json")
-          ]);
-
-          console.log("Loaded data:", { summary, byYear, topArtistsByYear, topTracksByYear });
-
-          // Check if we have actual data (allow sample data with 10+ plays to show)
-          if (!summary.total_plays || summary.total_plays === 0) {
-            document.body.innerHTML = `
-              <div class="error-state">
-                <div class="error-icon">🎵</div>
-                <h2 class="error-title">No Data Available</h2>
-                <p class="error-message">This is a demo deployment. To see your actual Spotify data:</p>
-                <ol style="text-align: left; max-width: 400px; margin: 0 auto 2rem auto;">
-                  <li>Add your <code>merged_spotify_data.json</code> to the <code>raw/</code> directory</li>
-                  <li>Run <code>npm run build:data</code> locally</li>
-                  <li>Commit and push the updated <code>docs/data/</code> files</li>
-                </ol>
-                <p><strong>Note:</strong> Large data files are kept local for privacy and never uploaded to GitHub.</p>
-              </div>
-            `;
-            return;
-          }
-
-          // Populate stats with improved styling
-          const statsContainer = document.getElementById("stats");
-          statsContainer.innerHTML = `
-            <div class="stat-card">
-              <div class="stat-icon">
-                <i class="fas fa-clock"></i>
-              </div>
-              <div class="stat-number">${summary.total_hours.toLocaleString()}</div>
-              <div class="stat-label">Total Hours</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-icon">
-                <i class="fas fa-play"></i>
-              </div>
-              <div class="stat-number">${summary.total_plays.toLocaleString()}</div>
-              <div class="stat-label">Total Plays</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-icon">
-                <i class="fas fa-calendar"></i>
-              </div>
-              <div class="stat-number">${summary.years.length}</div>
-              <div class="stat-label">Years of Data</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-icon">
-                <i class="fas fa-music"></i>
-              </div>
-              <div class="stat-number">${(summary.total_hours / summary.total_plays * 60).toFixed(1)}</div>
-              <div class="stat-label">Avg Minutes per Play</div>
-            </div>
-          `;
-
-          const years = Object.keys(byYear).filter(y => y !== "unknown").sort();
-          const hours = years.map(y => byYear[y].hours);
-
-          // Enhanced Chart.js configuration
-          Chart.defaults.color = '#B3B3B3';
-          Chart.defaults.font.family = 'Inter, sans-serif';
-
-          // Hours by Year chart
-          const ctx1 = document.getElementById("hoursByYear");
-          new Chart(ctx1, {
-            type: "bar",
-            data: { 
-              labels: years, 
-              datasets: [{ 
-                label: "Hours", 
-                data: hours,
-                backgroundColor: 'rgba(29, 185, 84, 0.8)',
-                borderColor: '#1DB954',
-                borderWidth: 2,
-                borderRadius: 8,
-                borderSkipped: false,
-              }] 
-            },
-            options: { 
-              responsive: true,
-              maintainAspectRatio: false,
-              plugins: { 
-                legend: { display: false },
-                tooltip: {
-                  backgroundColor: 'rgba(0, 0, 0, 0.8)',
-                  titleColor: '#fff',
-                  bodyColor: '#B3B3B3',
-                  borderColor: '#1DB954',
-                  borderWidth: 1,
-                  cornerRadius: 8,
-                }
-              },
-              scales: {
-                y: {
-                  ticks: { color: '#B3B3B3' },
-                  grid: { color: 'rgba(255, 255, 255, 0.1)' }
-                },
-                x: {
-                  ticks: { color: '#B3B3B3' },
-                  grid: { color: 'rgba(255, 255, 255, 0.1)' }
-                }
-              }
-            } 
-          });
-
-          // Top artists
-          const yearSelect = document.getElementById("yearSelect");
-          years.slice().reverse().forEach(y => {
-            const opt = document.createElement("option");
-            opt.value = y; opt.textContent = y;
-            yearSelect.appendChild(opt);
-          });
-
-          const ctx2 = document.getElementById("topArtists");
-          let topArtistsChart;
-
-          function renderTopArtists(y){
-            const data = (topArtistsByYear[y] || []).slice(0, 10);
-            const labels = data.map(d => d.artist);
-            const vals = data.map(d => d.hours);
-            if (topArtistsChart) topArtistsChart.destroy();
-            topArtistsChart = new Chart(ctx2, {
-              type: "bar",
-              data: { 
-                labels, 
-                datasets: [{ 
-                  label: "Hours", 
-                  data: vals,
-                  backgroundColor: 'rgba(29, 185, 84, 0.8)',
-                  borderColor: '#1DB954',
-                  borderWidth: 2,
-                  borderRadius: 8,
-                }] 
-              },
-              options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                indexAxis: "y",
-                plugins: { legend: { display: false } },
-                scales: { 
-                  x: { 
-                    ticks: { 
-                      callback: v => v + "h",
-                      color: '#B3B3B3'
-                    },
-                    grid: { color: 'rgba(255, 255, 255, 0.1)' }
-                  },
-                  y: {
-                    ticks: { color: '#B3B3B3' },
-                    grid: { color: 'rgba(255, 255, 255, 0.1)' }
-                  }
-                }
-              }
-            });
-          }
-
-          // Top tracks
-          const trackYearSelect = document.getElementById("trackYearSelect");
-          years.slice().reverse().forEach(y => {
-            const opt = document.createElement("option");
-            opt.value = y; opt.textContent = y;
-            trackYearSelect.appendChild(opt);
-          });
-
-          const ctx3 = document.getElementById("topTracks");
-          let topTracksChart;
-
-          function renderTopTracks(y){
-            const data = (topTracksByYear[y] || []).slice(0, 10);
-            const labels = data.map(d => `${d.track} - ${d.artist}`);
-            const vals = data.map(d => d.hours);
-            if (topTracksChart) topTracksChart.destroy();
-            topTracksChart = new Chart(ctx3, {
-              type: "bar",
-              data: { 
-                labels, 
-                datasets: [{ 
-                  label: "Hours", 
-                  data: vals,
-                  backgroundColor: 'rgba(29, 185, 84, 0.8)',
-                  borderColor: '#1DB954',
-                  borderWidth: 2,
-                  borderRadius: 8,
-                }] 
-              },
-              options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                indexAxis: "y",
-                plugins: { legend: { display: false } },
-                scales: { 
-                  x: { 
-                    ticks: { 
-                      callback: v => v + "h",
-                      color: '#B3B3B3'
-                    },
-                    grid: { color: 'rgba(255, 255, 255, 0.1)' }
-                  },
-                  y: {
-                    ticks: { color: '#B3B3B3' },
-                    grid: { color: 'rgba(255, 255, 255, 0.1)' }
-                  }
-                }
-              }
-            });
-          }
-
-          // Daily pattern (simplified - just show last 30 days)
-          const ctx4 = document.getElementById("dailyPattern");
-          fetch("./data/listening_daily.csv")
-            .then(r => r.text())
-            .then(csv => {
-              const lines = csv.split('\n').slice(1); // Skip header
-              const last30Days = lines.slice(-30);
-              const dates = last30Days.map(line => {
-                const [date] = line.split(',');
-                return new Date(date).toLocaleDateString();
-              });
-              const hours = last30Days.map(line => {
-                const [, hours] = line.split(',');
-                return parseFloat(hours);
-              });
-
-              new Chart(ctx4, {
-                type: "line",
-                data: { 
-                  labels: dates, 
-                  datasets: [{ 
-                    label: "Hours", 
-                    data: hours,
-                    borderColor: '#1DB954',
-                    backgroundColor: 'rgba(29, 185, 84, 0.1)',
-                    borderWidth: 3,
-                    fill: true,
-                    tension: 0.4,
-                    pointBackgroundColor: '#1DB954',
-                    pointBorderColor: '#fff',
-                    pointBorderWidth: 2,
-                    pointRadius: 4,
-                  }] 
-                },
-                options: {
-                  responsive: true,
-                  maintainAspectRatio: false,
-                  plugins: { legend: { display: false } },
-                  scales: {
-                    y: {
-                      ticks: { color: '#B3B3B3' },
-                      grid: { color: 'rgba(255, 255, 255, 0.1)' }
-                    },
-                    x: {
-                      ticks: { color: '#B3B3B3' },
-                      grid: { color: 'rgba(255, 255, 255, 0.1)' }
-                    }
-                  }
-                }
-              });
-            });
-
-          // Initialize charts
-          renderTopArtists(years.at(-1));
-          renderTopTracks(years.at(-1));
           
-          // Event listeners
-          yearSelect.addEventListener("change", e => renderTopArtists(e.target.value));
-          trackYearSelect.addEventListener("change", e => renderTopTracks(e.target.value));
-           
-        } catch (error) {
-          console.error("Failed to load Spotify data:", error);
+          <div class="chart-container">
+            <h3 class="chart-title">Top Artists (All Time)</h3>
+            <div class="chart-wrapper">
+              <canvas id="topArtistsChart"></canvas>
+            </div>
+          </div>
+          
+          <div class="chart-container">
+            <h3 class="chart-title">Listening by Hour of Day</h3>
+            <div class="chart-wrapper">
+              <canvas id="hourlyChart"></canvas>
+            </div>
+          </div>
+          
+          <div class="chart-container">
+            <h3 class="chart-title">Listening by Day of Week</h3>
+            <div class="chart-wrapper">
+              <canvas id="dayOfWeekChart"></canvas>
+            </div>
+          </div>
+          
+          <div class="chart-container">
+            <h3 class="chart-title">Monthly Listening Trends</h3>
+            <div class="chart-wrapper">
+              <canvas id="monthlyChart"></canvas>
+            </div>
+          </div>
+          
+          <div class="chart-container">
+            <h3 class="chart-title">Top Tracks (All Time)</h3>
+            <div class="chart-wrapper">
+              <canvas id="topTracksChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Enhanced Features -->
+      <section class="section">
+        <h2 class="section-title">Advanced Analytics</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🎵</div>
+            <h3 class="feature-title">Genre Breakdown</h3>
+            <p class="feature-description">Discover your musical taste diversity across genres</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3 class="feature-title">Device Usage</h3>
+            <p class="feature-description">See how you listen across different platforms</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">🔥</div>
+            <h3 class="feature-title">Binge Sessions</h3>
+            <p class="feature-description">Your longest listening marathons</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">💿</div>
+            <h3 class="feature-title">Top Albums</h3>
+            <p class="feature-description">Complete albums you love the most</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script type="module">
+    // Chart.js defaults
+    Chart.defaults.color = '#B3B3B3';
+    Chart.defaults.borderColor = '#404040';
+    Chart.defaults.font.family = 'Inter, sans-serif';
+    Chart.defaults.plugins.legend.labels.usePointStyle = true;
+    Chart.defaults.plugins.legend.labels.padding = 20;
+
+    async function getJSON(url) {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.json();
+    }
+
+    // Main dashboard function
+    async function loadDashboard() {
+      try {
+        // Show loading state
+        document.getElementById('loading').style.display = 'flex';
+        document.getElementById('dashboard-content').style.display = 'none';
+
+        // Load all data files
+        const [
+          summary,
+          byYear,
+          byMonth,
+          byHour,
+          byDayOfWeek,
+          topArtistsByYear,
+          topTracksByYear,
+          topArtistsAllTime,
+          topTracksAllTime,
+          topAlbums,
+          genreBreakdown,
+          deviceUsage,
+          bingeSessions
+        ] = await Promise.all([
+          getJSON("./data/summary.json"),
+          getJSON("./data/listening_by_year.json"),
+          getJSON("./data/listening_by_month.json"),
+          getJSON("./data/listening_by_hour.json"),
+          getJSON("./data/listening_by_day_of_week.json"),
+          getJSON("./data/top_artists_by_year.json"),
+          getJSON("./data/top_tracks_by_year.json"),
+          getJSON("./data/top_artists_all_time.json"),
+          getJSON("./data/top_tracks_all_time.json"),
+          getJSON("./data/top_albums.json"),
+          getJSON("./data/genre_breakdown.json"),
+          getJSON("./data/device_usage.json"),
+          getJSON("./data/binge_sessions.json")
+        ]);
+
+        console.log("Loaded complete data:", { 
+          summary, byYear, byMonth, byHour, byDayOfWeek, 
+          topArtistsByYear, topTracksByYear, topArtistsAllTime, 
+          topTracksAllTime, topAlbums, genreBreakdown, 
+          deviceUsage, bingeSessions 
+        });
+
+        // Check if we have actual data
+        if (!summary.total_plays || summary.total_plays === 0) {
           document.body.innerHTML = `
             <div class="error-state">
-              <div class="error-icon">⚠️</div>
-              <h2 class="error-title">Error Loading Data</h2>
-              <p class="error-message">Failed to load your Spotify data. This could be because the data files are not available yet, there was a network error, or the deployment is still in progress.</p>
-              <button class="retry-button" onclick="location.reload()">
-                <i class="fas fa-redo"></i> Try Again
-              </button>
+              <div class="error-icon">🎵</div>
+              <h2 class="error-title">No Data Available</h2>
+              <p class="error-message">This is a demo deployment. To see your actual Spotify data:</p>
+              <ol style="text-align: left; max-width: 400px; margin: 0 auto 2rem auto;">
+                <li>Add your Spotify data files to the repository</li>
+                <li>Run <code>npm run build:data</code> locally</li>
+                <li>Commit and push the updated <code>docs/data/</code> files</li>
+              </ol>
+              <p><strong>Note:</strong> Large data files are kept local for privacy and never uploaded to GitHub.</p>
             </div>
           `;
+          return;
         }
-      }
 
-      // Start the dashboard
-      loadDashboard();
-    </script>
-  </body>
+        // Hide loading, show dashboard
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('dashboard-content').style.display = 'block';
+
+        // Populate stats grid
+        populateStatsGrid(summary);
+
+        // Create year selector
+        createYearSelector(summary.years);
+
+        // Create charts
+        createHoursByYearChart(byYear);
+        createTopArtistsChart(topArtistsAllTime);
+        createHourlyChart(byHour);
+        createDayOfWeekChart(byDayOfWeek);
+        createMonthlyChart(byMonth);
+        createTopTracksChart(topTracksAllTime);
+
+        // Smooth scroll to dashboard
+        document.querySelector('.dashboard').scrollIntoView({ 
+          behavior: 'smooth' 
+        });
+
+      } catch (error) {
+        console.error("Failed to load Spotify data:", error);
+        document.body.innerHTML = `
+          <div class="error-state">
+            <div class="error-icon">⚠️</div>
+            <h2 class="error-title">Error Loading Data</h2>
+            <p class="error-message">Failed to load your Spotify data. This could be because the data files are not available yet, there was a network error, or the deployment is still in progress.</p>
+            <button class="retry-button" onclick="location.reload()">
+              <i class="fas fa-redo"></i> Try Again
+            </button>
+          </div>
+        `;
+      }
+    }
+
+    function populateStatsGrid(summary) {
+      const statsGrid = document.getElementById('stats-grid');
+      
+      const stats = [
+        {
+          icon: '🎵',
+          value: summary.total_hours.toLocaleString(),
+          label: 'Total Hours'
+        },
+        {
+          icon: '🎧',
+          value: summary.total_plays.toLocaleString(),
+          label: 'Total Plays'
+        },
+        {
+          icon: '👤',
+          value: summary.unique_artists.toLocaleString(),
+          label: 'Unique Artists'
+        },
+        {
+          icon: '🎼',
+          value: summary.unique_tracks.toLocaleString(),
+          label: 'Unique Tracks'
+        },
+        {
+          icon: '💿',
+          value: summary.unique_albums.toLocaleString(),
+          label: 'Unique Albums'
+        },
+        {
+          icon: '🔥',
+          value: summary.listening_sessions.toLocaleString(),
+          label: 'Listening Sessions'
+        },
+        {
+          icon: '⏱️',
+          value: summary.longest_session_hours + 'h',
+          label: 'Longest Session'
+        },
+        {
+          icon: '📅',
+          value: summary.years.length,
+          label: 'Years of Data'
+        }
+      ];
+
+      statsGrid.innerHTML = stats.map(stat => `
+        <div class="stat-card">
+          <div class="stat-icon">${stat.icon}</div>
+          <div class="stat-value">${stat.value}</div>
+          <div class="stat-label">${stat.label}</div>
+        </div>
+      `).join('');
+    }
+
+    function createYearSelector(years) {
+      const yearSelector = document.getElementById('year-selector');
+      yearSelector.innerHTML = years.map(year => `
+        <button class="year-btn ${year === years[years.length - 1] ? 'active' : ''}" 
+                data-year="${year}">
+          ${year}
+        </button>
+      `).join('');
+
+      // Add click handlers
+      yearSelector.addEventListener('click', (e) => {
+        if (e.target.classList.contains('year-btn')) {
+          // Remove active class from all buttons
+          yearSelector.querySelectorAll('.year-btn').forEach(btn => 
+            btn.classList.remove('active')
+          );
+          // Add active class to clicked button
+          e.target.classList.add('active');
+          
+          // TODO: Update charts for selected year
+          const selectedYear = e.target.dataset.year;
+          console.log('Selected year:', selectedYear);
+        }
+      });
+    }
+
+    function createHoursByYearChart(byYear) {
+      const ctx = document.getElementById('hoursByYearChart').getContext('2d');
+      const years = Object.keys(byYear).filter(y => y !== "unknown").sort();
+      const hours = years.map(y => byYear[y].hours);
+
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: years,
+          datasets: [{
+            label: 'Hours',
+            data: hours,
+            backgroundColor: 'rgba(29, 185, 84, 0.8)',
+            borderColor: '#1DB954',
+            borderWidth: 2,
+            borderRadius: 8,
+            borderSkipped: false,
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grid: {
+                color: 'rgba(64, 64, 64, 0.3)'
+              },
+              ticks: {
+                callback: function(value) {
+                  return value + 'h';
+                }
+              }
+            },
+            x: {
+              grid: {
+                color: 'rgba(64, 64, 64, 0.3)'
+              }
+            }
+          }
+        }
+      });
+    }
+
+    function createTopArtistsChart(topArtists) {
+      const ctx = document.getElementById('topArtistsChart').getContext('2d');
+      const top10 = topArtists.slice(0, 10);
+      
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: top10.map(a => a.artist),
+          datasets: [{
+            label: 'Hours',
+            data: top10.map(a => a.hours),
+            backgroundColor: 'rgba(29, 185, 84, 0.8)',
+            borderColor: '#1DB954',
+            borderWidth: 2,
+            borderRadius: 8,
+            borderSkipped: false,
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          indexAxis: 'y',
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            x: {
+              beginAtZero: true,
+              grid: {
+                color: 'rgba(64, 64, 64, 0.3)'
+              },
+              ticks: {
+                callback: function(value) {
+                  return value + 'h';
+                }
+              }
+            },
+            y: {
+              grid: {
+                color: 'rgba(64, 64, 64, 0.3)'
+              }
+            }
+          }
+        }
+      });
+    }
+
+    function createHourlyChart(byHour) {
+      const ctx = document.getElementById('hourlyChart').getContext('2d');
+      
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: byHour.map(h => `${h.hour}:00`),
+          datasets: [{
+            label: 'Hours',
+            data: byHour.map(h => h.hours),
+            borderColor: '#1DB954',
+            backgroundColor: 'rgba(29, 185, 84, 0.1)',
+            borderWidth: 3,
+            fill: true,
+            tension: 0.4,
+            pointBackgroundColor: '#1DB954',
+            pointBorderColor: '#FFFFFF',
+            pointBorderWidth: 2,
+            pointRadius: 6,
+            pointHoverRadius: 8
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grid: {
+                color: 'rgba(64, 64, 64, 0.3)'
+              },
+              ticks: {
+                callback: function(value) {
+                  return value + 'h';
+                }
+              }
+            },
+            x: {
+              grid: {
+                color: 'rgba(64, 64, 64, 0.3)'
+              }
+            }
+          }
+        }
+      });
+    }
+
+    function createDayOfWeekChart(byDayOfWeek) {
+      const ctx = document.getElementById('dayOfWeekChart').getContext('2d');
+      
+      new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: byDayOfWeek.map(d => d.dayName),
+          datasets: [{
+            data: byDayOfWeek.map(d => d.hours),
+            backgroundColor: [
+              '#1DB954', '#1ed760', '#2ECC71', '#27AE60',
+              '#16A085', '#138D75', '#117A65'
+            ],
+            borderWidth: 0,
+            hoverOffset: 4
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                padding: 20,
+                usePointStyle: true
+              }
+            }
+          }
+        }
+      });
+    }
+
+    function createMonthlyChart(byMonth) {
+      const ctx = document.getElementById('monthlyChart').getContext('2d');
+      
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: byMonth.map(m => {
+            const [year, month] = m.month.split('-');
+            return new Date(year, month - 1).toLocaleDateString('en-US', { 
+              month: 'short', 
+              year: '2-digit' 
+            });
+          }),
+          datasets: [{
+            label: 'Hours',
+            data: byMonth.map(m => m.hours),
+            borderColor: '#667eea',
+            backgroundColor: 'rgba(102, 126, 234, 0.1)',
+            borderWidth: 3,
+            fill: true,
+            tension: 0.4,
+            pointBackgroundColor: '#667eea',
+            pointBorderColor: '#FFFFFF',
+            pointBorderWidth: 2,
+            pointRadius: 6,
+            pointHoverRadius: 8
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grid: {
+                color: 'rgba(64, 64, 64, 0.3)'
+              },
+              ticks: {
+                callback: function(value) {
+                  return value + 'h';
+                }
+              }
+            },
+            x: {
+              grid: {
+                color: 'rgba(64, 64, 64, 0.3)'
+              }
+            }
+          }
+        }
+      });
+    }
+
+    function createTopTracksChart(topTracks) {
+      const ctx = document.getElementById('topTracksChart').getContext('2d');
+      const top10 = topTracks.slice(0, 10);
+      
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: top10.map(t => `${t.artist} - ${t.track}`),
+          datasets: [{
+            label: 'Hours',
+            data: top10.map(t => t.hours),
+            backgroundColor: 'rgba(118, 75, 162, 0.8)',
+            borderColor: '#764ba2',
+            borderWidth: 2,
+            borderRadius: 8,
+            borderSkipped: false,
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          indexAxis: 'y',
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            x: {
+              beginAtZero: true,
+              grid: {
+                color: 'rgba(64, 64, 64, 0.3)'
+              },
+              ticks: {
+                callback: function(value) {
+                  return value + 'h';
+                }
+              }
+            },
+            y: {
+              grid: {
+                color: 'rgba(64, 64, 64, 0.3)'
+              }
+            }
+          }
+        }
+      });
+    }
+
+    // Start the dashboard
+    loadDashboard();
+  </script>
+</body>
 </html>
