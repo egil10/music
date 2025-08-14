@@ -2,50 +2,50 @@
   {
     "day": 0,
     "dayName": "Sunday",
-    "ms": 387620785,
-    "plays": 2266,
-    "hours": 107.67
+    "ms": 4368241414,
+    "plays": 24261,
+    "hours": 1213.4
   },
   {
     "day": 1,
     "dayName": "Monday",
-    "ms": 507443719,
-    "plays": 2736,
-    "hours": 140.96
+    "ms": 4914785898,
+    "plays": 26939,
+    "hours": 1365.22
   },
   {
     "day": 2,
     "dayName": "Tuesday",
-    "ms": 551729467,
-    "plays": 2955,
-    "hours": 153.26
+    "ms": 4992978650,
+    "plays": 27152,
+    "hours": 1386.94
   },
   {
     "day": 3,
     "dayName": "Wednesday",
-    "ms": 521950352,
-    "plays": 2785,
-    "hours": 144.99
+    "ms": 5025973702,
+    "plays": 27123,
+    "hours": 1396.1
   },
   {
     "day": 4,
     "dayName": "Thursday",
-    "ms": 525151942,
-    "plays": 2849,
-    "hours": 145.88
+    "ms": 4487034712,
+    "plays": 24906,
+    "hours": 1246.4
   },
   {
     "day": 5,
     "dayName": "Friday",
-    "ms": 530769826,
-    "plays": 2899,
-    "hours": 147.44
+    "ms": 4669735764,
+    "plays": 25640,
+    "hours": 1297.15
   },
   {
     "day": 6,
     "dayName": "Saturday",
-    "ms": 408169642,
-    "plays": 2327,
-    "hours": 113.38
+    "ms": 4222846745,
+    "plays": 23610,
+    "hours": 1173.01
   }
 ]

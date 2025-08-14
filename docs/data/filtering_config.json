@@ -25,9 +25,9 @@
     "maxPlayTime": 3600000
   },
   "stats": {
-    "mean_play_time_minutes": 1.86,
-    "std_dev_minutes": 1.91,
+    "mean_play_time_minutes": 1.77,
+    "std_dev_minutes": 1.92,
     "percentile_95_minutes": 4.91,
-    "percentile_99_minutes": 7
+    "percentile_99_minutes": 6.9
   }
 }

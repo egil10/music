@@ -1,42 +1,51 @@
 {
-  "total_ms": 3432835733,
-  "total_hours": 953.57,
-  "total_plays": 18817,
+  "total_ms": 32681596885,
+  "total_hours": 9078.22,
+  "total_plays": 179631,
   "years": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
     "2024",
     "2025"
   ],
   "data_sources": 29,
   "date_range": {
-    "earliest": "2024-03-15",
+    "earliest": "2015-06-05",
     "latest": "2025-03-15"
   },
-  "unique_artists": 1880,
-  "unique_tracks": 5385,
-  "unique_albums": 0,
-  "listening_sessions": 1652,
-  "longest_session_hours": 4.94,
+  "unique_artists": 6859,
+  "unique_tracks": 21778,
+  "unique_albums": 15036,
+  "listening_sessions": 13808,
+  "longest_session_hours": 33.34,
   "filtering_stats": {
-    "original_items": 33579,
-    "filtered_items": 18817,
-    "excluded_items": 14762,
+    "original_items": 343564,
+    "filtered_items": 179631,
+    "excluded_items": 163933,
     "exclusion_breakdown": {
-      "manual_artist_exclusion": 12,
+      "manual_artist_exclusion": 1633,
       "manual_track_exclusion": 0,
-      "manual_keyword_exclusion": 140,
+      "manual_keyword_exclusion": 1192,
       "unknown_metadata": 0,
       "invalid_metadata": 0,
-      "too_short": 14283,
-      "too_long": 0,
-      "outlier_zscore": 236,
-      "outlier_percentile": 91
+      "too_short": 157758,
+      "too_long": 1,
+      "outlier_zscore": 2345,
+      "outlier_percentile": 1004
     }
   },
   "outlier_detection": {
-    "mean_play_time_minutes": 1.86,
-    "std_dev_minutes": 1.91,
+    "mean_play_time_minutes": 1.77,
+    "std_dev_minutes": 1.92,
     "percentile_95_minutes": 4.91,
-    "percentile_99_minutes": 7
+    "percentile_99_minutes": 6.9
   },
   "podcast_stats": {
     "total_items": 11991,

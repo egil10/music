@@ -57,6 +57,7 @@ function toDayOfWeek(dateStr) {
 // Improved artist/track name extraction
 function extractArtistName(item) {
   const artist = pick(item, [
+    "master_metadata_album_artist_name",  // Primary field for music
     "artistName", 
     "master_metadata_artist_name", 
     "artist",
@@ -80,8 +81,8 @@ function extractArtistName(item) {
 
 function extractTrackName(item) {
   const track = pick(item, [
+    "master_metadata_track_name",  // Primary field for music
     "trackName", 
-    "master_metadata_track_name", 
     "track",
     "track_name"
   ], "");
@@ -103,8 +104,8 @@ function extractTrackName(item) {
 
 function extractAlbumName(item) {
   const album = pick(item, [
+    "master_metadata_album_album_name",  // Primary field for music
     "albumName",
-    "master_metadata_album_album_name",
     "album",
     "album_name"
   ], "");
@@ -114,18 +115,17 @@ function extractAlbumName(item) {
 
 // Determine if this is music or podcast
 function isPodcast(item) {
-  const episodeName = pick(item, ["episodeName", "episode_name"], "");
-  const showName = pick(item, ["showName", "show_name"], "");
-  const episodeUri = pick(item, ["episodeUri", "episode_uri"], "");
-  const showUri = pick(item, ["showUri", "show_uri"], "");
+  const episodeName = pick(item, ["episode_name", "episodeName"], "");
+  const showName = pick(item, ["episode_show_name", "showName", "show_name"], "");
+  const episodeUri = pick(item, ["spotify_episode_uri", "episodeUri", "episode_uri"], "");
   
-  // Check if any podcast-specific fields are present
-  if (episodeName || showName || episodeUri || showUri) {
+  // Check if any podcast-specific fields are present and not null
+  if ((episodeName && episodeName !== null) || (showName && showName !== null) || (episodeUri && episodeUri !== null)) {
     return true;
   }
   
   // Check if the URI indicates podcast
-  const uri = pick(item, ["spotify_track_uri", "track_uri", "uri"], "");
+  const uri = pick(item, ["spotify_track_uri", "spotify_episode_uri", "track_uri", "episode_uri", "uri"], "");
   if (uri && uri.includes("episode")) {
     return true;
   }
@@ -305,7 +305,7 @@ async function main() {
   musicData.forEach(item => {
     const artist = extractArtistName(item);
     const track = extractTrackName(item);
-    const timestamp = pick(item, ["endTime", "ts", "eventTime", "time"]);
+    const timestamp = pick(item, ["ts", "endTime", "eventTime", "time"]);  // 'ts' is the primary field
     
     if (artist && track && timestamp) {
       const key = `${artist}::${track}::${timestamp}`;
@@ -320,8 +320,8 @@ async function main() {
 
   // Sort by date for proper timeline analysis
   musicHistory.sort((a, b) => {
-    const dateA = pick(a, ["endTime", "ts", "eventTime", "time"]);
-    const dateB = pick(b, ["endTime", "ts", "eventTime", "time"]);
+    const dateA = pick(a, ["ts", "endTime", "eventTime", "time"]);  // 'ts' is the primary field
+    const dateB = pick(b, ["ts", "endTime", "eventTime", "time"]);
     return new Date(dateA) - new Date(dateB);
   });
 
@@ -329,7 +329,7 @@ async function main() {
   console.log("\n🔍 Performing outlier detection and filtering...");
 
   const playTimes = musicHistory.map(item =>
-    Number(pick(item, ["msPlayed", "ms_played", "ms_played_sum", "durationMs", "duration_ms"], 0)) || 0
+    Number(pick(item, ["ms_played", "msPlayed", "ms_played_sum", "durationMs", "duration_ms"], 0)) || 0  // 'ms_played' is the primary field
   ).filter(ms => ms > 0);
 
   const stats = calculateStats(playTimes);
@@ -351,7 +351,7 @@ async function main() {
   };
 
   musicHistory.forEach(item => {
-    const ms = Number(pick(item, ["msPlayed", "ms_played", "ms_played_sum", "durationMs", "duration_ms"], 0)) || 0;
+    const ms = Number(pick(item, ["ms_played", "msPlayed", "ms_played_sum", "durationMs", "duration_ms"], 0)) || 0;  // 'ms_played' is the primary field
 
     const exclusion = shouldExcludeTrack(item);
     if (exclusion.excluded) {
@@ -371,7 +371,7 @@ async function main() {
 
     const cappedMs = Math.min(ms, percentile99);
     const normalizedItem = { ...item };
-    const msFields = ["msPlayed", "ms_played", "ms_played_sum", "durationMs", "duration_ms"];
+    const msFields = ["ms_played", "msPlayed", "ms_played_sum", "durationMs", "duration_ms"];  // 'ms_played' is the primary field
     for (const field of msFields) {
       if (item[field] !== undefined) {
         normalizedItem[field] = cappedMs;
@@ -415,10 +415,10 @@ async function main() {
     const artist = extractArtistName(item);
     const track = extractTrackName(item);
     const album = extractAlbumName(item);
-    const ms = Number(pick(item, ["msPlayed", "ms_played", "ms_played_sum", "durationMs", "duration_ms"], 0)) || 0;
-    const endTime = pick(item, ["endTime", "ts", "eventTime", "time"]);
-    const device = pick(item, ["platform", "device", "conn_country"], "Unknown");
-    const uri = pick(item, ["spotify_track_uri", "track_uri", "uri"], "");
+    const ms = Number(pick(item, ["ms_played", "msPlayed", "ms_played_sum", "durationMs", "duration_ms"], 0)) || 0;  // 'ms_played' is the primary field
+    const endTime = pick(item, ["ts", "endTime", "eventTime", "time"]);  // 'ts' is the primary field
+    const device = pick(item, ["platform", "device", "conn_country"], "Unknown");  // 'platform' is the primary field
+    const uri = pick(item, ["spotify_track_uri", "spotify_episode_uri", "track_uri", "episode_uri", "uri"], "");  // 'spotify_track_uri' is the primary field
 
     if (!artist || !track || !endTime || ms === 0) return;
 
@@ -577,9 +577,9 @@ async function main() {
     data_sources: streamingFiles.length,
     date_range: {
       earliest: filteredHistory.length > 0 ?
-        dayjs(pick(filteredHistory[0], ["endTime", "ts", "eventTime", "time"])).format("YYYY-MM-DD") : "Unknown",
+        dayjs(pick(filteredHistory[0], ["ts", "endTime", "eventTime", "time"])).format("YYYY-MM-DD") : "Unknown",  // 'ts' is the primary field
       latest: filteredHistory.length > 0 ?
-        dayjs(pick(filteredHistory[filteredHistory.length - 1], ["endTime", "ts", "eventTime", "time"])).format("YYYY-MM-DD") : "Unknown"
+        dayjs(pick(filteredHistory[filteredHistory.length - 1], ["ts", "endTime", "eventTime", "time"])).format("YYYY-MM-DD") : "Unknown"  // 'ts' is the primary field
     },
     unique_artists: byArtist.size,
     unique_tracks: byTrack.size,
@@ -680,10 +680,10 @@ async function main() {
     const podcastSummary = {
       total_items: podcastData.length,
       unique_shows: new Set(podcastData.map(item => 
-        pick(item, ["showName", "show_name"], "Unknown Show")
+        pick(item, ["episode_show_name", "showName", "show_name"], "Unknown Show")  // 'episode_show_name' is the primary field
       )).size,
       total_hours: +(podcastData.reduce((sum, item) => 
-        sum + (Number(pick(item, ["msPlayed", "ms_played", "ms_played_sum", "durationMs", "duration_ms"], 0)) || 0), 0
+        sum + (Number(pick(item, ["ms_played", "msPlayed", "ms_played_sum", "durationMs", "duration_ms"], 0)) || 0), 0  // 'ms_played' is the primary field
       ) / 1000 / 3600).toFixed(2)
     };
     await fse.writeJson(path.join(OUT_DIR, "podcast_summary.json"), podcastSummary, { spaces: 2 });
