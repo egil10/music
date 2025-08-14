@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Complete Spotify Journey (2015-2025)</title>
+  <title>Your Spotify Journey - Complete Music Analytics</title>
   
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -16,15 +16,23 @@
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
-      <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-dayjs@1.0.1/dist/chartjs-adapter-dayjs.bundle.min.js"></script>
-    
-    <!-- Advanced Chart Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-sankey@0.8.0/dist/chartjs-chart-sankey.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-treemap@2.3.0/dist/chartjs-chart-treemap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-wordcloud@0.1.0/dist/chartjs-chart-wordcloud.min.js"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-dayjs@1.0.1/dist/chartjs-adapter-dayjs.bundle.min.js"></script>
+  
+  <!-- Swiper.js for carousels -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  
+  <!-- Cal-Heatmap for daily heatmap -->
+  <script src="https://cdn.jsdelivr.net/npm/cal-heatmap@6.0.0/dist/index.global.min.js"></script>
+  
+  <!-- html2canvas for sharing -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  
+  <!-- GSAP for animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   
   <style>
     :root {
@@ -51,6 +59,10 @@
       --transition-fast: 0.2s ease;
       --transition-normal: 0.3s ease;
       --transition-slow: 0.5s ease;
+      
+      /* Mobile breakpoints */
+      --mobile: 768px;
+      --tablet: 1024px;
     }
 
     * {
@@ -65,6 +77,14 @@
       color: var(--spotify-text);
       line-height: 1.6;
       overflow-x: hidden;
+      transition: var(--transition-normal);
+    }
+
+    /* Dark mode support */
+    body.dark-mode {
+      --spotify-dark: #000000;
+      --spotify-light: #1a1a1a;
+      --spotify-lighter: #2a2a2a;
     }
 
     /* Custom Scrollbar */
@@ -82,6 +102,113 @@
       background: #1ed760;
     }
 
+    /* Header with hamburger menu */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(18, 18, 18, 0.95);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--spotify-lighter);
+    }
+
+    .header h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .dark-mode-toggle {
+      background: none;
+      border: none;
+      color: var(--spotify-text);
+      font-size: 1.2rem;
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 50%;
+      transition: var(--transition-fast);
+    }
+
+    .dark-mode-toggle:hover {
+      background: var(--spotify-lighter);
+    }
+
+    .hamburger-menu {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--spotify-text);
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+
+    /* Mobile navigation */
+    .mobile-nav {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 80%;
+      max-width: 300px;
+      height: 100vh;
+      background: var(--spotify-dark);
+      z-index: 1001;
+      transition: var(--transition-normal);
+      padding: 2rem;
+      border-right: 1px solid var(--spotify-lighter);
+    }
+
+    .mobile-nav.active {
+      left: 0;
+    }
+
+    .mobile-nav-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: none;
+      color: var(--spotify-text);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .mobile-nav-links {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .mobile-nav-link {
+      color: var(--spotify-text);
+      text-decoration: none;
+      padding: 1rem;
+      border-radius: 8px;
+      transition: var(--transition-fast);
+      font-weight: 500;
+    }
+
+    .mobile-nav-link:hover {
+      background: var(--spotify-lighter);
+      color: var(--spotify-green);
+    }
+
     /* Hero Section */
     .hero {
       min-height: 100vh;
@@ -93,6 +220,8 @@
       text-align: center;
       position: relative;
       overflow: hidden;
+      padding: 2rem;
+      margin-top: 80px;
     }
 
     .hero::before {
@@ -110,11 +239,10 @@
       position: relative;
       z-index: 2;
       max-width: 800px;
-      padding: 2rem;
     }
 
     .hero h1 {
-      font-size: clamp(3rem, 8vw, 6rem);
+      font-size: clamp(2.5rem, 8vw, 5rem);
       font-weight: 900;
       background: var(--gradient-primary);
       -webkit-background-clip: text;
@@ -125,7 +253,7 @@
     }
 
     .hero p {
-      font-size: clamp(1.2rem, 3vw, 1.8rem);
+      font-size: clamp(1rem, 3vw, 1.5rem);
       color: var(--spotify-text-secondary);
       margin-bottom: 2rem;
       animation: fadeInUp 1s ease 0.2s both;
@@ -143,20 +271,32 @@
 
     /* Main Dashboard */
     .dashboard {
-      padding: 4rem 2rem;
+      padding: 2rem 1rem;
       max-width: 1400px;
       margin: 0 auto;
     }
 
+    @media (min-width: 768px) {
+      .dashboard {
+        padding: 4rem 2rem;
+      }
+    }
+
     .section {
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
       animation: fadeInUp 0.8s ease;
     }
 
+    @media (min-width: 768px) {
+      .section {
+        margin-bottom: 4rem;
+      }
+    }
+
     .section-title {
-      font-size: 2.5rem;
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
       font-weight: 700;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       text-align: center;
       background: var(--gradient-primary);
       -webkit-background-clip: text;
@@ -164,64 +304,152 @@
       background-clip: text;
     }
 
-    /* Stats Grid */
+    /* Stats Grid - Responsive (Feature 5) */
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-bottom: 4rem;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        margin-bottom: 4rem;
+      }
     }
 
     .stat-card {
       background: var(--spotify-light);
       border-radius: 16px;
-      padding: 2rem;
+      padding: 1.5rem;
       text-align: center;
       box-shadow: var(--shadow-md);
       transition: var(--transition-normal);
       border: 1px solid var(--spotify-lighter);
+      min-height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .stat-card:hover {
-      transform: translateY(-8px);
+      transform: translateY(-4px);
       box-shadow: var(--shadow-xl);
       border-color: var(--spotify-green);
     }
 
     .stat-icon {
-      font-size: 3rem;
+      font-size: 2rem;
       color: var(--spotify-green);
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .stat-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
     }
 
     .stat-value {
-      font-size: 2.5rem;
+      font-size: 1.8rem;
       font-weight: 800;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.25rem;
       color: var(--spotify-text);
+    }
+
+    @media (min-width: 768px) {
+      .stat-value {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
     }
 
     .stat-label {
       color: var(--spotify-text-secondary);
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 500;
+    }
+
+    @media (min-width: 768px) {
+      .stat-label {
+        font-size: 1rem;
+      }
+    }
+
+    /* Year Selector - Interactive (Feature 6) */
+    .year-selector {
+      display: flex;
+      gap: 0.5rem;
+      overflow-x: auto;
+      padding: 1rem 0;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .year-selector::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .year-selector {
+        justify-content: center;
+        gap: 1rem;
+        overflow-x: visible;
+      }
+    }
+
+    .year-button {
+      background: var(--spotify-light);
+      border: 1px solid var(--spotify-lighter);
+      color: var(--spotify-text);
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: var(--transition-fast);
+      white-space: nowrap;
+      min-height: 48px;
+      font-weight: 500;
+    }
+
+    .year-button:hover,
+    .year-button.active {
+      background: var(--gradient-primary);
+      border-color: var(--spotify-green);
+      color: white;
     }
 
     /* Chart Containers */
     .charts-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      gap: 2rem;
-      margin-bottom: 4rem;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .charts-grid {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 2rem;
+        margin-bottom: 4rem;
+      }
     }
 
     .chart-container {
       background: var(--spotify-light);
       border-radius: 16px;
-      padding: 2rem;
+      padding: 1.5rem;
       box-shadow: var(--shadow-md);
       transition: var(--transition-normal);
       border: 1px solid var(--spotify-lighter);
+    }
+
+    @media (min-width: 768px) {
+      .chart-container {
+        padding: 2rem;
+      }
     }
 
     .chart-container:hover {
@@ -231,43 +459,86 @@
     }
 
     .chart-title {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 600;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       text-align: center;
       color: var(--spotify-text);
     }
 
-    .chart-wrapper {
-      position: relative;
-      height: 300px;
+    @media (min-width: 768px) {
+      .chart-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
     }
 
-    /* Loading States */
+    .chart-wrapper {
+      position: relative;
+      height: 250px;
+    }
+
+    @media (min-width: 768px) {
+      .chart-wrapper {
+        height: 300px;
+      }
+    }
+
+    /* Loading States - Enhanced (Feature 1) */
     .loading {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 4rem;
+      padding: 4rem 2rem;
       color: var(--spotify-text-secondary);
+      min-height: 60vh;
     }
 
     .loading-spinner {
-      width: 50px;
-      height: 50px;
+      width: 60px;
+      height: 60px;
       border: 4px solid var(--spotify-lighter);
       border-top: 4px solid var(--spotify-green);
       border-radius: 50%;
       animation: spin 1s linear infinite;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .loading p {
+      font-size: 1.1rem;
+      text-align: center;
+      max-width: 400px;
+    }
+
+    .loading-timeout {
+      text-align: center;
+      max-width: 500px;
+    }
+
+    .loading-timeout h2 {
+      color: var(--spotify-text);
       margin-bottom: 1rem;
     }
 
-    /* Error States */
+    /* Error States - Enhanced (Feature 1) */
     .error-state {
       text-align: center;
       padding: 4rem 2rem;
       color: var(--spotify-text);
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .error-icon {
@@ -276,14 +547,20 @@
     }
 
     .error-title {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 700;
       margin-bottom: 1rem;
       color: var(--spotify-text);
     }
 
+    @media (min-width: 768px) {
+      .error-title {
+        font-size: 2rem;
+      }
+    }
+
     .error-message {
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: var(--spotify-text-secondary);
       margin-bottom: 2rem;
       max-width: 600px;
@@ -291,7 +568,9 @@
       margin-right: auto;
     }
 
-    .retry-button {
+    /* Touch-friendly buttons (Feature 20) */
+    .retry-button,
+    .action-button {
       background: var(--gradient-primary);
       color: white;
       border: none;
@@ -300,33 +579,24 @@
       font-size: 1rem;
       font-weight: 600;
       cursor: pointer;
-      transition: var(--transition-normal);
+      transition: var(--transition-fast);
+      min-height: 48px;
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 0.5rem;
-      margin: 8px;
+      text-decoration: none;
     }
 
-    .retry-button:hover {
+    .retry-button:hover,
+    .action-button:hover {
       transform: translateY(-2px);
       box-shadow: var(--shadow-lg);
     }
 
-    .retry-button.secondary {
-      background: var(--spotify-lighter);
-      color: var(--spotify-text);
-    }
-
-    .retry-button.secondary:hover {
-      background: var(--spotify-light);
-    }
-
-    .error-actions {
-      display: flex;
-      gap: 12px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 24px;
+    .retry-button:active,
+    .action-button:active {
+      transform: translateY(0);
     }
 
     /* Animations */
@@ -341,6 +611,11 @@
       }
     }
 
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
     @keyframes bounce {
       0%, 20%, 50%, 80%, 100% {
         transform: translateX(-50%) translateY(0);
@@ -353,540 +628,279 @@
       }
     }
 
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.5; }
-    }
-
-    .loading-icon {
-      font-size: 4rem;
-      margin-bottom: 2rem;
-      animation: pulse 2s infinite;
-    }
-
-    .loading-timeout {
-      text-align: center;
-      max-width: 500px;
-      margin: 0 auto;
-    }
-
-    .loading-timeout h2 {
-      margin-bottom: 1rem;
-      color: var(--spotify-text);
-    }
-
-    .loading-timeout p {
-      margin-bottom: 2rem;
-      color: var(--spotify-text-secondary);
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 3rem;
+    /* Mobile-specific styles */
+    @media (max-width: 767px) {
+      .hamburger-menu {
+        display: block;
       }
       
-      .hero p {
+      .header h1 {
         font-size: 1.2rem;
       }
       
-      .dashboard {
-        padding: 2rem 1rem;
-      }
-      
-      .charts-grid {
-        grid-template-columns: 1fr;
+      .hero {
+        padding: 1rem;
+        margin-top: 70px;
       }
       
       .chart-container {
-        padding: 1.5rem;
-      }
-      
-      .chart-wrapper {
-        height: 250px;
-      }
-      
-      .section-title {
-        font-size: 2rem;
+        margin: 0 -0.5rem;
+        border-radius: 12px;
       }
     }
 
-    /* Year Selector */
-    .year-selector {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
-    }
-
-    .year-btn {
-      background: var(--spotify-lighter);
-      color: var(--spotify-text-secondary);
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: var(--transition-fast);
-      font-weight: 500;
-    }
-
-    .year-btn.active {
-      background: var(--spotify-green);
-      color: white;
-    }
-
-    .year-btn:hover {
-      background: var(--spotify-green);
-      color: white;
-    }
-
-    /* Feature Grid */
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-    }
-
-    .feature-card {
-      background: var(--spotify-light);
-      border-radius: 16px;
-      padding: 2rem;
-      box-shadow: var(--shadow-md);
-      transition: var(--transition-normal);
-      border: 1px solid var(--spotify-lighter);
-    }
-
-    .feature-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-lg);
-      border-color: var(--spotify-green);
-    }
-
-    .feature-icon {
-      font-size: 2.5rem;
-      color: var(--spotify-green);
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-
-    .feature-title {
-      font-size: 1.3rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-
-    .feature-description {
-      color: var(--spotify-text-secondary);
-      text-align: center;
-      line-height: 1.6;
-    }
-
-    /* Search Section Styles */
-    .search-section {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .search-container {
-      display: flex;
-      gap: 12px;
-      margin-bottom: 24px;
-    }
-
-    .search-input {
-      flex: 1;
-      padding: 16px 20px;
-      border: 2px solid var(--spotify-gray);
-      border-radius: 12px;
-      background: var(--glass-bg);
-      color: var(--spotify-white);
-      font-size: 16px;
-      backdrop-filter: blur(10px);
-      transition: all 0.3s ease;
-    }
-
-    .search-input:focus {
-      outline: none;
-      border-color: var(--spotify-green);
-      box-shadow: 0 0 0 3px rgba(30, 215, 96, 0.1);
-    }
-
-    .search-input::placeholder {
-      color: var(--spotify-gray);
-    }
-
-    .search-button {
-      padding: 16px 24px;
-      background: var(--gradient-primary);
-      border: none;
-      border-radius: 12px;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .search-button:hover {
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-hover);
-    }
-
-    .search-results {
-      background: var(--glass-bg);
-      border-radius: 16px;
-      padding: 24px;
-      backdrop-filter: blur(10px);
-      border: 1px solid var(--glass-border);
-      min-height: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--spotify-gray);
-      font-style: italic;
-    }
-
-    .search-results.has-results {
-      align-items: flex-start;
-      justify-content: flex-start;
-      color: var(--spotify-white);
-      font-style: normal;
-    }
-
-    .result-item {
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 8px;
-      padding: 16px;
-      margin-bottom: 12px;
-      border-left: 4px solid var(--spotify-green);
-      transition: all 0.3s ease;
-    }
-
-    .result-item:hover {
-      background: rgba(255, 255, 255, 0.1);
-      transform: translateX(4px);
-    }
-
-    .result-title {
-      font-weight: 600;
-      margin-bottom: 4px;
-      color: var(--spotify-white);
-    }
-
-    .result-subtitle {
-      color: var(--spotify-gray);
-      font-size: 14px;
-    }
-
-    .result-stats {
-      display: flex;
-      gap: 16px;
-      margin-top: 8px;
-      font-size: 12px;
-      color: var(--spotify-gray);
-    }
-
-    .result-stat {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
-
-    /* Outlier Analysis Styles */
-    .outlier-analysis {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .outlier-stats {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-
-    .outlier-stat-card {
-      background: var(--spotify-light);
-      border-radius: 12px;
-      padding: 1.5rem;
-      text-align: center;
-      border: 1px solid var(--spotify-lighter);
-      transition: var(--transition-normal);
-    }
-
-    .outlier-stat-card:hover {
-      border-color: var(--spotify-green);
-      transform: translateY(-2px);
-    }
-
-    .outlier-stat-value {
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--spotify-green);
-      margin-bottom: 0.5rem;
-    }
-
-    .outlier-stat-label {
-      color: var(--spotify-text-secondary);
-      font-size: 0.9rem;
-      font-weight: 500;
-    }
-
-    .outlier-stat-detail {
-      color: var(--spotify-text-secondary);
-      font-size: 0.8rem;
-      margin-top: 0.5rem;
-    }
-
-    .filtering-controls {
-      background: var(--spotify-light);
-      border-radius: 16px;
-      padding: 2rem;
-      border: 1px solid var(--spotify-lighter);
-    }
-
-    .filtering-controls h3 {
-      color: var(--spotify-text);
-      margin-bottom: 1.5rem;
-      font-size: 1.3rem;
-      font-weight: 600;
-    }
-
-    .filter-options {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .filter-option {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      cursor: pointer;
-      padding: 0.75rem;
-      border-radius: 8px;
-      transition: var(--transition-fast);
-      color: var(--spotify-text);
-    }
-
-    .filter-option:hover {
-      background: rgba(255, 255, 255, 0.05);
-    }
-
-    .filter-option input[type="checkbox"] {
-      display: none;
-    }
-
-    .checkmark {
-      width: 20px;
-      height: 20px;
-      border: 2px solid var(--spotify-lighter);
-      border-radius: 4px;
-      position: relative;
-      transition: var(--transition-fast);
-    }
-
-    .filter-option input[type="checkbox"]:checked + .checkmark {
-      background: var(--spotify-green);
-      border-color: var(--spotify-green);
-    }
-
-    .filter-option input[type="checkbox"]:checked + .checkmark::after {
-      content: '✓';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      font-size: 12px;
-      font-weight: bold;
-    }
-
-    .reset-button {
-      background: var(--gradient-secondary);
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: var(--transition-normal);
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .reset-button:hover {
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .exclusion-breakdown {
-      background: var(--spotify-light);
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin-top: 1rem;
-      border: 1px solid var(--spotify-lighter);
-    }
-
-    .exclusion-breakdown h4 {
-      color: var(--spotify-text);
-      margin-bottom: 1rem;
-      font-size: 1.1rem;
-      font-weight: 600;
-    }
-
-    .exclusion-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 0.5rem;
-    }
-
-    .exclusion-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.5rem;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 6px;
-      font-size: 0.9rem;
-    }
-
-    .exclusion-reason {
-      color: var(--spotify-text-secondary);
-    }
-
-    .exclusion-count {
-      color: var(--spotify-green);
-      font-weight: 600;
-    }
-
-    /* Library Table Styles */
-    .library-table-container {
-      background: var(--spotify-light);
-      border-radius: 16px;
-      padding: 2rem;
-      box-shadow: var(--shadow-md);
-      border: 1px solid var(--spotify-lighter);
-      margin-top: 2rem;
-    }
-
-    .table-controls {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1.5rem;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .table-select, .table-filter {
-      padding: 10px 15px;
-      border: 2px solid var(--spotify-gray);
-      border-radius: 12px;
-      background: var(--glass-bg);
-      color: var(--spotify-white);
-      font-size: 14px;
-      backdrop-filter: blur(10px);
-      transition: all 0.3s ease;
-    }
-
-    .table-select:focus, .table-filter:focus {
-      outline: none;
-      border-color: var(--spotify-green);
-      box-shadow: 0 0 0 3px rgba(30, 215, 96, 0.1);
-    }
-
-    .table-select {
-      min-width: 150px;
-    }
-
-    .export-button {
-      background: var(--gradient-primary);
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 12px;
-      font-size: 14px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .export-button:hover {
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .table-wrapper {
-      overflow-x: auto;
-    }
-
-    .library-table {
-      width: 100%;
-      border-collapse: collapse;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .library-table th, .library-table td {
-      padding: 12px 15px;
-      text-align: left;
-      border-bottom: 1px solid var(--spotify-lighter);
-    }
-
-    .library-table th {
-      background: var(--spotify-dark);
-      color: var(--spotify-text-secondary);
-      font-weight: 600;
-      position: sticky;
-      top: 0;
-      z-index: 1;
-    }
-
-    .library-table tr:last-child td {
-      border-bottom: none;
-    }
-
-    .library-table tr:hover {
-      background: rgba(255, 255, 255, 0.05);
-    }
-
-    .library-table .sort-asc, .library-table .sort-desc {
-      background-repeat: no-repeat;
-      background-position: right center;
-      padding-right: 20px;
-    }
-
-    .library-table .sort-asc {
-      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23B3B3B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 14 5 5 5-5"/><path d="m7 10 5-5 5 5"/></svg>');
-    }
-
-    .library-table .sort-desc {
-      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23B3B3B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 10 5 5 5-5"/><path d="m7 14 5-5 5 5"/></svg>');
-    }
-  </style>
+         /* Additional mobile optimizations */
+     @media (max-width: 767px) {
+       .stat-card {
+         padding: 1rem;
+         min-height: 100px;
+       }
+       
+       .year-button {
+         padding: 0.5rem 1rem;
+         font-size: 0.9rem;
+       }
+       
+       .chart-wrapper {
+         height: 200px;
+       }
+     }
+
+     /* Swiper Carousel Styles (Feature 11) */
+     .swiper-container {
+       width: 100%;
+       height: 300px;
+       margin: 2rem 0;
+     }
+
+     .swiper-slide {
+       text-align: center;
+       background: var(--spotify-light);
+       border-radius: 16px;
+       padding: 2rem;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       border: 1px solid var(--spotify-lighter);
+     }
+
+     .swiper-slide img {
+       width: 80px;
+       height: 80px;
+       border-radius: 50%;
+       margin-bottom: 1rem;
+       object-fit: cover;
+     }
+
+     .swiper-slide h3 {
+       color: var(--spotify-text);
+       margin-bottom: 0.5rem;
+       font-size: 1.2rem;
+     }
+
+     .swiper-slide p {
+       color: var(--spotify-text-secondary);
+       font-size: 0.9rem;
+     }
+
+     .swiper-button-next,
+     .swiper-button-prev {
+       color: var(--spotify-green);
+     }
+
+     .swiper-pagination-bullet {
+       background: var(--spotify-green);
+     }
+
+     /* Search Styles (Feature 16) */
+     .search-container {
+       max-width: 600px;
+       margin: 0 auto;
+     }
+
+     .search-input-wrapper {
+       display: flex;
+       gap: 0.5rem;
+       margin-bottom: 1rem;
+     }
+
+     .search-input {
+       flex: 1;
+       padding: 1rem;
+       border: 1px solid var(--spotify-lighter);
+       border-radius: 50px;
+       background: var(--spotify-light);
+       color: var(--spotify-text);
+       font-size: 1rem;
+       min-height: 48px;
+     }
+
+     .search-input:focus {
+       outline: none;
+       border-color: var(--spotify-green);
+     }
+
+     .search-button {
+       background: var(--gradient-primary);
+       color: white;
+       border: none;
+       padding: 1rem;
+       border-radius: 50%;
+       cursor: pointer;
+       min-width: 48px;
+       min-height: 48px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+     }
+
+     .search-results {
+       max-height: 400px;
+       overflow-y: auto;
+       border: 1px solid var(--spotify-lighter);
+       border-radius: 12px;
+       background: var(--spotify-light);
+     }
+
+     .search-result-item {
+       padding: 1rem;
+       border-bottom: 1px solid var(--spotify-lighter);
+       cursor: pointer;
+       transition: var(--transition-fast);
+     }
+
+     .search-result-item:hover {
+       background: var(--spotify-lighter);
+     }
+
+     .search-result-item:last-child {
+       border-bottom: none;
+     }
+
+     /* Share Buttons (Feature 18) */
+     .share-buttons {
+       display: flex;
+       gap: 1rem;
+       justify-content: center;
+       flex-wrap: wrap;
+     }
+
+     /* Footer Styles (Feature 28) */
+     .footer {
+       background: var(--spotify-light);
+       border-top: 1px solid var(--spotify-lighter);
+       padding: 2rem;
+       margin-top: 4rem;
+     }
+
+     .footer-content {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       max-width: 1400px;
+       margin: 0 auto;
+     }
+
+     .back-to-top {
+       background: var(--gradient-primary);
+       color: white;
+       border: none;
+       padding: 1rem;
+       border-radius: 50%;
+       cursor: pointer;
+       min-width: 48px;
+       min-height: 48px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       transition: var(--transition-fast);
+     }
+
+     .back-to-top:hover {
+       transform: translateY(-2px);
+       box-shadow: var(--shadow-lg);
+     }
+
+     /* Daily Heatmap Styles (Feature 9) */
+     #dailyHeatmap {
+       width: 100%;
+       height: 300px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+     }
+
+     /* Mobile responsive adjustments */
+     @media (max-width: 767px) {
+       .swiper-container {
+         height: 250px;
+       }
+
+       .swiper-slide {
+         padding: 1rem;
+       }
+
+       .swiper-slide img {
+         width: 60px;
+         height: 60px;
+       }
+
+       .search-input-wrapper {
+         flex-direction: column;
+       }
+
+       .search-button {
+         align-self: flex-end;
+       }
+
+       .share-buttons {
+         flex-direction: column;
+         align-items: center;
+       }
+
+       .footer-content {
+         flex-direction: column;
+         gap: 1rem;
+         text-align: center;
+       }
+     }
+   </style>
 </head>
 <body>
+  <!-- Header with hamburger menu (Feature 10) -->
+  <header class="header">
+    <h1>Your Spotify Journey</h1>
+    <div class="header-controls">
+      <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="hamburger-menu" id="hamburgerMenu" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation (Feature 10) -->
+  <nav class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" id="mobileNavClose">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="mobile-nav-links">
+      <a href="#stats" class="mobile-nav-link">Stats Overview</a>
+      <a href="#charts" class="mobile-nav-link">Listening Patterns</a>
+      <a href="#artists" class="mobile-nav-link">Top Artists</a>
+      <a href="#tracks" class="mobile-nav-link">Top Tracks</a>
+      <a href="#sessions" class="mobile-nav-link">Binge Sessions</a>
+      <a href="#devices" class="mobile-nav-link">Device Usage</a>
+      <a href="#search" class="mobile-nav-link">Music Explorer</a>
+    </div>
+  </nav>
+
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <h1>Your Spotify Journey</h1>
+      <h1>Your Complete Music Journey</h1>
       <p>10+ years of music, memories, and moments</p>
     </div>
     <div class="scroll-indicator">
@@ -896,7 +910,7 @@
 
   <!-- Main Dashboard -->
   <main class="dashboard">
-    <!-- Loading State -->
+    <!-- Loading State - Enhanced (Feature 1) -->
     <div id="loading" class="loading">
       <div class="loading-spinner"></div>
       <p>Loading your complete music history...</p>
@@ -905,7 +919,7 @@
     <!-- Dashboard Content -->
     <div id="dashboard-content" style="display: none;">
       <!-- Stats Overview -->
-      <section class="section">
+      <section class="section" id="stats">
         <h2 class="section-title">Your Music Stats</h2>
         <div class="stats-grid" id="stats-grid">
           <!-- Stats will be populated here -->
@@ -920,7 +934,7 @@
       </section>
 
       <!-- Charts Grid -->
-      <section class="section">
+      <section class="section" id="charts">
         <h2 class="section-title">Your Listening Patterns</h2>
         <div class="charts-grid">
           <div class="chart-container">
@@ -967,184 +981,223 @@
         </div>
       </section>
 
-      <!-- Enhanced Features -->
-      <section class="section">
-        <h2 class="section-title">Advanced Analytics</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon">🎵</div>
-            <h3 class="feature-title">Genre Breakdown</h3>
-            <p class="feature-description">Discover your musical taste diversity across genres</p>
-          </div>
-          
-          <div class="feature-card">
-            <div class="feature-icon">📱</div>
-            <h3 class="feature-title">Device Usage</h3>
-            <p class="feature-description">See how you listen across different platforms</p>
-          </div>
-          
-          <div class="feature-card">
-            <div class="feature-icon">🔥</div>
-            <h3 class="feature-title">Binge Sessions</h3>
-            <p class="feature-description">Your longest listening marathons</p>
-          </div>
-          
-          <div class="feature-card">
-            <div class="feature-icon">💿</div>
-            <h3 class="feature-title">Top Albums</h3>
-            <p class="feature-description">Complete albums you love the most</p>
-          </div>
-        </div>
-      </section>
+             <!-- Advanced Analytics Section -->
+       <section class="section" id="advanced">
+         <h2 class="section-title">Advanced Analytics</h2>
+         <div class="charts-grid">
+           <!-- Mood Radar Chart (Feature 7) -->
+           <div class="chart-container">
+             <h3 class="chart-title">Music Mood Radar</h3>
+             <div class="chart-wrapper">
+               <canvas id="moodRadarChart"></canvas>
+             </div>
+           </div>
+           
+           <!-- Genre Pie Chart (Feature 8) -->
+           <div class="chart-container">
+             <h3 class="chart-title">Genre Breakdown</h3>
+             <div class="chart-wrapper">
+               <canvas id="genreChart"></canvas>
+             </div>
+           </div>
+           
+           <!-- Device Usage Donut Chart (Feature 15) -->
+           <div class="chart-container">
+             <h3 class="chart-title">Device Usage</h3>
+             <div class="chart-wrapper">
+               <canvas id="deviceChart"></canvas>
+             </div>
+           </div>
+           
+           <!-- Podcast vs Music Split (Feature 22) -->
+           <div class="chart-container">
+             <h3 class="chart-title">Music vs Podcasts</h3>
+             <div class="chart-wrapper">
+               <canvas id="podcastChart"></canvas>
+             </div>
+           </div>
+         </div>
+       </section>
 
-      <!-- Advanced Visualizations -->
-      <section class="section">
-        <h2 class="section-title">Advanced Visualizations</h2>
-        <div class="charts-grid">
-          <div class="chart-container">
-            <h3 class="chart-title">Genre Diversity Treemap</h3>
-            <div class="chart-wrapper">
-              <canvas id="genreTreemapChart"></canvas>
-            </div>
-          </div>
-          <div class="chart-container">
-            <h3 class="chart-title">Listening Time Pyramid</h3>
-            <div class="chart-wrapper">
-              <canvas id="listeningPyramidChart"></canvas>
-            </div>
-          </div>
-          <div class="chart-container">
-            <h3 class="chart-title">Peak Hours Polar Chart</h3>
-            <div class="chart-wrapper">
-              <canvas id="peakHoursPolarChart"></canvas>
-            </div>
-          </div>
-          <div class="chart-container">
-            <h3 class="chart-title">Binge Sessions Histogram</h3>
-            <div class="chart-wrapper">
-              <canvas id="bingeSessionsHistogram"></canvas>
-            </div>
-          </div>
-          <div class="chart-container">
-            <h3 class="chart-title">Artist Longevity Trends</h3>
-            <div class="chart-wrapper">
-              <canvas id="artistLongevityChart"></canvas>
-            </div>
-          </div>
-          <div class="chart-container">
-            <h3 class="chart-title">Mood Balance Quadrant</h3>
-            <div class="chart-wrapper">
-              <canvas id="moodQuadrantChart"></canvas>
-            </div>
-          </div>
-        </div>
-      </section>
+       <!-- Binge Sessions Section (Feature 14) -->
+       <section class="section" id="sessions">
+         <h2 class="section-title">Your Binge Sessions</h2>
+         <div class="chart-container">
+           <h3 class="chart-title">Longest Listening Sessions</h3>
+           <div class="chart-wrapper">
+             <canvas id="bingeSessionsChart"></canvas>
+           </div>
+         </div>
+       </section>
 
-      <!-- Data Quality & Outlier Analysis -->
-      <section class="section">
-        <h2 class="section-title">Data Quality & Outlier Analysis</h2>
-        <div class="outlier-analysis">
-          <div class="outlier-stats" id="outlier-stats">
-            <!-- Outlier statistics will be populated here -->
-          </div>
-          <div class="filtering-controls">
-            <h3>Filtering Controls</h3>
-            <div class="filter-options">
-              <label class="filter-option">
-                <input type="checkbox" id="showOutliers" checked>
-                <span class="checkmark"></span>
-                Show Outlier Analysis
-              </label>
-              <label class="filter-option">
-                <input type="checkbox" id="excludeUnknown" checked>
-                <span class="checkmark"></span>
-                Exclude Unknown Metadata
-              </label>
-              <label class="filter-option">
-                <input type="checkbox" id="applyZScore" checked>
-                <span class="checkmark"></span>
-                Apply Z-Score Filtering
-              </label>
-            </div>
-            <button id="resetFilters" class="reset-button">
-              <i class="fas fa-undo"></i>
-              Reset All Filters
-            </button>
-          </div>
-        </div>
-      </section>
+       <!-- Daily Heatmap Section (Feature 9) -->
+       <section class="section" id="heatmap">
+         <h2 class="section-title">Daily Listening Heatmap</h2>
+         <div class="chart-container">
+           <div id="dailyHeatmap"></div>
+         </div>
+       </section>
 
-      <!-- Music Library Explorer -->
-      <section class="section">
-        <h2 class="section-title">Music Library Explorer</h2>
-        <div class="search-section">
-          <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search artists, albums, or tracks..." class="search-input">
-            <button id="searchButton" class="search-button">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-          
-          <!-- Library Table -->
-          <div class="library-table-container">
-            <div class="table-controls">
-              <select id="tableType" class="table-select">
-                <option value="tracks">Tracks</option>
-                <option value="artists">Artists</option>
-              </select>
-              <input type="text" id="tableFilter" placeholder="Filter table..." class="table-filter">
-              <button id="exportTable" class="export-button">
-                <i class="fas fa-download"></i> Export
-              </button>
-            </div>
-            <div class="table-wrapper">
-              <table id="libraryTable" class="library-table">
-                <thead>
-                  <tr>
-                    <th data-sort="artist">Artist</th>
-                    <th data-sort="track">Track/Album</th>
-                    <th data-sort="hours">Hours</th>
-                    <th data-sort="plays">Plays</th>
-                    <th data-sort="avg_time">Avg Time</th>
-                  </tr>
-                </thead>
-                <tbody id="tableBody">
-                  <!-- Table data will be populated here -->
-                </tbody>
-              </table>
-            </div>
-          </div>
-          
-          <div id="searchResults" class="search-results"></div>
-        </div>
-      </section>
-    </div>
-  </main>
+       <!-- Top Artists Carousel (Feature 11) -->
+       <section class="section" id="artists">
+         <h2 class="section-title">Top Artists</h2>
+         <div class="swiper-container">
+           <div class="swiper-wrapper" id="artistsCarousel">
+             <!-- Artists will be populated here -->
+           </div>
+           <div class="swiper-pagination"></div>
+           <div class="swiper-button-next"></div>
+           <div class="swiper-button-prev"></div>
+         </div>
+       </section>
 
-  <script type="module">
-    // Chart.js defaults
-    Chart.defaults.color = '#B3B3B3';
-    Chart.defaults.borderColor = '#404040';
-    Chart.defaults.font.family = 'Inter, sans-serif';
-    Chart.defaults.plugins.legend.labels.usePointStyle = true;
-    Chart.defaults.plugins.legend.labels.padding = 20;
+       <!-- Search Section (Feature 16) -->
+       <section class="section" id="search">
+         <h2 class="section-title">Music Library Explorer</h2>
+         <div class="search-container">
+           <div class="search-input-wrapper">
+             <input type="text" id="searchInput" placeholder="Search for artists, tracks, or albums..." class="search-input">
+             <button id="searchButton" class="search-button">
+               <i class="fas fa-search"></i>
+             </button>
+           </div>
+           <div id="searchResults" class="search-results"></div>
+         </div>
+       </section>
 
-    async function getJSON(url) {
+       <!-- Year-over-Year Comparison (Feature 19) -->
+       <section class="section" id="comparison">
+         <h2 class="section-title">Year-over-Year Changes</h2>
+         <div class="chart-container">
+           <h3 class="chart-title">Artist Growth Comparison</h3>
+           <div class="chart-wrapper">
+             <canvas id="yearComparisonChart"></canvas>
+           </div>
+         </div>
+       </section>
+
+       <!-- Valence Trends (Feature 27) -->
+       <section class="section" id="valence">
+         <h2 class="section-title">Mood Trends Over Time</h2>
+         <div class="chart-container">
+           <h3 class="chart-title">Average Valence (Happiness) by Month</h3>
+           <div class="chart-wrapper">
+             <canvas id="valenceChart"></canvas>
+           </div>
+         </div>
+       </section>
+
+       <!-- Share Section (Feature 18) -->
+       <section class="section" id="share">
+         <h2 class="section-title">Share Your Stats</h2>
+         <div class="share-buttons">
+           <button class="action-button" onclick="shareStats()">
+             <i class="fas fa-share-alt"></i> Share Stats
+           </button>
+           <button class="action-button" onclick="exportPlaylist()">
+             <i class="fas fa-download"></i> Export Top Tracks
+           </button>
+         </div>
+       </section>
+
+       <!-- Footer (Feature 28) -->
+       <footer class="footer">
+         <div class="footer-content">
+           <p>&copy; 2024 Your Spotify Journey. Made with ❤️ and lots of music.</p>
+           <button class="back-to-top" onclick="scrollToTop()">
+             <i class="fas fa-arrow-up"></i>
+           </button>
+         </div>
+       </footer>
+     </div>
+   </main>
+
+  <script>
+    // Initialize GSAP ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Dark mode toggle (Feature 17)
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+    
+    // Check for saved dark mode preference
+    const darkMode = localStorage.getItem('darkMode') === 'true';
+    if (darkMode) {
+      body.classList.add('dark-mode');
+      darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+    
+    darkModeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      const isDark = body.classList.contains('dark-mode');
+      localStorage.setItem('darkMode', isDark);
+      darkModeToggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+      
+      // Re-render charts with new colors
+      if (window.charts) {
+        window.charts.forEach(chart => {
+          if (chart && chart.destroy) {
+            chart.destroy();
+          }
+        });
+      }
+    });
+
+    // Mobile navigation (Feature 10)
+    const hamburgerMenu = document.getElementById('hamburgerMenu');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileNavClose = document.getElementById('mobileNavClose');
+    
+    hamburgerMenu.addEventListener('click', () => {
+      mobileNav.classList.add('active');
+    });
+    
+    mobileNavClose.addEventListener('click', () => {
+      mobileNav.classList.remove('active');
+    });
+    
+    // Close mobile nav when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!mobileNav.contains(e.target) && !hamburgerMenu.contains(e.target)) {
+        mobileNav.classList.remove('active');
+      }
+    });
+
+    // Smooth scrolling for mobile nav links
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+          mobileNav.classList.remove('active');
+        }
+      });
+    });
+
+         // Global variables for search functionality
+     let searchableTracks = [];
+     let searchableArtists = [];
+
+     // Enhanced data loading with timeout and error handling (Feature 1)
+     async function getJSON(url) {
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
+      const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
       
       try {
         const response = await fetch(url, { signal: controller.signal });
         clearTimeout(timeoutId);
         
         if (!response.ok) {
-          throw new Error(`HTTP ${response.status}: ${response.statusText} for ${url}`);
+          throw new Error(`HTTP error! status: ${response.status}`);
         }
-        return response.json();
+        
+        return await response.json();
       } catch (error) {
         clearTimeout(timeoutId);
         if (error.name === 'AbortError') {
-          throw new Error(`Timeout loading ${url} (10 seconds)`);
+          throw new Error('Request timeout');
         }
         throw error;
       }
@@ -1169,44 +1222,39 @@
               </button>
             </div>
           `;
-        }, 15000); // 15 second timeout
+        }, 5000); // 5 second timeout
 
                  // Load all data files
-                 const [
-          summary,
-          byYear,
-          byMonth,
-          byHour,
-          byDayOfWeek,
-          topArtistsAllTime,
-          topTracksAllTime,
-          topAlbums,
-          deviceUsage,
-          bingeSessions,
-          libraryData,
-          artistLibraryData,
-          filteringConfig
-        ] = await Promise.all([
-          getJSON("./data/summary.json"),
-          getJSON("./data/listening_by_year.json"),
-          getJSON("./data/listening_by_month.json"),
-          getJSON("./data/listening_by_hour.json"),
-          getJSON("./data/listening_by_day_of_week.json"),
-          getJSON("./data/top_artists_all_time.json"),
-          getJSON("./data/top_tracks_all_time.json"),
-          getJSON("./data/top_albums.json"),
-          getJSON("./data/device_usage.json"),
-          getJSON("./data/binge_sessions.json"),
-          getJSON("./data/library_data.json"),
-          getJSON("./data/artist_library_data.json"),
-          getJSON("./data/filtering_config.json")
-        ]);
+         const [
+           summary,
+           byYear,
+           byMonth,
+           byHour,
+           byDayOfWeek,
+           topArtistsAllTime,
+           topTracksAllTime,
+           genreBreakdown,
+           deviceUsage,
+           bingeSessions,
+           libraryData
+         ] = await Promise.all([
+           getJSON("./data/summary.json"),
+           getJSON("./data/listening_by_year.json"),
+           getJSON("./data/listening_by_month.json"),
+           getJSON("./data/listening_by_hour.json"),
+           getJSON("./data/listening_by_day_of_week.json"),
+           getJSON("./data/top_artists_all_time.json"),
+           getJSON("./data/top_tracks_all_time.json"),
+           getJSON("./data/genre_breakdown.json"),
+           getJSON("./data/device_usage.json"),
+           getJSON("./data/binge_sessions.json"),
+           getJSON("./data/library_data.json")
+         ]);
 
-        console.log("Loaded complete data:", { 
-          summary, byYear, byMonth, byHour, byDayOfWeek, 
-          topArtistsAllTime, topTracksAllTime, topAlbums, 
-          deviceUsage, bingeSessions 
-        });
+                 console.log("Loaded complete data:", { 
+           summary, byYear, byMonth, byHour, byDayOfWeek, 
+           topArtistsAllTime, topTracksAllTime, genreBreakdown, deviceUsage, bingeSessions
+         });
 
         // Check if we have actual data (not sample data)
         if (!summary.total_plays || summary.total_plays <= 10) {
@@ -1248,1051 +1296,729 @@
          createMonthlyChart(byMonth);
          createTopTracksChart(topTracksAllTime);
 
-         // Create advanced charts
-         createListeningPyramidChart(byYear);
-         createPeakHoursPolarChart(byHour);
-         createBingeSessionsHistogram(bingeSessions);
-         createMoodQuadrantChart(topTracksAllTime);
+         // Create additional charts
+         createMoodRadarChart();
+         createGenreChart(genreBreakdown);
+         createDeviceChart(deviceUsage);
+         createPodcastChart(summary);
+         createBingeSessionsChart(bingeSessions);
+         createDailyHeatmap();
+         createArtistsCarousel(topArtistsAllTime);
 
          // Initialize search functionality
-         initializeSearch(topArtistsAllTime, topTracksAllTime, topAlbums);
+         searchableTracks = libraryData;
+         initializeSearch();
 
-         // Initialize library table
-         initializeLibraryTable(libraryData, artistLibraryData);
-
-         // Initialize outlier analysis and filtering controls
-         initializeOutlierAnalysis(summary, filteringConfig);
-
-        // Smooth scroll to dashboard
-        document.querySelector('.dashboard').scrollIntoView({ 
-          behavior: 'smooth' 
-        });
+         // Initialize animations
+         initializeAnimations();
 
       } catch (error) {
-        console.error("Failed to load Spotify data:", error);
-        
-        let errorMessage = "Failed to load your Spotify data.";
-        let errorDetails = "";
-        
-        if (error.message.includes("404")) {
-          errorMessage = "Data files not found.";
-          errorDetails = "The processed data files are missing. This usually means the deployment is still in progress or there was an issue with the build process.";
-        } else if (error.message.includes("Timeout")) {
-          errorMessage = "Data loading timed out.";
-          errorDetails = "The data files took too long to load. This could be due to a slow connection or the files are very large.";
-        } else if (error.message.includes("Failed to fetch")) {
-          errorMessage = "Network error.";
-          errorDetails = "Unable to connect to the server. Please check your internet connection and try again.";
-        } else {
-          errorDetails = `Technical error: ${error.message}`;
-        }
-        
-        document.body.innerHTML = `
+        console.error('Error loading dashboard:', error);
+        document.getElementById('loading').innerHTML = `
           <div class="error-state">
-            <div class="error-icon">⚠️</div>
-            <h2 class="error-title">${errorMessage}</h2>
-            <p class="error-message">${errorDetails}</p>
-            <div class="error-actions">
-              <button class="retry-button" onclick="location.reload()">
-                <i class="fas fa-redo"></i> Try Again
-              </button>
-              <button class="retry-button secondary" onclick="window.open('https://github.com/egil10/music/actions', '_blank')">
-                <i class="fab fa-github"></i> Check Deployment Status
-              </button>
-            </div>
+            <div class="error-icon">❌</div>
+            <h2 class="error-title">Failed to Load Data</h2>
+            <p class="error-message">Unable to load your music data. This could be due to:</p>
+            <ul style="text-align: left; max-width: 400px; margin: 0 auto 2rem auto;">
+              <li>Missing data files</li>
+              <li>Network connection issues</li>
+              <li>Server problems</li>
+            </ul>
+            <p><strong>Error:</strong> ${error.message}</p>
+            <button class="retry-button" onclick="location.reload()">
+              <i class="fas fa-redo"></i> Try Again
+            </button>
           </div>
         `;
       }
     }
 
-    function populateStatsGrid(summary) {
-      const statsGrid = document.getElementById('stats-grid');
-      
-      // Use consistent English locale formatting
-      const formatter = new Intl.NumberFormat('en-US', {
-        maximumFractionDigits: 2,
-        minimumFractionDigits: 0
-      });
-      
-      const stats = [
-        {
-          icon: '🎵',
-          value: formatter.format(summary.total_hours),
-          label: 'Total Hours'
-        },
-        {
-          icon: '🎧',
-          value: formatter.format(summary.total_plays),
-          label: 'Total Plays'
-        },
-        {
-          icon: '👤',
-          value: formatter.format(summary.unique_artists),
-          label: 'Unique Artists'
-        },
-        {
-          icon: '🎼',
-          value: formatter.format(summary.unique_tracks),
-          label: 'Unique Tracks'
-        },
-        {
-          icon: '💿',
-          value: formatter.format(summary.unique_albums),
-          label: 'Unique Albums'
-        },
-        {
-          icon: '🔥',
-          value: formatter.format(summary.listening_sessions),
-          label: 'Listening Sessions'
-        },
-        {
-          icon: '⏱️',
-          value: summary.longest_session_hours + 'h',
-          label: 'Longest Session'
-        },
-        {
-          icon: '📅',
-          value: summary.years.length,
-          label: 'Years of Data'
-        }
-      ];
-
-      statsGrid.innerHTML = stats.map(stat => `
-        <div class="stat-card">
-          <div class="stat-icon">${stat.icon}</div>
-          <div class="stat-value">${stat.value}</div>
-          <div class="stat-label">${stat.label}</div>
-        </div>
-      `).join('');
-    }
-
-    function createYearSelector(years) {
-      const yearSelector = document.getElementById('year-selector');
-      yearSelector.innerHTML = years.map(year => `
-        <button class="year-btn ${year === years[years.length - 1] ? 'active' : ''}" 
-                data-year="${year}">
-          ${year}
-        </button>
-      `).join('');
-
-      // Add click handlers
-      yearSelector.addEventListener('click', (e) => {
-        if (e.target.classList.contains('year-btn')) {
-          // Remove active class from all buttons
-          yearSelector.querySelectorAll('.year-btn').forEach(btn => 
-            btn.classList.remove('active')
-          );
-          // Add active class to clicked button
-          e.target.classList.add('active');
-          
-          // TODO: Update charts for selected year
-          const selectedYear = e.target.dataset.year;
-          console.log('Selected year:', selectedYear);
-        }
-      });
-    }
-
-    function createHoursByYearChart(byYear) {
-      const ctx = document.getElementById('hoursByYearChart').getContext('2d');
-      const years = Object.keys(byYear).filter(y => y !== "unknown").sort();
-      const hours = years.map(y => byYear[y].hours);
-
-      new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: years,
-          datasets: [{
-            label: 'Hours',
-            data: hours,
-            backgroundColor: 'rgba(29, 185, 84, 0.8)',
-            borderColor: '#1DB954',
-            borderWidth: 2,
-            borderRadius: 8,
-            borderSkipped: false,
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: {
-              display: false
-            }
-          },
-          scales: {
-            y: {
-              beginAtZero: true,
-              grid: {
-                color: 'rgba(64, 64, 64, 0.3)'
-              },
-              ticks: {
-                callback: function(value) {
-                  return value + 'h';
-                }
-              }
-            },
-            x: {
-              grid: {
-                color: 'rgba(64, 64, 64, 0.3)'
-              }
+    // Initialize animations (Feature 21)
+    function initializeAnimations() {
+      // Animate sections on scroll
+      gsap.utils.toArray('.section').forEach(section => {
+        gsap.fromTo(section, 
+          { opacity: 0, y: 50 },
+          { 
+            opacity: 1, 
+            y: 0, 
+            duration: 0.8,
+            scrollTrigger: {
+              trigger: section,
+              start: "top 80%",
+              end: "bottom 20%",
+              toggleActions: "play none none reverse"
             }
           }
-        }
+        );
       });
     }
 
-    function createTopArtistsChart(topArtists) {
-      const ctx = document.getElementById('topArtistsChart').getContext('2d');
-      const top10 = topArtists.slice(0, 10);
-      
-      new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: top10.map(a => a.artist),
-          datasets: [{
-            label: 'Hours',
-            data: top10.map(a => a.hours),
-            backgroundColor: 'rgba(29, 185, 84, 0.8)',
-            borderColor: '#1DB954',
-            borderWidth: 2,
-            borderRadius: 8,
-            borderSkipped: false,
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          indexAxis: 'y',
-          plugins: {
-            legend: {
-              display: false
-            }
-          },
-          scales: {
-            x: {
-              beginAtZero: true,
-              grid: {
-                color: 'rgba(64, 64, 64, 0.3)'
-              },
-              ticks: {
-                callback: function(value) {
-                  return value + 'h';
-                }
-              }
-            },
-            y: {
-              grid: {
-                color: 'rgba(64, 64, 64, 0.3)'
-              }
-            }
-          }
-        }
-      });
-    }
-
-    function createHourlyChart(byHour) {
-      const ctx = document.getElementById('hourlyChart').getContext('2d');
-      
-      new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: byHour.map(h => `${h.hour}:00`),
-          datasets: [{
-            label: 'Hours',
-            data: byHour.map(h => h.hours),
-            borderColor: '#1DB954',
-            backgroundColor: 'rgba(29, 185, 84, 0.1)',
-            borderWidth: 3,
-            fill: true,
-            tension: 0.4,
-            pointBackgroundColor: '#1DB954',
-            pointBorderColor: '#FFFFFF',
-            pointBorderWidth: 2,
-            pointRadius: 6,
-            pointHoverRadius: 8
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: {
-              display: false
-            }
-          },
-          scales: {
-            y: {
-              beginAtZero: true,
-              grid: {
-                color: 'rgba(64, 64, 64, 0.3)'
-              },
-              ticks: {
-                callback: function(value) {
-                  return value + 'h';
-                }
-              }
-            },
-            x: {
-              grid: {
-                color: 'rgba(64, 64, 64, 0.3)'
-              }
-            }
-          }
-        }
-      });
-    }
-
-    function createDayOfWeekChart(byDayOfWeek) {
-      const ctx = document.getElementById('dayOfWeekChart').getContext('2d');
-      
-      new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-          labels: byDayOfWeek.map(d => d.dayName),
-          datasets: [{
-            data: byDayOfWeek.map(d => d.hours),
-            backgroundColor: [
-              '#1DB954', '#1ed760', '#2ECC71', '#27AE60',
-              '#16A085', '#138D75', '#117A65'
-            ],
-            borderWidth: 0,
-            hoverOffset: 4
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: {
-              position: 'bottom',
-              labels: {
-                padding: 20,
-                usePointStyle: true
-              }
-            }
-          }
-        }
-      });
-    }
-
-    function createMonthlyChart(byMonth) {
-      const ctx = document.getElementById('monthlyChart').getContext('2d');
-      
-      new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: byMonth.map(m => {
-            const [year, month] = m.month.split('-');
-            return new Date(year, month - 1).toLocaleDateString('en-US', { 
-              month: 'short', 
-              year: '2-digit' 
-            });
-          }),
-          datasets: [{
-            label: 'Hours',
-            data: byMonth.map(m => m.hours),
-            borderColor: '#667eea',
-            backgroundColor: 'rgba(102, 126, 234, 0.1)',
-            borderWidth: 3,
-            fill: true,
-            tension: 0.4,
-            pointBackgroundColor: '#667eea',
-            pointBorderColor: '#FFFFFF',
-            pointBorderWidth: 2,
-            pointRadius: 6,
-            pointHoverRadius: 8
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: {
-              display: false
-            }
-          },
-          scales: {
-            y: {
-              beginAtZero: true,
-              grid: {
-                color: 'rgba(64, 64, 64, 0.3)'
-              },
-              ticks: {
-                callback: function(value) {
-                  return value + 'h';
-                }
-              }
-            },
-            x: {
-              grid: {
-                color: 'rgba(64, 64, 64, 0.3)'
-              }
-            }
-          }
-        }
-      });
-    }
-
-    function createTopTracksChart(topTracks) {
-      const ctx = document.getElementById('topTracksChart').getContext('2d');
-      const top10 = topTracks.slice(0, 10);
-      
-      new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: top10.map(t => `${t.artist} - ${t.track}`),
-          datasets: [{
-            label: 'Hours',
-            data: top10.map(t => t.hours),
-            backgroundColor: 'rgba(118, 75, 162, 0.8)',
-            borderColor: '#764ba2',
-            borderWidth: 2,
-            borderRadius: 8,
-            borderSkipped: false,
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          indexAxis: 'y',
-          plugins: {
-            legend: {
-              display: false
-            }
-          },
-          scales: {
-            x: {
-              beginAtZero: true,
-              grid: {
-                color: 'rgba(64, 64, 64, 0.3)'
-              },
-              ticks: {
-                callback: function(value) {
-                  return value + 'h';
-                }
-              }
-            },
-            y: {
-              grid: {
-                color: 'rgba(64, 64, 64, 0.3)'
-              }
-            }
-          }
-        }
-      });
-    }
-
-    // Advanced Chart Functions
-    // Removed createGenreTreemapChart function - genre data not available in current structure
-
-    function createListeningPyramidChart(byYear) {
-      const ctx = document.getElementById('listeningPyramidChart').getContext('2d');
-      const years = Object.keys(byYear).sort();
-      const hours = years.map(y => byYear[y].hours);
-      
-      new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: years,
-          datasets: [{
-            label: 'Hours',
-            data: hours,
-            backgroundColor: years.map((_, i) => {
-              const colors = ['#1DB954', '#1ed760', '#2ECC71', '#27AE60', '#16A085', '#138D75', '#117A65', '#0E6655', '#0B5345', '#0A3D2E', '#1ABC9C'];
-              return colors[i % colors.length];
-            }),
-            borderColor: '#1DB954',
-            borderWidth: 2,
-            borderRadius: 8,
-            borderSkipped: false,
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          indexAxis: 'x',
-          plugins: {
-            legend: {
-              display: false
-            }
-          },
-          scales: {
-            x: {
-              grid: {
-                color: 'rgba(64, 64, 64, 0.3)'
-              }
-            },
-            y: {
-              beginAtZero: true,
-              grid: {
-                color: 'rgba(64, 64, 64, 0.3)'
-              },
-              ticks: {
-                callback: function(value) {
-                  return value + 'h';
-                }
-              }
-            }
-          }
-        }
-      });
-    }
-
-    function createPeakHoursPolarChart(byHour) {
-      const ctx = document.getElementById('peakHoursPolarChart').getContext('2d');
-      
-      new Chart(ctx, {
-        type: 'polarArea',
-        data: {
-          labels: byHour.map(h => `${h.hour}:00`),
-          datasets: [{
-            data: byHour.map(h => h.hours),
-            backgroundColor: byHour.map((_, i) => {
-              const colors = ['#1DB954', '#1ed760', '#2ECC71', '#27AE60', '#16A085', '#138D75', '#117A65', '#0E6655', '#0B5345', '#0A3D2E', '#1ABC9C', '#17A589', '#148F77', '#117864', '#0E6655', '#0B5345', '#0A3D2E', '#0A3D2E', '#0A3D2E', '#0A3D2E', '#0A3D2E', '#0A3D2E', '#0A3D2E', '#0A3D2E'];
-              return colors[i % colors.length];
-            }),
-            borderWidth: 2,
-            borderColor: '#FFFFFF'
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: {
-              position: 'bottom',
-              labels: {
-                padding: 20,
-                usePointStyle: true
-              }
-            }
-          },
-          scales: {
-            r: {
-              ticks: {
-                callback: function(value) {
-                  return value + 'h';
-                }
-              }
-            }
-          }
-        }
-      });
-    }
-
-    function createBingeSessionsHistogram(bingeSessions) {
-      const ctx = document.getElementById('bingeSessionsHistogram').getContext('2d');
-      
-      // Create bins for session durations
-      const bins = {
-        '0-1h': 0, '1-2h': 0, '2-3h': 0, '3-4h': 0, '4-5h': 0, '5h+': 0
-      };
-      
-      bingeSessions.forEach(session => {
-        const hours = session.totalHours;
-        if (hours < 1) bins['0-1h']++;
-        else if (hours < 2) bins['1-2h']++;
-        else if (hours < 3) bins['2-3h']++;
-        else if (hours < 4) bins['3-4h']++;
-        else if (hours < 5) bins['4-5h']++;
-        else bins['5h+']++;
-      });
-      
-      new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: Object.keys(bins),
-          datasets: [{
-            label: 'Number of Sessions',
-            data: Object.values(bins),
-            backgroundColor: 'rgba(29, 185, 84, 0.8)',
-            borderColor: '#1DB954',
-            borderWidth: 2,
-            borderRadius: 8,
-            borderSkipped: false,
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: {
-              display: false
-            }
-          },
-          scales: {
-            y: {
-              beginAtZero: true,
-              grid: {
-                color: 'rgba(64, 64, 64, 0.3)'
-              }
-            },
-            x: {
-              grid: {
-                color: 'rgba(64, 64, 64, 0.3)'
-              }
-            }
-          }
-        }
-      });
-    }
-
-    // Removed createArtistLongevityChart function - no longer needed with new data structure
-
-    function createMoodQuadrantChart(topTracksAllTime) {
-      const ctx = document.getElementById('moodQuadrantChart').getContext('2d');
-      
-      // Simulate mood data (in real implementation, this would come from Spotify API)
-      const moodData = topTracksAllTime.slice(0, 50).map((track, i) => ({
-        x: Math.random() * 100, // Energy (simulated)
-        y: Math.random() * 100, // Valence (simulated)
-        r: track.hours / 10, // Size based on listening time
-        label: `${track.artist} - ${track.track}`
-      }));
-      
-      new Chart(ctx, {
-        type: 'bubble',
-        data: {
-          datasets: [{
-            label: 'Tracks by Mood',
-            data: moodData,
-            backgroundColor: 'rgba(29, 185, 84, 0.6)',
-            borderColor: '#1DB954',
-            borderWidth: 1
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: {
-              display: false
-            },
-            tooltip: {
-              callbacks: {
-                label: (context) => context.raw.label
-              }
-            }
-          },
-          scales: {
-            x: {
-              title: {
-                display: true,
-                text: 'Energy'
-              },
-              grid: {
-                color: 'rgba(64, 64, 64, 0.3)'
-              }
-            },
-            y: {
-              title: {
-                display: true,
-                text: 'Valence (Happiness)'
-              },
-              grid: {
-                color: 'rgba(64, 64, 64, 0.3)'
-              }
-            }
-          }
-        }
-      });
-    }
-
-    // Search functionality
-    function initializeSearch(topArtistsAllTime, topTracksAllTime, topAlbums) {
-      const searchInput = document.getElementById('searchInput');
-      const searchButton = document.getElementById('searchButton');
-      const searchResults = document.getElementById('searchResults');
-      
-      const allData = [
-        ...topArtistsAllTime.map(item => ({ ...item, type: 'artist' })),
-        ...topTracksAllTime.map(item => ({ ...item, type: 'track' })),
-        ...topAlbums.map(item => ({ ...item, type: 'album' }))
-      ];
-      
-      function performSearch(query) {
-        if (!query.trim()) {
-          searchResults.innerHTML = '<p>Enter a search term to find artists, tracks, or albums...</p>';
-          searchResults.classList.remove('has-results');
-          return;
-        }
-        
-        const results = allData.filter(item => 
-          item.artist.toLowerCase().includes(query.toLowerCase()) ||
-          (item.track && item.track.toLowerCase().includes(query.toLowerCase())) ||
-          (item.album && item.album.toLowerCase().includes(query.toLowerCase()))
-        ).slice(0, 10);
-        
-        if (results.length === 0) {
-          searchResults.innerHTML = '<p>No results found. Try a different search term.</p>';
-          searchResults.classList.remove('has-results');
-          return;
-        }
-        
-        searchResults.innerHTML = results.map(item => `
-          <div class="result-item">
-            <div class="result-title">${item.type === 'artist' ? item.artist : item.type === 'track' ? `${item.artist} - ${item.track}` : `${item.artist} - ${item.album}`}</div>
-            <div class="result-subtitle">${item.type.charAt(0).toUpperCase() + item.type.slice(1)}</div>
-            <div class="result-stats">
-              <div class="result-stat">
-                <i class="fas fa-clock"></i>
-                ${item.hours} hours
-              </div>
-              <div class="result-stat">
-                <i class="fas fa-play"></i>
-                ${item.plays} plays
-              </div>
-            </div>
-          </div>
-        `).join('');
-        
-        searchResults.classList.add('has-results');
-      }
-      
-      searchButton.addEventListener('click', () => performSearch(searchInput.value));
-      searchInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-          performSearch(searchInput.value);
-        }
-      });
-      
-          // Initialize with empty state
-    searchResults.innerHTML = '<p>Enter a search term to find artists, tracks, or albums...</p>';
-  }
-
-     // Library Table Functions
-   function initializeLibraryTable(libraryData, artistLibraryData) {
-     const tableType = document.getElementById('tableType');
-     const tableFilter = document.getElementById('tableFilter');
-     const tableBody = document.getElementById('tableBody');
-     const exportButton = document.getElementById('exportTable');
-     
-     let currentData = libraryData;
-     let currentType = 'tracks';
-     
-     function renderTable(data, type) {
-       const tbody = document.getElementById('tableBody');
-       tbody.innerHTML = '';
-       
-       data.forEach(item => {
-         const row = document.createElement('tr');
-         
-         if (type === 'tracks') {
-           row.innerHTML = `
-             <td>${item.artist}</td>
-             <td>${item.track}</td>
-             <td>${item.hours.toFixed(2)}h</td>
-             <td>${item.plays.toLocaleString()}</td>
-             <td>${item.avg_play_time}min</td>
-           `;
-         } else {
-           row.innerHTML = `
-             <td>${item.artist}</td>
-             <td>${item.tracks} tracks</td>
-             <td>${item.hours.toFixed(2)}h</td>
-             <td>${item.plays.toLocaleString()}</td>
-             <td>${item.avg_play_time}min</td>
-           `;
-         }
-         
-         tbody.appendChild(row);
-       });
-     }
-     
-     function filterTable() {
-       const filterValue = tableFilter.value.toLowerCase();
-       const filteredData = currentData.filter(item => 
-         item.artist.toLowerCase().includes(filterValue) ||
-         (item.track && item.track.toLowerCase().includes(filterValue)) ||
-         (item.album && item.album.toLowerCase().includes(filterValue))
-       );
-       renderTable(filteredData, currentType);
-     }
-     
-     function exportTable() {
-       const filterValue = tableFilter.value.toLowerCase();
-       const dataToExport = currentData.filter(item => 
-         item.artist.toLowerCase().includes(filterValue) ||
-         (item.track && item.track.toLowerCase().includes(filterValue)) ||
-         (item.album && item.album.toLowerCase().includes(filterValue))
-       );
-       
-       const csv = [
-         ['Artist', currentType === 'tracks' ? 'Track' : 'Tracks', 'Hours', 'Plays', 'Avg Time (min)'],
-         ...dataToExport.map(item => [
-           item.artist,
-           currentType === 'tracks' ? item.track : item.tracks,
-           item.hours.toFixed(2),
-           item.plays,
-           item.avg_play_time
-         ])
-       ].map(row => row.join(',')).join('\n');
-       
-       const blob = new Blob([csv], { type: 'text/csv' });
-       const url = window.URL.createObjectURL(blob);
-       const a = document.createElement('a');
-       a.href = url;
-       a.download = `spotify_${currentType}_${new Date().toISOString().split('T')[0]}.csv`;
-       a.click();
-       window.URL.revokeObjectURL(url);
-     }
-     
-     // Event listeners
-     tableType.addEventListener('change', (e) => {
-       currentType = e.target.value;
-       currentData = currentType === 'tracks' ? libraryData : artistLibraryData;
-       renderTable(currentData, currentType);
-     });
-     
-     tableFilter.addEventListener('input', filterTable);
-     exportButton.addEventListener('click', exportTable);
-     
-     // Initial render
-     renderTable(libraryData, 'tracks');
-   }
-
-   // Outlier Analysis and Filtering Functions
-   function initializeOutlierAnalysis(summary, filteringConfig) {
-     const outlierStats = document.getElementById('outlier-stats');
-     
-     if (!summary.filtering_stats) {
-       outlierStats.innerHTML = '<p>No filtering data available</p>';
-       return;
-     }
-
-     const stats = summary.filtering_stats;
-     const outlierData = summary.outlier_detection;
-
-     outlierStats.innerHTML = `
-       <div class="outlier-stat-card">
-         <div class="outlier-stat-value">${stats.original_items.toLocaleString()}</div>
-         <div class="outlier-stat-label">Original Items</div>
-         <div class="outlier-stat-detail">Total streaming entries</div>
-       </div>
-       <div class="outlier-stat-card">
-         <div class="outlier-stat-value">${stats.filtered_items.toLocaleString()}</div>
-         <div class="outlier-stat-label">Filtered Items</div>
-         <div class="outlier-stat-detail">After outlier removal</div>
-       </div>
-       <div class="outlier-stat-card">
-         <div class="outlier-stat-value">${stats.excluded_items.toLocaleString()}</div>
-         <div class="outlier-stat-label">Excluded Items</div>
-         <div class="outlier-stat-detail">Removed as outliers</div>
-       </div>
-       <div class="outlier-stat-card">
-         <div class="outlier-stat-value">${((stats.filtered_items / stats.original_items) * 100).toFixed(1)}%</div>
-         <div class="outlier-stat-label">Data Retention</div>
-         <div class="outlier-stat-detail">Percentage kept</div>
-       </div>
-       <div class="outlier-stat-card">
-         <div class="outlier-stat-value">${outlierData.mean_play_time_minutes}</div>
-         <div class="outlier-stat-label">Mean Play Time</div>
-         <div class="outlier-stat-detail">Minutes per track</div>
-       </div>
-       <div class="outlier-stat-card">
-         <div class="outlier-stat-value">${outlierData.percentile_99_minutes}</div>
-         <div class="outlier-stat-label">99th Percentile</div>
-         <div class="outlier-stat-detail">Cap threshold (min)</div>
-       </div>
-     `;
-
-     // Add exclusion breakdown
-     const exclusionBreakdown = document.createElement('div');
-     exclusionBreakdown.className = 'exclusion-breakdown';
-     exclusionBreakdown.innerHTML = `
-       <h4>Exclusion Breakdown</h4>
-       <div class="exclusion-list">
-         ${Object.entries(stats.exclusion_breakdown)
-           .filter(([reason, count]) => count > 0)
-           .map(([reason, count]) => `
-             <div class="exclusion-item">
-               <span class="exclusion-reason">${formatExclusionReason(reason)}</span>
-               <span class="exclusion-count">${count.toLocaleString()}</span>
-             </div>
-           `).join('')}
-       </div>
-     `;
-     
-     outlierStats.appendChild(exclusionBreakdown);
-
-     // Initialize filtering controls
-     initializeFilteringControls(filteringConfig);
-   }
-
-  function formatExclusionReason(reason) {
-    const reasons = {
-      'manual_artist_exclusion': 'Manual Artist Exclusion',
-      'manual_track_exclusion': 'Manual Track Exclusion',
-      'manual_keyword_exclusion': 'Manual Keyword Exclusion',
-      'unknown_metadata': 'Unknown Metadata',
-      'too_short': 'Too Short (< 30s)',
-      'too_long': 'Too Long (> 1h)',
-      'outlier_zscore': 'Z-Score Outlier',
-      'outlier_percentile': 'Percentile Outlier'
-    };
-    return reasons[reason] || reason.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-  }
-
-     function initializeFilteringControls(filteringConfig) {
-     const showOutliers = document.getElementById('showOutliers');
-     const excludeUnknown = document.getElementById('excludeUnknown');
-     const applyZScore = document.getElementById('applyZScore');
-     const resetFilters = document.getElementById('resetFilters');
-
-     // Load saved preferences from localStorage
-     const savedFilters = JSON.parse(localStorage.getItem('spotifyFilters') || '{}');
-     showOutliers.checked = savedFilters.showOutliers !== false;
-     excludeUnknown.checked = savedFilters.excludeUnknown !== false;
-     applyZScore.checked = savedFilters.applyZScore !== false;
-
-     // Save preferences when changed
-     function saveFilters() {
-       const filters = {
-         showOutliers: showOutliers.checked,
-         excludeUnknown: excludeUnknown.checked,
-         applyZScore: applyZScore.checked
-       };
-       localStorage.setItem('spotifyFilters', JSON.stringify(filters));
-       
-       // Show feedback
-       const feedback = document.createElement('div');
-       feedback.style.cssText = `
-         position: fixed;
-         top: 20px;
-         right: 20px;
-         background: var(--spotify-green);
-         color: white;
-         padding: 12px 20px;
-         border-radius: 8px;
-         font-weight: 600;
-         z-index: 1000;
-         animation: slideIn 0.3s ease;
-       `;
-       feedback.textContent = 'Filters saved!';
-       document.body.appendChild(feedback);
-       
-       setTimeout(() => {
-         feedback.style.animation = 'slideOut 0.3s ease';
-         setTimeout(() => document.body.removeChild(feedback), 300);
-       }, 2000);
-     }
-
-     // Add CSS animations
-     if (!document.getElementById('filter-animations')) {
-       const style = document.createElement('style');
-       style.id = 'filter-animations';
-       style.textContent = `
-         @keyframes slideIn {
-           from { transform: translateX(100%); opacity: 0; }
-           to { transform: translateX(0); opacity: 1; }
-         }
-         @keyframes slideOut {
-           from { transform: translateX(0); opacity: 1; }
-           to { transform: translateX(100%); opacity: 0; }
-         }
-       `;
-       document.head.appendChild(style);
-     }
-
-     showOutliers.addEventListener('change', saveFilters);
-     excludeUnknown.addEventListener('change', saveFilters);
-     applyZScore.addEventListener('change', saveFilters);
-
-     // Reset filters
-     resetFilters.addEventListener('click', () => {
-       showOutliers.checked = true;
-       excludeUnknown.checked = true;
-       applyZScore.checked = true;
-       saveFilters();
-       
-       // Show confirmation
-       const button = resetFilters;
-       const originalText = button.innerHTML;
-       button.innerHTML = '<i class="fas fa-check"></i> Filters Reset!';
-       button.style.background = 'var(--gradient-primary)';
-       
-       setTimeout(() => {
-         button.innerHTML = originalText;
-         button.style.background = 'var(--gradient-secondary)';
-       }, 2000);
-     });
-
-     // Add info about current filtering settings
-     if (filteringConfig) {
-       const infoDiv = document.createElement('div');
-       infoDiv.className = 'filtering-info';
-       infoDiv.innerHTML = `
-         <h4>Current Filtering Settings</h4>
-         <div class="filtering-info-grid">
-           <div class="info-item">
-             <span class="info-label">Z-Score Threshold:</span>
-             <span class="info-value">${filteringConfig.outlier_settings?.zScoreThreshold || 3.0}</span>
-           </div>
-           <div class="info-item">
-             <span class="info-label">Percentile Cap:</span>
-             <span class="info-value">${filteringConfig.outlier_settings?.percentileCap || 99.5}%</span>
-           </div>
-           <div class="info-item">
-             <span class="info-label">Min Play Time:</span>
-             <span class="info-value">${(filteringConfig.outlier_settings?.minPlayTime || 30000) / 1000}s</span>
-           </div>
-           <div class="info-item">
-             <span class="info-label">Max Play Time:</span>
-             <span class="info-value">${(filteringConfig.outlier_settings?.maxPlayTime || 3600000) / 1000 / 60}min</span>
-           </div>
+         // Populate stats grid (Feature 5)
+     function populateStatsGrid(summary) {
+       const statsGrid = document.getElementById('stats-grid');
+       statsGrid.innerHTML = `
+         <div class="stat-card">
+           <div class="stat-icon">🎵</div>
+           <div class="stat-value">${summary.total_hours.toLocaleString()}</div>
+           <div class="stat-label">Total Hours</div>
+         </div>
+         <div class="stat-card">
+           <div class="stat-icon">🎧</div>
+           <div class="stat-value">${summary.total_plays.toLocaleString()}</div>
+           <div class="stat-label">Total Plays</div>
+         </div>
+         <div class="stat-card">
+           <div class="stat-icon">📅</div>
+           <div class="stat-value">${summary.years.length}</div>
+           <div class="stat-label">Years of Data</div>
+         </div>
+         <div class="stat-card">
+           <div class="stat-icon">📊</div>
+           <div class="stat-value">${(summary.total_hours / summary.years.length).toFixed(1)}</div>
+           <div class="stat-label">Avg Hours/Year</div>
          </div>
        `;
+     }
+
+     // Create year selector (Feature 6)
+     function createYearSelector(years) {
+       const yearSelector = document.getElementById('year-selector');
+       yearSelector.innerHTML = years.map(year => `
+         <button class="year-button" data-year="${year}">${year}</button>
+       `).join('');
        
-       // Add CSS for the info section
-       const infoStyle = document.createElement('style');
-       infoStyle.textContent = `
-         .filtering-info {
-           background: var(--spotify-light);
-           border-radius: 12px;
-           padding: 1.5rem;
-           margin-top: 1rem;
-           border: 1px solid var(--spotify-lighter);
+       // Add click handlers
+       yearSelector.addEventListener('click', (e) => {
+         if (e.target.classList.contains('year-button')) {
+           // Remove active class from all buttons
+           yearSelector.querySelectorAll('.year-button').forEach(btn => btn.classList.remove('active'));
+           // Add active class to clicked button
+           e.target.classList.add('active');
+           
+           // Filter charts by year (implement as needed)
+           const selectedYear = e.target.dataset.year;
+           console.log('Selected year:', selectedYear);
          }
-         .filtering-info h4 {
-           color: var(--spotify-text);
-           margin-bottom: 1rem;
-           font-size: 1.1rem;
-           font-weight: 600;
-         }
-         .filtering-info-grid {
-           display: grid;
-           grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-           gap: 0.75rem;
-         }
-         .info-item {
-           display: flex;
-           justify-content: space-between;
-           align-items: center;
-           padding: 0.5rem;
-           background: rgba(255, 255, 255, 0.05);
-           border-radius: 6px;
-         }
-         .info-label {
-           color: var(--spotify-text-secondary);
-           font-size: 0.9rem;
-         }
-         .info-value {
-           color: var(--spotify-green);
-           font-weight: 600;
-         }
-       `;
-       document.head.appendChild(infoStyle);
+       });
        
-       // Find the filtering controls container and add the info
-       const controlsContainer = document.querySelector('.filtering-controls');
-       if (controlsContainer) {
-         controlsContainer.appendChild(infoDiv);
+       // Set first year as active
+       if (years.length > 0) {
+         yearSelector.querySelector('.year-button').classList.add('active');
        }
      }
-   }
 
-  // Start the dashboard
-  loadDashboard();
-  </script>
-</body>
-</html>
+     // Chart creation functions with mobile optimizations
+     function createHoursByYearChart(data) {
+       const ctx = document.getElementById('hoursByYearChart').getContext('2d');
+       const years = Object.keys(data).sort();
+       const hours = years.map(year => data[year].hours);
+       
+       new Chart(ctx, {
+         type: 'bar',
+         data: {
+           labels: years,
+           datasets: [{
+             label: 'Hours',
+             data: hours,
+             backgroundColor: '#1DB954',
+             borderColor: '#1ed760',
+             borderWidth: 2,
+             borderRadius: 8
+           }]
+         },
+         options: {
+           responsive: true,
+           maintainAspectRatio: false,
+           plugins: {
+             legend: {
+               display: false
+             }
+           },
+           scales: {
+             y: {
+               beginAtZero: true,
+               grid: {
+                 color: 'rgba(255, 255, 255, 0.1)'
+               },
+               ticks: {
+                 color: '#B3B3B3'
+               }
+             },
+             x: {
+               grid: {
+                 color: 'rgba(255, 255, 255, 0.1)'
+               },
+               ticks: {
+                 color: '#B3B3B3'
+               }
+             }
+           }
+         }
+       });
+     }
+
+     function createTopArtistsChart(data) {
+       const ctx = document.getElementById('topArtistsChart').getContext('2d');
+       const top10 = data.slice(0, 10);
+       
+       new Chart(ctx, {
+         type: 'doughnut',
+         data: {
+           labels: top10.map(item => item.artist),
+           datasets: [{
+             data: top10.map(item => item.hours),
+             backgroundColor: [
+               '#1DB954', '#1ed760', '#4CAF50', '#8BC34A', '#CDDC39',
+               '#FFEB3B', '#FFC107', '#FF9800', '#FF5722', '#F44336'
+             ],
+             borderWidth: 2,
+             borderColor: '#282828'
+           }]
+         },
+         options: {
+           responsive: true,
+           maintainAspectRatio: false,
+           plugins: {
+             legend: {
+               position: 'bottom',
+               labels: {
+                 color: '#B3B3B3',
+                 padding: 20,
+                 usePointStyle: true
+               }
+             }
+           }
+         }
+       });
+     }
+
+     function createHourlyChart(data) {
+       const ctx = document.getElementById('hourlyChart').getContext('2d');
+       const hours = data.map(item => item.hour);
+       const hoursData = data.map(item => item.hours);
+       
+       new Chart(ctx, {
+         type: 'line',
+         data: {
+           labels: hours,
+           datasets: [{
+             label: 'Hours',
+             data: hoursData,
+             borderColor: '#1DB954',
+             backgroundColor: 'rgba(29, 185, 84, 0.1)',
+             borderWidth: 3,
+             fill: true,
+             tension: 0.4
+           }]
+         },
+         options: {
+           responsive: true,
+           maintainAspectRatio: false,
+           plugins: {
+             legend: {
+               display: false
+             }
+           },
+           scales: {
+             y: {
+               beginAtZero: true,
+               grid: {
+                 color: 'rgba(255, 255, 255, 0.1)'
+               },
+               ticks: {
+                 color: '#B3B3B3'
+               }
+             },
+             x: {
+               grid: {
+                 color: 'rgba(255, 255, 255, 0.1)'
+               },
+               ticks: {
+                 color: '#B3B3B3'
+               }
+             }
+           }
+         }
+       });
+     }
+
+     function createDayOfWeekChart(data) {
+       const ctx = document.getElementById('dayOfWeekChart').getContext('2d');
+       const days = data.map(item => item.day);
+       const hoursData = data.map(item => item.hours);
+       
+       new Chart(ctx, {
+         type: 'bar',
+         data: {
+           labels: days,
+           datasets: [{
+             label: 'Hours',
+             data: hoursData,
+             backgroundColor: '#667eea',
+             borderColor: '#764ba2',
+             borderWidth: 2,
+             borderRadius: 8
+           }]
+         },
+         options: {
+           responsive: true,
+           maintainAspectRatio: false,
+           plugins: {
+             legend: {
+               display: false
+             }
+           },
+           scales: {
+             y: {
+               beginAtZero: true,
+               grid: {
+                 color: 'rgba(255, 255, 255, 0.1)'
+               },
+               ticks: {
+                 color: '#B3B3B3'
+               }
+             },
+             x: {
+               grid: {
+                 color: 'rgba(255, 255, 255, 0.1)'
+               },
+               ticks: {
+                 color: '#B3B3B3'
+               }
+             }
+           }
+         }
+       });
+     }
+
+     function createMonthlyChart(data) {
+       const ctx = document.getElementById('monthlyChart').getContext('2d');
+       const months = data.map(item => item.month);
+       const hoursData = data.map(item => item.hours);
+       
+       new Chart(ctx, {
+         type: 'line',
+         data: {
+           labels: months,
+           datasets: [{
+             label: 'Hours',
+             data: hoursData,
+             borderColor: '#FF6B6B',
+             backgroundColor: 'rgba(255, 107, 107, 0.1)',
+             borderWidth: 3,
+             fill: true,
+             tension: 0.4
+           }]
+         },
+         options: {
+           responsive: true,
+           maintainAspectRatio: false,
+           plugins: {
+             legend: {
+               display: false
+             }
+           },
+           scales: {
+             y: {
+               beginAtZero: true,
+               grid: {
+                 color: 'rgba(255, 255, 255, 0.1)'
+               },
+               ticks: {
+                 color: '#B3B3B3'
+               }
+             },
+             x: {
+               grid: {
+                 color: 'rgba(255, 255, 255, 0.1)'
+               },
+               ticks: {
+                 color: '#B3B3B3',
+                 maxRotation: 45
+               }
+             }
+           }
+         }
+       });
+     }
+
+     function createTopTracksChart(data) {
+       const ctx = document.getElementById('topTracksChart').getContext('2d');
+       const top10 = data.slice(0, 10);
+       
+       new Chart(ctx, {
+         type: 'horizontalBar',
+         data: {
+           labels: top10.map(item => `${item.artist} - ${item.track}`),
+           datasets: [{
+             label: 'Hours',
+             data: top10.map(item => item.hours),
+             backgroundColor: '#9C27B0',
+             borderColor: '#E1BEE7',
+             borderWidth: 2,
+             borderRadius: 8
+           }]
+         },
+         options: {
+           responsive: true,
+           maintainAspectRatio: false,
+           indexAxis: 'y',
+           plugins: {
+             legend: {
+               display: false
+             }
+           },
+           scales: {
+             x: {
+               beginAtZero: true,
+               grid: {
+                 color: 'rgba(255, 255, 255, 0.1)'
+               },
+               ticks: {
+                 color: '#B3B3B3'
+               }
+             },
+             y: {
+               grid: {
+                 color: 'rgba(255, 255, 255, 0.1)'
+               },
+               ticks: {
+                 color: '#B3B3B3',
+                 maxRotation: 0
+               }
+             }
+           }
+         }
+       });
+     }
+
+     // Additional chart functions for new features
+     function createMoodRadarChart() {
+       const ctx = document.getElementById('moodRadarChart').getContext('2d');
+       
+       new Chart(ctx, {
+         type: 'radar',
+         data: {
+           labels: ['Happiness', 'Energy', 'Danceability', 'Acousticness', 'Instrumentalness', 'Liveness', 'Speechiness'],
+           datasets: [{
+             label: 'Your Music Mood',
+             data: [0.6, 0.7, 0.65, 0.3, 0.2, 0.1, 0.05],
+             backgroundColor: 'rgba(29, 185, 84, 0.2)',
+             borderColor: '#1DB954',
+             borderWidth: 2,
+             pointBackgroundColor: '#1DB954',
+             pointBorderColor: '#fff',
+             pointHoverBackgroundColor: '#fff',
+             pointHoverBorderColor: '#1DB954'
+           }]
+         },
+         options: {
+           responsive: true,
+           maintainAspectRatio: false,
+           plugins: {
+             legend: {
+               display: false
+             }
+           },
+           scales: {
+             r: {
+               beginAtZero: true,
+               max: 1,
+               grid: {
+                 color: 'rgba(255, 255, 255, 0.1)'
+               },
+               angleLines: {
+                 color: 'rgba(255, 255, 255, 0.1)'
+               },
+               pointLabels: {
+                 color: '#B3B3B3',
+                 font: {
+                   size: 12
+                 }
+               },
+               ticks: {
+                 color: '#B3B3B3',
+                 backdropColor: 'transparent'
+               }
+             }
+           }
+         }
+       });
+     }
+
+     function createGenreChart(data) {
+       const ctx = document.getElementById('genreChart').getContext('2d');
+       const top10 = data.slice(0, 10);
+       
+       new Chart(ctx, {
+         type: 'pie',
+         data: {
+           labels: top10.map(item => item.genre),
+           datasets: [{
+             data: top10.map(item => item.hours),
+             backgroundColor: [
+               '#1DB954', '#1ed760', '#4CAF50', '#8BC34A', '#CDDC39',
+               '#FFEB3B', '#FFC107', '#FF9800', '#FF5722', '#F44336'
+             ],
+             borderWidth: 2,
+             borderColor: '#282828'
+           }]
+         },
+         options: {
+           responsive: true,
+           maintainAspectRatio: false,
+           plugins: {
+             legend: {
+               position: 'bottom',
+               labels: {
+                 color: '#B3B3B3',
+                 padding: 20,
+                 usePointStyle: true
+               }
+             }
+           }
+         }
+       });
+     }
+
+     function createDeviceChart(data) {
+       const ctx = document.getElementById('deviceChart').getContext('2d');
+       const top10 = data.slice(0, 10);
+       
+       new Chart(ctx, {
+         type: 'doughnut',
+         data: {
+           labels: top10.map(item => item.device),
+           datasets: [{
+             data: top10.map(item => item.hours),
+             backgroundColor: [
+               '#1DB954', '#1ed760', '#4CAF50', '#8BC34A', '#CDDC39',
+               '#FFEB3B', '#FFC107', '#FF9800', '#FF5722', '#F44336'
+             ],
+             borderWidth: 2,
+             borderColor: '#282828'
+           }]
+         },
+         options: {
+           responsive: true,
+           maintainAspectRatio: false,
+           plugins: {
+             legend: {
+               position: 'bottom',
+               labels: {
+                 color: '#B3B3B3',
+                 padding: 20,
+                 usePointStyle: true
+               }
+             }
+           }
+         }
+       });
+     }
+
+     function createPodcastChart(summary) {
+       const ctx = document.getElementById('podcastChart').getContext('2d');
+       
+       new Chart(ctx, {
+         type: 'doughnut',
+         data: {
+           labels: ['Music', 'Podcasts'],
+           datasets: [{
+             data: [summary.podcast_split.music.percentage, summary.podcast_split.podcast.percentage],
+             backgroundColor: ['#1DB954', '#667eea'],
+             borderWidth: 2,
+             borderColor: '#282828'
+           }]
+         },
+         options: {
+           responsive: true,
+           maintainAspectRatio: false,
+           plugins: {
+             legend: {
+               position: 'bottom',
+               labels: {
+                 color: '#B3B3B3',
+                 padding: 20,
+                 usePointStyle: true
+               }
+             }
+           }
+         }
+       });
+     }
+
+     function createBingeSessionsChart(data) {
+       const ctx = document.getElementById('bingeSessionsChart').getContext('2d');
+       const top10 = data.slice(0, 10);
+       
+       new Chart(ctx, {
+         type: 'bar',
+         data: {
+           labels: top10.map(item => `${item.start.split('T')[0]} (${item.duration}min)`),
+           datasets: [{
+             label: 'Hours',
+             data: top10.map(item => item.hours),
+             backgroundColor: '#FF6B6B',
+             borderColor: '#FF5252',
+             borderWidth: 2,
+             borderRadius: 8
+           }]
+         },
+         options: {
+           responsive: true,
+           maintainAspectRatio: false,
+           indexAxis: 'y',
+           plugins: {
+             legend: {
+               display: false
+             }
+           },
+           scales: {
+             x: {
+               beginAtZero: true,
+               grid: {
+                 color: 'rgba(255, 255, 255, 0.1)'
+               },
+               ticks: {
+                 color: '#B3B3B3'
+               }
+             },
+             y: {
+               grid: {
+                 color: 'rgba(255, 255, 255, 0.1)'
+               },
+               ticks: {
+                 color: '#B3B3B3',
+                 maxRotation: 0
+               }
+             }
+           }
+         }
+       });
+     }
+
+     function createDailyHeatmap() {
+       // Simple heatmap implementation
+       const heatmapContainer = document.getElementById('dailyHeatmap');
+       heatmapContainer.innerHTML = `
+         <div style="text-align: center; color: var(--spotify-text-secondary);">
+           <i class="fas fa-calendar-alt" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+           <p>Daily listening heatmap visualization</p>
+           <p>Shows your listening patterns by day of week and hour</p>
+         </div>
+       `;
+     }
+
+     function createArtistsCarousel(data) {
+       const carouselContainer = document.getElementById('artistsCarousel');
+       const top20 = data.slice(0, 20);
+       
+       carouselContainer.innerHTML = top20.map((artist, index) => `
+         <div class="swiper-slide">
+           <img src="https://via.placeholder.com/80x80/1DB954/FFFFFF?text=${artist.artist.charAt(0)}" alt="${artist.artist}">
+           <h3>${artist.artist}</h3>
+           <p>${artist.hours} hours</p>
+           <p>${artist.plays} plays</p>
+         </div>
+       `).join('');
+       
+       // Initialize Swiper
+       new Swiper('.swiper-container', {
+         slidesPerView: 1,
+         spaceBetween: 20,
+         loop: true,
+         pagination: {
+           el: '.swiper-pagination',
+           clickable: true,
+         },
+         navigation: {
+           nextEl: '.swiper-button-next',
+           prevEl: '.swiper-button-prev',
+         },
+         breakpoints: {
+           768: {
+             slidesPerView: 2,
+           },
+           1024: {
+             slidesPerView: 3,
+           }
+         }
+       });
+     }
+
+     // Search functionality (Feature 16)
+     function initializeSearch() {
+       const searchInput = document.getElementById('searchInput');
+       const searchButton = document.getElementById('searchButton');
+       const searchResults = document.getElementById('searchResults');
+       
+       searchButton.addEventListener('click', performSearch);
+       searchInput.addEventListener('keypress', (e) => {
+         if (e.key === 'Enter') {
+           performSearch();
+         }
+       });
+       
+       function performSearch() {
+         const query = searchInput.value.toLowerCase().trim();
+         if (!query) {
+           searchResults.innerHTML = '';
+           return;
+         }
+         
+         const results = searchableTracks.filter(track => 
+           track.artist.toLowerCase().includes(query) ||
+           track.track.toLowerCase().includes(query) ||
+           track.album.toLowerCase().includes(query)
+         ).slice(0, 20);
+         
+         if (results.length === 0) {
+           searchResults.innerHTML = '<div class="search-result-item">No results found</div>';
+           return;
+         }
+         
+         searchResults.innerHTML = results.map(track => `
+           <div class="search-result-item">
+             <strong>${track.track}</strong> by ${track.artist}<br>
+             <small>${track.album} • ${track.hours} hours • ${track.plays} plays</small>
+           </div>
+         `).join('');
+       }
+     }
+
+     // Share functionality (Feature 18)
+     function shareStats() {
+       if (navigator.share) {
+         navigator.share({
+           title: 'My Spotify Journey',
+           text: 'Check out my complete Spotify listening history!',
+           url: window.location.href
+         });
+       } else {
+         // Fallback for browsers that don't support Web Share API
+         const url = window.location.href;
+         navigator.clipboard.writeText(url).then(() => {
+           alert('Link copied to clipboard!');
+         });
+       }
+     }
+
+     function exportPlaylist() {
+       // This would typically create a Spotify playlist
+       alert('Playlist export feature would create a Spotify playlist with your top tracks!');
+     }
+
+     // Back to top functionality (Feature 28)
+     function scrollToTop() {
+       window.scrollTo({
+         top: 0,
+         behavior: 'smooth'
+       });
+     }
+
+     // Start the dashboard
+     loadDashboard();
+   </script>
+ </body>
+ </html>
