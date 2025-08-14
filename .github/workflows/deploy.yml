@@ -31,7 +31,19 @@ jobs:
       run: npm ci
       
     - name: Build data
-      run: npm run build:data
+      run: |
+        # Check if raw data exists, if not create a sample or skip
+        if [ -f "raw/merged_spotify_data.json" ]; then
+          npm run build:data
+        else
+          echo "No raw data found, creating sample data for demo..."
+          mkdir -p public/data
+          echo '{"total_ms": 0, "total_hours": 0, "total_plays": 0, "years": []}' > public/data/summary.json
+          echo '{}' > public/data/listening_by_year.json
+          echo '{}' > public/data/top_artists_by_year.json
+          echo '{}' > public/data/top_tracks_by_year.json
+          echo "date,hours,plays" > public/data/listening_daily.csv
+        fi
       
     - name: Setup Pages
       uses: actions/configure-pages@v4

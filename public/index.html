@@ -133,6 +133,28 @@
         getJSON("./data/top_tracks_by_year.json")
       ]);
 
+      // Check if we have actual data
+      if (!summary.total_plays || summary.total_plays === 0) {
+        document.body.innerHTML = `
+          <div style="text-align: center; padding: 50px; font-family: system-ui, Arial, sans-serif;">
+            <h1>🎵 Spotify Wrapped Dashboard</h1>
+            <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 10px; margin: 20px auto; max-width: 600px;">
+              <h2>No Data Available</h2>
+              <p>This is a demo deployment. To see your actual Spotify data:</p>
+              <ol style="text-align: left; max-width: 400px; margin: 0 auto;">
+                <li>Add your <code>merged_spotify_data.json</code> to the <code>raw/</code> directory</li>
+                <li>Run <code>npm run build:data</code> locally</li>
+                <li>Commit and push the updated <code>public/data/</code> files</li>
+              </ol>
+              <p style="margin-top: 20px;">
+                <strong>Note:</strong> Large data files are kept local for privacy and never uploaded to GitHub.
+              </p>
+            </div>
+          </div>
+        `;
+        return;
+      }
+
       // Populate stats
       const statsContainer = document.getElementById("stats");
       statsContainer.innerHTML = `
