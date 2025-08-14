@@ -2,43 +2,43 @@
   {
     "day": 0,
     "dayName": "Sunday",
-    "hours": 1591.25,
-    "plays": 47357
+    "hours": 1274.08,
+    "plays": 24854
   },
   {
     "day": 1,
     "dayName": "Monday",
-    "hours": 1742.3,
-    "plays": 52176
+    "hours": 1432.3,
+    "plays": 27588
   },
   {
     "day": 2,
     "dayName": "Tuesday",
-    "hours": 1754.04,
-    "plays": 50202
+    "hours": 1452.67,
+    "plays": 27755
   },
   {
     "day": 3,
     "dayName": "Wednesday",
-    "hours": 1759.82,
-    "plays": 49354
+    "hours": 1466.39,
+    "plays": 27781
   },
   {
     "day": 4,
     "dayName": "Thursday",
-    "hours": 1588.91,
-    "plays": 48217
+    "hours": 1308.51,
+    "plays": 25482
   },
   {
     "day": 5,
     "dayName": "Friday",
-    "hours": 1645.27,
-    "plays": 47074
+    "hours": 1362.49,
+    "plays": 26246
   },
   {
     "day": 6,
     "dayName": "Saturday",
-    "hours": 1533.39,
-    "plays": 46629
+    "hours": 1230.96,
+    "plays": 24150
   }
 ]

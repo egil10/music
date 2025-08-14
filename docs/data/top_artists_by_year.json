@@ -2,17 +2,17 @@
   "2015": [
     {
       "artist": "Unknown Artist",
-      "plays": 11409,
-      "hours": 290.22,
-      "firstPlay": "2015-06-05T14:13:26Z",
+      "plays": 5357,
+      "hours": 278.51,
+      "firstPlay": "2015-06-05T14:14:09Z",
       "lastPlay": "2015-12-31T19:44:19Z"
     }
   ],
   "2016": [
     {
       "artist": "Unknown Artist",
-      "plays": 32402,
-      "hours": 948.95,
+      "plays": 17712,
+      "hours": 916.21,
       "firstPlay": "2016-01-01T13:06:23Z",
       "lastPlay": "2016-12-31T22:33:00Z"
     }
@@ -20,8 +20,8 @@
   "2017": [
     {
       "artist": "Unknown Artist",
-      "plays": 51576,
-      "hours": 1308.74,
+      "plays": 24160,
+      "hours": 1208.58,
       "firstPlay": "2017-01-01T00:17:28Z",
       "lastPlay": "2017-12-31T22:24:05Z"
     }
@@ -29,8 +29,8 @@
   "2018": [
     {
       "artist": "Unknown Artist",
-      "plays": 35402,
-      "hours": 1021.06,
+      "plays": 16602,
+      "hours": 805.68,
       "firstPlay": "2017-12-31T23:30:36Z",
       "lastPlay": "2018-12-31T22:29:57Z"
     }
@@ -38,8 +38,8 @@
   "2019": [
     {
       "artist": "Unknown Artist",
-      "plays": 27260,
-      "hours": 938.71,
+      "plays": 14730,
+      "hours": 743.94,
       "firstPlay": "2018-12-31T23:18:22Z",
       "lastPlay": "2019-12-31T17:39:49Z"
     }
@@ -47,17 +47,17 @@
   "2020": [
     {
       "artist": "Unknown Artist",
-      "plays": 22989,
-      "hours": 773.36,
+      "plays": 11933,
+      "hours": 624.8,
       "firstPlay": "2020-01-01T09:58:18Z",
-      "lastPlay": "2020-12-30T15:00:51Z"
+      "lastPlay": "2020-12-30T13:31:17Z"
     }
   ],
   "2021": [
     {
       "artist": "Unknown Artist",
-      "plays": 23054,
-      "hours": 969.27,
+      "plays": 13107,
+      "hours": 724.85,
       "firstPlay": "2021-01-01T18:46:23Z",
       "lastPlay": "2021-12-31T22:58:22Z"
     }
@@ -65,8 +65,8 @@
   "2022": [
     {
       "artist": "Unknown Artist",
-      "plays": 24204,
-      "hours": 1035.57,
+      "plays": 15548,
+      "hours": 845.46,
       "firstPlay": "2021-12-31T23:00:42Z",
       "lastPlay": "2022-12-31T21:45:38Z"
     }
@@ -74,8 +74,8 @@
   "2023": [
     {
       "artist": "Unknown Artist",
-      "plays": 38097,
-      "hours": 1533.65,
+      "plays": 22783,
+      "hours": 1202.83,
       "firstPlay": "2022-12-31T23:38:15Z",
       "lastPlay": "2023-12-31T22:40:01Z"
     }
@@ -83,668 +83,626 @@
   "2024": [
     {
       "artist": "Unknown Artist",
-      "plays": 34095,
-      "hours": 1421.81,
+      "plays": 19049,
+      "hours": 989.56,
       "firstPlay": "2023-12-31T23:40:13Z",
       "lastPlay": "2024-12-31T16:45:24Z"
     },
     {
       "artist": "Jan Eggum",
-      "plays": 2768,
-      "hours": 96.07,
+      "plays": 1864,
+      "hours": 94.13,
       "firstPlay": "2024-03-15 05:51",
-      "lastPlay": "2024-12-19 23:14"
+      "lastPlay": "2024-12-18 20:06"
     },
     {
       "artist": "Jonas Alaska",
-      "plays": 841,
-      "hours": 33.2,
+      "plays": 634,
+      "hours": 32.65,
       "firstPlay": "2024-03-25 08:53",
       "lastPlay": "2024-12-20 12:23"
     },
     {
-      "artist": "Benny Sings",
-      "plays": 808,
-      "hours": 26.41,
-      "firstPlay": "2024-03-19 09:12",
-      "lastPlay": "2024-12-27 23:16"
-    },
-    {
       "artist": "Khruangbin",
-      "plays": 666,
-      "hours": 26.26,
+      "plays": 491,
+      "hours": 25.94,
       "firstPlay": "2024-03-15 06:51",
       "lastPlay": "2024-12-28 13:45"
     },
     {
+      "artist": "Benny Sings",
+      "plays": 561,
+      "hours": 25.85,
+      "firstPlay": "2024-03-19 09:19",
+      "lastPlay": "2024-12-27 23:16"
+    },
+    {
       "artist": "Susanne Sundfør",
-      "plays": 462,
-      "hours": 18.86,
+      "plays": 294,
+      "hours": 18.25,
       "firstPlay": "2024-03-28 12:53",
-      "lastPlay": "2024-12-17 17:34"
+      "lastPlay": "2024-12-15 12:07"
+    },
+    {
+      "artist": "Papooz",
+      "plays": 360,
+      "hours": 16.83,
+      "firstPlay": "2024-03-22 03:40",
+      "lastPlay": "2024-12-13 16:49"
     },
     {
       "artist": "Dire Straits",
-      "plays": 386,
-      "hours": 18.11,
+      "plays": 216,
+      "hours": 15.45,
       "firstPlay": "2024-03-17 03:13",
       "lastPlay": "2024-12-31 12:48"
     },
     {
-      "artist": "Papooz",
-      "plays": 545,
-      "hours": 17.23,
-      "firstPlay": "2024-03-22 03:40",
-      "lastPlay": "2024-12-16 01:04"
-    },
-    {
       "artist": "Bee Gees",
-      "plays": 483,
-      "hours": 14.4,
+      "plays": 283,
+      "hours": 13.91,
       "firstPlay": "2024-03-15 05:11",
       "lastPlay": "2024-12-27 22:01"
     },
     {
       "artist": "Ludwig Göransson",
-      "plays": 245,
-      "hours": 13.51,
-      "firstPlay": "2024-08-17 21:37",
+      "plays": 221,
+      "hours": 13.21,
+      "firstPlay": "2024-08-17 21:42",
       "lastPlay": "2024-12-03 14:57"
     },
     {
       "artist": "Daft Punk",
-      "plays": 343,
-      "hours": 10.47,
-      "firstPlay": "2024-03-15 02:30",
-      "lastPlay": "2024-12-31 13:31"
+      "plays": 158,
+      "hours": 10.05,
+      "firstPlay": "2024-03-16 11:33",
+      "lastPlay": "2024-12-30 12:36"
     },
     {
       "artist": "The War On Drugs",
-      "plays": 174,
-      "hours": 8.76,
+      "plays": 96,
+      "hours": 7.87,
       "firstPlay": "2024-03-19 04:38",
       "lastPlay": "2024-12-26 17:38"
     },
     {
       "artist": "Sondre Lerche",
-      "plays": 195,
-      "hours": 8.75,
+      "plays": 123,
+      "hours": 7.35,
       "firstPlay": "2024-03-16 09:26",
       "lastPlay": "2024-12-28 16:37"
     },
     {
       "artist": "Jacob Collier",
-      "plays": 189,
-      "hours": 7.47,
-      "firstPlay": "2024-04-12 01:40",
+      "plays": 119,
+      "hours": 7.31,
+      "firstPlay": "2024-04-12 05:31",
       "lastPlay": "2024-12-30 12:38"
     },
     {
       "artist": "Frédéric Chopin",
-      "plays": 148,
-      "hours": 7.16,
+      "plays": 108,
+      "hours": 7.09,
       "firstPlay": "2024-03-25 14:18",
-      "lastPlay": "2024-12-19 23:10"
+      "lastPlay": "2024-11-22 21:07"
     },
     {
       "artist": "Pish",
-      "plays": 155,
-      "hours": 6.91,
+      "plays": 136,
+      "hours": 6.85,
       "firstPlay": "2024-05-06 17:19",
       "lastPlay": "2024-12-30 12:15"
     },
     {
+      "artist": "Parcels",
+      "plays": 120,
+      "hours": 6.47,
+      "firstPlay": "2024-03-21 00:46",
+      "lastPlay": "2024-12-31 15:48"
+    },
+    {
       "artist": "deadmau5",
-      "plays": 212,
-      "hours": 6.81,
+      "plays": 112,
+      "hours": 6.25,
       "firstPlay": "2024-03-21 07:36",
       "lastPlay": "2024-12-31 15:41"
     },
     {
-      "artist": "Parcels",
-      "plays": 229,
-      "hours": 6.66,
-      "firstPlay": "2024-03-18 00:45",
-      "lastPlay": "2024-12-31 15:48"
-    },
-    {
       "artist": "The Beatles",
-      "plays": 324,
-      "hours": 5.95,
-      "firstPlay": "2024-03-15 04:35",
+      "plays": 134,
+      "hours": 5.62,
+      "firstPlay": "2024-03-15 04:59",
       "lastPlay": "2024-12-26 15:22"
     },
     {
-      "artist": "Johannes Brahms",
-      "plays": 53,
-      "hours": 5.57,
-      "firstPlay": "2024-05-20 15:59",
-      "lastPlay": "2024-12-11 17:47"
-    },
-    {
       "artist": "Laufey",
-      "plays": 177,
-      "hours": 5.38,
+      "plays": 111,
+      "hours": 5.24,
       "firstPlay": "2024-03-15 03:34",
       "lastPlay": "2024-12-19 16:15"
     },
     {
       "artist": "L'Impératrice",
-      "plays": 166,
-      "hours": 5.38,
+      "plays": 105,
+      "hours": 5.22,
       "firstPlay": "2024-03-19 03:03",
-      "lastPlay": "2024-12-27 13:49"
+      "lastPlay": "2024-12-12 16:47"
     },
     {
       "artist": "Chicago",
-      "plays": 152,
-      "hours": 5.3,
+      "plays": 103,
+      "hours": 5.18,
       "firstPlay": "2024-04-20 04:22",
       "lastPlay": "2024-12-19 22:39"
     },
     {
       "artist": "Kakkmaddafakka",
-      "plays": 149,
-      "hours": 5.17,
+      "plays": 96,
+      "hours": 5.08,
       "firstPlay": "2024-03-18 09:00",
       "lastPlay": "2024-12-31 12:35"
     },
     {
       "artist": "Espen Eriksen Trio",
-      "plays": 91,
-      "hours": 5.11,
+      "plays": 67,
+      "hours": 5.07,
       "firstPlay": "2024-04-23 05:59",
-      "lastPlay": "2024-12-19 23:13"
+      "lastPlay": "2024-11-20 14:06"
     },
     {
       "artist": "Bjørn Eidsvåg",
-      "plays": 138,
-      "hours": 5.07,
+      "plays": 107,
+      "hours": 5,
       "firstPlay": "2024-03-16 07:07",
       "lastPlay": "2024-12-31 12:49"
     },
     {
       "artist": "St. Paul & The Broken Bones",
-      "plays": 116,
-      "hours": 5,
+      "plays": 83,
+      "hours": 4.93,
       "firstPlay": "2024-05-06 17:34",
       "lastPlay": "2024-12-30 01:28"
     },
     {
       "artist": "Gus Dapperton",
-      "plays": 156,
-      "hours": 4.9,
+      "plays": 101,
+      "hours": 4.79,
       "firstPlay": "2024-03-16 07:59",
       "lastPlay": "2024-12-31 12:32"
     },
     {
       "artist": "Elton John",
-      "plays": 132,
-      "hours": 4.6,
+      "plays": 77,
+      "hours": 4.52,
       "firstPlay": "2024-03-15 03:27",
       "lastPlay": "2024-12-31 15:42"
     },
     {
       "artist": "Bobby Caldwell",
-      "plays": 152,
-      "hours": 4.57,
+      "plays": 88,
+      "hours": 4.42,
       "firstPlay": "2024-03-15 03:06",
-      "lastPlay": "2024-12-19 13:27"
+      "lastPlay": "2024-12-17 16:06"
     },
     {
       "artist": "Maroon 5",
-      "plays": 125,
-      "hours": 4.25,
+      "plays": 83,
+      "hours": 4.15,
       "firstPlay": "2024-03-25 09:09",
       "lastPlay": "2024-12-20 12:21"
     },
     {
       "artist": "Frank Ocean",
-      "plays": 197,
-      "hours": 4.17,
+      "plays": 80,
+      "hours": 4.01,
       "firstPlay": "2024-03-19 03:44",
-      "lastPlay": "2024-12-31 12:24"
+      "lastPlay": "2024-12-27 20:34"
+    },
+    {
+      "artist": "Claude Debussy",
+      "plays": 52,
+      "hours": 3.82,
+      "firstPlay": "2024-03-28 11:11",
+      "lastPlay": "2024-11-11 16:30"
     },
     {
       "artist": "Röyksopp",
-      "plays": 80,
-      "hours": 3.88,
+      "plays": 52,
+      "hours": 3.81,
       "firstPlay": "2024-06-21 05:27",
       "lastPlay": "2024-12-12 19:14"
     },
     {
-      "artist": "Claude Debussy",
-      "plays": 77,
-      "hours": 3.87,
-      "firstPlay": "2024-03-28 11:11",
-      "lastPlay": "2024-12-12 15:56"
-    },
-    {
       "artist": "Post Malone",
-      "plays": 159,
-      "hours": 3.76,
-      "firstPlay": "2024-03-20 00:49",
+      "plays": 72,
+      "hours": 3.65,
+      "firstPlay": "2024-03-21 03:27",
       "lastPlay": "2024-12-27 20:49"
     },
     {
-      "artist": "CHIC",
-      "plays": 116,
-      "hours": 3.61,
-      "firstPlay": "2024-03-15 01:18",
-      "lastPlay": "2024-12-28 13:26"
-    },
-    {
-      "artist": "Michael Jackson",
-      "plays": 105,
-      "hours": 3.61,
-      "firstPlay": "2024-03-18 15:46",
-      "lastPlay": "2024-12-28 02:11"
-    },
-    {
       "artist": "Gabrielle",
-      "plays": 81,
-      "hours": 3.61,
-      "firstPlay": "2024-08-01 08:17",
+      "plays": 72,
+      "hours": 3.6,
+      "firstPlay": "2024-08-01 08:21",
       "lastPlay": "2024-09-17 12:23"
     },
     {
       "artist": "Fagernes Yacht Klubb",
-      "plays": 68,
-      "hours": 3.57,
+      "plays": 56,
+      "hours": 3.55,
       "firstPlay": "2024-05-15 01:57",
       "lastPlay": "2024-12-27 20:33"
     },
     {
-      "artist": "Calvin Harris",
-      "plays": 110,
+      "artist": "Michael Jackson",
+      "plays": 62,
       "hours": 3.51,
+      "firstPlay": "2024-03-18 15:46",
+      "lastPlay": "2024-12-20 21:24"
+    },
+    {
+      "artist": "CHIC",
+      "plays": 58,
+      "hours": 3.48,
+      "firstPlay": "2024-03-15 01:18",
+      "lastPlay": "2024-12-19 15:49"
+    },
+    {
+      "artist": "Calvin Harris",
+      "plays": 79,
+      "hours": 3.44,
       "firstPlay": "2024-03-18 05:13",
       "lastPlay": "2024-12-15 19:10"
     },
     {
       "artist": "TOTO",
-      "plays": 93,
-      "hours": 3.38,
+      "plays": 58,
+      "hours": 3.29,
       "firstPlay": "2024-04-09 08:49",
-      "lastPlay": "2024-12-08 13:37"
+      "lastPlay": "2024-10-29 17:06"
     },
     {
       "artist": "The Strokes",
-      "plays": 110,
-      "hours": 3.16,
-      "firstPlay": "2024-03-27 11:20",
+      "plays": 59,
+      "hours": 3.01,
+      "firstPlay": "2024-03-27 11:31",
       "lastPlay": "2024-12-30 12:17"
     },
     {
       "artist": "Sabrina Carpenter",
-      "plays": 100,
-      "hours": 3.07,
+      "plays": 73,
+      "hours": 3.01,
       "firstPlay": "2024-04-14 15:57",
-      "lastPlay": "2024-12-26 20:38"
+      "lastPlay": "2024-12-21 14:38"
     },
     {
       "artist": "Eagles",
-      "plays": 83,
-      "hours": 3.03,
-      "firstPlay": "2024-03-15 02:20",
-      "lastPlay": "2024-12-31 12:32"
+      "plays": 45,
+      "hours": 2.96,
+      "firstPlay": "2024-03-28 12:35",
+      "lastPlay": "2024-12-21 15:04"
     },
     {
       "artist": "The Weeknd",
-      "plays": 85,
-      "hours": 2.91,
-      "firstPlay": "2024-03-15 04:41",
+      "plays": 51,
+      "hours": 2.84,
+      "firstPlay": "2024-03-19 11:23",
       "lastPlay": "2024-12-26 15:26"
     },
     {
       "artist": "Lindsey Lomis",
-      "plays": 77,
-      "hours": 2.86,
-      "firstPlay": "2024-11-19 10:56",
-      "lastPlay": "2024-12-26 20:33"
-    },
-    {
-      "artist": "Pink Floyd",
-      "plays": 73,
+      "plays": 58,
       "hours": 2.81,
-      "firstPlay": "2024-03-18 08:42",
-      "lastPlay": "2024-12-21 15:42"
+      "firstPlay": "2024-11-19 10:56",
+      "lastPlay": "2024-12-26 17:40"
     },
     {
       "artist": "Fleetwood Mac",
-      "plays": 84,
-      "hours": 2.59,
+      "plays": 46,
+      "hours": 2.53,
       "firstPlay": "2024-03-27 02:39",
-      "lastPlay": "2024-12-19 22:22"
+      "lastPlay": "2024-12-17 15:50"
     },
     {
       "artist": "Highasakite",
-      "plays": 53,
-      "hours": 2.54,
+      "plays": 40,
+      "hours": 2.46,
       "firstPlay": "2024-03-16 07:11",
       "lastPlay": "2024-12-20 20:23"
     },
     {
       "artist": "Chet Baker",
-      "plays": 127,
-      "hours": 2.54,
-      "firstPlay": "2024-03-18 01:51",
-      "lastPlay": "2024-12-19 23:08"
+      "plays": 46,
+      "hours": 2.45,
+      "firstPlay": "2024-03-21 14:11",
+      "lastPlay": "2024-11-30 15:35"
+    },
+    {
+      "artist": "Serge Gainsbourg",
+      "plays": 49,
+      "hours": 2.45,
+      "firstPlay": "2024-06-26 05:15",
+      "lastPlay": "2024-12-12 16:35"
+    },
+    {
+      "artist": "Edvard Grieg",
+      "plays": 42,
+      "hours": 2.34,
+      "firstPlay": "2024-03-17 03:29",
+      "lastPlay": "2024-12-21 05:30"
     }
   ],
   "2025": [
     {
       "artist": "Unknown Artist",
-      "plays": 7130,
-      "hours": 338.65,
+      "plays": 3852,
+      "hours": 202.1,
       "firstPlay": "2025-01-01T16:06:41Z",
       "lastPlay": "2025-03-12T23:15:45Z"
     },
     {
       "artist": "Augustine",
-      "plays": 681,
-      "hours": 24.89,
+      "plays": 516,
+      "hours": 24.58,
       "firstPlay": "2025-01-01 18:56",
       "lastPlay": "2025-03-10 00:39"
     },
     {
       "artist": "Khruangbin",
-      "plays": 192,
-      "hours": 7.44,
-      "firstPlay": "2025-01-03 01:37",
+      "plays": 121,
+      "hours": 7.32,
+      "firstPlay": "2025-01-03 13:51",
       "lastPlay": "2025-03-12 17:20"
     },
     {
       "artist": "Jan Eggum",
-      "plays": 148,
-      "hours": 5.48,
+      "plays": 106,
+      "hours": 5.38,
       "firstPlay": "2025-01-02 14:01",
       "lastPlay": "2025-03-15 11:55"
     },
     {
       "artist": "Midnight Generation",
-      "plays": 122,
-      "hours": 4.93,
-      "firstPlay": "2025-01-23 19:01",
+      "plays": 84,
+      "hours": 4.85,
+      "firstPlay": "2025-01-23 22:44",
       "lastPlay": "2025-03-04 18:05"
     },
     {
       "artist": "Daft Punk",
-      "plays": 95,
-      "hours": 3.62,
+      "plays": 53,
+      "hours": 3.51,
       "firstPlay": "2025-01-02 14:37",
       "lastPlay": "2025-03-15 11:35"
     },
     {
       "artist": "The Beatles",
-      "plays": 120,
-      "hours": 2.9,
-      "firstPlay": "2025-01-03 13:07",
+      "plays": 65,
+      "hours": 2.81,
+      "firstPlay": "2025-01-03 14:37",
       "lastPlay": "2025-03-15 18:49"
     },
     {
-      "artist": "Max Bruch",
-      "plays": 24,
-      "hours": 2.44,
-      "firstPlay": "2025-02-02 14:00",
-      "lastPlay": "2025-02-03 14:23"
-    },
-    {
-      "artist": "Erik Satie",
-      "plays": 43,
-      "hours": 2,
-      "firstPlay": "2025-01-18 15:29",
-      "lastPlay": "2025-02-25 15:08"
+      "artist": "Kakkmaddafakka",
+      "plays": 33,
+      "hours": 1.61,
+      "firstPlay": "2025-01-01 20:39",
+      "lastPlay": "2025-03-15 15:50"
     },
     {
       "artist": "Dire Straits",
-      "plays": 31,
-      "hours": 1.7,
+      "plays": 20,
+      "hours": 1.57,
       "firstPlay": "2025-01-03 17:40",
       "lastPlay": "2025-03-14 14:40"
     },
     {
-      "artist": "Kakkmaddafakka",
-      "plays": 54,
-      "hours": 1.65,
-      "firstPlay": "2025-01-01 20:34",
-      "lastPlay": "2025-03-15 15:50"
+      "artist": "Erik Satie",
+      "plays": 35,
+      "hours": 1.57,
+      "firstPlay": "2025-01-18 15:29",
+      "lastPlay": "2025-02-13 12:19"
     },
     {
       "artist": "Parcels",
-      "plays": 54,
-      "hours": 1.58,
-      "firstPlay": "2025-01-07 09:41",
-      "lastPlay": "2025-03-15 10:41"
+      "plays": 30,
+      "hours": 1.55,
+      "firstPlay": "2025-01-08 07:24",
+      "lastPlay": "2025-03-14 21:23"
     },
     {
-      "artist": "Frank Ocean",
-      "plays": 64,
-      "hours": 1.52,
-      "firstPlay": "2025-01-02 13:48",
-      "lastPlay": "2025-03-15 16:20"
+      "artist": "Max Bruch",
+      "plays": 17,
+      "hours": 1.55,
+      "firstPlay": "2025-02-02 14:23",
+      "lastPlay": "2025-02-02 16:36"
     },
     {
       "artist": "Connan Mockasin",
-      "plays": 16,
+      "plays": 13,
       "hours": 1.52,
       "firstPlay": "2025-02-10 15:42",
       "lastPlay": "2025-03-07 19:34"
     },
     {
+      "artist": "Frank Ocean",
+      "plays": 30,
+      "hours": 1.46,
+      "firstPlay": "2025-01-02 13:48",
+      "lastPlay": "2025-03-15 16:20"
+    },
+    {
       "artist": "Bee Gees",
-      "plays": 40,
-      "hours": 1.42,
-      "firstPlay": "2025-01-04 12:23",
+      "plays": 26,
+      "hours": 1.39,
+      "firstPlay": "2025-01-07 18:14",
       "lastPlay": "2025-03-15 11:46"
     },
     {
       "artist": "TOTO",
-      "plays": 41,
-      "hours": 1.4,
+      "plays": 27,
+      "hours": 1.38,
       "firstPlay": "2025-01-12 22:07",
       "lastPlay": "2025-03-12 23:02"
     },
     {
       "artist": "Oddny",
-      "plays": 24,
-      "hours": 1.36,
-      "firstPlay": "2025-01-09 21:58",
+      "plays": 21,
+      "hours": 1.35,
+      "firstPlay": "2025-02-17 09:09",
       "lastPlay": "2025-03-14 18:30"
     },
     {
       "artist": "Gus Dapperton",
-      "plays": 40,
-      "hours": 1.19,
+      "plays": 23,
+      "hours": 1.16,
       "firstPlay": "2025-01-02 14:11",
       "lastPlay": "2025-03-14 17:03"
     },
     {
       "artist": "Gabriel Fauré",
-      "plays": 19,
-      "hours": 1.16,
-      "firstPlay": "2025-02-07 16:36",
-      "lastPlay": "2025-02-27 15:29"
+      "plays": 17,
+      "hours": 1.15,
+      "firstPlay": "2025-02-07 16:39",
+      "lastPlay": "2025-02-23 19:16"
     },
     {
       "artist": "Lucky Lo",
-      "plays": 19,
-      "hours": 1.14,
-      "firstPlay": "2025-03-11 16:06",
+      "plays": 16,
+      "hours": 1.13,
+      "firstPlay": "2025-03-12 12:28",
       "lastPlay": "2025-03-15 17:51"
     },
     {
       "artist": "Drake",
-      "plays": 26,
-      "hours": 1.12,
+      "plays": 18,
+      "hours": 1.11,
       "firstPlay": "2025-01-03 18:59",
       "lastPlay": "2025-03-15 12:53"
     },
     {
       "artist": "Elton John",
-      "plays": 36,
-      "hours": 1.11,
+      "plays": 21,
+      "hours": 1.08,
       "firstPlay": "2025-01-03 12:52",
       "lastPlay": "2025-03-15 11:42"
     },
     {
       "artist": "David Bowie",
-      "plays": 31,
-      "hours": 1.11,
+      "plays": 14,
+      "hours": 1.08,
       "firstPlay": "2025-01-03 16:13",
       "lastPlay": "2025-03-15 10:31"
     },
     {
       "artist": "CHIC",
-      "plays": 29,
-      "hours": 1.1,
-      "firstPlay": "2025-01-03 20:25",
+      "plays": 16,
+      "hours": 1.07,
+      "firstPlay": "2025-01-04 14:04",
       "lastPlay": "2025-03-14 09:39"
     },
     {
       "artist": "Khalid",
-      "plays": 34,
-      "hours": 1.05,
-      "firstPlay": "2025-01-04 12:23",
+      "plays": 22,
+      "hours": 1.04,
+      "firstPlay": "2025-01-04 12:25",
       "lastPlay": "2025-03-14 10:01"
     },
     {
       "artist": "Pish",
-      "plays": 24,
-      "hours": 1.03,
+      "plays": 20,
+      "hours": 1.02,
       "firstPlay": "2025-01-03 14:24",
       "lastPlay": "2025-03-13 17:24"
     },
     {
-      "artist": "Michael Jackson",
-      "plays": 32,
-      "hours": 1.02,
-      "firstPlay": "2025-01-04 12:23",
-      "lastPlay": "2025-03-15 18:24"
-    },
-    {
       "artist": "Jonas Alaska",
-      "plays": 22,
-      "hours": 1.02,
+      "plays": 17,
+      "hours": 1,
       "firstPlay": "2025-01-20 21:34",
       "lastPlay": "2025-03-14 20:44"
     },
     {
-      "artist": "Post Malone",
-      "plays": 39,
-      "hours": 0.95,
-      "firstPlay": "2025-01-03 14:28",
-      "lastPlay": "2025-03-13 19:05"
+      "artist": "Michael Jackson",
+      "plays": 15,
+      "hours": 0.98,
+      "firstPlay": "2025-01-09 07:49",
+      "lastPlay": "2025-03-15 18:24"
     },
     {
       "artist": "Queen",
-      "plays": 25,
-      "hours": 0.95,
+      "plays": 15,
+      "hours": 0.94,
       "firstPlay": "2025-01-03 21:47",
       "lastPlay": "2025-03-14 17:54"
     },
     {
+      "artist": "Post Malone",
+      "plays": 19,
+      "hours": 0.92,
+      "firstPlay": "2025-01-05 00:32",
+      "lastPlay": "2025-03-13 19:05"
+    },
+    {
       "artist": "Steely Dan",
-      "plays": 15,
+      "plays": 11,
       "hours": 0.9,
       "firstPlay": "2025-01-13 12:40",
       "lastPlay": "2025-03-15 16:09"
     },
     {
       "artist": "Johann Sebastian Bach",
-      "plays": 13,
+      "plays": 10,
       "hours": 0.89,
       "firstPlay": "2025-01-03 21:24",
       "lastPlay": "2025-03-12 18:09"
     },
     {
-      "artist": "Richard Strauss",
-      "plays": 18,
-      "hours": 0.88,
-      "firstPlay": "2025-01-17 10:55",
-      "lastPlay": "2025-02-07 15:22"
-    },
-    {
-      "artist": "Pink Floyd",
-      "plays": 27,
-      "hours": 0.83,
-      "firstPlay": "2025-01-02 14:08",
-      "lastPlay": "2025-03-14 22:19"
-    },
-    {
       "artist": "Benny Sings",
-      "plays": 20,
-      "hours": 0.8,
+      "plays": 19,
+      "hours": 0.79,
       "firstPlay": "2025-01-06 11:59",
       "lastPlay": "2025-03-13 18:20"
     },
     {
       "artist": "Broken Bells",
-      "plays": 10,
-      "hours": 0.8,
+      "plays": 7,
+      "hours": 0.79,
       "firstPlay": "2025-02-11 14:27",
       "lastPlay": "2025-02-17 22:19"
     },
     {
       "artist": "Serge Gainsbourg",
-      "plays": 38,
-      "hours": 0.79,
+      "plays": 18,
+      "hours": 0.76,
       "firstPlay": "2025-01-06 20:12",
       "lastPlay": "2025-03-04 16:42"
     },
     {
       "artist": "Sondre Lerche",
-      "plays": 19,
-      "hours": 0.74,
-      "firstPlay": "2025-01-10 09:08",
-      "lastPlay": "2025-03-15 15:43"
+      "plays": 12,
+      "hours": 0.73,
+      "firstPlay": "2025-01-19 16:18",
+      "lastPlay": "2025-03-14 18:49"
     },
     {
       "artist": "Paul McCartney",
-      "plays": 20,
-      "hours": 0.74,
+      "plays": 11,
+      "hours": 0.72,
       "firstPlay": "2025-01-13 09:33",
       "lastPlay": "2025-03-15 18:07"
     },
     {
-      "artist": "Johannes Brahms",
-      "plays": 8,
-      "hours": 0.73,
-      "firstPlay": "2025-01-18 15:15",
-      "lastPlay": "2025-01-31 16:41"
-    },
-    {
-      "artist": "Unknown Mortal Orchestra",
-      "plays": 21,
-      "hours": 0.72,
-      "firstPlay": "2025-01-07 18:21",
-      "lastPlay": "2025-03-15 11:17"
-    },
-    {
-      "artist": "Georges Bizet",
-      "plays": 24,
-      "hours": 0.71,
-      "firstPlay": "2025-02-03 17:35",
-      "lastPlay": "2025-02-07 13:26"
-    },
-    {
-      "artist": "Fleetwood Mac",
-      "plays": 23,
-      "hours": 0.7,
-      "firstPlay": "2025-01-10 07:44",
-      "lastPlay": "2025-03-13 16:34"
-    },
-    {
       "artist": "Kanye West",
-      "plays": 22,
-      "hours": 0.69,
+      "plays": 13,
+      "hours": 0.68,
       "firstPlay": "2025-01-01 20:42",
       "lastPlay": "2025-03-14 21:46"
     },
     {
       "artist": "Sophie Ellis-Bextor",
-      "plays": 17,
-      "hours": 0.69,
+      "plays": 14,
+      "hours": 0.68,
       "firstPlay": "2025-01-03 12:51",
       "lastPlay": "2025-03-12 21:44"
     },
@@ -756,32 +714,74 @@
       "lastPlay": "2025-02-27 14:15"
     },
     {
-      "artist": "Vansire",
-      "plays": 18,
+      "artist": "Fleetwood Mac",
+      "plays": 12,
+      "hours": 0.68,
+      "firstPlay": "2025-02-07 22:28",
+      "lastPlay": "2025-03-12 17:53"
+    },
+    {
+      "artist": "Georges Bizet",
+      "plays": 14,
       "hours": 0.67,
-      "firstPlay": "2025-01-03 20:21",
-      "lastPlay": "2025-03-14 21:26"
+      "firstPlay": "2025-02-03 17:38",
+      "lastPlay": "2025-02-07 12:25"
     },
     {
       "artist": "The War On Drugs",
-      "plays": 21,
+      "plays": 12,
       "hours": 0.66,
       "firstPlay": "2025-01-03 21:41",
       "lastPlay": "2025-03-13 16:51"
     },
     {
-      "artist": "Eagles",
-      "plays": 27,
+      "artist": "Vansire",
+      "plays": 13,
       "hours": 0.65,
-      "firstPlay": "2025-01-09 22:16",
-      "lastPlay": "2025-03-14 09:00"
+      "firstPlay": "2025-01-03 20:21",
+      "lastPlay": "2025-03-14 21:26"
     },
     {
       "artist": "Chet Baker",
-      "plays": 18,
-      "hours": 0.64,
+      "plays": 12,
+      "hours": 0.63,
       "firstPlay": "2025-01-08 14:44",
       "lastPlay": "2025-03-15 12:34"
+    },
+    {
+      "artist": "Eagles",
+      "plays": 8,
+      "hours": 0.63,
+      "firstPlay": "2025-01-09 22:16",
+      "lastPlay": "2025-03-06 11:41"
+    },
+    {
+      "artist": "Chicago",
+      "plays": 12,
+      "hours": 0.62,
+      "firstPlay": "2025-02-03 19:47",
+      "lastPlay": "2025-03-15 14:29"
+    },
+    {
+      "artist": "Richard Strauss",
+      "plays": 10,
+      "hours": 0.62,
+      "firstPlay": "2025-02-07 13:28",
+      "lastPlay": "2025-02-07 15:21"
+    },
+    {
+      "artist": "M83",
+      "plays": 10,
+      "hours": 0.62,
+      "firstPlay": "2025-03-03 09:28",
+      "lastPlay": "2025-03-13 17:55"
+    },
+    {
+      "artist": "Pink Floyd",
+      "plays": 12,
+      "hours": 0.59,
+      "firstPlay": "2025-01-02 14:08",
+      "lastPlay": "2025-03-05 11:36"
     }
   ]
 }

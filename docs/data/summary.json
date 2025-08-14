@@ -1,7 +1,7 @@
 {
-  "total_ms": 41813915835,
-  "total_hours": 11614.98,
-  "total_plays": 341009,
+  "total_ms": 34298683523,
+  "total_hours": 9527.41,
+  "total_plays": 183856,
   "years": [
     "2015",
     "2016",
@@ -20,9 +20,30 @@
     "earliest": "2015-06-05",
     "latest": "2025-03-15"
   },
-  "unique_artists": 2548,
-  "unique_tracks": 42746,
-  "unique_albums": 27302,
-  "listening_sessions": 14057,
-  "longest_session_hours": 38.64
+  "unique_artists": 1889,
+  "unique_tracks": 25972,
+  "unique_albums": 16091,
+  "listening_sessions": 12377,
+  "longest_session_hours": 37.93,
+  "filtering_stats": {
+    "original_items": 349704,
+    "filtered_items": 183856,
+    "excluded_items": 165848,
+    "exclusion_breakdown": {
+      "manual_artist_exclusion": 15,
+      "manual_track_exclusion": 1277,
+      "manual_keyword_exclusion": 938,
+      "unknown_metadata": 86,
+      "too_short": 160114,
+      "too_long": 303,
+      "outlier_zscore": 2264,
+      "outlier_percentile": 851
+    }
+  },
+  "outlier_detection": {
+    "mean_play_time_minutes": 2.04,
+    "std_dev_minutes": 4.07,
+    "percentile_95_minutes": 5.1,
+    "percentile_99_minutes": 9.88
+  }
 }

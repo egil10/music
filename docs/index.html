@@ -552,6 +552,177 @@
       align-items: center;
       gap: 4px;
     }
+
+    /* Outlier Analysis Styles */
+    .outlier-analysis {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .outlier-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .outlier-stat-card {
+      background: var(--spotify-light);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      border: 1px solid var(--spotify-lighter);
+      transition: var(--transition-normal);
+    }
+
+    .outlier-stat-card:hover {
+      border-color: var(--spotify-green);
+      transform: translateY(-2px);
+    }
+
+    .outlier-stat-value {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--spotify-green);
+      margin-bottom: 0.5rem;
+    }
+
+    .outlier-stat-label {
+      color: var(--spotify-text-secondary);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .outlier-stat-detail {
+      color: var(--spotify-text-secondary);
+      font-size: 0.8rem;
+      margin-top: 0.5rem;
+    }
+
+    .filtering-controls {
+      background: var(--spotify-light);
+      border-radius: 16px;
+      padding: 2rem;
+      border: 1px solid var(--spotify-lighter);
+    }
+
+    .filtering-controls h3 {
+      color: var(--spotify-text);
+      margin-bottom: 1.5rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
+    .filter-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .filter-option {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      cursor: pointer;
+      padding: 0.75rem;
+      border-radius: 8px;
+      transition: var(--transition-fast);
+      color: var(--spotify-text);
+    }
+
+    .filter-option:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .filter-option input[type="checkbox"] {
+      display: none;
+    }
+
+    .checkmark {
+      width: 20px;
+      height: 20px;
+      border: 2px solid var(--spotify-lighter);
+      border-radius: 4px;
+      position: relative;
+      transition: var(--transition-fast);
+    }
+
+    .filter-option input[type="checkbox"]:checked + .checkmark {
+      background: var(--spotify-green);
+      border-color: var(--spotify-green);
+    }
+
+    .filter-option input[type="checkbox"]:checked + .checkmark::after {
+      content: '✓';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .reset-button {
+      background: var(--gradient-secondary);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition-normal);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .reset-button:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .exclusion-breakdown {
+      background: var(--spotify-light);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-top: 1rem;
+      border: 1px solid var(--spotify-lighter);
+    }
+
+    .exclusion-breakdown h4 {
+      color: var(--spotify-text);
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .exclusion-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.5rem;
+    }
+
+    .exclusion-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+
+    .exclusion-reason {
+      color: var(--spotify-text-secondary);
+    }
+
+    .exclusion-count {
+      color: var(--spotify-green);
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
@@ -712,6 +883,40 @@
         </div>
       </section>
 
+      <!-- Data Quality & Outlier Analysis -->
+      <section class="section">
+        <h2 class="section-title">Data Quality & Outlier Analysis</h2>
+        <div class="outlier-analysis">
+          <div class="outlier-stats" id="outlier-stats">
+            <!-- Outlier statistics will be populated here -->
+          </div>
+          <div class="filtering-controls">
+            <h3>Filtering Controls</h3>
+            <div class="filter-options">
+              <label class="filter-option">
+                <input type="checkbox" id="showOutliers" checked>
+                <span class="checkmark"></span>
+                Show Outlier Analysis
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" id="excludeUnknown" checked>
+                <span class="checkmark"></span>
+                Exclude Unknown Metadata
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" id="applyZScore" checked>
+                <span class="checkmark"></span>
+                Apply Z-Score Filtering
+              </label>
+            </div>
+            <button id="resetFilters" class="reset-button">
+              <i class="fas fa-undo"></i>
+              Reset All Filters
+            </button>
+          </div>
+        </div>
+      </section>
+
       <!-- Music Library Explorer -->
       <section class="section">
         <h2 class="section-title">Music Library Explorer</h2>
@@ -833,8 +1038,11 @@
         createArtistLongevityChart(topArtistsByYear);
         createMoodQuadrantChart(topTracksAllTime);
 
-        // Initialize search functionality
-        initializeSearch(topArtistsAllTime, topTracksAllTime, topAlbums);
+            // Initialize search functionality
+    initializeSearch(topArtistsAllTime, topTracksAllTime, topAlbums);
+
+    // Initialize outlier analysis and filtering controls
+    initializeOutlierAnalysis(summary);
 
         // Smooth scroll to dashboard
         document.querySelector('.dashboard').scrollIntoView({ 
@@ -1626,12 +1834,140 @@
         }
       });
       
-      // Initialize with empty state
-      searchResults.innerHTML = '<p>Enter a search term to find artists, tracks, or albums...</p>';
+          // Initialize with empty state
+    searchResults.innerHTML = '<p>Enter a search term to find artists, tracks, or albums...</p>';
+  }
+
+  // Outlier Analysis and Filtering Functions
+  function initializeOutlierAnalysis(summary) {
+    const outlierStats = document.getElementById('outlier-stats');
+    
+    if (!summary.filtering_stats) {
+      outlierStats.innerHTML = '<p>No filtering data available</p>';
+      return;
     }
 
-    // Start the dashboard
-    loadDashboard();
+    const stats = summary.filtering_stats;
+    const outlierData = summary.outlier_detection;
+
+    outlierStats.innerHTML = `
+      <div class="outlier-stat-card">
+        <div class="outlier-stat-value">${stats.original_items.toLocaleString()}</div>
+        <div class="outlier-stat-label">Original Items</div>
+        <div class="outlier-stat-detail">Total streaming entries</div>
+      </div>
+      <div class="outlier-stat-card">
+        <div class="outlier-stat-value">${stats.filtered_items.toLocaleString()}</div>
+        <div class="outlier-stat-label">Filtered Items</div>
+        <div class="outlier-stat-detail">After outlier removal</div>
+      </div>
+      <div class="outlier-stat-card">
+        <div class="outlier-stat-value">${stats.excluded_items.toLocaleString()}</div>
+        <div class="outlier-stat-label">Excluded Items</div>
+        <div class="outlier-stat-detail">Removed as outliers</div>
+      </div>
+      <div class="outlier-stat-card">
+        <div class="outlier-stat-value">${((stats.filtered_items / stats.original_items) * 100).toFixed(1)}%</div>
+        <div class="outlier-stat-label">Data Retention</div>
+        <div class="outlier-stat-detail">Percentage kept</div>
+      </div>
+      <div class="outlier-stat-card">
+        <div class="outlier-stat-value">${outlierData.mean_play_time_minutes}</div>
+        <div class="outlier-stat-label">Mean Play Time</div>
+        <div class="outlier-stat-detail">Minutes per track</div>
+      </div>
+      <div class="outlier-stat-card">
+        <div class="outlier-stat-value">${outlierData.percentile_99_minutes}</div>
+        <div class="outlier-stat-label">99th Percentile</div>
+        <div class="outlier-stat-detail">Cap threshold (min)</div>
+      </div>
+    `;
+
+    // Add exclusion breakdown
+    const exclusionBreakdown = document.createElement('div');
+    exclusionBreakdown.className = 'exclusion-breakdown';
+    exclusionBreakdown.innerHTML = `
+      <h4>Exclusion Breakdown</h4>
+      <div class="exclusion-list">
+        ${Object.entries(stats.exclusion_breakdown)
+          .filter(([reason, count]) => count > 0)
+          .map(([reason, count]) => `
+            <div class="exclusion-item">
+              <span class="exclusion-reason">${formatExclusionReason(reason)}</span>
+              <span class="exclusion-count">${count.toLocaleString()}</span>
+            </div>
+          `).join('')}
+      </div>
+    `;
+    
+    outlierStats.appendChild(exclusionBreakdown);
+
+    // Initialize filtering controls
+    initializeFilteringControls();
+  }
+
+  function formatExclusionReason(reason) {
+    const reasons = {
+      'manual_artist_exclusion': 'Manual Artist Exclusion',
+      'manual_track_exclusion': 'Manual Track Exclusion',
+      'manual_keyword_exclusion': 'Manual Keyword Exclusion',
+      'unknown_metadata': 'Unknown Metadata',
+      'too_short': 'Too Short (< 30s)',
+      'too_long': 'Too Long (> 1h)',
+      'outlier_zscore': 'Z-Score Outlier',
+      'outlier_percentile': 'Percentile Outlier'
+    };
+    return reasons[reason] || reason.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+  }
+
+  function initializeFilteringControls() {
+    const showOutliers = document.getElementById('showOutliers');
+    const excludeUnknown = document.getElementById('excludeUnknown');
+    const applyZScore = document.getElementById('applyZScore');
+    const resetFilters = document.getElementById('resetFilters');
+
+    // Load saved preferences from localStorage
+    const savedFilters = JSON.parse(localStorage.getItem('spotifyFilters') || '{}');
+    showOutliers.checked = savedFilters.showOutliers !== false;
+    excludeUnknown.checked = savedFilters.excludeUnknown !== false;
+    applyZScore.checked = savedFilters.applyZScore !== false;
+
+    // Save preferences when changed
+    function saveFilters() {
+      const filters = {
+        showOutliers: showOutliers.checked,
+        excludeUnknown: excludeUnknown.checked,
+        applyZScore: applyZScore.checked
+      };
+      localStorage.setItem('spotifyFilters', JSON.stringify(filters));
+    }
+
+    showOutliers.addEventListener('change', saveFilters);
+    excludeUnknown.addEventListener('change', saveFilters);
+    applyZScore.addEventListener('change', saveFilters);
+
+    // Reset filters
+    resetFilters.addEventListener('click', () => {
+      showOutliers.checked = true;
+      excludeUnknown.checked = true;
+      applyZScore.checked = true;
+      saveFilters();
+      
+      // Show confirmation
+      const button = resetFilters;
+      const originalText = button.innerHTML;
+      button.innerHTML = '<i class="fas fa-check"></i> Filters Reset!';
+      button.style.background = 'var(--gradient-primary)';
+      
+      setTimeout(() => {
+        button.innerHTML = originalText;
+        button.style.background = 'var(--gradient-secondary)';
+      }, 2000);
+    });
+  }
+
+  // Start the dashboard
+  loadDashboard();
   </script>
 </body>
 </html>

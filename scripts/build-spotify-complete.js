@@ -6,6 +6,21 @@ import dayjs from "dayjs";
 
 const OUT_DIR = "docs/data";
 
+// Manual exclusion list - tracks/artists to always filter out
+const MANUAL_EXCLUSIONS = {
+  artists: ["Pilt!", "Unknown Artist"],
+  tracks: ["mary plays the piano", "unknown track"],
+  keywords: ["test", "demo", "sample"]
+};
+
+// Outlier detection settings
+const OUTLIER_SETTINGS = {
+  zScoreThreshold: 3.0, // Standard deviations for outlier detection
+  percentileCap: 99.5, // Cap at 99.5th percentile
+  minPlayTime: 30000, // Minimum 30 seconds to be considered valid
+  maxPlayTime: 3600000 // Maximum 1 hour per play (likely an error)
+};
+
 // Helpers to read fields across Spotify variants
 function pick(obj, keys, fallback = undefined) {
   for (const k of keys) {
@@ -37,6 +52,70 @@ function toHour(dateStr) {
 function toDayOfWeek(dateStr) {
   const d = dayjs(dateStr);
   return d.isValid() ? d.day() : null; // 0 = Sunday, 6 = Saturday
+}
+
+// Statistical functions for outlier detection
+function calculateStats(values) {
+  const n = values.length;
+  if (n === 0) return { mean: 0, std: 0, median: 0, q1: 0, q3: 0 };
+  
+  const sorted = [...values].sort((a, b) => a - b);
+  const mean = values.reduce((sum, val) => sum + val, 0) / n;
+  const variance = values.reduce((sum, val) => sum + Math.pow(val - mean, 2), 0) / n;
+  const std = Math.sqrt(variance);
+  
+  const median = sorted[Math.floor(n / 2)];
+  const q1 = sorted[Math.floor(n * 0.25)];
+  const q3 = sorted[Math.floor(n * 0.75)];
+  
+  return { mean, std, median, q1, q3 };
+}
+
+function calculateZScore(value, mean, std) {
+  return std === 0 ? 0 : (value - mean) / std;
+}
+
+function isOutlier(value, mean, std, threshold = OUTLIER_SETTINGS.zScoreThreshold) {
+  const zScore = calculateZScore(value, mean, std);
+  return Math.abs(zScore) > threshold;
+}
+
+// Filtering functions
+function shouldExcludeTrack(item) {
+  const artist = pick(item, ["artistName", "master_metadata_artist_name", "artist"], "").toLowerCase();
+  const track = pick(item, ["trackName", "master_metadata_track_name", "track"], "").toLowerCase();
+  const ms = Number(pick(item, ["msPlayed", "ms_played", "ms_played_sum", "durationMs", "duration_ms"], 0)) || 0;
+  
+  // Manual exclusions
+  if (MANUAL_EXCLUSIONS.artists.some(ex => artist.includes(ex.toLowerCase()))) {
+    return { excluded: true, reason: "manual_artist_exclusion" };
+  }
+  
+  if (MANUAL_EXCLUSIONS.tracks.some(ex => track.includes(ex.toLowerCase()))) {
+    return { excluded: true, reason: "manual_track_exclusion" };
+  }
+  
+  if (MANUAL_EXCLUSIONS.keywords.some(keyword => 
+    artist.includes(keyword.toLowerCase()) || track.includes(keyword.toLowerCase())
+  )) {
+    return { excluded: true, reason: "manual_keyword_exclusion" };
+  }
+  
+  // Unknown track/artist exclusions
+  if (artist.includes("unknown") || track.includes("unknown")) {
+    return { excluded: true, reason: "unknown_metadata" };
+  }
+  
+  // Play time validation
+  if (ms < OUTLIER_SETTINGS.minPlayTime) {
+    return { excluded: true, reason: "too_short" };
+  }
+  
+  if (ms > OUTLIER_SETTINGS.maxPlayTime) {
+    return { excluded: true, reason: "too_long" };
+  }
+  
+  return { excluded: false, reason: null };
 }
 
 // Function to process a single streaming history file
@@ -140,6 +219,85 @@ async function main() {
     return aTime.localeCompare(bTime);
   });
 
+  // Pre-filtering and outlier detection
+  console.log("\n🔍 Performing outlier detection and filtering...");
+  
+  const playTimes = streamingHistory.map(item => 
+    Number(pick(item, ["msPlayed", "ms_played", "ms_played_sum", "durationMs", "duration_ms"], 0)) || 0
+  ).filter(ms => ms > 0);
+  
+  const stats = calculateStats(playTimes);
+  const percentile95 = playTimes.sort((a, b) => a - b)[Math.floor(playTimes.length * 0.95)];
+  const percentile99 = playTimes.sort((a, b) => a - b)[Math.floor(playTimes.length * 0.99)];
+  
+  console.log(`📊 Play time statistics:`);
+  console.log(`  - Mean: ${(stats.mean / 1000 / 60).toFixed(2)} minutes`);
+  console.log(`  - Std Dev: ${(stats.std / 1000 / 60).toFixed(2)} minutes`);
+  console.log(`  - 95th percentile: ${(percentile95 / 1000 / 60).toFixed(2)} minutes`);
+  console.log(`  - 99th percentile: ${(percentile99 / 1000 / 60).toFixed(2)} minutes`);
+
+  // Filter items and collect exclusion statistics
+  const filteredHistory = [];
+  const exclusionStats = {
+    manual_artist_exclusion: 0,
+    manual_track_exclusion: 0,
+    manual_keyword_exclusion: 0,
+    unknown_metadata: 0,
+    too_short: 0,
+    too_long: 0,
+    outlier_zscore: 0,
+    outlier_percentile: 0
+  };
+
+  streamingHistory.forEach(item => {
+    const ms = Number(pick(item, ["msPlayed", "ms_played", "ms_played_sum", "durationMs", "duration_ms"], 0)) || 0;
+    
+    // Apply manual exclusions and basic filters
+    const exclusion = shouldExcludeTrack(item);
+    if (exclusion.excluded) {
+      exclusionStats[exclusion.reason]++;
+      return;
+    }
+    
+    // Outlier detection using Z-score
+    if (isOutlier(ms, stats.mean, stats.std)) {
+      exclusionStats.outlier_zscore++;
+      return;
+    }
+    
+    // Outlier detection using percentile
+    if (ms > percentile99) {
+      exclusionStats.outlier_percentile++;
+      return;
+    }
+    
+    // Apply percentile capping (normalize extreme values)
+    const cappedMs = Math.min(ms, percentile99);
+    const normalizedItem = { ...item };
+    
+    // Update the ms value in the item (find the correct field)
+    const msFields = ["msPlayed", "ms_played", "ms_played_sum", "durationMs", "duration_ms"];
+    for (const field of msFields) {
+      if (item[field] !== undefined) {
+        normalizedItem[field] = cappedMs;
+        break;
+      }
+    }
+    
+    filteredHistory.push(normalizedItem);
+  });
+
+  console.log(`\n📈 Filtering results:`);
+  console.log(`  - Original items: ${streamingHistory.length}`);
+  console.log(`  - Filtered items: ${filteredHistory.length}`);
+  console.log(`  - Excluded items: ${streamingHistory.length - filteredHistory.length}`);
+  
+  Object.entries(exclusionStats).forEach(([reason, count]) => {
+    if (count > 0) {
+      console.log(`    - ${reason}: ${count} items`);
+    }
+  });
+
   // Enhanced aggregates for all the new features
   const byYear = {};                    // year -> { ms: number, plays: number }
   const artistsByYear = {};             // year -> Map(artist -> { ms, plays, firstPlay, lastPlay })
@@ -161,7 +319,7 @@ async function main() {
 
   console.log("\nAggregating data with enhanced features...");
 
-  streamingHistory.forEach((item, index) => {
+  filteredHistory.forEach((item, index) => {
     if (index % 10000 === 0) {
       console.log(`  Processed ${index} items...`);
     }
@@ -185,12 +343,6 @@ async function main() {
 
     // Skip items with no play time
     if (ms <= 0) return;
-
-    // Skip unwanted artists and tracks
-    if (artist === "Pilt!" || 
-        track.toLowerCase().includes("mary plays the piano")) {
-      return;
-    }
 
     // totals
     totalMs += ms;
@@ -321,7 +473,7 @@ async function main() {
 
   console.log("\nWriting enhanced outputs...");
 
-  // 1) Enhanced Summary
+  // 1) Enhanced Summary with filtering stats
   const summary = {
     total_ms: totalMs,
     total_hours: +(totalMs / 1000 / 3600).toFixed(2),
@@ -329,17 +481,29 @@ async function main() {
     years: Object.keys(byYear).filter(y => y !== "unknown").sort(),
     data_sources: streamingFiles.length,
     date_range: {
-      earliest: streamingHistory.length > 0 ? 
-        dayjs(pick(streamingHistory[0], ["endTime", "ts", "eventTime", "time"])).format("YYYY-MM-DD") : "Unknown",
-      latest: streamingHistory.length > 0 ? 
-        dayjs(pick(streamingHistory[streamingHistory.length - 1], ["endTime", "ts", "eventTime", "time"])).format("YYYY-MM-DD") : "Unknown"
+      earliest: filteredHistory.length > 0 ? 
+        dayjs(pick(filteredHistory[0], ["endTime", "ts", "eventTime", "time"])).format("YYYY-MM-DD") : "Unknown",
+      latest: filteredHistory.length > 0 ? 
+        dayjs(pick(filteredHistory[filteredHistory.length - 1], ["endTime", "ts", "eventTime", "time"])).format("YYYY-MM-DD") : "Unknown"
     },
     unique_artists: byArtist.size,
     unique_tracks: byTrack.size,
     unique_albums: byAlbum.size,
     listening_sessions: listeningSessions.length,
     longest_session_hours: listeningSessions.length > 0 ? 
-      +(Math.max(...listeningSessions.map(s => s.totalMs)) / 1000 / 3600).toFixed(2) : 0
+      +(Math.max(...listeningSessions.map(s => s.totalMs)) / 1000 / 3600).toFixed(2) : 0,
+    filtering_stats: {
+      original_items: streamingHistory.length,
+      filtered_items: filteredHistory.length,
+      excluded_items: streamingHistory.length - filteredHistory.length,
+      exclusion_breakdown: exclusionStats
+    },
+    outlier_detection: {
+      mean_play_time_minutes: +(stats.mean / 1000 / 60).toFixed(2),
+      std_dev_minutes: +(stats.std / 1000 / 60).toFixed(2),
+      percentile_95_minutes: +(percentile95 / 1000 / 60).toFixed(2),
+      percentile_99_minutes: +(percentile99 / 1000 / 60).toFixed(2)
+    }
   };
   await fse.writeJson(path.join(OUT_DIR, "summary.json"), summary, { spaces: 2 });
 
@@ -493,6 +657,19 @@ async function main() {
     .slice(0, 20);
   await fse.writeJson(path.join(OUT_DIR, "binge_sessions.json"), bingeSessions, { spaces: 2 });
 
+  // 14) Filtering configuration for UI
+  const filteringConfig = {
+    manual_exclusions: MANUAL_EXCLUSIONS,
+    outlier_settings: OUTLIER_SETTINGS,
+    stats: {
+      mean_play_time_minutes: +(stats.mean / 1000 / 60).toFixed(2),
+      std_dev_minutes: +(stats.std / 1000 / 60).toFixed(2),
+      percentile_95_minutes: +(percentile95 / 1000 / 60).toFixed(2),
+      percentile_99_minutes: +(percentile99 / 1000 / 60).toFixed(2)
+    }
+  };
+  await fse.writeJson(path.join(OUT_DIR, "filtering_config.json"), filteringConfig, { spaces: 2 });
+
   console.log(`\n✅ Done! Enhanced files in ${OUT_DIR}/:
   - summary.json (${summary.total_hours} hours, ${summary.total_plays} plays across ${summary.years.length} years)
   - listening_by_year.json
@@ -507,6 +684,7 @@ async function main() {
   - genre_breakdown.json
   - device_usage.json
   - binge_sessions.json
+  - filtering_config.json
   - listening_daily.csv (${dailyRows.length - 1} days of data)
   
 📊 Enhanced Data Summary:
@@ -520,6 +698,15 @@ async function main() {
   - Unique Albums: ${summary.unique_albums.toLocaleString()}
   - Listening Sessions: ${summary.listening_sessions.toLocaleString()}
   - Longest Session: ${summary.longest_session_hours} hours
+
+🔍 Filtering Results:
+  - Original Items: ${summary.filtering_stats.original_items.toLocaleString()}
+  - Filtered Items: ${summary.filtering_stats.filtered_items.toLocaleString()}
+  - Excluded Items: ${summary.filtering_stats.excluded_items.toLocaleString()}
+  - Manual Exclusions: ${exclusionStats.manual_artist_exclusion + exclusionStats.manual_track_exclusion + exclusionStats.manual_keyword_exclusion}
+  - Unknown Metadata: ${exclusionStats.unknown_metadata}
+  - Outliers (Z-score): ${exclusionStats.outlier_zscore}
+  - Outliers (Percentile): ${exclusionStats.outlier_percentile}
   `);
 }
 
