@@ -18,6 +18,10 @@ import { ArtistJourneySection } from './sections/artist-journey-section'
 import { SeasonalitySection } from './sections/seasonality-section'
 import { SessionsSection } from './sections/sessions-section'
 import { PlaylistsSection } from './sections/playlists-section'
+import { AdvancedAnalyticsSection } from './sections/advanced-analytics-section'
+import { VisualizationSection } from './sections/visualization-section'
+import { InsightsSection } from './sections/insights-section'
+import { ComprehensiveAnalyticsSection } from './sections/comprehensive-analytics-section'
 
 interface DashboardProps {
   data: AnalyticsData
@@ -38,6 +42,10 @@ type SectionType =
   | 'seasonality'
   | 'sessions'
   | 'playlists'
+  | 'advanced-analytics'
+  | 'visualization'
+  | 'insights'
+  | 'comprehensive-analytics'
 
 const sections = [
   { id: 'overview', label: 'Overview', icon: '📊' },
@@ -54,6 +62,10 @@ const sections = [
   { id: 'seasonality', label: 'Seasonality', icon: '🌱' },
   { id: 'sessions', label: 'Listening Sessions', icon: '🎧' },
   { id: 'playlists', label: 'Playlists', icon: '📝' },
+  { id: 'advanced-analytics', label: 'Advanced Analytics', icon: '📈' },
+  { id: 'visualization', label: 'Visualizations', icon: '📊' },
+  { id: 'insights', label: 'Deep Insights', icon: '🧠' },
+  { id: 'comprehensive-analytics', label: 'Comprehensive', icon: '🎯' },
 ] as const
 
 export function Dashboard({ data }: DashboardProps) {
@@ -89,6 +101,14 @@ export function Dashboard({ data }: DashboardProps) {
         return <SessionsSection data={data} />
       case 'playlists':
         return <PlaylistsSection data={data} />
+      case 'advanced-analytics':
+        return <AdvancedAnalyticsSection data={data} />
+      case 'visualization':
+        return <VisualizationSection data={data} />
+      case 'insights':
+        return <InsightsSection data={data} />
+      case 'comprehensive-analytics':
+        return <ComprehensiveAnalyticsSection data={data} />
       default:
         return <OverviewSection data={data} />
     }
