@@ -301,11 +301,29 @@
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
+      margin: 8px;
     }
 
     .retry-button:hover {
       transform: translateY(-2px);
       box-shadow: var(--shadow-lg);
+    }
+
+    .retry-button.secondary {
+      background: var(--spotify-lighter);
+      color: var(--spotify-text);
+    }
+
+    .retry-button.secondary:hover {
+      background: var(--spotify-light);
+    }
+
+    .error-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 24px;
     }
 
     /* Animations */
@@ -335,6 +353,33 @@
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    .loading-icon {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+      animation: pulse 2s infinite;
+    }
+
+    .loading-timeout {
+      text-align: center;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .loading-timeout h2 {
+      margin-bottom: 1rem;
+      color: var(--spotify-text);
+    }
+
+    .loading-timeout p {
+      margin-bottom: 2rem;
+      color: var(--spotify-text-secondary);
     }
 
     /* Responsive Design */
@@ -942,11 +987,24 @@
     Chart.defaults.plugins.legend.labels.padding = 20;
 
     async function getJSON(url) {
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
+      
+      try {
+        const response = await fetch(url, { signal: controller.signal });
+        clearTimeout(timeoutId);
+        
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}: ${response.statusText} for ${url}`);
+        }
+        return response.json();
+      } catch (error) {
+        clearTimeout(timeoutId);
+        if (error.name === 'AbortError') {
+          throw new Error(`Timeout loading ${url} (10 seconds)`);
+        }
+        throw error;
       }
-      return response.json();
     }
 
     // Main dashboard function
@@ -955,6 +1013,20 @@
         // Show loading state
         document.getElementById('loading').style.display = 'flex';
         document.getElementById('dashboard-content').style.display = 'none';
+
+        // Set a loading timeout to prevent infinite loading
+        const loadingTimeout = setTimeout(() => {
+          document.getElementById('loading').innerHTML = `
+            <div class="loading-timeout">
+              <div class="loading-icon">⏰</div>
+              <h2>Loading is taking longer than expected...</h2>
+              <p>This might be due to large data files or a slow connection.</p>
+              <button class="retry-button" onclick="location.reload()">
+                <i class="fas fa-redo"></i> Try Again
+              </button>
+            </div>
+          `;
+        }, 15000); // 15 second timeout
 
         // Load all data files
         const [
@@ -994,25 +1066,29 @@
           deviceUsage, bingeSessions 
         });
 
-        // Check if we have actual data
-        if (!summary.total_plays || summary.total_plays === 0) {
+        // Check if we have actual data (not sample data)
+        if (!summary.total_plays || summary.total_plays <= 10) {
           document.body.innerHTML = `
             <div class="error-state">
               <div class="error-icon">🎵</div>
-              <h2 class="error-title">No Data Available</h2>
-              <p class="error-message">This is a demo deployment. To see your actual Spotify data:</p>
+              <h2 class="error-title">Sample Data Detected</h2>
+              <p class="error-message">This is a demo deployment with sample data. To see your actual Spotify data:</p>
               <ol style="text-align: left; max-width: 400px; margin: 0 auto 2rem auto;">
                 <li>Add your Spotify data files to the repository</li>
                 <li>Run <code>npm run build:data</code> locally</li>
                 <li>Commit and push the updated <code>docs/data/</code> files</li>
               </ol>
               <p><strong>Note:</strong> Large data files are kept local for privacy and never uploaded to GitHub.</p>
+              <button class="retry-button" onclick="location.reload()">
+                <i class="fas fa-redo"></i> Try Again
+              </button>
             </div>
           `;
           return;
         }
 
-        // Hide loading, show dashboard
+        // Clear loading timeout and hide loading, show dashboard
+        clearTimeout(loadingTimeout);
         document.getElementById('loading').style.display = 'none';
         document.getElementById('dashboard-content').style.display = 'block';
 
@@ -1051,14 +1127,36 @@
 
       } catch (error) {
         console.error("Failed to load Spotify data:", error);
+        
+        let errorMessage = "Failed to load your Spotify data.";
+        let errorDetails = "";
+        
+        if (error.message.includes("404")) {
+          errorMessage = "Data files not found.";
+          errorDetails = "The processed data files are missing. This usually means the deployment is still in progress or there was an issue with the build process.";
+        } else if (error.message.includes("Timeout")) {
+          errorMessage = "Data loading timed out.";
+          errorDetails = "The data files took too long to load. This could be due to a slow connection or the files are very large.";
+        } else if (error.message.includes("Failed to fetch")) {
+          errorMessage = "Network error.";
+          errorDetails = "Unable to connect to the server. Please check your internet connection and try again.";
+        } else {
+          errorDetails = `Technical error: ${error.message}`;
+        }
+        
         document.body.innerHTML = `
           <div class="error-state">
             <div class="error-icon">⚠️</div>
-            <h2 class="error-title">Error Loading Data</h2>
-            <p class="error-message">Failed to load your Spotify data. This could be because the data files are not available yet, there was a network error, or the deployment is still in progress.</p>
-            <button class="retry-button" onclick="location.reload()">
-              <i class="fas fa-redo"></i> Try Again
-            </button>
+            <h2 class="error-title">${errorMessage}</h2>
+            <p class="error-message">${errorDetails}</p>
+            <div class="error-actions">
+              <button class="retry-button" onclick="location.reload()">
+                <i class="fas fa-redo"></i> Try Again
+              </button>
+              <button class="retry-button secondary" onclick="window.open('https://github.com/egil10/music/actions', '_blank')">
+                <i class="fab fa-github"></i> Check Deployment Status
+              </button>
+            </div>
           </div>
         `;
       }
@@ -1067,35 +1165,41 @@
     function populateStatsGrid(summary) {
       const statsGrid = document.getElementById('stats-grid');
       
+      // Use consistent English locale formatting
+      const formatter = new Intl.NumberFormat('en-US', {
+        maximumFractionDigits: 2,
+        minimumFractionDigits: 0
+      });
+      
       const stats = [
         {
           icon: '🎵',
-          value: summary.total_hours.toLocaleString(),
+          value: formatter.format(summary.total_hours),
           label: 'Total Hours'
         },
         {
           icon: '🎧',
-          value: summary.total_plays.toLocaleString(),
+          value: formatter.format(summary.total_plays),
           label: 'Total Plays'
         },
         {
           icon: '👤',
-          value: summary.unique_artists.toLocaleString(),
+          value: formatter.format(summary.unique_artists),
           label: 'Unique Artists'
         },
         {
           icon: '🎼',
-          value: summary.unique_tracks.toLocaleString(),
+          value: formatter.format(summary.unique_tracks),
           label: 'Unique Tracks'
         },
         {
           icon: '💿',
-          value: summary.unique_albums.toLocaleString(),
+          value: formatter.format(summary.unique_albums),
           label: 'Unique Albums'
         },
         {
           icon: '🔥',
-          value: summary.listening_sessions.toLocaleString(),
+          value: formatter.format(summary.listening_sessions),
           label: 'Listening Sessions'
         },
         {

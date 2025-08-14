@@ -32,19 +32,30 @@ jobs:
       
     - name: Build data
       run: |
-        # Check if raw data exists, if not create a sample or skip
-        if [ -f "raw/merged_spotify_data.json" ]; then
-          npm run build:data
+        # Check if processed data already exists, if not create sample data
+        if [ -f "docs/data/summary.json" ]; then
+          echo "Using existing processed data..."
         else
-                     echo "No raw data found, creating sample data for demo..."
-           mkdir -p docs/data
-           # Create proper sample data
-           echo '{"total_ms": 3600000, "total_hours": 1.0, "total_plays": 10, "years": ["2024"]}' > docs/data/summary.json
-           echo '{"2024": {"ms": 3600000, "plays": 10, "hours": 1.0}}' > docs/data/listening_by_year.json
-           echo '{"2024": [{"artist": "Sample Artist", "plays": 5, "hours": 0.5}]}' > docs/data/top_artists_by_year.json
-           echo '{"2024": [{"artist": "Sample Artist", "track": "Sample Track", "plays": 3, "hours": 0.3}]}' > docs/data/top_tracks_by_year.json
-           echo "date,hours,plays" > docs/data/listening_daily.csv
-           echo "2024-01-01,0.1,1" >> docs/data/listening_daily.csv
+          echo "No processed data found, creating sample data for demo..."
+          mkdir -p docs/data
+          # Create proper sample data
+          echo '{"total_ms": 3600000, "total_hours": 1.0, "total_plays": 10, "years": ["2024"]}' > docs/data/summary.json
+          echo '{"2024": {"ms": 3600000, "plays": 10, "hours": 1.0}}' > docs/data/listening_by_year.json
+          echo '{"2024": [{"artist": "Sample Artist", "plays": 5, "hours": 0.5}]}' > docs/data/top_artists_by_year.json
+          echo '{"2024": [{"artist": "Sample Artist", "track": "Sample Track", "plays": 3, "hours": 0.3}]}' > docs/data/top_tracks_by_year.json
+          echo "date,hours,plays" > docs/data/listening_daily.csv
+          echo "2024-01-01,0.1,1" >> docs/data/listening_daily.csv
+          # Add other required sample files
+          echo '{}' > docs/data/listening_by_month.json
+          echo '[]' > docs/data/listening_by_hour.json
+          echo '[]' > docs/data/listening_by_day_of_week.json
+          echo '[]' > docs/data/top_artists_all_time.json
+          echo '[]' > docs/data/top_tracks_all_time.json
+          echo '[]' > docs/data/top_albums.json
+          echo '[]' > docs/data/genre_breakdown.json
+          echo '[]' > docs/data/device_usage.json
+          echo '[]' > docs/data/binge_sessions.json
+          echo '{}' > docs/data/filtering_config.json
         fi
       
     - name: Setup Pages
