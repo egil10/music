@@ -1172,40 +1172,39 @@
         }, 15000); // 15 second timeout
 
                  // Load all data files
-         const [
-           summary,
-           byYear,
-           byMonth,
-           byHour,
-           byDayOfWeek,
-           topArtistsAllTime,
-           topTracksAllTime,
-           topAlbums,
-           deviceUsage,
-           bingeSessions,
-           libraryData,
-           artistLibraryData,
-           filteringConfig
-         ] = await Promise.all([
-           getJSON("./data/summary.json"),
-           getJSON("./data/listening_by_year.json"),
-           getJSON("./data/listening_by_month.json"),
-           getJSON("./data/listening_by_hour.json"),
-           getJSON("./data/listening_by_day_of_week.json"),
-           getJSON("./data/top_artists_all_time.json"),
-           getJSON("./data/top_tracks_all_time.json"),
-           getJSON("./data/top_albums.json"),
-           getJSON("./data/device_usage.json"),
-           getJSON("./data/binge_sessions.json"),
-           getJSON("./data/library_data.json"),
-           getJSON("./data/artist_library_data.json"),
-           getJSON("./data/filtering_config.json")
-         ]);
+                 const [
+          summary,
+          byYear,
+          byMonth,
+          byHour,
+          byDayOfWeek,
+          topArtistsAllTime,
+          topTracksAllTime,
+          topAlbums,
+          deviceUsage,
+          bingeSessions,
+          libraryData,
+          artistLibraryData,
+          filteringConfig
+        ] = await Promise.all([
+          getJSON("./data/summary.json"),
+          getJSON("./data/listening_by_year.json"),
+          getJSON("./data/listening_by_month.json"),
+          getJSON("./data/listening_by_hour.json"),
+          getJSON("./data/listening_by_day_of_week.json"),
+          getJSON("./data/top_artists_all_time.json"),
+          getJSON("./data/top_tracks_all_time.json"),
+          getJSON("./data/top_albums.json"),
+          getJSON("./data/device_usage.json"),
+          getJSON("./data/binge_sessions.json"),
+          getJSON("./data/library_data.json"),
+          getJSON("./data/artist_library_data.json"),
+          getJSON("./data/filtering_config.json")
+        ]);
 
         console.log("Loaded complete data:", { 
           summary, byYear, byMonth, byHour, byDayOfWeek, 
-          topArtistsByYear, topTracksByYear, topArtistsAllTime, 
-          topTracksAllTime, topAlbums, genreBreakdown, 
+          topArtistsAllTime, topTracksAllTime, topAlbums, 
           deviceUsage, bingeSessions 
         });
 
@@ -1684,60 +1683,7 @@
     }
 
     // Advanced Chart Functions
-    function createGenreTreemapChart(genreBreakdown) {
-      const ctx = document.getElementById('genreTreemapChart').getContext('2d');
-      const topGenres = genreBreakdown.slice(0, 20);
-      
-      new Chart(ctx, {
-        type: 'treemap',
-        data: {
-          datasets: [{
-            tree: topGenres.map(g => ({
-              value: g.hours,
-              label: g.genre,
-              parent: 'root'
-            })),
-            key: 'value',
-            groups: ['parent'],
-            spacing: 2,
-            backgroundColor: (ctx) => {
-              const colors = [
-                '#1DB954', '#1ed760', '#2ECC71', '#27AE60',
-                '#16A085', '#138D75', '#117A65', '#0E6655',
-                '#0B5345', '#0A3D2E', '#1ABC9C', '#17A589',
-                '#148F77', '#117864', '#0E6655', '#0B5345',
-                '#0A3D2E', '#0A3D2E', '#0A3D2E', '#0A3D2E'
-              ];
-              return colors[ctx.dataIndex % colors.length];
-            },
-            labels: {
-              display: true,
-              formatter: (ctx) => {
-                return [
-                  ctx.raw.label,
-                  `${ctx.raw.value.toFixed(1)}h`
-                ];
-              }
-            }
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: {
-              display: false
-            },
-            tooltip: {
-              callbacks: {
-                title: (items) => items[0].raw.label,
-                label: (item) => `${item.raw.value.toFixed(1)} hours`
-              }
-            }
-          }
-        }
-      });
-    }
+    // Removed createGenreTreemapChart function - genre data not available in current structure
 
     function createListeningPyramidChart(byYear) {
       const ctx = document.getElementById('listeningPyramidChart').getContext('2d');
@@ -1891,79 +1837,7 @@
       });
     }
 
-    function createArtistLongevityChart(topArtistsByYear) {
-      const ctx = document.getElementById('artistLongevityChart').getContext('2d');
-      
-      // Get top 5 artists across all years
-      const allArtists = new Map();
-      Object.values(topArtistsByYear).forEach(yearArtists => {
-        yearArtists.slice(0, 10).forEach(artist => {
-          if (!allArtists.has(artist.artist)) {
-            allArtists.set(artist.artist, { artist: artist.artist, years: [], hours: [] });
-          }
-          const entry = allArtists.get(artist.artist);
-          entry.years.push(artist.artist);
-          entry.hours.push(artist.hours);
-        });
-      });
-      
-      const topArtists = Array.from(allArtists.values())
-        .sort((a, b) => b.hours.reduce((sum, h) => sum + h, 0) - a.hours.reduce((sum, h) => sum + h, 0))
-        .slice(0, 5);
-      
-      const years = Object.keys(topArtistsByYear).sort();
-      
-      new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: years,
-          datasets: topArtists.map((artist, i) => ({
-            label: artist.artist,
-            data: years.map(year => {
-              const yearArtist = topArtistsByYear[year]?.find(a => a.artist === artist.artist);
-              return yearArtist ? yearArtist.hours : 0;
-            }),
-            borderColor: ['#1DB954', '#1ed760', '#2ECC71', '#27AE60', '#16A085'][i % 5],
-            backgroundColor: 'transparent',
-            borderWidth: 3,
-            tension: 0.4,
-            pointRadius: 6,
-            pointHoverRadius: 8
-          }))
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: {
-              position: 'bottom',
-              labels: {
-                padding: 20,
-                usePointStyle: true
-              }
-            }
-          },
-          scales: {
-            y: {
-              beginAtZero: true,
-              grid: {
-                color: 'rgba(64, 64, 64, 0.3)'
-              },
-              ticks: {
-                callback: function(value) {
-                  return value + 'h';
-                }
-              }
-            },
-            x: {
-              grid: {
-                color: 'rgba(64, 64, 64, 0.3)'
-              }
-            }
-          }
-        }
-      });
-    }
+    // Removed createArtistLongevityChart function - no longer needed with new data structure
 
     function createMoodQuadrantChart(topTracksAllTime) {
       const ctx = document.getElementById('moodQuadrantChart').getContext('2d');
