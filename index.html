@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Spotify Wrapped</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Loading Screen -->
+        <div id="loading-screen" class="loading-screen">
+            <div class="loading-content">
+                <div class="spotify-logo">
+                    <i class="fab fa-spotify"></i>
+                </div>
+                <h2>Loading Your Music Story</h2>
+                <div class="loading-spinner"></div>
+            </div>
+        </div>
+
+        <!-- Main Dashboard -->
+        <div id="dashboard" class="dashboard hidden">
+            <!-- Header -->
+            <header class="header">
+                <h1>My Spotify Wrapped</h1>
+                <p class="subtitle">Your Music Journey</p>
+            </header>
+
+            <!-- Navigation -->
+            <nav class="nav">
+                <button class="nav-btn active" data-section="overview">
+                    <i class="fas fa-chart-line"></i>
+                    Overview
+                </button>
+                <button class="nav-btn" data-section="top-artists">
+                    <i class="fas fa-microphone"></i>
+                    Top Artists
+                </button>
+                <button class="nav-btn" data-section="top-tracks">
+                    <i class="fas fa-music"></i>
+                    Top Tracks
+                </button>
+                <button class="nav-btn" data-section="listening-habits">
+                    <i class="fas fa-clock"></i>
+                    Listening Habits
+                </button>
+                <button class="nav-btn" data-section="playlists">
+                    <i class="fas fa-list"></i>
+                    Playlists
+                </button>
+            </nav>
+
+            <!-- Content Sections -->
+            <main class="main-content">
+                <!-- Overview Section -->
+                <section id="overview" class="content-section active">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 id="total-streams">-</h3>
+                                <p>Total Streams</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 id="total-time">-</h3>
+                                <p>Listening Time</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-microphone"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 id="unique-artists">-</h3>
+                                <p>Unique Artists</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 id="unique-tracks">-</h3>
+                                <p>Unique Tracks</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <h2>Listening Activity Over Time</h2>
+                        <canvas id="activity-chart"></canvas>
+                    </div>
+                </section>
+
+                <!-- Top Artists Section -->
+                <section id="top-artists" class="content-section">
+                    <h2>Your Top Artists</h2>
+                    <div class="artists-grid" id="artists-grid">
+                        <!-- Artists will be populated by JavaScript -->
+                    </div>
+                </section>
+
+                <!-- Top Tracks Section -->
+                <section id="top-tracks" class="content-section">
+                    <h2>Your Top Tracks</h2>
+                    <div class="tracks-list" id="tracks-list">
+                        <!-- Tracks will be populated by JavaScript -->
+                    </div>
+                </section>
+
+                <!-- Listening Habits Section -->
+                <section id="listening-habits" class="content-section">
+                    <h2>Listening Habits</h2>
+                    <div class="habits-grid">
+                        <div class="habit-card">
+                            <h3>Most Active Hours</h3>
+                            <canvas id="hours-chart"></canvas>
+                        </div>
+                        <div class="habit-card">
+                            <h3>Most Active Days</h3>
+                            <canvas id="days-chart"></canvas>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Playlists Section -->
+                <section id="playlists" class="content-section">
+                    <h2>Your Playlists</h2>
+                    <div class="playlists-grid" id="playlists-grid">
+                        <!-- Playlists will be populated by JavaScript -->
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/data-processor.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
