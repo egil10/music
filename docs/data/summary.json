@@ -1,7 +1,7 @@
 {
-  "total_ms": 41885743421,
-  "total_hours": 11634.93,
-  "total_plays": 342226,
+  "total_ms": 41813915835,
+  "total_hours": 11614.98,
+  "total_plays": 341009,
   "years": [
     "2015",
     "2016",
@@ -20,9 +20,9 @@
     "earliest": "2015-06-05",
     "latest": "2025-03-15"
   },
-  "unique_artists": 2549,
-  "unique_tracks": 42749,
-  "unique_albums": 27304,
-  "listening_sessions": 14070,
+  "unique_artists": 2548,
+  "unique_tracks": 42746,
+  "unique_albums": 27302,
+  "listening_sessions": 14057,
   "longest_session_hours": 38.64
 }

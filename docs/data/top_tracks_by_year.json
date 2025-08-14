@@ -1618,14 +1618,6 @@
     },
     {
       "artist": "Unknown Artist",
-      "track": "Mary Plays the Piano",
-      "plays": 1205,
-      "hours": 19.8,
-      "firstPlay": "2019-08-20T09:18:09Z",
-      "lastPlay": "2019-11-29T02:52:00Z"
-    },
-    {
-      "artist": "Unknown Artist",
       "track": "Slide",
       "plays": 214,
       "hours": 7.35,
@@ -2007,6 +1999,14 @@
       "hours": 2.02,
       "firstPlay": "2019-01-01T23:50:58Z",
       "lastPlay": "2019-10-09T17:05:50Z"
+    },
+    {
+      "artist": "Unknown Artist",
+      "track": "Friday Morning",
+      "plays": 57,
+      "hours": 2.01,
+      "firstPlay": "2019-01-01T12:42:03Z",
+      "lastPlay": "2019-12-03T19:00:58Z"
     }
   ],
   "2020": [

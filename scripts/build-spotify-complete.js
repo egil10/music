@@ -186,6 +186,12 @@ async function main() {
     // Skip items with no play time
     if (ms <= 0) return;
 
+    // Skip unwanted artists and tracks
+    if (artist === "Pilt!" || 
+        track.toLowerCase().includes("mary plays the piano")) {
+      return;
+    }
+
     // totals
     totalMs += ms;
     totalPlays += 1;

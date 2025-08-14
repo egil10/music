@@ -6,8 +6,8 @@
   },
   {
     "device": "Android OS 9 API 28 (motorola, moto g(6) plus)",
-    "plays": 45584,
-    "hours": 1559.67
+    "plays": 45530,
+    "hours": 1558.99
   },
   {
     "device": "Android OS 7.0 API 24 (samsung, SM-G930F)",
@@ -16,8 +16,8 @@
   },
   {
     "device": "Unknown Device",
-    "plays": 33406,
-    "hours": 1035.14
+    "plays": 33394,
+    "hours": 1034.99
   },
   {
     "device": "Android OS 5.1.1 API 22 (samsung, SM-G800F)",
@@ -26,8 +26,8 @@
   },
   {
     "device": "Android OS 8.0.0 API 26 (samsung, SM-G930F)",
-    "plays": 22445,
-    "hours": 762.31
+    "plays": 22413,
+    "hours": 761.91
   },
   {
     "device": "Android OS 4.4.2 API 19 (samsung, SM-G800F)",
@@ -41,8 +41,8 @@
   },
   {
     "device": "Android OS 7.0 API 24 (motorola, Moto G (5) Plus)",
-    "plays": 12610,
-    "hours": 368.63
+    "plays": 12607,
+    "hours": 368.59
   },
   {
     "device": "Windows 10 (10.0.22000; x64)",
@@ -51,8 +51,8 @@
   },
   {
     "device": "Android OS 4.4.4 API 19 (samsung, GT-I9195I)",
-    "plays": 6743,
-    "hours": 168.4
+    "plays": 6689,
+    "hours": 167.69
   },
   {
     "device": "Android OS 12 API 31 (samsung, SM-A525F)",
@@ -120,14 +120,14 @@
     "hours": 36.67
   },
   {
-    "device": "Windows 10 (10.0.17134; x64)",
-    "plays": 795,
-    "hours": 34.85
-  },
-  {
     "device": "Android OS 2.3.5 API 10 (HTC, HTC Desire HD A9191)",
     "plays": 647,
     "hours": 34.77
+  },
+  {
+    "device": "Windows 10 (10.0.17134; x64)",
+    "plays": 769,
+    "hours": 34.51
   },
   {
     "device": "Android OS 6.0.1 API 23 (samsung, SM-G900F)",
@@ -141,8 +141,8 @@
   },
   {
     "device": "Android-tablet OS 9 API 28 (motorola, moto g(6) plus)",
-    "plays": 615,
-    "hours": 22.08
+    "plays": 559,
+    "hours": 21.16
   },
   {
     "device": "Windows 10 (10.0.10240; x64)",
@@ -166,18 +166,13 @@
   },
   {
     "device": "Android OS 7.0 API 24 (samsung, SM-A310F)",
-    "plays": 302,
-    "hours": 14.64
+    "plays": 299,
+    "hours": 14.63
   },
   {
     "device": "Windows 10 (10.0.17763; x64; AppX)",
     "plays": 260,
     "hours": 14.14
-  },
-  {
-    "device": "web_player windows 10;chrome 78.0.3904.70;desktop",
-    "plays": 799,
-    "hours": 13.89
   },
   {
     "device": "Windows 10 (10.0.10586; x64)",
@@ -270,18 +265,8 @@
     "hours": 2.05
   },
   {
-    "device": "web_player windows 10;chrome 76.0.3809.100;desktop",
-    "plays": 96,
-    "hours": 1.64
-  },
-  {
     "device": "Partner google cast_tv;Chromecast;;1.22.78337",
     "plays": 37,
-    "hours": 1.17
-  },
-  {
-    "device": "Android OS 8.0.0 API 26 (HUAWEI, LDN-AL20)",
-    "plays": 83,
     "hours": 1.17
   },
   {
@@ -365,8 +350,8 @@
     "hours": 0
   },
   {
-    "device": "web_player windows 10;microsoft edge 17.17134;desktop",
-    "plays": 1,
+    "device": "Android OS 8.0.0 API 26 (HUAWEI, LDN-AL20)",
+    "plays": 2,
     "hours": 0
   },
   {

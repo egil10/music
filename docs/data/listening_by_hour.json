@@ -1,122 +1,122 @@
 [
   {
     "hour": 0,
-    "hours": 386.36,
-    "plays": 14036
+    "hours": 385.34,
+    "plays": 13975
   },
   {
     "hour": 1,
-    "hours": 335.05,
-    "plays": 9597
+    "hours": 334.14,
+    "plays": 9543
   },
   {
     "hour": 2,
-    "hours": 278.63,
-    "plays": 6137
+    "hours": 277.63,
+    "plays": 6080
   },
   {
     "hour": 3,
-    "hours": 224.67,
-    "plays": 4064
+    "hours": 223.78,
+    "plays": 4010
   },
   {
     "hour": 4,
-    "hours": 186.92,
-    "plays": 3087
+    "hours": 186.04,
+    "plays": 3036
   },
   {
     "hour": 5,
-    "hours": 241.25,
-    "plays": 4358
+    "hours": 240.26,
+    "plays": 4302
   },
   {
     "hour": 6,
-    "hours": 190.36,
-    "plays": 4294
+    "hours": 189.47,
+    "plays": 4243
   },
   {
     "hour": 7,
-    "hours": 271.34,
-    "plays": 6534
+    "hours": 270.34,
+    "plays": 6474
   },
   {
     "hour": 8,
-    "hours": 366.87,
-    "plays": 9886
+    "hours": 365.8,
+    "plays": 9820
   },
   {
     "hour": 9,
-    "hours": 451.77,
-    "plays": 12650
+    "hours": 451.64,
+    "plays": 12641
   },
   {
     "hour": 10,
-    "hours": 551.68,
-    "plays": 15967
+    "hours": 551.63,
+    "plays": 15961
   },
   {
     "hour": 11,
-    "hours": 574.08,
-    "plays": 16130
+    "hours": 573.49,
+    "plays": 16095
   },
   {
     "hour": 12,
-    "hours": 647.5,
-    "plays": 17143
+    "hours": 647.26,
+    "plays": 17129
   },
   {
     "hour": 13,
-    "hours": 725.59,
-    "plays": 20172
+    "hours": 724.72,
+    "plays": 20121
   },
   {
     "hour": 14,
-    "hours": 768.86,
-    "plays": 23089
+    "hours": 767.13,
+    "plays": 22981
   },
   {
     "hour": 15,
-    "hours": 776.27,
-    "plays": 23215
+    "hours": 775.14,
+    "plays": 23148
   },
   {
     "hour": 16,
-    "hours": 727.11,
-    "plays": 22488
+    "hours": 726.1,
+    "plays": 22430
   },
   {
     "hour": 17,
-    "hours": 679.58,
-    "plays": 21039
+    "hours": 678.15,
+    "plays": 20956
   },
   {
     "hour": 18,
-    "hours": 618,
-    "plays": 20030
+    "hours": 617.26,
+    "plays": 19981
   },
   {
     "hour": 19,
-    "hours": 562.87,
-    "plays": 17251
+    "hours": 562,
+    "plays": 17200
   },
   {
     "hour": 20,
-    "hours": 557.81,
-    "plays": 17878
+    "hours": 557.33,
+    "plays": 17839
   },
   {
     "hour": 21,
-    "hours": 539.9,
-    "plays": 17151
+    "hours": 539.77,
+    "plays": 17139
   },
   {
     "hour": 22,
-    "hours": 491.32,
-    "plays": 18088
+    "hours": 490.75,
+    "plays": 18050
   },
   {
     "hour": 23,
-    "hours": 481.14,
-    "plays": 17942
+    "hours": 479.79,
+    "plays": 17855
   }
 ]

@@ -1,9 +1,9 @@
 [
   {
     "genre": "Unknown Genre",
-    "plays": 39519,
-    "hours": 2739.34,
-    "uniqueArtists": 2549
+    "plays": 39507,
+    "hours": 2739.18,
+    "uniqueArtists": 2548
   },
   {
     "genre": "Blonde",
@@ -285,12 +285,6 @@
     "genre": "The Universe Smiles Upon You",
     "plays": 541,
     "hours": 20.2,
-    "uniqueArtists": 1
-  },
-  {
-    "genre": "Mary Plays the Piano",
-    "plays": 1205,
-    "hours": 19.8,
     "uniqueArtists": 1
   },
   {
