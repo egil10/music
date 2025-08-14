@@ -134,17 +134,19 @@
          }
        }
 
-       // Load all data with error handling
-       try {
-         const [summary, byYear, topArtistsByYear, topTracksByYear] = await Promise.all([
-           getJSON("./data/summary.json"),
-           getJSON("./data/listening_by_year.json"),
-           getJSON("./data/top_artists_by_year.json"),
-           getJSON("./data/top_tracks_by_year.json")
-         ]);
+               // Load all data with error handling
+        try {
+          const [summary, byYear, topArtistsByYear, topTracksByYear] = await Promise.all([
+            getJSON("./data/summary.json"),
+            getJSON("./data/listening_by_year.json"),
+            getJSON("./data/top_artists_by_year.json"),
+            getJSON("./data/top_tracks_by_year.json")
+          ]);
 
-         // Check if we have actual data
-         if (!summary.total_plays || summary.total_plays === 0) {
+          console.log("Loaded data:", { summary, byYear, topArtistsByYear, topTracksByYear });
+
+                   // Check if we have actual data (allow sample data with 10+ plays to show)
+          if (!summary.total_plays || summary.total_plays === 0) {
         document.body.innerHTML = `
           <div style="text-align: center; padding: 50px; font-family: system-ui, Arial, sans-serif;">
             <h1>🎵 Spotify Wrapped Dashboard</h1>
