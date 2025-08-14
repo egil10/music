@@ -1,0 +1,506 @@
+{
+  "2024": [
+    {
+      "artist": "Jan Eggum",
+      "plays": 2806,
+      "hours": 96.4
+    },
+    {
+      "artist": "Jonas Alaska",
+      "plays": 855,
+      "hours": 33.34
+    },
+    {
+      "artist": "Benny Sings",
+      "plays": 823,
+      "hours": 26.47
+    },
+    {
+      "artist": "Khruangbin",
+      "plays": 671,
+      "hours": 26.26
+    },
+    {
+      "artist": "Susanne Sundfør",
+      "plays": 468,
+      "hours": 18.94
+    },
+    {
+      "artist": "Dire Straits",
+      "plays": 391,
+      "hours": 18.21
+    },
+    {
+      "artist": "Papooz",
+      "plays": 555,
+      "hours": 17.29
+    },
+    {
+      "artist": "Bee Gees",
+      "plays": 498,
+      "hours": 14.43
+    },
+    {
+      "artist": "Ludwig Göransson",
+      "plays": 245,
+      "hours": 13.51
+    },
+    {
+      "artist": "Daft Punk",
+      "plays": 352,
+      "hours": 10.48
+    },
+    {
+      "artist": "Sondre Lerche",
+      "plays": 197,
+      "hours": 8.81
+    },
+    {
+      "artist": "The War On Drugs",
+      "plays": 179,
+      "hours": 8.77
+    },
+    {
+      "artist": "Jacob Collier",
+      "plays": 192,
+      "hours": 7.48
+    },
+    {
+      "artist": "Frédéric Chopin",
+      "plays": 148,
+      "hours": 7.16
+    },
+    {
+      "artist": "Pish",
+      "plays": 155,
+      "hours": 6.91
+    },
+    {
+      "artist": "deadmau5",
+      "plays": 219,
+      "hours": 6.83
+    },
+    {
+      "artist": "Parcels",
+      "plays": 231,
+      "hours": 6.66
+    },
+    {
+      "artist": "The Beatles",
+      "plays": 335,
+      "hours": 5.97
+    },
+    {
+      "artist": "Johannes Brahms",
+      "plays": 53,
+      "hours": 5.57
+    },
+    {
+      "artist": "Laufey",
+      "plays": 181,
+      "hours": 5.44
+    },
+    {
+      "artist": "L'Impératrice",
+      "plays": 166,
+      "hours": 5.38
+    },
+    {
+      "artist": "Chicago",
+      "plays": 153,
+      "hours": 5.31
+    },
+    {
+      "artist": "Kakkmaddafakka",
+      "plays": 152,
+      "hours": 5.19
+    },
+    {
+      "artist": "Espen Eriksen Trio",
+      "plays": 92,
+      "hours": 5.12
+    },
+    {
+      "artist": "Bjørn Eidsvåg",
+      "plays": 141,
+      "hours": 5.07
+    },
+    {
+      "artist": "St. Paul & The Broken Bones",
+      "plays": 118,
+      "hours": 5
+    },
+    {
+      "artist": "Gus Dapperton",
+      "plays": 156,
+      "hours": 4.9
+    },
+    {
+      "artist": "Elton John",
+      "plays": 132,
+      "hours": 4.6
+    },
+    {
+      "artist": "Bobby Caldwell",
+      "plays": 155,
+      "hours": 4.58
+    },
+    {
+      "artist": "Maroon 5",
+      "plays": 125,
+      "hours": 4.25
+    },
+    {
+      "artist": "Frank Ocean",
+      "plays": 205,
+      "hours": 4.17
+    },
+    {
+      "artist": "Claude Debussy",
+      "plays": 78,
+      "hours": 3.92
+    },
+    {
+      "artist": "Röyksopp",
+      "plays": 85,
+      "hours": 3.88
+    },
+    {
+      "artist": "Post Malone",
+      "plays": 162,
+      "hours": 3.77
+    },
+    {
+      "artist": "CHIC",
+      "plays": 124,
+      "hours": 3.65
+    },
+    {
+      "artist": "Michael Jackson",
+      "plays": 106,
+      "hours": 3.61
+    },
+    {
+      "artist": "Gabrielle",
+      "plays": 81,
+      "hours": 3.61
+    },
+    {
+      "artist": "Fagernes Yacht Klubb",
+      "plays": 69,
+      "hours": 3.57
+    },
+    {
+      "artist": "Calvin Harris",
+      "plays": 111,
+      "hours": 3.51
+    },
+    {
+      "artist": "TOTO",
+      "plays": 96,
+      "hours": 3.38
+    },
+    {
+      "artist": "The Strokes",
+      "plays": 110,
+      "hours": 3.16
+    },
+    {
+      "artist": "Sabrina Carpenter",
+      "plays": 102,
+      "hours": 3.08
+    },
+    {
+      "artist": "Eagles",
+      "plays": 86,
+      "hours": 3.04
+    },
+    {
+      "artist": "The Weeknd",
+      "plays": 86,
+      "hours": 2.91
+    },
+    {
+      "artist": "Lindsey Lomis",
+      "plays": 77,
+      "hours": 2.86
+    },
+    {
+      "artist": "Pink Floyd",
+      "plays": 74,
+      "hours": 2.82
+    },
+    {
+      "artist": "Fleetwood Mac",
+      "plays": 87,
+      "hours": 2.65
+    },
+    {
+      "artist": "Edvard Grieg",
+      "plays": 285,
+      "hours": 2.56
+    },
+    {
+      "artist": "Highasakite",
+      "plays": 54,
+      "hours": 2.55
+    },
+    {
+      "artist": "Chet Baker",
+      "plays": 137,
+      "hours": 2.54
+    }
+  ],
+  "2025": [
+    {
+      "artist": "Augustine",
+      "plays": 692,
+      "hours": 24.92
+    },
+    {
+      "artist": "Khruangbin",
+      "plays": 193,
+      "hours": 7.44
+    },
+    {
+      "artist": "Jan Eggum",
+      "plays": 150,
+      "hours": 5.48
+    },
+    {
+      "artist": "Midnight Generation",
+      "plays": 125,
+      "hours": 4.94
+    },
+    {
+      "artist": "Daft Punk",
+      "plays": 98,
+      "hours": 3.64
+    },
+    {
+      "artist": "The Beatles",
+      "plays": 125,
+      "hours": 2.9
+    },
+    {
+      "artist": "Max Bruch",
+      "plays": 24,
+      "hours": 2.44
+    },
+    {
+      "artist": "Erik Satie",
+      "plays": 43,
+      "hours": 2
+    },
+    {
+      "artist": "Dire Straits",
+      "plays": 32,
+      "hours": 1.7
+    },
+    {
+      "artist": "Kakkmaddafakka",
+      "plays": 55,
+      "hours": 1.65
+    },
+    {
+      "artist": "Parcels",
+      "plays": 60,
+      "hours": 1.59
+    },
+    {
+      "artist": "Frank Ocean",
+      "plays": 64,
+      "hours": 1.52
+    },
+    {
+      "artist": "Connan Mockasin",
+      "plays": 16,
+      "hours": 1.52
+    },
+    {
+      "artist": "Bee Gees",
+      "plays": 40,
+      "hours": 1.42
+    },
+    {
+      "artist": "TOTO",
+      "plays": 41,
+      "hours": 1.4
+    },
+    {
+      "artist": "Oddny",
+      "plays": 26,
+      "hours": 1.37
+    },
+    {
+      "artist": "Gus Dapperton",
+      "plays": 40,
+      "hours": 1.19
+    },
+    {
+      "artist": "Lucky Lo",
+      "plays": 20,
+      "hours": 1.18
+    },
+    {
+      "artist": "Gabriel Fauré",
+      "plays": 19,
+      "hours": 1.16
+    },
+    {
+      "artist": "Drake",
+      "plays": 27,
+      "hours": 1.12
+    },
+    {
+      "artist": "Elton John",
+      "plays": 37,
+      "hours": 1.11
+    },
+    {
+      "artist": "David Bowie",
+      "plays": 31,
+      "hours": 1.11
+    },
+    {
+      "artist": "CHIC",
+      "plays": 29,
+      "hours": 1.1
+    },
+    {
+      "artist": "Khalid",
+      "plays": 34,
+      "hours": 1.05
+    },
+    {
+      "artist": "Pish",
+      "plays": 24,
+      "hours": 1.03
+    },
+    {
+      "artist": "Jonas Alaska",
+      "plays": 24,
+      "hours": 1.03
+    },
+    {
+      "artist": "Michael Jackson",
+      "plays": 33,
+      "hours": 1.02
+    },
+    {
+      "artist": "Post Malone",
+      "plays": 39,
+      "hours": 0.95
+    },
+    {
+      "artist": "Queen",
+      "plays": 25,
+      "hours": 0.95
+    },
+    {
+      "artist": "Steely Dan",
+      "plays": 15,
+      "hours": 0.9
+    },
+    {
+      "artist": "Johann Sebastian Bach",
+      "plays": 13,
+      "hours": 0.89
+    },
+    {
+      "artist": "Richard Strauss",
+      "plays": 18,
+      "hours": 0.88
+    },
+    {
+      "artist": "Pink Floyd",
+      "plays": 27,
+      "hours": 0.83
+    },
+    {
+      "artist": "Benny Sings",
+      "plays": 20,
+      "hours": 0.8
+    },
+    {
+      "artist": "Broken Bells",
+      "plays": 10,
+      "hours": 0.8
+    },
+    {
+      "artist": "Serge Gainsbourg",
+      "plays": 39,
+      "hours": 0.79
+    },
+    {
+      "artist": "Sondre Lerche",
+      "plays": 19,
+      "hours": 0.74
+    },
+    {
+      "artist": "Paul McCartney",
+      "plays": 20,
+      "hours": 0.74
+    },
+    {
+      "artist": "Johannes Brahms",
+      "plays": 9,
+      "hours": 0.74
+    },
+    {
+      "artist": "Unknown Mortal Orchestra",
+      "plays": 22,
+      "hours": 0.72
+    },
+    {
+      "artist": "Georges Bizet",
+      "plays": 24,
+      "hours": 0.71
+    },
+    {
+      "artist": "Fleetwood Mac",
+      "plays": 23,
+      "hours": 0.7
+    },
+    {
+      "artist": "Kanye West",
+      "plays": 23,
+      "hours": 0.69
+    },
+    {
+      "artist": "Sophie Ellis-Bextor",
+      "plays": 17,
+      "hours": 0.69
+    },
+    {
+      "artist": "Donald Fagen",
+      "plays": 8,
+      "hours": 0.68
+    },
+    {
+      "artist": "Vansire",
+      "plays": 18,
+      "hours": 0.67
+    },
+    {
+      "artist": "The War On Drugs",
+      "plays": 21,
+      "hours": 0.66
+    },
+    {
+      "artist": "Eagles",
+      "plays": 27,
+      "hours": 0.65
+    },
+    {
+      "artist": "Chet Baker",
+      "plays": 18,
+      "hours": 0.64
+    },
+    {
+      "artist": "Chicago",
+      "plays": 15,
+      "hours": 0.63
+    }
+  ]
+}

@@ -62,6 +62,11 @@ logs/
 # sanitization_report.json
 # merged_spotify_data.json
 
+# Large data files - keep these out of git
+privacy_analysis_report.json
+merged_spotify_data.json
+raw/
+
 # Temporary files
 *.tmp
 *.temp
