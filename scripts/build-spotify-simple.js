@@ -5,7 +5,7 @@ import path from "path";
 import dayjs from "dayjs";
 
 const RAW = "raw/merged_spotify_data.json";
-const OUT_DIR = "public/data";
+const OUT_DIR = "docs/data";
 
 // Helpers to read fields across Spotify variants
 function pick(obj, keys, fallback = undefined) {

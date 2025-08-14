@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Test</title>
+</head>
+<body>
+    <h1>Spotify Data Test</h1>
+    <div id="results"></div>
+    
+    <script>
+        async function testData() {
+            const results = document.getElementById('results');
+            
+            try {
+                // Test each data file
+                const files = [
+                    './data/summary.json',
+                    './data/listening_by_year.json',
+                    './data/top_artists_by_year.json',
+                    './data/top_tracks_by_year.json',
+                    './data/listening_daily.csv'
+                ];
+                
+                for (const file of files) {
+                    try {
+                        const response = await fetch(file);
+                        if (response.ok) {
+                            const data = await response.text();
+                            results.innerHTML += `<p>✅ ${file} - OK (${data.length} chars)</p>`;
+                            if (file.endsWith('.json')) {
+                                const json = JSON.parse(data);
+                                results.innerHTML += `<pre>${JSON.stringify(json, null, 2)}</pre>`;
+                            }
+                        } else {
+                            results.innerHTML += `<p>❌ ${file} - HTTP ${response.status}</p>`;
+                        }
+                    } catch (error) {
+                        results.innerHTML += `<p>❌ ${file} - Error: ${error.message}</p>`;
+                    }
+                }
+            } catch (error) {
+                results.innerHTML = `<p>❌ Test failed: ${error.message}</p>`;
+            }
+        }
+        
+        testData();
+    </script>
+</body>
+</html>

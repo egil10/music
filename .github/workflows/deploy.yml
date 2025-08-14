@@ -36,24 +36,24 @@ jobs:
         if [ -f "raw/merged_spotify_data.json" ]; then
           npm run build:data
         else
-          echo "No raw data found, creating sample data for demo..."
-          mkdir -p public/data
-          # Create proper sample data
-          echo '{"total_ms": 3600000, "total_hours": 1.0, "total_plays": 10, "years": ["2024"]}' > public/data/summary.json
-          echo '{"2024": {"ms": 3600000, "plays": 10, "hours": 1.0}}' > public/data/listening_by_year.json
-          echo '{"2024": [{"artist": "Sample Artist", "plays": 5, "hours": 0.5}]}' > public/data/top_artists_by_year.json
-          echo '{"2024": [{"artist": "Sample Artist", "track": "Sample Track", "plays": 3, "hours": 0.3}]}' > public/data/top_tracks_by_year.json
-          echo "date,hours,plays" > public/data/listening_daily.csv
-          echo "2024-01-01,0.1,1" >> public/data/listening_daily.csv
+                     echo "No raw data found, creating sample data for demo..."
+           mkdir -p docs/data
+           # Create proper sample data
+           echo '{"total_ms": 3600000, "total_hours": 1.0, "total_plays": 10, "years": ["2024"]}' > docs/data/summary.json
+           echo '{"2024": {"ms": 3600000, "plays": 10, "hours": 1.0}}' > docs/data/listening_by_year.json
+           echo '{"2024": [{"artist": "Sample Artist", "plays": 5, "hours": 0.5}]}' > docs/data/top_artists_by_year.json
+           echo '{"2024": [{"artist": "Sample Artist", "track": "Sample Track", "plays": 3, "hours": 0.3}]}' > docs/data/top_tracks_by_year.json
+           echo "date,hours,plays" > docs/data/listening_daily.csv
+           echo "2024-01-01,0.1,1" >> docs/data/listening_daily.csv
         fi
       
     - name: Setup Pages
       uses: actions/configure-pages@v4
       
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: './public'
+         - name: Upload artifact
+       uses: actions/upload-pages-artifact@v3
+       with:
+         path: './docs'
 
   deploy:
     environment:
