@@ -1,122 +1,146 @@
 [
   {
     "hour": 0,
-    "hours": 295.69,
-    "plays": 5945
+    "ms": 62159000,
+    "plays": 348,
+    "hours": 17.27
   },
   {
     "hour": 1,
-    "hours": 228.08,
-    "plays": 4487
+    "ms": 120015762,
+    "plays": 611,
+    "hours": 33.34
   },
   {
     "hour": 2,
-    "hours": 155.41,
-    "plays": 2901
+    "ms": 131458755,
+    "plays": 688,
+    "hours": 36.52
   },
   {
     "hour": 3,
-    "hours": 146.02,
-    "plays": 2648
+    "ms": 150046412,
+    "plays": 749,
+    "hours": 41.68
   },
   {
     "hour": 4,
-    "hours": 103.93,
-    "plays": 1898
+    "ms": 66667207,
+    "plays": 389,
+    "hours": 18.52
   },
   {
     "hour": 5,
-    "hours": 179.99,
-    "plays": 3020
+    "ms": 148083933,
+    "plays": 778,
+    "hours": 41.13
   },
   {
     "hour": 6,
-    "hours": 139.75,
-    "plays": 2556
+    "ms": 150591237,
+    "plays": 799,
+    "hours": 41.83
   },
   {
     "hour": 7,
-    "hours": 199.19,
-    "plays": 3798
+    "ms": 169886717,
+    "plays": 960,
+    "hours": 47.19
   },
   {
     "hour": 8,
-    "hours": 294.99,
-    "plays": 5682
+    "ms": 159591935,
+    "plays": 878,
+    "hours": 44.33
   },
   {
     "hour": 9,
-    "hours": 374.9,
-    "plays": 7190
+    "ms": 161489873,
+    "plays": 912,
+    "hours": 44.86
   },
   {
     "hour": 10,
-    "hours": 472.94,
-    "plays": 9022
+    "ms": 111290219,
+    "plays": 667,
+    "hours": 30.91
   },
   {
     "hour": 11,
-    "hours": 498.12,
-    "plays": 9411
+    "ms": 169863691,
+    "plays": 894,
+    "hours": 47.18
   },
   {
     "hour": 12,
-    "hours": 553.93,
-    "plays": 10358
+    "ms": 222959030,
+    "plays": 1222,
+    "hours": 61.93
   },
   {
     "hour": 13,
-    "hours": 619.87,
-    "plays": 11751
+    "ms": 218266438,
+    "plays": 1188,
+    "hours": 60.63
   },
   {
     "hour": 14,
-    "hours": 661.14,
-    "plays": 12677
+    "ms": 230385162,
+    "plays": 1270,
+    "hours": 64
   },
   {
     "hour": 15,
-    "hours": 663.04,
-    "plays": 12731
+    "ms": 219772892,
+    "plays": 1237,
+    "hours": 61.05
   },
   {
     "hour": 16,
-    "hours": 637.01,
-    "plays": 12362
+    "ms": 184879284,
+    "plays": 1025,
+    "hours": 51.36
   },
   {
     "hour": 17,
-    "hours": 578.02,
-    "plays": 11434
+    "ms": 171252985,
+    "plays": 958,
+    "hours": 47.57
   },
   {
     "hour": 18,
-    "hours": 513.5,
-    "plays": 10187
+    "ms": 135737358,
+    "plays": 745,
+    "hours": 37.7
   },
   {
     "hour": 19,
-    "hours": 464.71,
-    "plays": 9151
+    "ms": 96834697,
+    "plays": 541,
+    "hours": 26.9
   },
   {
     "hour": 20,
-    "hours": 469.99,
-    "plays": 9386
+    "ms": 105504414,
+    "plays": 609,
+    "hours": 29.31
   },
   {
     "hour": 21,
-    "hours": 454.39,
-    "plays": 8912
+    "ms": 110430479,
+    "plays": 590,
+    "hours": 30.68
   },
   {
     "hour": 22,
-    "hours": 420.25,
-    "plays": 8355
+    "ms": 89609611,
+    "plays": 503,
+    "hours": 24.89
   },
   {
     "hour": 23,
-    "hours": 402.54,
-    "plays": 7994
+    "ms": 46058642,
+    "plays": 256,
+    "hours": 12.79
   }
 ]

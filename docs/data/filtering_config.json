@@ -2,16 +2,20 @@
   "manual_exclusions": {
     "artists": [
       "Pilt!",
-      "Unknown Artist"
+      "Unknown Artist",
+      "unknown artist",
+      "Unknown"
     ],
     "tracks": [
       "mary plays the piano",
-      "unknown track"
+      "unknown track",
+      "Unknown Track"
     ],
     "keywords": [
       "test",
       "demo",
-      "sample"
+      "sample",
+      "unknown"
     ]
   },
   "outlier_settings": {
@@ -21,9 +25,9 @@
     "maxPlayTime": 3600000
   },
   "stats": {
-    "mean_play_time_minutes": 2.04,
-    "std_dev_minutes": 4.07,
-    "percentile_95_minutes": 5.1,
-    "percentile_99_minutes": 9.88
+    "mean_play_time_minutes": 1.86,
+    "std_dev_minutes": 1.91,
+    "percentile_95_minutes": 4.91,
+    "percentile_99_minutes": 7
   }
 }

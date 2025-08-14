@@ -1,802 +1,11282 @@
 [
   {
-    "artist": "Unknown Artist",
-    "plays": 164833,
-    "hours": 8542.51,
-    "uniqueTracks": 20531,
-    "firstPlay": "2015-06-05T14:14:09Z",
-    "lastPlay": "2025-03-12T23:15:45Z"
-  },
-  {
     "artist": "Jan Eggum",
-    "plays": 1970,
-    "hours": 99.51,
-    "uniqueTracks": 332,
-    "firstPlay": "2024-03-15 05:51",
-    "lastPlay": "2025-03-15 11:55"
+    "ms": 356820426,
+    "plays": 1967,
+    "hours": 99.12
   },
   {
     "artist": "Jonas Alaska",
+    "ms": 121161402,
     "plays": 651,
-    "hours": 33.66,
-    "uniqueTracks": 78,
-    "firstPlay": "2024-03-25 08:53",
-    "lastPlay": "2025-03-14 20:44"
+    "hours": 33.66
   },
   {
     "artist": "Khruangbin",
-    "plays": 612,
-    "hours": 33.26,
-    "uniqueTracks": 101,
-    "firstPlay": "2024-03-15 06:51",
-    "lastPlay": "2025-03-12 17:20"
+    "ms": 114951909,
+    "plays": 602,
+    "hours": 31.93
   },
   {
     "artist": "Benny Sings",
-    "plays": 580,
-    "hours": 26.64,
-    "uniqueTracks": 120,
-    "firstPlay": "2024-03-19 09:19",
-    "lastPlay": "2025-03-13 18:20"
+    "ms": 95004250,
+    "plays": 578,
+    "hours": 26.39
   },
   {
     "artist": "Augustine",
+    "ms": 90942819,
     "plays": 533,
-    "hours": 25.26,
-    "uniqueTracks": 23,
-    "firstPlay": "2024-03-18 05:35",
-    "lastPlay": "2025-03-10 00:39"
+    "hours": 25.26
   },
   {
     "artist": "Susanne Sundfør",
-    "plays": 295,
-    "hours": 18.31,
-    "uniqueTracks": 85,
-    "firstPlay": "2024-03-28 12:53",
-    "lastPlay": "2025-01-27 17:15"
-  },
-  {
-    "artist": "Dire Straits",
-    "plays": 236,
-    "hours": 17.02,
-    "uniqueTracks": 54,
-    "firstPlay": "2024-03-17 03:13",
-    "lastPlay": "2025-03-14 14:40"
+    "ms": 62537305,
+    "plays": 288,
+    "hours": 17.37
   },
   {
     "artist": "Papooz",
+    "ms": 61207860,
     "plays": 364,
-    "hours": 17,
-    "uniqueTracks": 53,
-    "firstPlay": "2024-03-22 03:40",
-    "lastPlay": "2025-03-15 14:25"
+    "hours": 17
+  },
+  {
+    "artist": "Dire Straits",
+    "ms": 54280949,
+    "plays": 222,
+    "hours": 15.08
   },
   {
     "artist": "Bee Gees",
-    "plays": 309,
-    "hours": 15.3,
-    "uniqueTracks": 58,
-    "firstPlay": "2024-03-15 05:11",
-    "lastPlay": "2025-03-15 11:46"
-  },
-  {
-    "artist": "Daft Punk",
-    "plays": 211,
-    "hours": 13.56,
-    "uniqueTracks": 37,
-    "firstPlay": "2024-03-16 11:33",
-    "lastPlay": "2025-03-15 11:35"
+    "ms": 54165429,
+    "plays": 307,
+    "hours": 15.05
   },
   {
     "artist": "Ludwig Göransson",
-    "plays": 221,
-    "hours": 13.21,
-    "uniqueTracks": 23,
-    "firstPlay": "2024-08-17 21:42",
-    "lastPlay": "2024-12-03 14:57"
+    "ms": 45205838,
+    "plays": 216,
+    "hours": 12.56
   },
   {
-    "artist": "The War On Drugs",
-    "plays": 108,
-    "hours": 8.53,
-    "uniqueTracks": 12,
-    "firstPlay": "2024-03-19 04:38",
-    "lastPlay": "2025-03-13 16:51"
+    "artist": "Daft Punk",
+    "ms": 43279025,
+    "plays": 200,
+    "hours": 12.02
   },
   {
     "artist": "The Beatles",
-    "plays": 199,
-    "hours": 8.42,
-    "uniqueTracks": 61,
-    "firstPlay": "2024-03-15 04:59",
-    "lastPlay": "2025-03-15 18:49"
+    "ms": 29417836,
+    "plays": 197,
+    "hours": 8.17
   },
   {
     "artist": "Sondre Lerche",
-    "plays": 135,
-    "hours": 8.08,
-    "uniqueTracks": 59,
-    "firstPlay": "2024-03-16 09:26",
-    "lastPlay": "2025-03-14 18:49"
-  },
-  {
-    "artist": "Parcels",
-    "plays": 150,
-    "hours": 8.02,
-    "uniqueTracks": 50,
-    "firstPlay": "2024-03-21 00:46",
-    "lastPlay": "2025-03-14 21:23"
+    "ms": 28651309,
+    "plays": 134,
+    "hours": 7.96
   },
   {
     "artist": "Pish",
+    "ms": 28314684,
     "plays": 156,
-    "hours": 7.87,
-    "uniqueTracks": 26,
-    "firstPlay": "2024-05-06 17:19",
-    "lastPlay": "2025-03-13 17:24"
+    "hours": 7.87
   },
   {
-    "artist": "Jacob Collier",
-    "plays": 119,
-    "hours": 7.31,
-    "uniqueTracks": 61,
-    "firstPlay": "2024-04-12 05:31",
-    "lastPlay": "2024-12-30 12:38"
+    "artist": "Parcels",
+    "ms": 27396324,
+    "plays": 147,
+    "hours": 7.61
+  },
+  {
+    "artist": "The War On Drugs",
+    "ms": 25003168,
+    "plays": 96,
+    "hours": 6.95
   },
   {
     "artist": "Frédéric Chopin",
-    "plays": 112,
-    "hours": 7.24,
-    "uniqueTracks": 37,
-    "firstPlay": "2024-03-25 14:18",
-    "lastPlay": "2025-03-09 08:03"
+    "ms": 24626085,
+    "plays": 109,
+    "hours": 6.84
+  },
+  {
+    "artist": "Jacob Collier",
+    "ms": 24426249,
+    "plays": 115,
+    "hours": 6.79
   },
   {
     "artist": "Kakkmaddafakka",
-    "plays": 129,
-    "hours": 6.68,
-    "uniqueTracks": 28,
-    "firstPlay": "2024-03-18 09:00",
-    "lastPlay": "2025-03-15 15:50"
-  },
-  {
-    "artist": "deadmau5",
-    "plays": 116,
-    "hours": 6.39,
-    "uniqueTracks": 32,
-    "firstPlay": "2024-03-21 07:36",
-    "lastPlay": "2025-02-05 10:12"
+    "ms": 23592928,
+    "plays": 128,
+    "hours": 6.55
   },
   {
     "artist": "Gus Dapperton",
+    "ms": 21420607,
     "plays": 124,
-    "hours": 5.95,
-    "uniqueTracks": 19,
-    "firstPlay": "2024-03-16 07:59",
-    "lastPlay": "2025-03-14 17:03"
+    "hours": 5.95
   },
   {
     "artist": "Chicago",
-    "plays": 115,
-    "hours": 5.8,
-    "uniqueTracks": 17,
-    "firstPlay": "2024-04-20 04:22",
-    "lastPlay": "2025-03-15 14:29"
+    "ms": 20467268,
+    "plays": 114,
+    "hours": 5.69
   },
   {
     "artist": "Elton John",
+    "ms": 20172775,
     "plays": 98,
-    "hours": 5.6,
-    "uniqueTracks": 22,
-    "firstPlay": "2024-03-15 03:27",
-    "lastPlay": "2025-03-15 11:42"
+    "hours": 5.6
   },
   {
     "artist": "L'Impératrice",
+    "ms": 19893829,
     "plays": 111,
-    "hours": 5.53,
-    "uniqueTracks": 19,
-    "firstPlay": "2024-03-19 03:03",
-    "lastPlay": "2025-03-13 16:43"
+    "hours": 5.53
   },
   {
     "artist": "Bjørn Eidsvåg",
+    "ms": 19858577,
     "plays": 117,
-    "hours": 5.52,
-    "uniqueTracks": 17,
-    "firstPlay": "2024-03-16 07:07",
-    "lastPlay": "2025-03-12 22:39"
-  },
-  {
-    "artist": "Frank Ocean",
-    "plays": 110,
-    "hours": 5.47,
-    "uniqueTracks": 38,
-    "firstPlay": "2024-03-19 03:44",
-    "lastPlay": "2025-03-15 16:20"
+    "hours": 5.52
   },
   {
     "artist": "Laufey",
+    "ms": 19644108,
     "plays": 115,
-    "hours": 5.46,
-    "uniqueTracks": 30,
-    "firstPlay": "2024-03-15 03:34",
-    "lastPlay": "2025-03-13 16:56"
+    "hours": 5.46
   },
   {
-    "artist": "Espen Eriksen Trio",
-    "plays": 68,
-    "hours": 5.12,
-    "uniqueTracks": 31,
-    "firstPlay": "2024-04-23 05:59",
-    "lastPlay": "2025-01-17 21:39"
+    "artist": "deadmau5",
+    "ms": 19191888,
+    "plays": 108,
+    "hours": 5.33
+  },
+  {
+    "artist": "Frank Ocean",
+    "ms": 18514145,
+    "plays": 108,
+    "hours": 5.14
   },
   {
     "artist": "St. Paul & The Broken Bones",
-    "plays": 87,
-    "hours": 5.07,
-    "uniqueTracks": 14,
-    "firstPlay": "2024-05-06 17:34",
-    "lastPlay": "2025-01-17 10:56"
+    "ms": 17683383,
+    "plays": 86,
+    "hours": 4.91
   },
   {
     "artist": "Midnight Generation",
+    "ms": 17457017,
     "plays": 84,
-    "hours": 4.85,
-    "uniqueTracks": 31,
-    "firstPlay": "2025-01-23 22:44",
-    "lastPlay": "2025-03-04 18:05"
+    "hours": 4.85
   },
   {
     "artist": "TOTO",
+    "ms": 16785277,
     "plays": 85,
-    "hours": 4.66,
-    "uniqueTracks": 28,
-    "firstPlay": "2024-04-09 08:49",
-    "lastPlay": "2025-03-12 23:02"
-  },
-  {
-    "artist": "Bobby Caldwell",
-    "plays": 92,
-    "hours": 4.62,
-    "uniqueTracks": 10,
-    "firstPlay": "2024-03-15 03:06",
-    "lastPlay": "2025-02-18 12:20"
+    "hours": 4.66
   },
   {
     "artist": "Post Malone",
+    "ms": 16459423,
     "plays": 91,
-    "hours": 4.57,
-    "uniqueTracks": 23,
-    "firstPlay": "2024-03-21 03:27",
-    "lastPlay": "2025-03-13 19:05"
+    "hours": 4.57
   },
   {
-    "artist": "CHIC",
-    "plays": 74,
-    "hours": 4.55,
-    "uniqueTracks": 19,
-    "firstPlay": "2024-03-15 01:18",
-    "lastPlay": "2025-03-14 09:39"
+    "artist": "Bobby Caldwell",
+    "ms": 16157140,
+    "plays": 91,
+    "hours": 4.49
   },
   {
     "artist": "Michael Jackson",
+    "ms": 16155921,
     "plays": 77,
-    "hours": 4.49,
-    "uniqueTracks": 21,
-    "firstPlay": "2024-03-18 15:46",
-    "lastPlay": "2025-03-15 18:24"
+    "hours": 4.49
+  },
+  {
+    "artist": "Espen Eriksen Trio",
+    "ms": 15090313,
+    "plays": 61,
+    "hours": 4.19
   },
   {
     "artist": "Maroon 5",
-    "plays": 85,
-    "hours": 4.26,
-    "uniqueTracks": 16,
-    "firstPlay": "2024-03-25 09:09",
-    "lastPlay": "2025-02-05 14:13"
+    "ms": 14905594,
+    "plays": 84,
+    "hours": 4.14
   },
   {
-    "artist": "Claude Debussy",
-    "plays": 54,
-    "hours": 4.01,
-    "uniqueTracks": 12,
-    "firstPlay": "2024-03-28 11:11",
-    "lastPlay": "2025-03-04 17:40"
+    "artist": "CHIC",
+    "ms": 13892064,
+    "plays": 69,
+    "hours": 3.86
   },
   {
     "artist": "Röyksopp",
-    "plays": 54,
-    "hours": 3.92,
-    "uniqueTracks": 13,
-    "firstPlay": "2024-06-21 05:27",
-    "lastPlay": "2025-01-27 17:22"
+    "ms": 13605228,
+    "plays": 53,
+    "hours": 3.78
   },
   {
-    "artist": "Fagernes Yacht Klubb",
-    "plays": 57,
-    "hours": 3.62,
-    "uniqueTracks": 2,
-    "firstPlay": "2024-05-15 01:57",
-    "lastPlay": "2025-01-03 14:36"
+    "artist": "Claude Debussy",
+    "ms": 13507979,
+    "plays": 52,
+    "hours": 3.75
   },
   {
     "artist": "Gabrielle",
+    "ms": 12949392,
     "plays": 72,
-    "hours": 3.6,
-    "uniqueTracks": 9,
-    "firstPlay": "2024-08-01 08:21",
-    "lastPlay": "2024-09-17 12:23"
-  },
-  {
-    "artist": "Eagles",
-    "plays": 53,
-    "hours": 3.59,
-    "uniqueTracks": 15,
-    "firstPlay": "2024-03-28 12:35",
-    "lastPlay": "2025-03-06 11:41"
+    "hours": 3.6
   },
   {
     "artist": "Calvin Harris",
+    "ms": 12761903,
     "plays": 83,
-    "hours": 3.54,
-    "uniqueTracks": 23,
-    "firstPlay": "2024-03-18 05:13",
-    "lastPlay": "2025-03-09 09:17"
+    "hours": 3.54
+  },
+  {
+    "artist": "Fagernes Yacht Klubb",
+    "ms": 12532191,
+    "plays": 56,
+    "hours": 3.48
   },
   {
     "artist": "The Weeknd",
+    "ms": 12369170,
     "plays": 63,
-    "hours": 3.44,
-    "uniqueTracks": 17,
-    "firstPlay": "2024-03-19 11:23",
-    "lastPlay": "2025-03-14 09:43"
+    "hours": 3.44
   },
   {
     "artist": "The Strokes",
-    "plays": 69,
-    "hours": 3.4,
-    "uniqueTracks": 23,
-    "firstPlay": "2024-03-27 11:31",
-    "lastPlay": "2025-03-10 12:01"
+    "ms": 11711583,
+    "plays": 68,
+    "hours": 3.25
   },
   {
     "artist": "Lindsey Lomis",
+    "ms": 11674736,
     "plays": 68,
-    "hours": 3.24,
-    "uniqueTracks": 24,
-    "firstPlay": "2024-11-19 10:56",
-    "lastPlay": "2025-03-15 14:39"
+    "hours": 3.24
+  },
+  {
+    "artist": "Eagles",
+    "ms": 11576802,
+    "plays": 50,
+    "hours": 3.22
   },
   {
     "artist": "Fleetwood Mac",
+    "ms": 11551521,
     "plays": 58,
-    "hours": 3.21,
-    "uniqueTracks": 16,
-    "firstPlay": "2024-03-27 02:39",
-    "lastPlay": "2025-03-12 17:53"
+    "hours": 3.21
   },
   {
     "artist": "Serge Gainsbourg",
+    "ms": 11555495,
     "plays": 67,
-    "hours": 3.21,
-    "uniqueTracks": 21,
-    "firstPlay": "2024-06-26 05:15",
-    "lastPlay": "2025-03-04 16:42"
-  },
-  {
-    "artist": "Chet Baker",
-    "plays": 58,
-    "hours": 3.08,
-    "uniqueTracks": 18,
-    "firstPlay": "2024-03-21 14:11",
-    "lastPlay": "2025-03-15 12:34"
+    "hours": 3.21
   },
   {
     "artist": "Sabrina Carpenter",
+    "ms": 10989221,
     "plays": 74,
-    "hours": 3.05,
-    "uniqueTracks": 13,
-    "firstPlay": "2024-04-14 15:57",
-    "lastPlay": "2025-02-01 20:10"
+    "hours": 3.05
   },
   {
     "artist": "Queen",
+    "ms": 10838971,
     "plays": 52,
-    "hours": 3.01,
-    "uniqueTracks": 19,
-    "firstPlay": "2024-03-28 02:33",
-    "lastPlay": "2025-03-14 17:54"
-  },
-  {
-    "artist": "David Bowie",
-    "plays": 42,
-    "hours": 2.91,
-    "uniqueTracks": 17,
-    "firstPlay": "2024-03-26 12:36",
-    "lastPlay": "2025-03-15 10:31"
+    "hours": 3.01
   },
   {
     "artist": "Khalid",
+    "ms": 10333825,
     "plays": 56,
-    "hours": 2.87,
-    "uniqueTracks": 16,
-    "firstPlay": "2024-03-17 04:06",
-    "lastPlay": "2025-03-14 10:01"
+    "hours": 2.87
   },
   {
-    "artist": "Pink Floyd",
-    "plays": 42,
-    "hours": 2.69,
-    "uniqueTracks": 20,
-    "firstPlay": "2024-03-18 08:42",
-    "lastPlay": "2025-03-05 11:36"
-  },
-  {
-    "artist": "Steely Dan",
-    "plays": 42,
-    "hours": 2.68,
-    "uniqueTracks": 11,
-    "firstPlay": "2024-03-19 05:20",
-    "lastPlay": "2025-03-15 16:09"
+    "artist": "Chet Baker",
+    "ms": 9298030,
+    "plays": 54,
+    "hours": 2.58
   },
   {
     "artist": "Highasakite",
+    "ms": 9094799,
     "plays": 41,
-    "hours": 2.53,
-    "uniqueTracks": 6,
-    "firstPlay": "2024-03-16 07:11",
-    "lastPlay": "2025-02-14 14:52"
+    "hours": 2.53
+  },
+  {
+    "artist": "David Bowie",
+    "ms": 9114529,
+    "plays": 39,
+    "hours": 2.53
   },
   {
     "artist": "Drake",
+    "ms": 8784143,
     "plays": 41,
-    "hours": 2.44,
-    "uniqueTracks": 12,
-    "firstPlay": "2024-03-21 13:52",
-    "lastPlay": "2025-03-15 12:53"
+    "hours": 2.44
   },
   {
     "artist": "Edvard Grieg",
+    "ms": 8644053,
     "plays": 44,
-    "hours": 2.4,
-    "uniqueTracks": 25,
-    "firstPlay": "2024-03-17 03:29",
-    "lastPlay": "2025-01-18 15:53"
+    "hours": 2.4
   },
   {
     "artist": "Arctic Monkeys",
+    "ms": 8457539,
     "plays": 45,
-    "hours": 2.35,
-    "uniqueTracks": 16,
-    "firstPlay": "2024-03-19 08:24",
-    "lastPlay": "2025-03-14 18:05"
+    "hours": 2.35
   },
   {
     "artist": "Jungle",
+    "ms": 8463550,
     "plays": 49,
-    "hours": 2.35,
-    "uniqueTracks": 27,
-    "firstPlay": "2024-03-31 05:16",
-    "lastPlay": "2025-02-20 14:29"
+    "hours": 2.35
+  },
+  {
+    "artist": "Mortal Orchestra",
+    "ms": 8162169,
+    "plays": 46,
+    "hours": 2.27
   },
   {
     "artist": "PNAU",
+    "ms": 8063890,
     "plays": 43,
-    "hours": 2.24,
-    "uniqueTracks": 19,
-    "firstPlay": "2024-03-15 00:56",
-    "lastPlay": "2025-01-22 08:13"
+    "hours": 2.24
   },
   {
     "artist": "Kanye West",
+    "ms": 7994059,
     "plays": 46,
-    "hours": 2.22,
-    "uniqueTracks": 18,
-    "firstPlay": "2024-03-18 15:44",
-    "lastPlay": "2025-03-14 21:46"
+    "hours": 2.22
   },
   {
     "artist": "Paul McCartney",
+    "ms": 7800626,
     "plays": 38,
-    "hours": 2.17,
-    "uniqueTracks": 11,
-    "firstPlay": "2024-03-15 04:58",
-    "lastPlay": "2025-03-15 18:07"
+    "hours": 2.17
   },
   {
     "artist": "Sophie Ellis-Bextor",
+    "ms": 7820117,
     "plays": 42,
-    "hours": 2.17,
-    "uniqueTracks": 3,
-    "firstPlay": "2024-03-20 01:34",
-    "lastPlay": "2025-03-12 21:44"
+    "hours": 2.17
   },
   {
-    "artist": "Tame Impala",
+    "artist": "Pink Floyd",
+    "ms": 7395039,
     "plays": 37,
-    "hours": 2.15,
-    "uniqueTracks": 11,
-    "firstPlay": "2024-03-19 06:08",
-    "lastPlay": "2025-03-15 15:47"
+    "hours": 2.05
   },
   {
     "artist": "Charlie Puth",
+    "ms": 7343936,
     "plays": 52,
-    "hours": 2.04,
-    "uniqueTracks": 17,
-    "firstPlay": "2024-03-24 13:47",
-    "lastPlay": "2025-03-12 21:47"
-  },
-  {
-    "artist": "This Agreement",
-    "plays": 30,
-    "hours": 1.95,
-    "uniqueTracks": 6,
-    "firstPlay": "2024-03-25 14:10",
-    "lastPlay": "2025-03-05 20:05"
+    "hours": 2.04
   },
   {
     "artist": "Hamid Al Shaeri",
+    "ms": 6991484,
     "plays": 34,
-    "hours": 1.94,
-    "uniqueTracks": 3,
-    "firstPlay": "2024-03-20 00:59",
-    "lastPlay": "2024-12-20 12:28"
-  },
-  {
-    "artist": "RY X",
-    "plays": 30,
-    "hours": 1.92,
-    "uniqueTracks": 11,
-    "firstPlay": "2024-03-19 04:59",
-    "lastPlay": "2025-03-14 21:31"
+    "hours": 1.94
   },
   {
     "artist": "Cezinando",
+    "ms": 6902779,
     "plays": 35,
-    "hours": 1.92,
-    "uniqueTracks": 13,
-    "firstPlay": "2024-03-25 13:11",
-    "lastPlay": "2025-03-15 12:20"
+    "hours": 1.92
+  },
+  {
+    "artist": "Steely Dan",
+    "ms": 6834731,
+    "plays": 36,
+    "hours": 1.9
   },
   {
     "artist": "Milky Chance",
+    "ms": 6747844,
     "plays": 40,
-    "hours": 1.87,
-    "uniqueTracks": 16,
-    "firstPlay": "2024-03-18 00:39",
-    "lastPlay": "2025-03-14 10:54"
+    "hours": 1.87
   },
   {
     "artist": "Vansire",
+    "ms": 6747578,
     "plays": 41,
-    "hours": 1.87,
-    "uniqueTracks": 9,
-    "firstPlay": "2024-03-18 17:52",
-    "lastPlay": "2025-03-14 21:26"
+    "hours": 1.87
   },
   {
     "artist": "Lemaitre",
+    "ms": 6713515,
     "plays": 33,
-    "hours": 1.86,
-    "uniqueTracks": 12,
-    "firstPlay": "2024-03-16 15:32",
-    "lastPlay": "2025-03-13 09:25"
-  },
-  {
-    "artist": "Mac Miller",
-    "plays": 28,
-    "hours": 1.86,
-    "uniqueTracks": 11,
-    "firstPlay": "2024-03-26 03:28",
-    "lastPlay": "2025-02-19 14:03"
+    "hours": 1.86
   },
   {
     "artist": "Gregory Porter",
+    "ms": 6712738,
     "plays": 31,
-    "hours": 1.86,
-    "uniqueTracks": 14,
-    "firstPlay": "2024-08-05 21:07",
-    "lastPlay": "2025-03-15 14:35"
+    "hours": 1.86
+  },
+  {
+    "artist": "This Agreement",
+    "ms": 6599533,
+    "plays": 29,
+    "hours": 1.83
   },
   {
     "artist": "Home",
+    "ms": 6601745,
     "plays": 40,
-    "hours": 1.83,
-    "uniqueTracks": 8,
-    "firstPlay": "2024-05-21 05:21",
-    "lastPlay": "2025-01-19 18:43"
+    "hours": 1.83
+  },
+  {
+    "artist": "RY X",
+    "ms": 6479996,
+    "plays": 29,
+    "hours": 1.8
   },
   {
     "artist": "Billie Eilish",
+    "ms": 6490889,
     "plays": 32,
-    "hours": 1.8,
-    "uniqueTracks": 4,
-    "firstPlay": "2024-05-21 07:22",
-    "lastPlay": "2025-01-22 09:31"
+    "hours": 1.8
   },
   {
-    "artist": "Erik Satie",
-    "plays": 37,
-    "hours": 1.7,
-    "uniqueTracks": 28,
-    "firstPlay": "2024-06-11 01:57",
-    "lastPlay": "2025-02-13 12:19"
+    "artist": "Tame Impala",
+    "ms": 6390238,
+    "plays": 34,
+    "hours": 1.78
+  },
+  {
+    "artist": "Mac Miller",
+    "ms": 6204011,
+    "plays": 27,
+    "hours": 1.72
   },
   {
     "artist": "Leon Bridges",
+    "ms": 6019625,
     "plays": 35,
-    "hours": 1.67,
-    "uniqueTracks": 8,
-    "firstPlay": "2024-09-07 17:06",
-    "lastPlay": "2025-02-06 10:50"
+    "hours": 1.67
   },
   {
     "artist": "FKJ",
+    "ms": 5952162,
     "plays": 30,
-    "hours": 1.65,
-    "uniqueTracks": 14,
-    "firstPlay": "2024-03-21 08:22",
-    "lastPlay": "2025-02-05 14:54"
+    "hours": 1.65
   },
   {
     "artist": "Future Islands",
+    "ms": 5954100,
     "plays": 28,
-    "hours": 1.65,
-    "uniqueTracks": 8,
-    "firstPlay": "2024-03-22 09:24",
-    "lastPlay": "2025-03-10 00:21"
-  },
-  {
-    "artist": "James Taylor",
-    "plays": 31,
-    "hours": 1.65,
-    "uniqueTracks": 9,
-    "firstPlay": "2024-03-28 12:40",
-    "lastPlay": "2025-03-06 11:36"
+    "hours": 1.65
   },
   {
     "artist": "Jean Tonique",
+    "ms": 5920906,
     "plays": 36,
-    "hours": 1.64,
-    "uniqueTracks": 9,
-    "firstPlay": "2024-04-09 03:14",
-    "lastPlay": "2025-02-28 15:58"
-  },
-  {
-    "artist": "Eric Clapton",
-    "plays": 27,
-    "hours": 1.57,
-    "uniqueTracks": 6,
-    "firstPlay": "2024-03-28 02:23",
-    "lastPlay": "2025-03-14 18:23"
+    "hours": 1.64
   },
   {
     "artist": "Electric Light Orchestra",
+    "ms": 5597612,
     "plays": 28,
-    "hours": 1.55,
-    "uniqueTracks": 7,
-    "firstPlay": "2024-03-17 03:57",
-    "lastPlay": "2025-03-13 11:18"
+    "hours": 1.55
   },
   {
     "artist": "Empire Of The Sun",
+    "ms": 5563080,
     "plays": 28,
-    "hours": 1.55,
-    "uniqueTracks": 6,
-    "firstPlay": "2024-03-22 06:56",
-    "lastPlay": "2025-03-13 09:53"
-  },
-  {
-    "artist": "Connan Mockasin",
-    "plays": 14,
-    "hours": 1.55,
-    "uniqueTracks": 2,
-    "firstPlay": "2024-12-10 14:31",
-    "lastPlay": "2025-03-07 19:34"
-  },
-  {
-    "artist": "Max Bruch",
-    "plays": 17,
-    "hours": 1.55,
-    "uniqueTracks": 17,
-    "firstPlay": "2025-02-02 14:23",
-    "lastPlay": "2025-02-02 16:36"
+    "hours": 1.55
   },
   {
     "artist": "Pikekyss",
+    "ms": 5462936,
     "plays": 34,
-    "hours": 1.52,
-    "uniqueTracks": 10,
-    "firstPlay": "2024-03-16 10:45",
-    "lastPlay": "2024-12-28 14:30"
+    "hours": 1.52
   },
   {
-    "artist": "Stevie Wonder",
-    "plays": 29,
-    "hours": 1.49,
-    "uniqueTracks": 14,
-    "firstPlay": "2024-04-09 01:25",
-    "lastPlay": "2025-03-13 15:25"
+    "artist": "James Taylor",
+    "ms": 5434617,
+    "plays": 30,
+    "hours": 1.51
   },
   {
     "artist": "Foreigner",
+    "ms": 5377575,
     "plays": 24,
-    "hours": 1.49,
-    "uniqueTracks": 4,
-    "firstPlay": "2024-05-15 02:08",
-    "lastPlay": "2025-03-13 17:11"
+    "hours": 1.49
+  },
+  {
+    "artist": "Eric Clapton",
+    "ms": 5216896,
+    "plays": 26,
+    "hours": 1.45
+  },
+  {
+    "artist": "Erik Satie",
+    "ms": 5194681,
+    "plays": 35,
+    "hours": 1.44
   },
   {
     "artist": "Men I Trust",
+    "ms": 5156791,
     "plays": 31,
-    "hours": 1.43,
-    "uniqueTracks": 5,
-    "firstPlay": "2024-03-25 08:57",
-    "lastPlay": "2025-03-04 19:52"
+    "hours": 1.43
   },
   {
     "artist": "Coldplay",
+    "ms": 5115328,
     "plays": 24,
-    "hours": 1.42,
-    "uniqueTracks": 9,
-    "firstPlay": "2024-03-21 07:27",
-    "lastPlay": "2025-01-03 20:03"
-  },
-  {
-    "artist": "Johannes Brahms",
-    "plays": 19,
-    "hours": 1.4,
-    "uniqueTracks": 8,
-    "firstPlay": "2024-05-20 15:59",
-    "lastPlay": "2025-01-31 16:41"
+    "hours": 1.42
   },
   {
     "artist": "boy pablo",
+    "ms": 4955713,
     "plays": 29,
-    "hours": 1.38,
-    "uniqueTracks": 9,
-    "firstPlay": "2024-03-22 00:38",
-    "lastPlay": "2025-03-08 18:30"
+    "hours": 1.38
   },
   {
     "artist": "Gilbert O'Sullivan",
+    "ms": 4976515,
     "plays": 25,
-    "hours": 1.38,
-    "uniqueTracks": 2,
-    "firstPlay": "2024-04-14 05:04",
-    "lastPlay": "2025-03-08 13:28"
+    "hours": 1.38
   },
   {
     "artist": "Oddny",
+    "ms": 4967879,
     "plays": 22,
-    "hours": 1.38,
-    "uniqueTracks": 3,
-    "firstPlay": "2024-11-19 23:44",
-    "lastPlay": "2025-03-14 18:30"
+    "hours": 1.38
   },
   {
     "artist": "Royel Otis",
+    "ms": 4945367,
     "plays": 32,
-    "hours": 1.37,
-    "uniqueTracks": 5,
-    "firstPlay": "2024-04-20 15:07",
-    "lastPlay": "2025-03-13 18:14"
+    "hours": 1.37
   },
   {
     "artist": "M83",
+    "ms": 4881600,
     "plays": 23,
-    "hours": 1.36,
-    "uniqueTracks": 6,
-    "firstPlay": "2024-05-21 14:58",
-    "lastPlay": "2025-03-13 17:55"
+    "hours": 1.36
+  },
+  {
+    "artist": "Sam Cooke",
+    "ms": 4859051,
+    "plays": 36,
+    "hours": 1.35
+  },
+  {
+    "artist": "Todd Rundgren",
+    "ms": 4820681,
+    "plays": 31,
+    "hours": 1.34
+  },
+  {
+    "artist": "Anomalie",
+    "ms": 4785428,
+    "plays": 28,
+    "hours": 1.33
+  },
+  {
+    "artist": "Carpenters",
+    "ms": 4790564,
+    "plays": 22,
+    "hours": 1.33
+  },
+  {
+    "artist": "Willie Nelson",
+    "ms": 4740761,
+    "plays": 30,
+    "hours": 1.32
+  },
+  {
+    "artist": "Hozier",
+    "ms": 4672815,
+    "plays": 23,
+    "hours": 1.3
+  },
+  {
+    "artist": "Paul Simon",
+    "ms": 4659181,
+    "plays": 22,
+    "hours": 1.29
+  },
+  {
+    "artist": "Gitarkameratene",
+    "ms": 4605076,
+    "plays": 33,
+    "hours": 1.28
+  },
+  {
+    "artist": "Andy Gibb",
+    "ms": 4616918,
+    "plays": 23,
+    "hours": 1.28
+  },
+  {
+    "artist": "Wallows",
+    "ms": 4536534,
+    "plays": 28,
+    "hours": 1.26
+  },
+  {
+    "artist": "The Rolling Stones",
+    "ms": 4505431,
+    "plays": 22,
+    "hours": 1.25
+  },
+  {
+    "artist": "Gabriel Fauré",
+    "ms": 4510551,
+    "plays": 19,
+    "hours": 1.25
+  },
+  {
+    "artist": "Louis Armstrong",
+    "ms": 4429756,
+    "plays": 25,
+    "hours": 1.23
+  },
+  {
+    "artist": "Verdensrommet",
+    "ms": 4412791,
+    "plays": 26,
+    "hours": 1.23
+  },
+  {
+    "artist": "Stevie Wonder",
+    "ms": 4440258,
+    "plays": 27,
+    "hours": 1.23
+  },
+  {
+    "artist": "Neil Young",
+    "ms": 4392723,
+    "plays": 21,
+    "hours": 1.22
+  },
+  {
+    "artist": "Bob Marley & The Wailers",
+    "ms": 4345976,
+    "plays": 27,
+    "hours": 1.21
+  },
+  {
+    "artist": "Phoenix",
+    "ms": 4324976,
+    "plays": 22,
+    "hours": 1.2
+  },
+  {
+    "artist": "The Neighbourhood",
+    "ms": 4310938,
+    "plays": 24,
+    "hours": 1.2
+  },
+  {
+    "artist": "Sam Smith",
+    "ms": 4299304,
+    "plays": 25,
+    "hours": 1.19
+  },
+  {
+    "artist": "Eli Rygg",
+    "ms": 4198414,
+    "plays": 21,
+    "hours": 1.17
+  },
+  {
+    "artist": "Pomplamoose",
+    "ms": 4222457,
+    "plays": 25,
+    "hours": 1.17
+  },
+  {
+    "artist": "Lucky Lo",
+    "ms": 4077407,
+    "plays": 16,
+    "hours": 1.13
+  },
+  {
+    "artist": "John Mayer",
+    "ms": 4045591,
+    "plays": 20,
+    "hours": 1.12
+  },
+  {
+    "artist": "Karpe",
+    "ms": 3953431,
+    "plays": 19,
+    "hours": 1.1
+  },
+  {
+    "artist": "Sampha",
+    "ms": 3931935,
+    "plays": 20,
+    "hours": 1.09
+  },
+  {
+    "artist": "Kygo",
+    "ms": 3916354,
+    "plays": 26,
+    "hours": 1.09
+  },
+  {
+    "artist": "Arc De Soleil",
+    "ms": 3907617,
+    "plays": 26,
+    "hours": 1.09
+  },
+  {
+    "artist": "Mumford & Sons",
+    "ms": 3876516,
+    "plays": 17,
+    "hours": 1.08
+  },
+  {
+    "artist": "The Cranberries",
+    "ms": 3894422,
+    "plays": 20,
+    "hours": 1.08
+  },
+  {
+    "artist": "Mac DeMarco",
+    "ms": 3834824,
+    "plays": 25,
+    "hours": 1.07
+  },
+  {
+    "artist": "JAY-Z",
+    "ms": 3763524,
+    "plays": 21,
+    "hours": 1.05
+  },
+  {
+    "artist": "Rex Orange County",
+    "ms": 3784350,
+    "plays": 24,
+    "hours": 1.05
+  },
+  {
+    "artist": "Alan Walker",
+    "ms": 3759498,
+    "plays": 24,
+    "hours": 1.04
+  },
+  {
+    "artist": "Ella Fitzgerald",
+    "ms": 3699454,
+    "plays": 20,
+    "hours": 1.03
+  },
+  {
+    "artist": "Wings",
+    "ms": 3719574,
+    "plays": 20,
+    "hours": 1.03
+  },
+  {
+    "artist": "The Lijadu Sisters",
+    "ms": 3693983,
+    "plays": 18,
+    "hours": 1.03
+  },
+  {
+    "artist": "Bjørn Johan Muri",
+    "ms": 3663717,
+    "plays": 20,
+    "hours": 1.02
+  },
+  {
+    "artist": "Wu-Tang Clan",
+    "ms": 3657354,
+    "plays": 16,
+    "hours": 1.02
+  },
+  {
+    "artist": "Billy Joel",
+    "ms": 3671944,
+    "plays": 17,
+    "hours": 1.02
+  },
+  {
+    "artist": "Diana Ross",
+    "ms": 3684276,
+    "plays": 16,
+    "hours": 1.02
+  },
+  {
+    "artist": "Matoma",
+    "ms": 3614663,
+    "plays": 17,
+    "hours": 1
+  },
+  {
+    "artist": "Vulfpeck",
+    "ms": 3589738,
+    "plays": 19,
+    "hours": 1
+  },
+  {
+    "artist": "Xiao Ou",
+    "ms": 3562085,
+    "plays": 25,
+    "hours": 0.99
+  },
+  {
+    "artist": "Johannes Brahms",
+    "ms": 3558455,
+    "plays": 16,
+    "hours": 0.99
+  },
+  {
+    "artist": "Dua Lipa",
+    "ms": 3491175,
+    "plays": 22,
+    "hours": 0.97
+  },
+  {
+    "artist": "ABBA",
+    "ms": 3502967,
+    "plays": 17,
+    "hours": 0.97
+  },
+  {
+    "artist": "Djo",
+    "ms": 3461793,
+    "plays": 24,
+    "hours": 0.96
+  },
+  {
+    "artist": "Chappell Roan",
+    "ms": 3450088,
+    "plays": 18,
+    "hours": 0.96
+  },
+  {
+    "artist": "DJ Løv",
+    "ms": 3418001,
+    "plays": 19,
+    "hours": 0.95
+  },
+  {
+    "artist": "No. 4",
+    "ms": 3412104,
+    "plays": 19,
+    "hours": 0.95
+  },
+  {
+    "artist": "SVON",
+    "ms": 3400184,
+    "plays": 21,
+    "hours": 0.94
+  },
+  {
+    "artist": "RAYE",
+    "ms": 3376312,
+    "plays": 19,
+    "hours": 0.94
+  },
+  {
+    "artist": "Dionne Warwick",
+    "ms": 3327737,
+    "plays": 18,
+    "hours": 0.92
+  },
+  {
+    "artist": "Urban Cone",
+    "ms": 3232351,
+    "plays": 11,
+    "hours": 0.9
+  },
+  {
+    "artist": "Baccara",
+    "ms": 3256699,
+    "plays": 21,
+    "hours": 0.9
+  },
+  {
+    "artist": "Max Bruch",
+    "ms": 3230285,
+    "plays": 12,
+    "hours": 0.9
+  },
+  {
+    "artist": "Vieux Farka Touré",
+    "ms": 3211509,
+    "plays": 12,
+    "hours": 0.89
+  },
+  {
+    "artist": "The Doobie Brothers",
+    "ms": 3192107,
+    "plays": 17,
+    "hours": 0.89
+  },
+  {
+    "artist": "Tom Misch",
+    "ms": 3206302,
+    "plays": 15,
+    "hours": 0.89
+  },
+  {
+    "artist": "U2",
+    "ms": 3190836,
+    "plays": 14,
+    "hours": 0.89
+  },
+  {
+    "artist": "Isah",
+    "ms": 3151204,
+    "plays": 21,
+    "hours": 0.88
+  },
+  {
+    "artist": "Eminem",
+    "ms": 3158881,
+    "plays": 11,
+    "hours": 0.88
+  },
+  {
+    "artist": "Morten Harket",
+    "ms": 3145851,
+    "plays": 15,
+    "hours": 0.87
+  },
+  {
+    "artist": "Blæst",
+    "ms": 3136559,
+    "plays": 19,
+    "hours": 0.87
+  },
+  {
+    "artist": "Lady Gaga",
+    "ms": 3148670,
+    "plays": 14,
+    "hours": 0.87
+  },
+  {
+    "artist": "LISA",
+    "ms": 3128836,
+    "plays": 24,
+    "hours": 0.87
+  },
+  {
+    "artist": "Otis Redding",
+    "ms": 3084567,
+    "plays": 25,
+    "hours": 0.86
+  },
+  {
+    "artist": "Franz Liszt",
+    "ms": 3083388,
+    "plays": 12,
+    "hours": 0.86
+  },
+  {
+    "artist": "Todd Terje",
+    "ms": 3100240,
+    "plays": 12,
+    "hours": 0.86
+  },
+  {
+    "artist": "Kendrick Lamar",
+    "ms": 3055065,
+    "plays": 17,
+    "hours": 0.85
+  },
+  {
+    "artist": "Teddy Swims",
+    "ms": 3049811,
+    "plays": 18,
+    "hours": 0.85
+  },
+  {
+    "artist": "Roosevelt",
+    "ms": 3039560,
+    "plays": 16,
+    "hours": 0.84
+  },
+  {
+    "artist": "Bill Withers",
+    "ms": 3023375,
+    "plays": 19,
+    "hours": 0.84
+  },
+  {
+    "artist": "Adele",
+    "ms": 2999493,
+    "plays": 15,
+    "hours": 0.83
+  },
+  {
+    "artist": "Tyler, The Creator",
+    "ms": 3003318,
+    "plays": 12,
+    "hours": 0.83
+  },
+  {
+    "artist": "Al Jarreau",
+    "ms": 2943997,
+    "plays": 18,
+    "hours": 0.82
+  },
+  {
+    "artist": "Player",
+    "ms": 2957709,
+    "plays": 14,
+    "hours": 0.82
+  },
+  {
+    "artist": "Unge Ferrari",
+    "ms": 2921378,
+    "plays": 19,
+    "hours": 0.81
+  },
+  {
+    "artist": "Hans Zimmer",
+    "ms": 2925123,
+    "plays": 13,
+    "hours": 0.81
+  },
+  {
+    "artist": "Julio Iglesias",
+    "ms": 2879645,
+    "plays": 12,
+    "hours": 0.8
+  },
+  {
+    "artist": "Jan Erik Vold",
+    "ms": 2895117,
+    "plays": 18,
+    "hours": 0.8
+  },
+  {
+    "artist": "21 Savage",
+    "ms": 2888748,
+    "plays": 13,
+    "hours": 0.8
+  },
+  {
+    "artist": "Henning Sommerro",
+    "ms": 2851148,
+    "plays": 22,
+    "hours": 0.79
+  },
+  {
+    "artist": "Giacomo Puccini",
+    "ms": 2837090,
+    "plays": 16,
+    "hours": 0.79
+  },
+  {
+    "artist": "Roberta Flack",
+    "ms": 2853665,
+    "plays": 15,
+    "hours": 0.79
+  },
+  {
+    "artist": "Bernhoft",
+    "ms": 2826804,
+    "plays": 15,
+    "hours": 0.79
+  },
+  {
+    "artist": "Christopher Cross",
+    "ms": 2851730,
+    "plays": 12,
+    "hours": 0.79
+  },
+  {
+    "artist": "Wolfgang Amadeus Mozart",
+    "ms": 2826198,
+    "plays": 18,
+    "hours": 0.79
+  },
+  {
+    "artist": "The Killers",
+    "ms": 2823847,
+    "plays": 15,
+    "hours": 0.78
+  },
+  {
+    "artist": "Emma Steinbakken",
+    "ms": 2805787,
+    "plays": 17,
+    "hours": 0.78
+  },
+  {
+    "artist": "Marvin Gaye",
+    "ms": 2813158,
+    "plays": 12,
+    "hours": 0.78
+  },
+  {
+    "artist": "Faces",
+    "ms": 2797137,
+    "plays": 15,
+    "hours": 0.78
+  },
+  {
+    "artist": "Wilco",
+    "ms": 2766334,
+    "plays": 15,
+    "hours": 0.77
+  },
+  {
+    "artist": "Muse",
+    "ms": 2759972,
+    "plays": 11,
+    "hours": 0.77
+  },
+  {
+    "artist": "Clairo",
+    "ms": 2755873,
+    "plays": 19,
+    "hours": 0.77
+  },
+  {
+    "artist": "Gorillaz",
+    "ms": 2739756,
+    "plays": 14,
+    "hours": 0.76
+  },
+  {
+    "artist": "Status Quo",
+    "ms": 2741622,
+    "plays": 12,
+    "hours": 0.76
+  },
+  {
+    "artist": "Michael Kiwanuka",
+    "ms": 2735553,
+    "plays": 13,
+    "hours": 0.76
+  },
+  {
+    "artist": "Alicia Keys",
+    "ms": 2713683,
+    "plays": 14,
+    "hours": 0.75
+  },
+  {
+    "artist": "Ariana Grande",
+    "ms": 2714791,
+    "plays": 17,
+    "hours": 0.75
+  },
+  {
+    "artist": "Georges Bizet",
+    "ms": 2702103,
+    "plays": 15,
+    "hours": 0.75
+  },
+  {
+    "artist": "KENNETH ENGEBRETSEN",
+    "ms": 2649342,
+    "plays": 14,
+    "hours": 0.74
+  },
+  {
+    "artist": "FIFTY FIFTY",
+    "ms": 2651040,
+    "plays": 20,
+    "hours": 0.74
+  },
+  {
+    "artist": "Al Green",
+    "ms": 2670239,
+    "plays": 12,
+    "hours": 0.74
+  },
+  {
+    "artist": "Leonard Cohen",
+    "ms": 2665914,
+    "plays": 12,
+    "hours": 0.74
+  },
+  {
+    "artist": "10cc",
+    "ms": 2673166,
+    "plays": 11,
+    "hours": 0.74
+  },
+  {
+    "artist": "Crosby, Stills, Nash & Young",
+    "ms": 2621110,
+    "plays": 16,
+    "hours": 0.73
+  },
+  {
+    "artist": "John Lennon",
+    "ms": 2643659,
+    "plays": 13,
+    "hours": 0.73
+  },
+  {
+    "artist": "Johann Sebastian Bach",
+    "ms": 2610684,
+    "plays": 14,
+    "hours": 0.73
+  },
+  {
+    "artist": "The Supremes",
+    "ms": 2645014,
+    "plays": 19,
+    "hours": 0.73
+  },
+  {
+    "artist": "Madonna",
+    "ms": 2631010,
+    "plays": 12,
+    "hours": 0.73
+  },
+  {
+    "artist": "Future",
+    "ms": 2643154,
+    "plays": 12,
+    "hours": 0.73
+  },
+  {
+    "artist": "Skrillex",
+    "ms": 2575927,
+    "plays": 15,
+    "hours": 0.72
+  },
+  {
+    "artist": "Svømmebasseng",
+    "ms": 2588955,
+    "plays": 14,
+    "hours": 0.72
+  },
+  {
+    "artist": "Free Nationals",
+    "ms": 2607098,
+    "plays": 19,
+    "hours": 0.72
+  },
+  {
+    "artist": "Eloise",
+    "ms": 2597728,
+    "plays": 16,
+    "hours": 0.72
+  },
+  {
+    "artist": "Flume",
+    "ms": 2557053,
+    "plays": 13,
+    "hours": 0.71
+  },
+  {
+    "artist": "The Mamas & The Papas",
+    "ms": 2572116,
+    "plays": 17,
+    "hours": 0.71
+  },
+  {
+    "artist": "PREP",
+    "ms": 2553187,
+    "plays": 13,
+    "hours": 0.71
+  },
+  {
+    "artist": "Charli xcx",
+    "ms": 2539903,
+    "plays": 20,
+    "hours": 0.71
+  },
+  {
+    "artist": "Phil Collins",
+    "ms": 2506041,
+    "plays": 14,
+    "hours": 0.7
+  },
+  {
+    "artist": "Delegation",
+    "ms": 2495539,
+    "plays": 12,
+    "hours": 0.69
+  },
+  {
+    "artist": "Bon Iver",
+    "ms": 2501712,
+    "plays": 13,
+    "hours": 0.69
+  },
+  {
+    "artist": "Lykke Li",
+    "ms": 2442341,
+    "plays": 10,
+    "hours": 0.68
+  },
+  {
+    "artist": "Stan Getz",
+    "ms": 2442971,
+    "plays": 14,
+    "hours": 0.68
+  },
+  {
+    "artist": "Elis Regina",
+    "ms": 2459374,
+    "plays": 11,
+    "hours": 0.68
+  },
+  {
+    "artist": "Simon & Garfunkel",
+    "ms": 2449497,
+    "plays": 14,
+    "hours": 0.68
+  },
+  {
+    "artist": "Yusuf / Cat Stevens",
+    "ms": 2433995,
+    "plays": 13,
+    "hours": 0.68
+  },
+  {
+    "artist": "James Brown",
+    "ms": 2449607,
+    "plays": 15,
+    "hours": 0.68
+  },
+  {
+    "artist": "Lou Reed",
+    "ms": 2434729,
+    "plays": 12,
+    "hours": 0.68
+  },
+  {
+    "artist": "M.I.L.K.",
+    "ms": 2461943,
+    "plays": 19,
+    "hours": 0.68
+  },
+  {
+    "artist": "Masayoshi Takanaka",
+    "ms": 2403615,
+    "plays": 14,
+    "hours": 0.67
+  },
+  {
+    "artist": "Lily Allen",
+    "ms": 2373160,
+    "plays": 14,
+    "hours": 0.66
+  },
+  {
+    "artist": "Taylor Swift",
+    "ms": 2369175,
+    "plays": 15,
+    "hours": 0.66
+  },
+  {
+    "artist": "Salvador Sobral",
+    "ms": 2339975,
+    "plays": 12,
+    "hours": 0.65
+  },
+  {
+    "artist": "The Temptations",
+    "ms": 2323855,
+    "plays": 11,
+    "hours": 0.65
+  },
+  {
+    "artist": "Crosby, Stills & Nash",
+    "ms": 2335526,
+    "plays": 17,
+    "hours": 0.65
   },
   {
     "artist": "Jaden",
+    "ms": 2315746,
+    "plays": 12,
+    "hours": 0.64
+  },
+  {
+    "artist": "BENEE",
+    "ms": 2300753,
+    "plays": 18,
+    "hours": 0.64
+  },
+  {
+    "artist": "Champagne Superchillin'",
+    "ms": 2294711,
+    "plays": 14,
+    "hours": 0.64
+  },
+  {
+    "artist": "Roy Orbison",
+    "ms": 2268677,
+    "plays": 15,
+    "hours": 0.63
+  },
+  {
+    "artist": "Travis Scott",
+    "ms": 2281741,
+    "plays": 14,
+    "hours": 0.63
+  },
+  {
+    "artist": "Klossmajor",
+    "ms": 2219574,
+    "plays": 16,
+    "hours": 0.62
+  },
+  {
+    "artist": "Petter",
+    "ms": 2219896,
+    "plays": 12,
+    "hours": 0.62
+  },
+  {
+    "artist": "Radiohead",
+    "ms": 2233474,
+    "plays": 15,
+    "hours": 0.62
+  },
+  {
+    "artist": "Nik Kershaw",
+    "ms": 2204537,
+    "plays": 9,
+    "hours": 0.61
+  },
+  {
+    "artist": "Aerosmith",
+    "ms": 2198505,
+    "plays": 10,
+    "hours": 0.61
+  },
+  {
+    "artist": "Lionel Richie",
+    "ms": 2201960,
+    "plays": 10,
+    "hours": 0.61
+  },
+  {
+    "artist": "NEIL FRANCES",
+    "ms": 2199276,
+    "plays": 13,
+    "hours": 0.61
+  },
+  {
+    "artist": "Inge Bremnes",
+    "ms": 2164127,
+    "plays": 10,
+    "hours": 0.6
+  },
+  {
+    "artist": "Galantis",
+    "ms": 2117944,
+    "plays": 13,
+    "hours": 0.59
+  },
+  {
+    "artist": "Kimchii",
+    "ms": 2136471,
+    "plays": 8,
+    "hours": 0.59
+  },
+  {
+    "artist": "Chuck Mangione",
+    "ms": 2131023,
+    "plays": 9,
+    "hours": 0.59
+  },
+  {
+    "artist": "Arif Murakami",
+    "ms": 2124129,
+    "plays": 14,
+    "hours": 0.59
+  },
+  {
+    "artist": "Robyn",
+    "ms": 2125470,
+    "plays": 13,
+    "hours": 0.59
+  },
+  {
+    "artist": "Pharrell Williams",
+    "ms": 2097845,
     "plays": 17,
-    "hours": 1.35,
-    "uniqueTracks": 6,
-    "firstPlay": "2024-03-21 00:44",
-    "lastPlay": "2025-03-13 10:40"
+    "hours": 0.58
+  },
+  {
+    "artist": "Seals and Crofts",
+    "ms": 2087742,
+    "plays": 15,
+    "hours": 0.58
+  },
+  {
+    "artist": "Waa Wei",
+    "ms": 2102247,
+    "plays": 11,
+    "hours": 0.58
+  },
+  {
+    "artist": "Traveling Wilburys",
+    "ms": 2040360,
+    "plays": 12,
+    "hours": 0.57
+  },
+  {
+    "artist": "Truls",
+    "ms": 2035385,
+    "plays": 12,
+    "hours": 0.57
+  },
+  {
+    "artist": "Donald Fagen",
+    "ms": 2050547,
+    "plays": 8,
+    "hours": 0.57
+  },
+  {
+    "artist": "Miki Matsubara",
+    "ms": 2057702,
+    "plays": 8,
+    "hours": 0.57
+  },
+  {
+    "artist": "Bruno Mars",
+    "ms": 2054699,
+    "plays": 11,
+    "hours": 0.57
+  },
+  {
+    "artist": "Winston Surfshirt",
+    "ms": 2027372,
+    "plays": 9,
+    "hours": 0.56
+  },
+  {
+    "artist": "臧天朔",
+    "ms": 2033595,
+    "plays": 10,
+    "hours": 0.56
+  },
+  {
+    "artist": "Nils Bech",
+    "ms": 1999767,
+    "plays": 15,
+    "hours": 0.56
+  },
+  {
+    "artist": "Chromeo",
+    "ms": 2006271,
+    "plays": 13,
+    "hours": 0.56
+  },
+  {
+    "artist": "Camille Saint-Saëns",
+    "ms": 2008372,
+    "plays": 13,
+    "hours": 0.56
+  },
+  {
+    "artist": "Her's",
+    "ms": 2027364,
+    "plays": 10,
+    "hours": 0.56
+  },
+  {
+    "artist": "Labi Siffre",
+    "ms": 2010783,
+    "plays": 8,
+    "hours": 0.56
+  },
+  {
+    "artist": "Sérgio Mendes",
+    "ms": 2025200,
+    "plays": 9,
+    "hours": 0.56
+  },
+  {
+    "artist": "Jolin Tsai",
+    "ms": 1988868,
+    "plays": 11,
+    "hours": 0.55
+  },
+  {
+    "artist": "Keith Urban",
+    "ms": 1994207,
+    "plays": 11,
+    "hours": 0.55
+  },
+  {
+    "artist": "Kavinsky",
+    "ms": 1973027,
+    "plays": 9,
+    "hours": 0.55
+  },
+  {
+    "artist": "Richard Strauss",
+    "ms": 1967091,
+    "plays": 11,
+    "hours": 0.55
+  },
+  {
+    "artist": "Frazey Ford",
+    "ms": 1978152,
+    "plays": 8,
+    "hours": 0.55
+  },
+  {
+    "artist": "Fjorden Baby!",
+    "ms": 1951336,
+    "plays": 10,
+    "hours": 0.54
+  },
+  {
+    "artist": "Elvis Presley",
+    "ms": 1952521,
+    "plays": 14,
+    "hours": 0.54
+  },
+  {
+    "artist": "Bryan Adams",
+    "ms": 1945295,
+    "plays": 9,
+    "hours": 0.54
+  },
+  {
+    "artist": "Coco",
+    "ms": 1950745,
+    "plays": 10,
+    "hours": 0.54
+  },
+  {
+    "artist": "Earth, Wind & Fire",
+    "ms": 1901834,
+    "plays": 9,
+    "hours": 0.53
+  },
+  {
+    "artist": "Gabriel Rios",
+    "ms": 1910446,
+    "plays": 11,
+    "hours": 0.53
+  },
+  {
+    "artist": "Céline Dion",
+    "ms": 1880943,
+    "plays": 9,
+    "hours": 0.52
+  },
+  {
+    "artist": "Johnny Cash",
+    "ms": 1856672,
+    "plays": 15,
+    "hours": 0.52
+  },
+  {
+    "artist": "Francis Poulenc",
+    "ms": 1875424,
+    "plays": 7,
+    "hours": 0.52
+  },
+  {
+    "artist": "Maurice Ravel",
+    "ms": 1873436,
+    "plays": 8,
+    "hours": 0.52
+  },
+  {
+    "artist": "Shannon Lauren Callihan",
+    "ms": 1883715,
+    "plays": 10,
+    "hours": 0.52
+  },
+  {
+    "artist": "Bill Evans",
+    "ms": 1857956,
+    "plays": 6,
+    "hours": 0.52
+  },
+  {
+    "artist": "Andrew Lloyd Webber",
+    "ms": 1872977,
+    "plays": 10,
+    "hours": 0.52
+  },
+  {
+    "artist": "Kings of Leon",
+    "ms": 1883253,
+    "plays": 9,
+    "hours": 0.52
+  },
+  {
+    "artist": "Olivia Newton-John",
+    "ms": 1881184,
+    "plays": 8,
+    "hours": 0.52
+  },
+  {
+    "artist": "Jimin",
+    "ms": 1882002,
+    "plays": 14,
+    "hours": 0.52
+  },
+  {
+    "artist": "Kaizers Orchestra",
+    "ms": 1824390,
+    "plays": 10,
+    "hours": 0.51
+  },
+  {
+    "artist": "Sawyer Hill",
+    "ms": 1824000,
+    "plays": 7,
+    "hours": 0.51
+  },
+  {
+    "artist": "Modjo",
+    "ms": 1837487,
+    "plays": 8,
+    "hours": 0.51
+  },
+  {
+    "artist": "Tom Waits",
+    "ms": 1834917,
+    "plays": 7,
+    "hours": 0.51
+  },
+  {
+    "artist": "Johann Strauss II",
+    "ms": 1845307,
+    "plays": 6,
+    "hours": 0.51
+  },
+  {
+    "artist": "SAULT",
+    "ms": 1810730,
+    "plays": 7,
+    "hours": 0.5
+  },
+  {
+    "artist": "Jalen Ngonda",
+    "ms": 1748995,
+    "plays": 11,
+    "hours": 0.49
+  },
+  {
+    "artist": "Fleet Foxes",
+    "ms": 1757313,
+    "plays": 9,
+    "hours": 0.49
+  },
+  {
+    "artist": "Daryl Hall & John Oates",
+    "ms": 1751491,
+    "plays": 10,
+    "hours": 0.49
+  },
+  {
+    "artist": "Macklemore & Ryan Lewis",
+    "ms": 1758936,
+    "plays": 8,
+    "hours": 0.49
+  },
+  {
+    "artist": "Billie Holiday",
+    "ms": 1769163,
+    "plays": 10,
+    "hours": 0.49
+  },
+  {
+    "artist": "America",
+    "ms": 1770189,
+    "plays": 8,
+    "hours": 0.49
+  },
+  {
+    "artist": "KC & The Sunshine Band",
+    "ms": 1750394,
+    "plays": 11,
+    "hours": 0.49
+  },
+  {
+    "artist": "John Legend",
+    "ms": 1735594,
+    "plays": 8,
+    "hours": 0.48
+  },
+  {
+    "artist": "BJ The Chicago Kid",
+    "ms": 1713594,
+    "plays": 7,
+    "hours": 0.48
+  },
+  {
+    "artist": "Sigvart Dagsland",
+    "ms": 1744759,
+    "plays": 13,
+    "hours": 0.48
+  },
+  {
+    "artist": "Supertramp",
+    "ms": 1730551,
+    "plays": 9,
+    "hours": 0.48
+  },
+  {
+    "artist": "James Bay",
+    "ms": 1714796,
+    "plays": 7,
+    "hours": 0.48
+  },
+  {
+    "artist": "Procol Harum",
+    "ms": 1710806,
+    "plays": 7,
+    "hours": 0.48
+  },
+  {
+    "artist": "Fay Wildhagen",
+    "ms": 1719810,
+    "plays": 11,
+    "hours": 0.48
+  },
+  {
+    "artist": "斯琴格日樂",
+    "ms": 1708763,
+    "plays": 7,
+    "hours": 0.47
+  },
+  {
+    "artist": "Erlend Øye",
+    "ms": 1706623,
+    "plays": 8,
+    "hours": 0.47
+  },
+  {
+    "artist": "Cam'ron",
+    "ms": 1708583,
+    "plays": 8,
+    "hours": 0.47
+  },
+  {
+    "artist": "Foster The People",
+    "ms": 1699110,
+    "plays": 11,
+    "hours": 0.47
+  },
+  {
+    "artist": "Francis and the Lights",
+    "ms": 1669473,
+    "plays": 11,
+    "hours": 0.46
+  },
+  {
+    "artist": "George Harrison",
+    "ms": 1644973,
+    "plays": 7,
+    "hours": 0.46
+  },
+  {
+    "artist": "Hailu Mergia",
+    "ms": 1657598,
+    "plays": 9,
+    "hours": 0.46
+  },
+  {
+    "artist": "Great News",
+    "ms": 1639914,
+    "plays": 9,
+    "hours": 0.46
+  },
+  {
+    "artist": "The Ink Spots",
+    "ms": 1637918,
+    "plays": 9,
+    "hours": 0.45
+  },
+  {
+    "artist": "Leonard Bernstein",
+    "ms": 1632064,
+    "plays": 9,
+    "hours": 0.45
+  },
+  {
+    "artist": "Bette Midler",
+    "ms": 1606671,
+    "plays": 7,
+    "hours": 0.45
+  },
+  {
+    "artist": "The Lemon Twigs",
+    "ms": 1596406,
+    "plays": 8,
+    "hours": 0.44
+  },
+  {
+    "artist": "Odd Børretzen",
+    "ms": 1599531,
+    "plays": 9,
+    "hours": 0.44
+  },
+  {
+    "artist": "blackwave.",
+    "ms": 1568424,
+    "plays": 8,
+    "hours": 0.44
+  },
+  {
+    "artist": "Matt Simons",
+    "ms": 1545168,
+    "plays": 9,
+    "hours": 0.43
+  },
+  {
+    "artist": "The Highwaymen",
+    "ms": 1541244,
+    "plays": 8,
+    "hours": 0.43
+  },
+  {
+    "artist": "XXXTENTACION",
+    "ms": 1538749,
+    "plays": 16,
+    "hours": 0.43
+  },
+  {
+    "artist": "Snakehips",
+    "ms": 1546454,
+    "plays": 8,
+    "hours": 0.43
+  },
+  {
+    "artist": "Paul Anka",
+    "ms": 1553937,
+    "plays": 10,
+    "hours": 0.43
+  },
+  {
+    "artist": "Bob Dylan",
+    "ms": 1555430,
+    "plays": 9,
+    "hours": 0.43
+  },
+  {
+    "artist": "Action Bronson",
+    "ms": 1543622,
+    "plays": 6,
+    "hours": 0.43
+  },
+  {
+    "artist": "Whitney Houston",
+    "ms": 1556624,
+    "plays": 7,
+    "hours": 0.43
+  },
+  {
+    "artist": "Tom Petty",
+    "ms": 1501543,
+    "plays": 9,
+    "hours": 0.42
+  },
+  {
+    "artist": "趙雷",
+    "ms": 1529744,
+    "plays": 5,
+    "hours": 0.42
+  },
+  {
+    "artist": "STR4TA",
+    "ms": 1520003,
+    "plays": 9,
+    "hours": 0.42
+  },
+  {
+    "artist": "George Michael",
+    "ms": 1525292,
+    "plays": 7,
+    "hours": 0.42
+  },
+  {
+    "artist": "Thundercat",
+    "ms": 1511477,
+    "plays": 8,
+    "hours": 0.42
+  },
+  {
+    "artist": "Anna of the North",
+    "ms": 1495610,
+    "plays": 6,
+    "hours": 0.42
+  },
+  {
+    "artist": "Michael McDonald",
+    "ms": 1518001,
+    "plays": 9,
+    "hours": 0.42
+  },
+  {
+    "artist": "Breakbot",
+    "ms": 1475878,
+    "plays": 8,
+    "hours": 0.41
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "ms": 1463980,
+    "plays": 5,
+    "hours": 0.41
+  },
+  {
+    "artist": "Ray LaMontagne",
+    "ms": 1469693,
+    "plays": 6,
+    "hours": 0.41
+  },
+  {
+    "artist": "WILLOW",
+    "ms": 1464012,
+    "plays": 8,
+    "hours": 0.41
+  },
+  {
+    "artist": "Esbe",
+    "ms": 1491323,
+    "plays": 12,
+    "hours": 0.41
+  },
+  {
+    "artist": "Susanna Hoffs",
+    "ms": 1479599,
+    "plays": 8,
+    "hours": 0.41
+  },
+  {
+    "artist": "Sly & The Family Stone",
+    "ms": 1443947,
+    "plays": 6,
+    "hours": 0.4
+  },
+  {
+    "artist": "Keane",
+    "ms": 1432113,
+    "plays": 6,
+    "hours": 0.4
+  },
+  {
+    "artist": "Atthar",
+    "ms": 1444185,
+    "plays": 7,
+    "hours": 0.4
+  },
+  {
+    "artist": "2Pac",
+    "ms": 1444041,
+    "plays": 10,
+    "hours": 0.4
+  },
+  {
+    "artist": "Pitbull",
+    "ms": 1435285,
+    "plays": 9,
+    "hours": 0.4
+  },
+  {
+    "artist": "The Buggles",
+    "ms": 1427804,
+    "plays": 7,
+    "hours": 0.4
+  },
+  {
+    "artist": "Kate Bush",
+    "ms": 1449797,
+    "plays": 6,
+    "hours": 0.4
+  },
+  {
+    "artist": "Blondie",
+    "ms": 1422253,
+    "plays": 8,
+    "hours": 0.4
+  },
+  {
+    "artist": "Agathe Backer Grøndahl",
+    "ms": 1453791,
+    "plays": 7,
+    "hours": 0.4
+  },
+  {
+    "artist": "The Shacks",
+    "ms": 1422503,
+    "plays": 10,
+    "hours": 0.4
+  },
+  {
+    "artist": "Emelie Hollow",
+    "ms": 1421532,
+    "plays": 9,
+    "hours": 0.39
+  },
+  {
+    "artist": "LCD Soundsystem",
+    "ms": 1393133,
+    "plays": 7,
+    "hours": 0.39
+  },
+  {
+    "artist": "Amy Winehouse",
+    "ms": 1413601,
+    "plays": 7,
+    "hours": 0.39
+  },
+  {
+    "artist": "The Jackson 5",
+    "ms": 1397403,
+    "plays": 10,
+    "hours": 0.39
+  },
+  {
+    "artist": "Shaggy",
+    "ms": 1397307,
+    "plays": 7,
+    "hours": 0.39
+  },
+  {
+    "artist": "The Chainsmokers",
+    "ms": 1388833,
+    "plays": 7,
+    "hours": 0.39
+  },
+  {
+    "artist": "a-ha",
+    "ms": 1400572,
+    "plays": 8,
+    "hours": 0.39
+  },
+  {
+    "artist": "Mulatu Astatke",
+    "ms": 1401428,
+    "plays": 7,
+    "hours": 0.39
+  },
+  {
+    "artist": "Tory Lanez",
+    "ms": 1418988,
+    "plays": 13,
+    "hours": 0.39
+  },
+  {
+    "artist": "Kapo",
+    "ms": 1409817,
+    "plays": 10,
+    "hours": 0.39
+  },
+  {
+    "artist": "*NSYNC",
+    "ms": 1402417,
+    "plays": 7,
+    "hours": 0.39
+  },
+  {
+    "artist": "KAROL G",
+    "ms": 1406656,
+    "plays": 8,
+    "hours": 0.39
+  },
+  {
+    "artist": "The Waterboys",
+    "ms": 1370711,
+    "plays": 7,
+    "hours": 0.38
+  },
+  {
+    "artist": "Sister Sledge",
+    "ms": 1351489,
+    "plays": 8,
+    "hours": 0.38
+  },
+  {
+    "artist": "Erik Bye",
+    "ms": 1379951,
+    "plays": 9,
+    "hours": 0.38
+  },
+  {
+    "artist": "Jeremy Loops",
+    "ms": 1372815,
+    "plays": 6,
+    "hours": 0.38
+  },
+  {
+    "artist": "Yung Lean",
+    "ms": 1356888,
+    "plays": 8,
+    "hours": 0.38
+  },
+  {
+    "artist": "Darius",
+    "ms": 1383474,
+    "plays": 6,
+    "hours": 0.38
+  },
+  {
+    "artist": "SALES",
+    "ms": 1358801,
+    "plays": 10,
+    "hours": 0.38
+  },
+  {
+    "artist": "MGMT",
+    "ms": 1370572,
+    "plays": 7,
+    "hours": 0.38
+  },
+  {
+    "artist": "Garfield Fleming",
+    "ms": 1365113,
+    "plays": 5,
+    "hours": 0.38
+  },
+  {
+    "artist": "Myles Smith",
+    "ms": 1380264,
+    "plays": 8,
+    "hours": 0.38
+  },
+  {
+    "artist": "Felix Mendelssohn",
+    "ms": 1350273,
+    "plays": 6,
+    "hours": 0.38
+  },
+  {
+    "artist": "Rakkere",
+    "ms": 1350720,
+    "plays": 11,
+    "hours": 0.38
+  },
+  {
+    "artist": "Charlotte Gainsbourg",
+    "ms": 1383661,
+    "plays": 5,
+    "hours": 0.38
+  },
+  {
+    "artist": "Kristian Kristensen",
+    "ms": 1317505,
+    "plays": 9,
+    "hours": 0.37
+  },
+  {
+    "artist": "Duran Duran",
+    "ms": 1331878,
+    "plays": 5,
+    "hours": 0.37
+  },
+  {
+    "artist": "Quincy Jones",
+    "ms": 1321129,
+    "plays": 6,
+    "hours": 0.37
+  },
+  {
+    "artist": "Daniel Kvammen",
+    "ms": 1345586,
+    "plays": 7,
+    "hours": 0.37
+  },
+  {
+    "artist": "Frank Zappa",
+    "ms": 1343119,
+    "plays": 6,
+    "hours": 0.37
+  },
+  {
+    "artist": "Pet Shop Boys",
+    "ms": 1320324,
+    "plays": 5,
+    "hours": 0.37
+  },
+  {
+    "artist": "The Wailers",
+    "ms": 1348571,
+    "plays": 7,
+    "hours": 0.37
+  },
+  {
+    "artist": "Nujabes",
+    "ms": 1343299,
+    "plays": 6,
+    "hours": 0.37
+  },
+  {
+    "artist": "Antônio Carlos Jobim",
+    "ms": 1338498,
+    "plays": 9,
+    "hours": 0.37
+  },
+  {
+    "artist": "Mark Ronson",
+    "ms": 1286356,
+    "plays": 6,
+    "hours": 0.36
+  },
+  {
+    "artist": "Lukas Graham",
+    "ms": 1296368,
+    "plays": 8,
+    "hours": 0.36
+  },
+  {
+    "artist": "Queens of the Stone Age",
+    "ms": 1312939,
+    "plays": 7,
+    "hours": 0.36
+  },
+  {
+    "artist": "Transition 前進樂團",
+    "ms": 1284178,
+    "plays": 8,
+    "hours": 0.36
+  },
+  {
+    "artist": "Broiler",
+    "ms": 1305625,
+    "plays": 6,
+    "hours": 0.36
+  },
+  {
+    "artist": "Kenta",
+    "ms": 1292271,
+    "plays": 8,
+    "hours": 0.36
+  },
+  {
+    "artist": "TØFL",
+    "ms": 1278392,
+    "plays": 9,
+    "hours": 0.36
+  },
+  {
+    "artist": "Diane Tell",
+    "ms": 1303641,
+    "plays": 7,
+    "hours": 0.36
+  },
+  {
+    "artist": "Bent Fabricius-Bjerre",
+    "ms": 1283123,
+    "plays": 12,
+    "hours": 0.36
+  },
+  {
+    "artist": "Tommy Richman",
+    "ms": 1281176,
+    "plays": 9,
+    "hours": 0.36
+  },
+  {
+    "artist": "Gerry Rafferty",
+    "ms": 1282419,
+    "plays": 6,
+    "hours": 0.36
+  },
+  {
+    "artist": "Mike Oldfield",
+    "ms": 1306195,
+    "plays": 9,
+    "hours": 0.36
+  },
+  {
+    "artist": "C418",
+    "ms": 1303184,
+    "plays": 7,
+    "hours": 0.36
+  },
+  {
+    "artist": "Data",
+    "ms": 1296976,
+    "plays": 7,
+    "hours": 0.36
+  },
+  {
+    "artist": "Robbie Williams",
+    "ms": 1282491,
+    "plays": 6,
+    "hours": 0.36
+  },
+  {
+    "artist": "John Williams",
+    "ms": 1299303,
+    "plays": 5,
+    "hours": 0.36
+  },
+  {
+    "artist": "Cashmere Cat",
+    "ms": 1273147,
+    "plays": 6,
+    "hours": 0.35
+  },
+  {
+    "artist": "Brigitte Bardot",
+    "ms": 1265058,
+    "plays": 7,
+    "hours": 0.35
+  },
+  {
+    "artist": "Judy Collins",
+    "ms": 1246447,
+    "plays": 6,
+    "hours": 0.35
+  },
+  {
+    "artist": "Eddie Johns",
+    "ms": 1242772,
+    "plays": 4,
+    "hours": 0.35
+  },
+  {
+    "artist": "Alexander O'Neal",
+    "ms": 1274999,
+    "plays": 4,
+    "hours": 0.35
+  },
+  {
+    "artist": "YG Marley",
+    "ms": 1246293,
+    "plays": 6,
+    "hours": 0.35
+  },
+  {
+    "artist": "Kid Bloom",
+    "ms": 1276083,
+    "plays": 9,
+    "hours": 0.35
+  },
+  {
+    "artist": "Cage The Elephant",
+    "ms": 1256184,
+    "plays": 6,
+    "hours": 0.35
+  },
+  {
+    "artist": "Imagine Dragons",
+    "ms": 1250979,
+    "plays": 7,
+    "hours": 0.35
+  },
+  {
+    "artist": "The Tallest Man On Earth",
+    "ms": 1245215,
+    "plays": 6,
+    "hours": 0.35
+  },
+  {
+    "artist": "Tatsuro Yamashita",
+    "ms": 1262256,
+    "plays": 4,
+    "hours": 0.35
+  },
+  {
+    "artist": "Dur-Dur Band",
+    "ms": 1272288,
+    "plays": 5,
+    "hours": 0.35
+  },
+  {
+    "artist": "sped up + slowed",
+    "ms": 1277121,
+    "plays": 7,
+    "hours": 0.35
+  },
+  {
+    "artist": "The Beach Boys",
+    "ms": 1242173,
+    "plays": 8,
+    "hours": 0.35
+  },
+  {
+    "artist": "Hanumankind",
+    "ms": 1253189,
+    "plays": 8,
+    "hours": 0.35
+  },
+  {
+    "artist": "平生不晚",
+    "ms": 1265385,
+    "plays": 7,
+    "hours": 0.35
+  },
+  {
+    "artist": "Alabama 3",
+    "ms": 1255567,
+    "plays": 6,
+    "hours": 0.35
+  },
+  {
+    "artist": "Ovidicio",
+    "ms": 1234951,
+    "plays": 6,
+    "hours": 0.34
+  },
+  {
+    "artist": "Tears For Fears",
+    "ms": 1226856,
+    "plays": 7,
+    "hours": 0.34
+  },
+  {
+    "artist": "Andrew Gold",
+    "ms": 1229983,
+    "plays": 6,
+    "hours": 0.34
+  },
+  {
+    "artist": "Ziggy Marley",
+    "ms": 1227101,
+    "plays": 6,
+    "hours": 0.34
+  },
+  {
+    "artist": "Wham!",
+    "ms": 1221239,
+    "plays": 6,
+    "hours": 0.34
+  },
+  {
+    "artist": "The Delfonics",
+    "ms": 1235284,
+    "plays": 7,
+    "hours": 0.34
+  },
+  {
+    "artist": "LÉON",
+    "ms": 1207118,
+    "plays": 5,
+    "hours": 0.34
+  },
+  {
+    "artist": "Kenya Grace",
+    "ms": 1179856,
+    "plays": 7,
+    "hours": 0.33
+  },
+  {
+    "artist": "The 5th Dimension",
+    "ms": 1194571,
+    "plays": 5,
+    "hours": 0.33
+  },
+  {
+    "artist": "Lil Uzi Vert",
+    "ms": 1174316,
+    "plays": 6,
+    "hours": 0.33
+  },
+  {
+    "artist": "雲端司機 CLOUDRIVER",
+    "ms": 1177215,
+    "plays": 7,
+    "hours": 0.33
+  },
+  {
+    "artist": "Sade",
+    "ms": 1171811,
+    "plays": 9,
+    "hours": 0.33
+  },
+  {
+    "artist": "The Byrds",
+    "ms": 1192724,
+    "plays": 6,
+    "hours": 0.33
+  },
+  {
+    "artist": "Hot Chocolate",
+    "ms": 1171670,
+    "plays": 5,
+    "hours": 0.33
+  },
+  {
+    "artist": "Marcus Tvedt Hjelle",
+    "ms": 1200354,
+    "plays": 8,
+    "hours": 0.33
+  },
+  {
+    "artist": "Grateful Dead",
+    "ms": 1188739,
+    "plays": 7,
+    "hours": 0.33
+  },
+  {
+    "artist": "Lewis Capaldi",
+    "ms": 1187905,
+    "plays": 6,
+    "hours": 0.33
+  },
+  {
+    "artist": "MF DOOM",
+    "ms": 1175619,
+    "plays": 7,
+    "hours": 0.33
+  },
+  {
+    "artist": "Razika",
+    "ms": 1185876,
+    "plays": 7,
+    "hours": 0.33
+  },
+  {
+    "artist": "Ed Sheeran",
+    "ms": 1177943,
+    "plays": 6,
+    "hours": 0.33
+  },
+  {
+    "artist": "Fred again..",
+    "ms": 1191436,
+    "plays": 8,
+    "hours": 0.33
+  },
+  {
+    "artist": "Logic",
+    "ms": 1193481,
+    "plays": 5,
+    "hours": 0.33
+  },
+  {
+    "artist": "Frank Sinatra",
+    "ms": 1190672,
+    "plays": 8,
+    "hours": 0.33
+  },
+  {
+    "artist": "Etta James",
+    "ms": 1182052,
+    "plays": 9,
+    "hours": 0.33
+  },
+  {
+    "artist": "CASIOPEA",
+    "ms": 1193719,
+    "plays": 6,
+    "hours": 0.33
+  },
+  {
+    "artist": "Minken Fosheim",
+    "ms": 1181757,
+    "plays": 8,
+    "hours": 0.33
+  },
+  {
+    "artist": "Dasha",
+    "ms": 1183798,
+    "plays": 7,
+    "hours": 0.33
+  },
+  {
+    "artist": "Hues Corporation",
+    "ms": 1172204,
+    "plays": 8,
+    "hours": 0.33
+  },
+  {
+    "artist": "Ella Langley",
+    "ms": 1181726,
+    "plays": 5,
+    "hours": 0.33
+  },
+  {
+    "artist": "Far Caspian",
+    "ms": 1191064,
+    "plays": 6,
+    "hours": 0.33
+  },
+  {
+    "artist": "Ane Brun",
+    "ms": 1153758,
+    "plays": 5,
+    "hours": 0.32
+  },
+  {
+    "artist": "David Tao",
+    "ms": 1151776,
+    "plays": 4,
+    "hours": 0.32
+  },
+  {
+    "artist": "Junior Senior",
+    "ms": 1138224,
+    "plays": 8,
+    "hours": 0.32
+  },
+  {
+    "artist": "Emil Kruse",
+    "ms": 1164613,
+    "plays": 8,
+    "hours": 0.32
+  },
+  {
+    "artist": "Polo & Pan",
+    "ms": 1144956,
+    "plays": 6,
+    "hours": 0.32
+  },
+  {
+    "artist": "Antony and the Johnsons",
+    "ms": 1166610,
+    "plays": 7,
+    "hours": 0.32
+  },
+  {
+    "artist": "Electric Guest",
+    "ms": 1135835,
+    "plays": 8,
+    "hours": 0.32
+  },
+  {
+    "artist": "tais.",
+    "ms": 1144646,
+    "plays": 4,
+    "hours": 0.32
+  },
+  {
+    "artist": "Damian Marley",
+    "ms": 1145355,
+    "plays": 7,
+    "hours": 0.32
+  },
+  {
+    "artist": "Bright Eyes",
+    "ms": 1161863,
+    "plays": 6,
+    "hours": 0.32
+  },
+  {
+    "artist": "Haruomi Hosono",
+    "ms": 1101548,
+    "plays": 8,
+    "hours": 0.31
+  },
+  {
+    "artist": "Alessi Brothers",
+    "ms": 1117920,
+    "plays": 6,
+    "hours": 0.31
+  },
+  {
+    "artist": "Lou Rawls",
+    "ms": 1113982,
+    "plays": 6,
+    "hours": 0.31
+  },
+  {
+    "artist": "Veronica Maggio",
+    "ms": 1125389,
+    "plays": 7,
+    "hours": 0.31
+  },
+  {
+    "artist": "Led Zeppelin",
+    "ms": 1098767,
+    "plays": 6,
+    "hours": 0.31
+  },
+  {
+    "artist": "Youth Club",
+    "ms": 1105018,
+    "plays": 7,
+    "hours": 0.31
+  },
+  {
+    "artist": "Marcos Valle",
+    "ms": 1102939,
+    "plays": 9,
+    "hours": 0.31
+  },
+  {
+    "artist": "Lindsey Buckingham",
+    "ms": 1116120,
+    "plays": 6,
+    "hours": 0.31
+  },
+  {
+    "artist": "Benson Boone",
+    "ms": 1105774,
+    "plays": 7,
+    "hours": 0.31
+  },
+  {
+    "artist": "Fred Åkerström",
+    "ms": 1102561,
+    "plays": 7,
+    "hours": 0.31
+  },
+  {
+    "artist": "Westminster Choir",
+    "ms": 1107382,
+    "plays": 4,
+    "hours": 0.31
+  },
+  {
+    "artist": "Adam Port",
+    "ms": 1123075,
+    "plays": 6,
+    "hours": 0.31
+  },
+  {
+    "artist": "FloyyMenor",
+    "ms": 1110000,
+    "plays": 5,
+    "hours": 0.31
+  },
+  {
+    "artist": "Hubbabubbaklubb",
+    "ms": 1121410,
+    "plays": 6,
+    "hours": 0.31
+  },
+  {
+    "artist": "Santana",
+    "ms": 1121206,
+    "plays": 6,
+    "hours": 0.31
+  },
+  {
+    "artist": "Jimmy Page",
+    "ms": 1095961,
+    "plays": 4,
+    "hours": 0.3
+  },
+  {
+    "artist": "Youngblood Hawke",
+    "ms": 1097320,
+    "plays": 7,
+    "hours": 0.3
+  },
+  {
+    "artist": "Fei Yu-ching",
+    "ms": 1093962,
+    "plays": 6,
+    "hours": 0.3
+  },
+  {
+    "artist": "Talking Heads",
+    "ms": 1070541,
+    "plays": 5,
+    "hours": 0.3
+  },
+  {
+    "artist": "vinni",
+    "ms": 1090836,
+    "plays": 7,
+    "hours": 0.3
+  },
+  {
+    "artist": "Atari",
+    "ms": 1077227,
+    "plays": 6,
+    "hours": 0.3
+  },
+  {
+    "artist": "The Fearless Flyers",
+    "ms": 1092380,
+    "plays": 9,
+    "hours": 0.3
+  },
+  {
+    "artist": "Eddie Kendricks",
+    "ms": 1086613,
+    "plays": 6,
+    "hours": 0.3
+  },
+  {
+    "artist": "Jacques Dutronc",
+    "ms": 1096910,
+    "plays": 7,
+    "hours": 0.3
+  },
+  {
+    "artist": "Dr. Dre",
+    "ms": 1063715,
+    "plays": 5,
+    "hours": 0.3
+  },
+  {
+    "artist": "Orgone",
+    "ms": 1073701,
+    "plays": 4,
+    "hours": 0.3
+  },
+  {
+    "artist": "Anuel AA",
+    "ms": 1070249,
+    "plays": 6,
+    "hours": 0.3
+  },
+  {
+    "artist": "Steve Winwood",
+    "ms": 1079189,
+    "plays": 4,
+    "hours": 0.3
+  },
+  {
+    "artist": "Ole Bull",
+    "ms": 1090239,
+    "plays": 4,
+    "hours": 0.3
+  },
+  {
+    "artist": "Lord Huron",
+    "ms": 1078765,
+    "plays": 6,
+    "hours": 0.3
+  },
+  {
+    "artist": "The Goo Goo Dolls",
+    "ms": 1062292,
+    "plays": 6,
+    "hours": 0.3
+  },
+  {
+    "artist": "Suprastate",
+    "ms": 1091948,
+    "plays": 4,
+    "hours": 0.3
+  },
+  {
+    "artist": "João Gilberto",
+    "ms": 1064149,
+    "plays": 6,
+    "hours": 0.3
+  },
+  {
+    "artist": "Michael Giacchino",
+    "ms": 1052644,
+    "plays": 5,
+    "hours": 0.29
+  },
+  {
+    "artist": "Nina Simone",
+    "ms": 1056589,
+    "plays": 8,
+    "hours": 0.29
+  },
+  {
+    "artist": "Terry Jacks",
+    "ms": 1033177,
+    "plays": 6,
+    "hours": 0.29
+  },
+  {
+    "artist": "Disclosure",
+    "ms": 1060195,
+    "plays": 5,
+    "hours": 0.29
+  },
+  {
+    "artist": "Madness",
+    "ms": 1044074,
+    "plays": 6,
+    "hours": 0.29
+  },
+  {
+    "artist": "Paolo Nutini",
+    "ms": 1031078,
+    "plays": 7,
+    "hours": 0.29
+  },
+  {
+    "artist": "Frankie Valli & The Four Seasons",
+    "ms": 1038884,
+    "plays": 8,
+    "hours": 0.29
+  },
+  {
+    "artist": "Pomo",
+    "ms": 1056396,
+    "plays": 5,
+    "hours": 0.29
+  },
+  {
+    "artist": "Bread",
+    "ms": 1053334,
+    "plays": 6,
+    "hours": 0.29
+  },
+  {
+    "artist": "Phantogram",
+    "ms": 1035989,
+    "plays": 5,
+    "hours": 0.29
+  },
+  {
+    "artist": "Moby",
+    "ms": 1042503,
+    "plays": 6,
+    "hours": 0.29
+  },
+  {
+    "artist": "Susana Estrada",
+    "ms": 1049940,
+    "plays": 8,
+    "hours": 0.29
+  },
+  {
+    "artist": "Jafunk",
+    "ms": 1029755,
+    "plays": 10,
+    "hours": 0.29
+  },
+  {
+    "artist": "Samuel Barber",
+    "ms": 1035534,
+    "plays": 5,
+    "hours": 0.29
+  },
+  {
+    "artist": "Joesef",
+    "ms": 1042033,
+    "plays": 4,
+    "hours": 0.29
+  },
+  {
+    "artist": "The Peddlers",
+    "ms": 1038680,
+    "plays": 5,
+    "hours": 0.29
+  },
+  {
+    "artist": "Metro Boomin",
+    "ms": 1015537,
+    "plays": 5,
+    "hours": 0.28
+  },
+  {
+    "artist": "Sigrid",
+    "ms": 1000489,
+    "plays": 5,
+    "hours": 0.28
+  },
+  {
+    "artist": "Doja Cat",
+    "ms": 1015640,
+    "plays": 6,
+    "hours": 0.28
+  },
+  {
+    "artist": "Chris Isaak",
+    "ms": 1004742,
+    "plays": 4,
+    "hours": 0.28
+  },
+  {
+    "artist": "JNO",
+    "ms": 1020720,
+    "plays": 7,
+    "hours": 0.28
+  },
+  {
+    "artist": "Beharie",
+    "ms": 997202,
+    "plays": 4,
+    "hours": 0.28
+  },
+  {
+    "artist": "MorMor",
+    "ms": 996842,
+    "plays": 4,
+    "hours": 0.28
+  },
+  {
+    "artist": "Majical Cloudz",
+    "ms": 996052,
+    "plays": 4,
+    "hours": 0.28
+  },
+  {
+    "artist": "JJ Lin",
+    "ms": 965564,
+    "plays": 4,
+    "hours": 0.27
+  },
+  {
+    "artist": "Kool & The Gang",
+    "ms": 968536,
+    "plays": 6,
+    "hours": 0.27
+  },
+  {
+    "artist": "Regard",
+    "ms": 962181,
+    "plays": 7,
+    "hours": 0.27
+  },
+  {
+    "artist": "The Velvet Underground",
+    "ms": 971491,
+    "plays": 5,
+    "hours": 0.27
+  },
+  {
+    "artist": "Jack Johnson",
+    "ms": 955969,
+    "plays": 6,
+    "hours": 0.27
+  },
+  {
+    "artist": "Iggy Pop",
+    "ms": 976805,
+    "plays": 6,
+    "hours": 0.27
+  },
+  {
+    "artist": "Foals",
+    "ms": 959775,
+    "plays": 4,
+    "hours": 0.27
+  },
+  {
+    "artist": "Cass Elliot",
+    "ms": 976747,
+    "plays": 8,
+    "hours": 0.27
+  },
+  {
+    "artist": "Manu Chao",
+    "ms": 967980,
+    "plays": 6,
+    "hours": 0.27
+  },
+  {
+    "artist": "Robbie Dupree",
+    "ms": 969375,
+    "plays": 5,
+    "hours": 0.27
+  },
+  {
+    "artist": "Coolio",
+    "ms": 962772,
+    "plays": 4,
+    "hours": 0.27
+  },
+  {
+    "artist": "Jackson Browne",
+    "ms": 969013,
+    "plays": 4,
+    "hours": 0.27
+  },
+  {
+    "artist": "Air Supply",
+    "ms": 959774,
+    "plays": 6,
+    "hours": 0.27
+  },
+  {
+    "artist": "The Olympians",
+    "ms": 962011,
+    "plays": 4,
+    "hours": 0.27
+  },
+  {
+    "artist": "Charles Trenet",
+    "ms": 956942,
+    "plays": 6,
+    "hours": 0.27
+  },
+  {
+    "artist": "Giuseppe Verdi",
+    "ms": 963705,
+    "plays": 5,
+    "hours": 0.27
+  },
+  {
+    "artist": "Pusha T",
+    "ms": 983765,
+    "plays": 4,
+    "hours": 0.27
+  },
+  {
+    "artist": "Peter Tosh",
+    "ms": 977012,
+    "plays": 4,
+    "hours": 0.27
+  },
+  {
+    "artist": "Tasmin Archer",
+    "ms": 987515,
+    "plays": 5,
+    "hours": 0.27
+  },
+  {
+    "artist": "Courtney Barnett",
+    "ms": 980065,
+    "plays": 4,
+    "hours": 0.27
+  },
+  {
+    "artist": "VM Holdet",
+    "ms": 951130,
+    "plays": 3,
+    "hours": 0.26
+  },
+  {
+    "artist": "Fonzi Thornton",
+    "ms": 933117,
+    "plays": 6,
+    "hours": 0.26
+  },
+  {
+    "artist": "cassö",
+    "ms": 946299,
+    "plays": 9,
+    "hours": 0.26
+  },
+  {
+    "artist": "Childish Gambino",
+    "ms": 929787,
+    "plays": 6,
+    "hours": 0.26
+  },
+  {
+    "artist": "Rod Stewart",
+    "ms": 945892,
+    "plays": 3,
+    "hours": 0.26
+  },
+  {
+    "artist": "Mild High Club",
+    "ms": 953160,
+    "plays": 5,
+    "hours": 0.26
+  },
+  {
+    "artist": "Kenneth Sivertsen",
+    "ms": 933822,
+    "plays": 4,
+    "hours": 0.26
+  },
+  {
+    "artist": "Depeche Mode",
+    "ms": 928357,
+    "plays": 5,
+    "hours": 0.26
+  },
+  {
+    "artist": "Lady A",
+    "ms": 945760,
+    "plays": 4,
+    "hours": 0.26
+  },
+  {
+    "artist": "Herb Alpert & The Tijuana Brass",
+    "ms": 937021,
+    "plays": 8,
+    "hours": 0.26
+  },
+  {
+    "artist": "Middle Kids",
+    "ms": 929670,
+    "plays": 6,
+    "hours": 0.26
+  },
+  {
+    "artist": "LEISURE",
+    "ms": 936555,
+    "plays": 5,
+    "hours": 0.26
+  },
+  {
+    "artist": "Carole King",
+    "ms": 943294,
+    "plays": 5,
+    "hours": 0.26
+  },
+  {
+    "artist": "Aaron Taylor",
+    "ms": 950105,
+    "plays": 6,
+    "hours": 0.26
+  },
+  {
+    "artist": "Phoria",
+    "ms": 936492,
+    "plays": 4,
+    "hours": 0.26
+  },
+  {
+    "artist": "Alina Baraz",
+    "ms": 938253,
+    "plays": 5,
+    "hours": 0.26
+  },
+  {
+    "artist": "5 Seconds of Summer",
+    "ms": 935151,
+    "plays": 6,
+    "hours": 0.26
+  },
+  {
+    "artist": "Father John Misty",
+    "ms": 932525,
+    "plays": 4,
+    "hours": 0.26
+  },
+  {
+    "artist": "Feist",
+    "ms": 919765,
+    "plays": 5,
+    "hours": 0.26
+  },
+  {
+    "artist": "Flo Morrissey",
+    "ms": 929095,
+    "plays": 4,
+    "hours": 0.26
+  },
+  {
+    "artist": "When In Rome",
+    "ms": 930559,
+    "plays": 5,
+    "hours": 0.26
+  },
+  {
+    "artist": "T-Pain",
+    "ms": 906994,
+    "plays": 4,
+    "hours": 0.25
+  },
+  {
+    "artist": "dyl dion",
+    "ms": 892183,
+    "plays": 7,
+    "hours": 0.25
+  },
+  {
+    "artist": "Dave Matthews Band",
+    "ms": 883331,
+    "plays": 6,
+    "hours": 0.25
+  },
+  {
+    "artist": "Heatwave",
+    "ms": 917264,
+    "plays": 4,
+    "hours": 0.25
+  },
+  {
+    "artist": "Cir.Cuz",
+    "ms": 899560,
+    "plays": 7,
+    "hours": 0.25
+  },
+  {
+    "artist": "Black Eyed Peas",
+    "ms": 916434,
+    "plays": 6,
+    "hours": 0.25
+  },
+  {
+    "artist": "Kali Uchis",
+    "ms": 883856,
+    "plays": 9,
+    "hours": 0.25
+  },
+  {
+    "artist": "Rita Coolidge",
+    "ms": 898809,
+    "plays": 5,
+    "hours": 0.25
+  },
+  {
+    "artist": "George Yanagi",
+    "ms": 903929,
+    "plays": 4,
+    "hours": 0.25
+  },
+  {
+    "artist": "Dolly Parton",
+    "ms": 885845,
+    "plays": 5,
+    "hours": 0.25
+  },
+  {
+    "artist": "Blues Traveler",
+    "ms": 899546,
+    "plays": 4,
+    "hours": 0.25
+  },
+  {
+    "artist": "Oliver Malcolm",
+    "ms": 915985,
+    "plays": 6,
+    "hours": 0.25
+  },
+  {
+    "artist": "Sports",
+    "ms": 904175,
+    "plays": 5,
+    "hours": 0.25
+  },
+  {
+    "artist": "Dylan LeBlanc",
+    "ms": 883673,
+    "plays": 4,
+    "hours": 0.25
+  },
+  {
+    "artist": "Rufus Wainwright",
+    "ms": 871240,
+    "plays": 4,
+    "hours": 0.24
+  },
+  {
+    "artist": "Netsky",
+    "ms": 865366,
+    "plays": 6,
+    "hours": 0.24
+  },
+  {
+    "artist": "OneRepublic",
+    "ms": 879937,
+    "plays": 4,
+    "hours": 0.24
+  },
+  {
+    "artist": "Mae",
+    "ms": 879073,
+    "plays": 4,
+    "hours": 0.24
+  },
+  {
+    "artist": "Love",
+    "ms": 863812,
+    "plays": 4,
+    "hours": 0.24
+  },
+  {
+    "artist": "Rachael Yamagata",
+    "ms": 846184,
+    "plays": 5,
+    "hours": 0.24
+  },
+  {
+    "artist": "Yuno Miles",
+    "ms": 853041,
+    "plays": 9,
+    "hours": 0.24
+  },
+  {
+    "artist": "Bobby McFerrin",
+    "ms": 854922,
+    "plays": 3,
+    "hours": 0.24
+  },
+  {
+    "artist": "Kenny Loggins",
+    "ms": 857045,
+    "plays": 5,
+    "hours": 0.24
+  },
+  {
+    "artist": "Ole Ivars",
+    "ms": 866552,
+    "plays": 5,
+    "hours": 0.24
+  },
+  {
+    "artist": "Kx5",
+    "ms": 865841,
+    "plays": 7,
+    "hours": 0.24
+  },
+  {
+    "artist": "Ballinciaga",
+    "ms": 849798,
+    "plays": 7,
+    "hours": 0.24
+  },
+  {
+    "artist": "Leon Ware",
+    "ms": 865202,
+    "plays": 4,
+    "hours": 0.24
+  },
+  {
+    "artist": "Bob Sinclar",
+    "ms": 863374,
+    "plays": 5,
+    "hours": 0.24
+  },
+  {
+    "artist": "The Monroes",
+    "ms": 855281,
+    "plays": 6,
+    "hours": 0.24
+  },
+  {
+    "artist": "Bobbi Humphrey",
+    "ms": 867941,
+    "plays": 3,
+    "hours": 0.24
+  },
+  {
+    "artist": "Aaron Frazer",
+    "ms": 870895,
+    "plays": 5,
+    "hours": 0.24
+  },
+  {
+    "artist": "Rudimental",
+    "ms": 859057,
+    "plays": 5,
+    "hours": 0.24
+  },
+  {
+    "artist": "Jonny Greenwood",
+    "ms": 855900,
+    "plays": 5,
+    "hours": 0.24
+  },
+  {
+    "artist": "Greg Phillinganes",
+    "ms": 869660,
+    "plays": 5,
+    "hours": 0.24
+  },
+  {
+    "artist": "Baddiel, Skinner & Lightning Seeds",
+    "ms": 881690,
+    "plays": 5,
+    "hours": 0.24
+  },
+  {
+    "artist": "Connan Mockasin",
+    "ms": 853455,
+    "plays": 5,
+    "hours": 0.24
+  },
+  {
+    "artist": "The Lionheart Brothers",
+    "ms": 841294,
+    "plays": 6,
+    "hours": 0.23
+  },
+  {
+    "artist": "Beyoncé",
+    "ms": 825178,
+    "plays": 10,
+    "hours": 0.23
+  },
+  {
+    "artist": "George Duke",
+    "ms": 824435,
+    "plays": 4,
+    "hours": 0.23
+  },
+  {
+    "artist": "Travelle",
+    "ms": 838203,
+    "plays": 5,
+    "hours": 0.23
+  },
+  {
+    "artist": "Ray Charles",
+    "ms": 811243,
+    "plays": 4,
+    "hours": 0.23
+  },
+  {
+    "artist": "Elley Duhé",
+    "ms": 840177,
+    "plays": 6,
+    "hours": 0.23
+  },
+  {
+    "artist": "Badfinger",
+    "ms": 818474,
+    "plays": 5,
+    "hours": 0.23
+  },
+  {
+    "artist": "Justin Bieber",
+    "ms": 822720,
+    "plays": 4,
+    "hours": 0.23
+  },
+  {
+    "artist": "Sammy Davis Jr.",
+    "ms": 816104,
+    "plays": 4,
+    "hours": 0.23
+  },
+  {
+    "artist": "southstar",
+    "ms": 824076,
+    "plays": 4,
+    "hours": 0.23
+  },
+  {
+    "artist": "Edward Sharpe & The Magnetic Zeros",
+    "ms": 822694,
+    "plays": 3,
+    "hours": 0.23
+  },
+  {
+    "artist": "Carly Simon",
+    "ms": 831265,
+    "plays": 4,
+    "hours": 0.23
+  },
+  {
+    "artist": "Sheryl Crow",
+    "ms": 842510,
+    "plays": 5,
+    "hours": 0.23
+  },
+  {
+    "artist": "Sia",
+    "ms": 830163,
+    "plays": 6,
+    "hours": 0.23
+  },
+  {
+    "artist": "REO Speedwagon",
+    "ms": 813019,
+    "plays": 5,
+    "hours": 0.23
+  },
+  {
+    "artist": "Frida Ånnevik",
+    "ms": 818158,
+    "plays": 4,
+    "hours": 0.23
+  },
+  {
+    "artist": "Metronomy",
+    "ms": 832959,
+    "plays": 3,
+    "hours": 0.23
+  },
+  {
+    "artist": "The Journeymen",
+    "ms": 839017,
+    "plays": 6,
+    "hours": 0.23
+  },
+  {
+    "artist": "Isaac Hayes",
+    "ms": 818758,
+    "plays": 4,
+    "hours": 0.23
+  },
+  {
+    "artist": "Ka2",
+    "ms": 825090,
+    "plays": 4,
+    "hours": 0.23
+  },
+  {
+    "artist": "Vince Guaraldi Trio",
+    "ms": 815684,
+    "plays": 6,
+    "hours": 0.23
+  },
+  {
+    "artist": "Niccolò Paganini",
+    "ms": 843610,
+    "plays": 4,
+    "hours": 0.23
+  },
+  {
+    "artist": "Dina Ögon",
+    "ms": 843911,
+    "plays": 6,
+    "hours": 0.23
+  },
+  {
+    "artist": "Choir Of Young Believers",
+    "ms": 842755,
+    "plays": 3,
+    "hours": 0.23
+  },
+  {
+    "artist": "sir Was",
+    "ms": 815812,
+    "plays": 3,
+    "hours": 0.23
+  },
+  {
+    "artist": "Slowdive",
+    "ms": 812754,
+    "plays": 3,
+    "hours": 0.23
+  },
+  {
+    "artist": "The Roots",
+    "ms": 786378,
+    "plays": 5,
+    "hours": 0.22
+  },
+  {
+    "artist": "Drugdealer",
+    "ms": 788160,
+    "plays": 4,
+    "hours": 0.22
+  },
+  {
+    "artist": "8Ball & MJG",
+    "ms": 779318,
+    "plays": 4,
+    "hours": 0.22
+  },
+  {
+    "artist": "Tavares",
+    "ms": 801054,
+    "plays": 3,
+    "hours": 0.22
+  },
+  {
+    "artist": "Two Feet",
+    "ms": 808282,
+    "plays": 6,
+    "hours": 0.22
+  },
+  {
+    "artist": "Chance the Rapper",
+    "ms": 797959,
+    "plays": 6,
+    "hours": 0.22
+  },
+  {
+    "artist": "Tenacious D",
+    "ms": 803829,
+    "plays": 6,
+    "hours": 0.22
+  },
+  {
+    "artist": "Foo Fighters",
+    "ms": 808119,
+    "plays": 3,
+    "hours": 0.22
+  },
+  {
+    "artist": "Quarteto Em Cy",
+    "ms": 808197,
+    "plays": 5,
+    "hours": 0.22
+  },
+  {
+    "artist": "alt-J",
+    "ms": 795054,
+    "plays": 6,
+    "hours": 0.22
+  },
+  {
+    "artist": "Bruce Roberts",
+    "ms": 795312,
+    "plays": 3,
+    "hours": 0.22
+  },
+  {
+    "artist": "Artemas",
+    "ms": 777292,
+    "plays": 8,
+    "hours": 0.22
+  },
+  {
+    "artist": "Betty Wright",
+    "ms": 802578,
+    "plays": 7,
+    "hours": 0.22
+  },
+  {
+    "artist": "The Dave Brubeck Quartet",
+    "ms": 793448,
+    "plays": 4,
+    "hours": 0.22
+  },
+  {
+    "artist": "beabadoobee",
+    "ms": 786129,
+    "plays": 4,
+    "hours": 0.22
+  },
+  {
+    "artist": "The Jacksons",
+    "ms": 797293,
+    "plays": 5,
+    "hours": 0.22
+  },
+  {
+    "artist": "MadeinTYO",
+    "ms": 790119,
+    "plays": 5,
+    "hours": 0.22
+  },
+  {
+    "artist": "Pulp",
+    "ms": 803768,
+    "plays": 4,
+    "hours": 0.22
+  },
+  {
+    "artist": "Deniece Williams",
+    "ms": 800904,
+    "plays": 5,
+    "hours": 0.22
+  },
+  {
+    "artist": "Spandau Ballet",
+    "ms": 801311,
+    "plays": 3,
+    "hours": 0.22
+  },
+  {
+    "artist": "Lenny Kravitz",
+    "ms": 786206,
+    "plays": 4,
+    "hours": 0.22
+  },
+  {
+    "artist": "Lee Hazlewood",
+    "ms": 799711,
+    "plays": 4,
+    "hours": 0.22
+  },
+  {
+    "artist": "Nu Genea",
+    "ms": 797604,
+    "plays": 4,
+    "hours": 0.22
+  },
+  {
+    "artist": "Gotts Street Park",
+    "ms": 782350,
+    "plays": 3,
+    "hours": 0.22
+  },
+  {
+    "artist": "Zara Larsson",
+    "ms": 771080,
+    "plays": 4,
+    "hours": 0.21
+  },
+  {
+    "artist": "יוגב גלוסמן",
+    "ms": 755499,
+    "plays": 3,
+    "hours": 0.21
+  },
+  {
+    "artist": "Aztec Camera",
+    "ms": 745056,
+    "plays": 3,
+    "hours": 0.21
+  },
+  {
+    "artist": "Fishmans",
+    "ms": 738532,
+    "plays": 2,
+    "hours": 0.21
+  },
+  {
+    "artist": "Hov1",
+    "ms": 740518,
+    "plays": 5,
+    "hours": 0.21
+  },
+  {
+    "artist": "The Korgis",
+    "ms": 755838,
+    "plays": 3,
+    "hours": 0.21
+  },
+  {
+    "artist": "Juice WRLD",
+    "ms": 767160,
+    "plays": 4,
+    "hours": 0.21
+  },
+  {
+    "artist": "Kamandi",
+    "ms": 760892,
+    "plays": 4,
+    "hours": 0.21
+  },
+  {
+    "artist": "Matt Duncan",
+    "ms": 741844,
+    "plays": 4,
+    "hours": 0.21
+  },
+  {
+    "artist": "J. Cole",
+    "ms": 760121,
+    "plays": 4,
+    "hours": 0.21
+  },
+  {
+    "artist": "Trang Fødsel",
+    "ms": 770564,
+    "plays": 5,
+    "hours": 0.21
+  },
+  {
+    "artist": "Commodores",
+    "ms": 740926,
+    "plays": 3,
+    "hours": 0.21
+  },
+  {
+    "artist": "Surfaces",
+    "ms": 769547,
+    "plays": 5,
+    "hours": 0.21
+  },
+  {
+    "artist": "Biig Piig",
+    "ms": 754351,
+    "plays": 4,
+    "hours": 0.21
+  },
+  {
+    "artist": "Emilie Nicolas",
+    "ms": 760953,
+    "plays": 4,
+    "hours": 0.21
+  },
+  {
+    "artist": "Luiz Bonfá",
+    "ms": 739708,
+    "plays": 6,
+    "hours": 0.21
+  },
+  {
+    "artist": "Jonas Hibiki",
+    "ms": 769527,
+    "plays": 4,
+    "hours": 0.21
+  },
+  {
+    "artist": "Snoop Dogg",
+    "ms": 757281,
+    "plays": 4,
+    "hours": 0.21
+  },
+  {
+    "artist": "Bon Jovi",
+    "ms": 758432,
+    "plays": 3,
+    "hours": 0.21
+  },
+  {
+    "artist": "Kim Larsen",
+    "ms": 753696,
+    "plays": 5,
+    "hours": 0.21
+  },
+  {
+    "artist": "Two Door Cinema Club",
+    "ms": 751246,
+    "plays": 4,
+    "hours": 0.21
+  },
+  {
+    "artist": "Eirik Aas",
+    "ms": 714765,
+    "plays": 4,
+    "hours": 0.2
+  },
+  {
+    "artist": "Luther Vandross",
+    "ms": 713019,
+    "plays": 4,
+    "hours": 0.2
+  },
+  {
+    "artist": "Jonna Fraser",
+    "ms": 711669,
+    "plays": 3,
+    "hours": 0.2
+  },
+  {
+    "artist": "Jimi Hendrix",
+    "ms": 736855,
+    "plays": 6,
+    "hours": 0.2
+  },
+  {
+    "artist": "Bobby Hebb",
+    "ms": 732326,
+    "plays": 5,
+    "hours": 0.2
+  },
+  {
+    "artist": "Double Exposure",
+    "ms": 734322,
+    "plays": 3,
+    "hours": 0.2
+  },
+  {
+    "artist": "Laurindo Almeida",
+    "ms": 720713,
+    "plays": 6,
+    "hours": 0.2
+  },
+  {
+    "artist": "Edison Lighthouse",
+    "ms": 732566,
+    "plays": 7,
+    "hours": 0.2
+  },
+  {
+    "artist": "Rat City",
+    "ms": 705273,
+    "plays": 4,
+    "hours": 0.2
+  },
+  {
+    "artist": "Panic! At The Disco",
+    "ms": 707148,
+    "plays": 3,
+    "hours": 0.2
+  },
+  {
+    "artist": "Rae Sremmurd",
+    "ms": 714733,
+    "plays": 3,
+    "hours": 0.2
+  },
+  {
+    "artist": "The Little Dippers",
+    "ms": 718464,
+    "plays": 5,
+    "hours": 0.2
+  },
+  {
+    "artist": "Larry Carlton",
+    "ms": 722902,
+    "plays": 3,
+    "hours": 0.2
+  },
+  {
+    "artist": "Sinj Clarke",
+    "ms": 707712,
+    "plays": 5,
+    "hours": 0.2
+  },
+  {
+    "artist": "The Emotions",
+    "ms": 703619,
+    "plays": 4,
+    "hours": 0.2
+  },
+  {
+    "artist": "Shaboozey",
+    "ms": 729285,
+    "plays": 5,
+    "hours": 0.2
+  },
+  {
+    "artist": "Ice Cube",
+    "ms": 732835,
+    "plays": 4,
+    "hours": 0.2
+  },
+  {
+    "artist": "Digital Farm Animals",
+    "ms": 730605,
+    "plays": 3,
+    "hours": 0.2
+  },
+  {
+    "artist": "Pale Jay",
+    "ms": 718095,
+    "plays": 4,
+    "hours": 0.2
+  },
+  {
+    "artist": "Freddy Kalas",
+    "ms": 720202,
+    "plays": 5,
+    "hours": 0.2
+  },
+  {
+    "artist": "Green Day",
+    "ms": 704065,
+    "plays": 3,
+    "hours": 0.2
+  },
+  {
+    "artist": "S. Kiyotaka & Omega Tribe",
+    "ms": 722865,
+    "plays": 3,
+    "hours": 0.2
+  },
+  {
+    "artist": "Ferris Pier",
+    "ms": 733836,
+    "plays": 4,
+    "hours": 0.2
+  },
+  {
+    "artist": "Modest Mussorgsky",
+    "ms": 705789,
+    "plays": 3,
+    "hours": 0.2
+  },
+  {
+    "artist": "Paul Davis",
+    "ms": 721243,
+    "plays": 4,
+    "hours": 0.2
+  },
+  {
+    "artist": "Emerson, Lake & Palmer",
+    "ms": 710923,
+    "plays": 3,
+    "hours": 0.2
+  },
+  {
+    "artist": "Andrew Oldham Orchestra",
+    "ms": 725650,
+    "plays": 4,
+    "hours": 0.2
+  },
+  {
+    "artist": "fusq",
+    "ms": 699212,
+    "plays": 4,
+    "hours": 0.19
+  },
+  {
+    "artist": "Sushi x Kobe",
+    "ms": 689854,
+    "plays": 4,
+    "hours": 0.19
+  },
+  {
+    "artist": "Henry Mancini",
+    "ms": 688528,
+    "plays": 7,
+    "hours": 0.19
+  },
+  {
+    "artist": "Miley Cyrus",
+    "ms": 666898,
+    "plays": 4,
+    "hours": 0.19
+  },
+  {
+    "artist": "Wakin Chau",
+    "ms": 682827,
+    "plays": 4,
+    "hours": 0.19
+  },
+  {
+    "artist": "Ludwig van Beethoven",
+    "ms": 687756,
+    "plays": 4,
+    "hours": 0.19
+  },
+  {
+    "artist": "Band Aid",
+    "ms": 699969,
+    "plays": 4,
+    "hours": 0.19
+  },
+  {
+    "artist": "Tina Turner",
+    "ms": 697576,
+    "plays": 5,
+    "hours": 0.19
+  },
+  {
+    "artist": "Johnny Horton",
+    "ms": 667511,
+    "plays": 5,
+    "hours": 0.19
+  },
+  {
+    "artist": "YBN Nahmir",
+    "ms": 697373,
+    "plays": 6,
+    "hours": 0.19
+  },
+  {
+    "artist": "Warren G",
+    "ms": 692249,
+    "plays": 4,
+    "hours": 0.19
+  },
+  {
+    "artist": "Nile Rodgers",
+    "ms": 693016,
+    "plays": 4,
+    "hours": 0.19
+  },
+  {
+    "artist": "Sonseed",
+    "ms": 684065,
+    "plays": 5,
+    "hours": 0.19
+  },
+  {
+    "artist": "Aphrodite's Child",
+    "ms": 697526,
+    "plays": 5,
+    "hours": 0.19
+  },
+  {
+    "artist": "George Benson",
+    "ms": 674339,
+    "plays": 5,
+    "hours": 0.19
+  },
+  {
+    "artist": "Rufus",
+    "ms": 667714,
+    "plays": 4,
+    "hours": 0.19
+  },
+  {
+    "artist": "Tove Lo",
+    "ms": 669373,
+    "plays": 3,
+    "hours": 0.19
+  },
+  {
+    "artist": "Tom Jones",
+    "ms": 683633,
+    "plays": 5,
+    "hours": 0.19
+  },
+  {
+    "artist": "Andrea True Connection",
+    "ms": 700460,
+    "plays": 5,
+    "hours": 0.19
+  },
+  {
+    "artist": "Linda Ronstadt",
+    "ms": 692615,
+    "plays": 5,
+    "hours": 0.19
+  },
+  {
+    "artist": "Michael Franks",
+    "ms": 687519,
+    "plays": 3,
+    "hours": 0.19
+  },
+  {
+    "artist": "Seal",
+    "ms": 683437,
+    "plays": 4,
+    "hours": 0.19
+  },
+  {
+    "artist": "Dr. Hook",
+    "ms": 701211,
+    "plays": 4,
+    "hours": 0.19
+  },
+  {
+    "artist": "RJD2",
+    "ms": 669734,
+    "plays": 3,
+    "hours": 0.19
+  },
+  {
+    "artist": "Pyotr Ilyich Tchaikovsky",
+    "ms": 691404,
+    "plays": 3,
+    "hours": 0.19
+  },
+  {
+    "artist": "Kleerup",
+    "ms": 668509,
+    "plays": 4,
+    "hours": 0.19
+  },
+  {
+    "artist": "Odd Nordstoga",
+    "ms": 677362,
+    "plays": 3,
+    "hours": 0.19
+  },
+  {
+    "artist": "Emma Sehested Høeg",
+    "ms": 686925,
+    "plays": 5,
+    "hours": 0.19
+  },
+  {
+    "artist": "Ziad Rahbani",
+    "ms": 686271,
+    "plays": 4,
+    "hours": 0.19
+  },
+  {
+    "artist": "Kamasi Washington",
+    "ms": 675000,
+    "plays": 3,
+    "hours": 0.19
+  },
+  {
+    "artist": "Jonathan Richman",
+    "ms": 692413,
+    "plays": 3,
+    "hours": 0.19
+  },
+  {
+    "artist": "Rhye",
+    "ms": 696218,
+    "plays": 3,
+    "hours": 0.19
+  },
+  {
+    "artist": "Lido Lido",
+    "ms": 642961,
+    "plays": 3,
+    "hours": 0.18
+  },
+  {
+    "artist": "Lava La Rue",
+    "ms": 639129,
+    "plays": 5,
+    "hours": 0.18
+  },
+  {
+    "artist": "Kings of Convenience",
+    "ms": 639957,
+    "plays": 3,
+    "hours": 0.18
+  },
+  {
+    "artist": "Inner Circle",
+    "ms": 663796,
+    "plays": 4,
+    "hours": 0.18
+  },
+  {
+    "artist": "Will Smith",
+    "ms": 650490,
+    "plays": 4,
+    "hours": 0.18
+  },
+  {
+    "artist": "Skeeter Davis",
+    "ms": 630293,
+    "plays": 5,
+    "hours": 0.18
+  },
+  {
+    "artist": "Phoebe Bridgers",
+    "ms": 647898,
+    "plays": 4,
+    "hours": 0.18
+  },
+  {
+    "artist": "Ace",
+    "ms": 633835,
+    "plays": 3,
+    "hours": 0.18
+  },
+  {
+    "artist": "川子",
+    "ms": 632306,
+    "plays": 4,
+    "hours": 0.18
+  },
+  {
+    "artist": "Grover Washington, Jr.",
+    "ms": 656470,
+    "plays": 2,
+    "hours": 0.18
+  },
+  {
+    "artist": "Nico Segal",
+    "ms": 639916,
+    "plays": 4,
+    "hours": 0.18
+  },
+  {
+    "artist": "Helgi Björnsson",
+    "ms": 647835,
+    "plays": 3,
+    "hours": 0.18
+  },
+  {
+    "artist": "Aaron Neville",
+    "ms": 644853,
+    "plays": 4,
+    "hours": 0.18
+  },
+  {
+    "artist": "Bastille",
+    "ms": 646500,
+    "plays": 5,
+    "hours": 0.18
+  },
+  {
+    "artist": "Postgirobygget",
+    "ms": 658937,
+    "plays": 4,
+    "hours": 0.18
+  },
+  {
+    "artist": "Lars Vaular",
+    "ms": 654136,
+    "plays": 9,
+    "hours": 0.18
+  },
+  {
+    "artist": "The Police",
+    "ms": 642132,
+    "plays": 4,
+    "hours": 0.18
+  },
+  {
+    "artist": "J.J. Cale",
+    "ms": 634222,
+    "plays": 6,
+    "hours": 0.18
+  },
+  {
+    "artist": "Yellow Days",
+    "ms": 635907,
+    "plays": 3,
+    "hours": 0.18
+  },
+  {
+    "artist": "Weezer",
+    "ms": 633507,
+    "plays": 4,
+    "hours": 0.18
+  },
+  {
+    "artist": "Hans Petter Hammersmark",
+    "ms": 630879,
+    "plays": 4,
+    "hours": 0.18
+  },
+  {
+    "artist": "Mungo Jerry",
+    "ms": 663923,
+    "plays": 4,
+    "hours": 0.18
+  },
+  {
+    "artist": "Yerachmiel Begun & The Miami Boys Choir",
+    "ms": 643576,
+    "plays": 3,
+    "hours": 0.18
+  },
+  {
+    "artist": "Ozzy Osbourne",
+    "ms": 637490,
+    "plays": 3,
+    "hours": 0.18
+  },
+  {
+    "artist": "Timbuktu",
+    "ms": 630906,
+    "plays": 2,
+    "hours": 0.18
+  },
+  {
+    "artist": "Average White Band",
+    "ms": 657833,
+    "plays": 4,
+    "hours": 0.18
+  },
+  {
+    "artist": "Sevdaliza",
+    "ms": 646620,
+    "plays": 4,
+    "hours": 0.18
+  },
+  {
+    "artist": "Prince",
+    "ms": 654888,
+    "plays": 4,
+    "hours": 0.18
+  },
+  {
+    "artist": "Hester V75",
+    "ms": 649737,
+    "plays": 4,
+    "hours": 0.18
+  },
+  {
+    "artist": "Wild Cherry",
+    "ms": 633703,
+    "plays": 3,
+    "hours": 0.18
+  },
+  {
+    "artist": "4th Dimension",
+    "ms": 652257,
+    "plays": 5,
+    "hours": 0.18
+  },
+  {
+    "artist": "Ron Trent",
+    "ms": 645417,
+    "plays": 2,
+    "hours": 0.18
+  },
+  {
+    "artist": "Percy Faith & His Orchestra",
+    "ms": 638349,
+    "plays": 4,
+    "hours": 0.18
+  },
+  {
+    "artist": "VOOID",
+    "ms": 645392,
+    "plays": 2,
+    "hours": 0.18
+  },
+  {
+    "artist": "Haddaway",
+    "ms": 600307,
+    "plays": 3,
+    "hours": 0.17
+  },
+  {
+    "artist": "PARTYNEXTDOOR",
+    "ms": 600921,
+    "plays": 5,
+    "hours": 0.17
+  },
+  {
+    "artist": "Patrice Rushen",
+    "ms": 609057,
+    "plays": 3,
+    "hours": 0.17
+  },
+  {
+    "artist": "Whole Truth",
+    "ms": 595725,
+    "plays": 3,
+    "hours": 0.17
+  },
+  {
+    "artist": "Norah Jones",
+    "ms": 618820,
+    "plays": 4,
+    "hours": 0.17
+  },
+  {
+    "artist": "Franz Schubert",
+    "ms": 612618,
+    "plays": 2,
+    "hours": 0.17
+  },
+  {
+    "artist": "Dido",
+    "ms": 603792,
+    "plays": 5,
+    "hours": 0.17
+  },
+  {
+    "artist": "Gucci Mane",
+    "ms": 613987,
+    "plays": 3,
+    "hours": 0.17
+  },
+  {
+    "artist": "Harry Styles",
+    "ms": 622047,
+    "plays": 3,
+    "hours": 0.17
+  },
+  {
+    "artist": "Arne Bendiksen",
+    "ms": 602127,
+    "plays": 4,
+    "hours": 0.17
+  },
+  {
+    "artist": "Jeethz",
+    "ms": 606367,
+    "plays": 4,
+    "hours": 0.17
+  },
+  {
+    "artist": "D.D.E.",
+    "ms": 604372,
+    "plays": 2,
+    "hours": 0.17
+  },
+  {
+    "artist": "Tomine Harket",
+    "ms": 617119,
+    "plays": 4,
+    "hours": 0.17
+  },
+  {
+    "artist": "Arcade Fire",
+    "ms": 606026,
+    "plays": 2,
+    "hours": 0.17
+  },
+  {
+    "artist": "Barrington Levy",
+    "ms": 603566,
+    "plays": 5,
+    "hours": 0.17
+  },
+  {
+    "artist": "Famous Yesterday",
+    "ms": 597661,
+    "plays": 5,
+    "hours": 0.17
+  },
+  {
+    "artist": "Paperboys",
+    "ms": 613629,
+    "plays": 4,
+    "hours": 0.17
+  },
+  {
+    "artist": "Elvin Bishop",
+    "ms": 622463,
+    "plays": 4,
+    "hours": 0.17
+  },
+  {
+    "artist": "BØRNS",
+    "ms": 598924,
+    "plays": 3,
+    "hours": 0.17
+  },
+  {
+    "artist": "Hermitude",
+    "ms": 623478,
+    "plays": 3,
+    "hours": 0.17
+  },
+  {
+    "artist": "Tony Bennett",
+    "ms": 606746,
+    "plays": 3,
+    "hours": 0.17
+  },
+  {
+    "artist": "Julie Andrews",
+    "ms": 620946,
+    "plays": 3,
+    "hours": 0.17
+  },
+  {
+    "artist": "The J.B.'s",
+    "ms": 618711,
+    "plays": 4,
+    "hours": 0.17
+  },
+  {
+    "artist": "Bruce Hornsby and the Range",
+    "ms": 595712,
+    "plays": 2,
+    "hours": 0.17
+  },
+  {
+    "artist": "Mocky",
+    "ms": 616244,
+    "plays": 3,
+    "hours": 0.17
+  },
+  {
+    "artist": "Oh Wonder",
+    "ms": 624687,
+    "plays": 3,
+    "hours": 0.17
+  },
+  {
+    "artist": "Estelle",
+    "ms": 613170,
+    "plays": 4,
+    "hours": 0.17
+  },
+  {
+    "artist": "JVKE",
+    "ms": 627777,
+    "plays": 3,
+    "hours": 0.17
+  },
+  {
+    "artist": "Max Romeo",
+    "ms": 618918,
+    "plays": 3,
+    "hours": 0.17
+  },
+  {
+    "artist": "Raquel Rodriguez",
+    "ms": 610492,
+    "plays": 3,
+    "hours": 0.17
+  },
+  {
+    "artist": "The Lumineers",
+    "ms": 615131,
+    "plays": 4,
+    "hours": 0.17
+  },
+  {
+    "artist": "West Ham Cup Squad '75",
+    "ms": 607282,
+    "plays": 4,
+    "hours": 0.17
+  },
+  {
+    "artist": "Barry Manilow",
+    "ms": 608538,
+    "plays": 3,
+    "hours": 0.17
+  },
+  {
+    "artist": "FireCityFunk",
+    "ms": 619393,
+    "plays": 3,
+    "hours": 0.17
+  },
+  {
+    "artist": "The Church",
+    "ms": 595218,
+    "plays": 2,
+    "hours": 0.17
+  },
+  {
+    "artist": "Karen O",
+    "ms": 597960,
+    "plays": 3,
+    "hours": 0.17
+  },
+  {
+    "artist": "The Neville Brothers",
+    "ms": 603980,
+    "plays": 3,
+    "hours": 0.17
+  },
+  {
+    "artist": "American Authors",
+    "ms": 560580,
+    "plays": 3,
+    "hours": 0.16
+  },
+  {
+    "artist": "Joe Weller",
+    "ms": 574499,
+    "plays": 5,
+    "hours": 0.16
+  },
+  {
+    "artist": "Dumdum Boys",
+    "ms": 572292,
+    "plays": 2,
+    "hours": 0.16
+  },
+  {
+    "artist": "The Naked And Famous",
+    "ms": 575095,
+    "plays": 3,
+    "hours": 0.16
+  },
+  {
+    "artist": "Bendik",
+    "ms": 589230,
+    "plays": 3,
+    "hours": 0.16
+  },
+  {
+    "artist": "Jack Ü",
+    "ms": 592894,
+    "plays": 3,
+    "hours": 0.16
+  },
+  {
+    "artist": "EZI",
+    "ms": 577082,
+    "plays": 4,
+    "hours": 0.16
+  },
+  {
+    "artist": "Danny Wright",
+    "ms": 582858,
+    "plays": 3,
+    "hours": 0.16
+  },
+  {
+    "artist": "A Taste Of Honey",
+    "ms": 585984,
+    "plays": 5,
+    "hours": 0.16
+  },
+  {
+    "artist": "Jitwam",
+    "ms": 579215,
+    "plays": 4,
+    "hours": 0.16
+  },
+  {
+    "artist": "Ulige Numre",
+    "ms": 559733,
+    "plays": 4,
+    "hours": 0.16
+  },
+  {
+    "artist": "Sean Kingston",
+    "ms": 562549,
+    "plays": 3,
+    "hours": 0.16
+  },
+  {
+    "artist": "John Coltrane",
+    "ms": 575686,
+    "plays": 2,
+    "hours": 0.16
+  },
+  {
+    "artist": "Vamp",
+    "ms": 561766,
+    "plays": 4,
+    "hours": 0.16
+  },
+  {
+    "artist": "Getatchew Mekurya",
+    "ms": 580550,
+    "plays": 3,
+    "hours": 0.16
+  },
+  {
+    "artist": "Kyu Sakamoto",
+    "ms": 581318,
+    "plays": 4,
+    "hours": 0.16
+  },
+  {
+    "artist": "Kaja Gunnufsen",
+    "ms": 589736,
+    "plays": 4,
+    "hours": 0.16
+  },
+  {
+    "artist": "Kylie Minogue",
+    "ms": 583186,
+    "plays": 4,
+    "hours": 0.16
+  },
+  {
+    "artist": "Paul Jackson, Jr.",
+    "ms": 564586,
+    "plays": 3,
+    "hours": 0.16
+  },
+  {
+    "artist": "Karoline Krüger",
+    "ms": 589043,
+    "plays": 4,
+    "hours": 0.16
+  },
+  {
+    "artist": "Remo Giazotto",
+    "ms": 589010,
+    "plays": 2,
+    "hours": 0.16
+  },
+  {
+    "artist": "José González",
+    "ms": 577828,
+    "plays": 3,
+    "hours": 0.16
+  },
+  {
+    "artist": "Zoë Kravitz",
+    "ms": 588133,
+    "plays": 4,
+    "hours": 0.16
+  },
+  {
+    "artist": "Katy Perry",
+    "ms": 562759,
+    "plays": 4,
+    "hours": 0.16
+  },
+  {
+    "artist": "Zac Brown Band",
+    "ms": 578617,
+    "plays": 4,
+    "hours": 0.16
+  },
+  {
+    "artist": "Feid",
+    "ms": 590400,
+    "plays": 3,
+    "hours": 0.16
+  },
+  {
+    "artist": "Lizzo",
+    "ms": 558398,
+    "plays": 4,
+    "hours": 0.16
+  },
+  {
+    "artist": "Iliona",
+    "ms": 570445,
+    "plays": 3,
+    "hours": 0.16
+  },
+  {
+    "artist": "d4vd",
+    "ms": 568610,
+    "plays": 2,
+    "hours": 0.16
+  },
+  {
+    "artist": "Suki Waterhouse",
+    "ms": 568369,
+    "plays": 4,
+    "hours": 0.16
+  },
+  {
+    "artist": "The Flaming Lips",
+    "ms": 579704,
+    "plays": 3,
+    "hours": 0.16
+  },
+  {
+    "artist": "Amo Amo",
+    "ms": 561804,
+    "plays": 3,
+    "hours": 0.16
+  },
+  {
+    "artist": "Ana Mazzotti",
+    "ms": 579782,
+    "plays": 3,
+    "hours": 0.16
+  },
+  {
+    "artist": "The Crane",
+    "ms": 589707,
+    "plays": 2,
+    "hours": 0.16
+  },
+  {
+    "artist": "The Alan Parsons Project",
+    "ms": 560220,
+    "plays": 3,
+    "hours": 0.16
+  },
+  {
+    "artist": "Håkan Hellström",
+    "ms": 577749,
+    "plays": 3,
+    "hours": 0.16
+  },
+  {
+    "artist": "Sylvan Esso",
+    "ms": 581813,
+    "plays": 3,
+    "hours": 0.16
+  },
+  {
+    "artist": "French Montana",
+    "ms": 552231,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "Thin Lizzy",
+    "ms": 549696,
+    "plays": 5,
+    "hours": 0.15
+  },
+  {
+    "artist": "落日飛車 Sunset Rollercoaster",
+    "ms": 540510,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "The Miracles",
+    "ms": 527092,
+    "plays": 5,
+    "hours": 0.15
+  },
+  {
+    "artist": "Marconi Union",
+    "ms": 529867,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "Paul Desmond",
+    "ms": 532166,
+    "plays": 4,
+    "hours": 0.15
+  },
+  {
+    "artist": "Justin Timberlake",
+    "ms": 533274,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "Daniel Caesar",
+    "ms": 540228,
+    "plays": 4,
+    "hours": 0.15
+  },
+  {
+    "artist": "Van Halen",
+    "ms": 538238,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "Chet Faker",
+    "ms": 533688,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "Hedda Mae",
+    "ms": 528600,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "Nulbarich",
+    "ms": 546151,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "Nas",
+    "ms": 537181,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "Days of August",
+    "ms": 534708,
+    "plays": 2,
+    "hours": 0.15
+  },
+  {
+    "artist": "Mike Posner",
+    "ms": 553435,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "Aretha Franklin",
+    "ms": 531697,
+    "plays": 5,
+    "hours": 0.15
+  },
+  {
+    "artist": "ルチアーノ・パヴァロッティ",
+    "ms": 539849,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "Gracie Abrams",
+    "ms": 527552,
+    "plays": 4,
+    "hours": 0.15
+  },
+  {
+    "artist": "Lost Frequencies",
+    "ms": 545837,
+    "plays": 5,
+    "hours": 0.15
+  },
+  {
+    "artist": "Indeep",
+    "ms": 538348,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "SAINt JHN",
+    "ms": 530520,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "Barbra Streisand",
+    "ms": 544571,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "Waylon Jennings",
+    "ms": 523033,
+    "plays": 4,
+    "hours": 0.15
+  },
+  {
+    "artist": "Hank Williams",
+    "ms": 544957,
+    "plays": 4,
+    "hours": 0.15
+  },
+  {
+    "artist": "Roy Ayers",
+    "ms": 543980,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "Big Mountain",
+    "ms": 539324,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "No Vacation",
+    "ms": 554213,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "Sebastian Sturm",
+    "ms": 532160,
+    "plays": 2,
+    "hours": 0.15
+  },
+  {
+    "artist": "The Wookies",
+    "ms": 549531,
+    "plays": 2,
+    "hours": 0.15
+  },
+  {
+    "artist": "BADBADNOTGOOD",
+    "ms": 547696,
+    "plays": 2,
+    "hours": 0.15
+  },
+  {
+    "artist": "Chromatics",
+    "ms": 543904,
+    "plays": 2,
+    "hours": 0.15
+  },
+  {
+    "artist": "Prefab Sprout",
+    "ms": 530932,
+    "plays": 2,
+    "hours": 0.15
+  },
+  {
+    "artist": "Lee Fields & The Expressions",
+    "ms": 548910,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "Monophonics",
+    "ms": 522348,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "Remi Wolf",
+    "ms": 527598,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "Klaatu",
+    "ms": 552981,
+    "plays": 3,
+    "hours": 0.15
+  },
+  {
+    "artist": "Seven-Jentene",
+    "ms": 500744,
+    "plays": 3,
+    "hours": 0.14
+  },
+  {
+    "artist": "Peach Pit",
+    "ms": 486283,
+    "plays": 4,
+    "hours": 0.14
+  },
+  {
+    "artist": "DRAM",
+    "ms": 496439,
+    "plays": 3,
+    "hours": 0.14
+  },
+  {
+    "artist": "The Game",
+    "ms": 514110,
+    "plays": 3,
+    "hours": 0.14
+  },
+  {
+    "artist": "Mary Wells",
+    "ms": 492991,
+    "plays": 4,
+    "hours": 0.14
+  },
+  {
+    "artist": "Chick Corea",
+    "ms": 509446,
+    "plays": 2,
+    "hours": 0.14
+  },
+  {
+    "artist": "The Ting Tings",
+    "ms": 513678,
+    "plays": 3,
+    "hours": 0.14
+  },
+  {
+    "artist": "Rodrigo Amarante",
+    "ms": 519905,
+    "plays": 5,
+    "hours": 0.14
+  },
+  {
+    "artist": "Dan Auerbach",
+    "ms": 496091,
+    "plays": 3,
+    "hours": 0.14
+  },
+  {
+    "artist": "Whitney",
+    "ms": 515680,
+    "plays": 3,
+    "hours": 0.14
+  },
+  {
+    "artist": "Di Derre",
+    "ms": 488025,
+    "plays": 4,
+    "hours": 0.14
+  },
+  {
+    "artist": "Banana Airlines",
+    "ms": 499871,
+    "plays": 3,
+    "hours": 0.14
+  },
+  {
+    "artist": "A Tribe Called Quest",
+    "ms": 512983,
+    "plays": 5,
+    "hours": 0.14
+  },
+  {
+    "artist": "Chalino Sanchez",
+    "ms": 488912,
+    "plays": 4,
+    "hours": 0.14
+  },
+  {
+    "artist": "Yndi",
+    "ms": 497761,
+    "plays": 2,
+    "hours": 0.14
+  },
+  {
+    "artist": "Frank Weber",
+    "ms": 501840,
+    "plays": 2,
+    "hours": 0.14
+  },
+  {
+    "artist": "Grizzly Bear",
+    "ms": 492426,
+    "plays": 2,
+    "hours": 0.14
+  },
+  {
+    "artist": "Ram Di Dam",
+    "ms": 499766,
+    "plays": 4,
+    "hours": 0.14
+  },
+  {
+    "artist": "Kingo Hamada",
+    "ms": 512397,
+    "plays": 5,
+    "hours": 0.14
+  },
+  {
+    "artist": "Shawn Colvin",
+    "ms": 516052,
+    "plays": 2,
+    "hours": 0.14
+  },
+  {
+    "artist": "AGAV",
+    "ms": 512049,
+    "plays": 3,
+    "hours": 0.14
+  },
+  {
+    "artist": "Ringnes-Ronny",
+    "ms": 514249,
+    "plays": 5,
+    "hours": 0.14
+  },
+  {
+    "artist": "Hver gang vi møtes",
+    "ms": 519106,
+    "plays": 3,
+    "hours": 0.14
+  },
+  {
+    "artist": "The Monkees",
+    "ms": 506520,
+    "plays": 5,
+    "hours": 0.14
+  },
+  {
+    "artist": "Mitski",
+    "ms": 491148,
+    "plays": 5,
+    "hours": 0.14
+  },
+  {
+    "artist": "A-Wall",
+    "ms": 486290,
+    "plays": 3,
+    "hours": 0.14
+  },
+  {
+    "artist": "Smokie",
+    "ms": 511812,
+    "plays": 2,
+    "hours": 0.14
+  },
+  {
+    "artist": "Makaveli",
+    "ms": 487891,
+    "plays": 2,
+    "hours": 0.14
+  },
+  {
+    "artist": "SZA",
+    "ms": 515249,
+    "plays": 4,
+    "hours": 0.14
+  },
+  {
+    "artist": "Black Box",
+    "ms": 519148,
+    "plays": 2,
+    "hours": 0.14
+  },
+  {
+    "artist": "The Sugarhill Gang",
+    "ms": 510450,
+    "plays": 3,
+    "hours": 0.14
+  },
+  {
+    "artist": "Roxette",
+    "ms": 518452,
+    "plays": 2,
+    "hours": 0.14
+  },
+  {
+    "artist": "Coco O.",
+    "ms": 503600,
+    "plays": 2,
+    "hours": 0.14
+  },
+  {
+    "artist": "Zero 7",
+    "ms": 491300,
+    "plays": 2,
+    "hours": 0.14
+  },
+  {
+    "artist": "The Blue Jean Committee",
+    "ms": 459346,
+    "plays": 4,
+    "hours": 0.13
+  },
+  {
+    "artist": "No Party For Cao Dong",
+    "ms": 470369,
+    "plays": 4,
+    "hours": 0.13
+  },
+  {
+    "artist": "Evrencan Gündüz",
+    "ms": 453289,
+    "plays": 3,
+    "hours": 0.13
+  },
+  {
+    "artist": "Uken I Bergen",
+    "ms": 465563,
+    "plays": 3,
+    "hours": 0.13
+  },
+  {
+    "artist": "Cory Wong",
+    "ms": 455879,
+    "plays": 4,
+    "hours": 0.13
+  },
+  {
+    "artist": "Tan Sri P. Ramlee",
+    "ms": 451848,
+    "plays": 3,
+    "hours": 0.13
+  },
+  {
+    "artist": "Kamelen",
+    "ms": 478566,
+    "plays": 3,
+    "hours": 0.13
+  },
+  {
+    "artist": "Lisa Ekdahl",
+    "ms": 450789,
+    "plays": 3,
+    "hours": 0.13
+  },
+  {
+    "artist": "Mattis V",
+    "ms": 458754,
+    "plays": 3,
+    "hours": 0.13
+  },
+  {
+    "artist": "Yngvil",
+    "ms": 458306,
+    "plays": 4,
+    "hours": 0.13
+  },
+  {
+    "artist": "Darondo",
+    "ms": 479063,
+    "plays": 3,
+    "hours": 0.13
+  },
+  {
+    "artist": "Nat King Cole",
+    "ms": 453096,
+    "plays": 3,
+    "hours": 0.13
+  },
+  {
+    "artist": "Barbara Carlotti",
+    "ms": 458876,
+    "plays": 3,
+    "hours": 0.13
+  },
+  {
+    "artist": "Jean Sibelius",
+    "ms": 483923,
+    "plays": 2,
+    "hours": 0.13
+  },
+  {
+    "artist": "Larry Lee",
+    "ms": 479710,
+    "plays": 3,
+    "hours": 0.13
+  },
+  {
+    "artist": "Wilson Pickett",
+    "ms": 451964,
+    "plays": 4,
+    "hours": 0.13
+  },
+  {
+    "artist": "Niki & The Dove",
+    "ms": 458744,
+    "plays": 2,
+    "hours": 0.13
+  },
+  {
+    "artist": "Joaquín Rodrigo",
+    "ms": 468571,
+    "plays": 2,
+    "hours": 0.13
+  },
+  {
+    "artist": "Amanda Bergman",
+    "ms": 468026,
+    "plays": 2,
+    "hours": 0.13
+  },
+  {
+    "artist": "Klondike",
+    "ms": 477092,
+    "plays": 2,
+    "hours": 0.13
+  },
+  {
+    "artist": "The Smiths",
+    "ms": 461325,
+    "plays": 3,
+    "hours": 0.13
+  },
+  {
+    "artist": "The Chicks",
+    "ms": 479169,
+    "plays": 3,
+    "hours": 0.13
+  },
+  {
+    "artist": "Christopher",
+    "ms": 471799,
+    "plays": 3,
+    "hours": 0.13
+  },
+  {
+    "artist": "Chris Rea",
+    "ms": 480359,
+    "plays": 2,
+    "hours": 0.13
+  },
+  {
+    "artist": "iLoveMemphis",
+    "ms": 468825,
+    "plays": 3,
+    "hours": 0.13
+  },
+  {
+    "artist": "Yamê",
+    "ms": 456675,
+    "plays": 3,
+    "hours": 0.13
+  },
+  {
+    "artist": "New Radicals",
+    "ms": 459423,
+    "plays": 2,
+    "hours": 0.13
+  },
+  {
+    "artist": "Outkast",
+    "ms": 454059,
+    "plays": 3,
+    "hours": 0.13
+  },
+  {
+    "artist": "Bad Bunny",
+    "ms": 477322,
+    "plays": 3,
+    "hours": 0.13
+  },
+  {
+    "artist": "João Donato",
+    "ms": 456364,
+    "plays": 2,
+    "hours": 0.13
+  },
+  {
+    "artist": "Frederick Delius",
+    "ms": 456871,
+    "plays": 2,
+    "hours": 0.13
+  },
+  {
+    "artist": "Leo Sayer",
+    "ms": 451803,
+    "plays": 3,
+    "hours": 0.13
+  },
+  {
+    "artist": "Destroyer",
+    "ms": 455037,
+    "plays": 2,
+    "hours": 0.13
+  },
+  {
+    "artist": "Shy Shy Shy",
+    "ms": 461669,
+    "plays": 2,
+    "hours": 0.13
+  },
+  {
+    "artist": "Chris Cornell",
+    "ms": 425933,
+    "plays": 3,
+    "hours": 0.12
+  },
+  {
+    "artist": "Domenico Modugno",
+    "ms": 432746,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Seeb",
+    "ms": 441895,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Natalie Cole",
+    "ms": 439750,
+    "plays": 3,
+    "hours": 0.12
+  },
+  {
+    "artist": "Parnasse",
+    "ms": 419893,
+    "plays": 5,
+    "hours": 0.12
+  },
+  {
+    "artist": "Andrew Applepie",
+    "ms": 445137,
+    "plays": 3,
+    "hours": 0.12
+  },
+  {
+    "artist": "Shayne Orok",
+    "ms": 432811,
+    "plays": 4,
+    "hours": 0.12
+  },
+  {
+    "artist": "P!nk",
+    "ms": 448899,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Jay Chou",
+    "ms": 437992,
+    "plays": 3,
+    "hours": 0.12
+  },
+  {
+    "artist": "Howard Blake",
+    "ms": 420532,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Mimi Webb",
+    "ms": 434387,
+    "plays": 4,
+    "hours": 0.12
+  },
+  {
+    "artist": "Sting",
+    "ms": 437715,
+    "plays": 3,
+    "hours": 0.12
+  },
+  {
+    "artist": "Onyx Collective",
+    "ms": 437513,
+    "plays": 4,
+    "hours": 0.12
+  },
+  {
+    "artist": "Benn Good",
+    "ms": 431604,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Marcos Ariel",
+    "ms": 446205,
+    "plays": 3,
+    "hours": 0.12
+  },
+  {
+    "artist": "John Adams",
+    "ms": 441226,
+    "plays": 4,
+    "hours": 0.12
+  },
+  {
+    "artist": "BOYTOY",
+    "ms": 439316,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Blur",
+    "ms": 417914,
+    "plays": 3,
+    "hours": 0.12
+  },
+  {
+    "artist": "Oliver Tree",
+    "ms": 435450,
+    "plays": 3,
+    "hours": 0.12
+  },
+  {
+    "artist": "Lorde",
+    "ms": 442641,
+    "plays": 3,
+    "hours": 0.12
+  },
+  {
+    "artist": "Ausekarane",
+    "ms": 414344,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Night Tempo",
+    "ms": 420038,
+    "plays": 4,
+    "hours": 0.12
+  },
+  {
+    "artist": "Jon Bellion",
+    "ms": 435206,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Kaia Huuse",
+    "ms": 419817,
+    "plays": 3,
+    "hours": 0.12
+  },
+  {
+    "artist": "Philharmonic Orchestra",
+    "ms": 416573,
+    "plays": 1,
+    "hours": 0.12
+  },
+  {
+    "artist": "Cracker",
+    "ms": 436859,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Gundelach",
+    "ms": 434560,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Hannes",
+    "ms": 414545,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Villagers",
+    "ms": 429106,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Gaetano Donizetti",
+    "ms": 416428,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Manchester Orchestra",
+    "ms": 432355,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Starland Vocal Band",
+    "ms": 438066,
+    "plays": 3,
+    "hours": 0.12
+  },
+  {
+    "artist": "Olivia Dean",
+    "ms": 430778,
+    "plays": 3,
+    "hours": 0.12
+  },
+  {
+    "artist": "Leopold Mozart",
+    "ms": 440119,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Bremer/McCoy",
+    "ms": 444476,
+    "plays": 4,
+    "hours": 0.12
+  },
+  {
+    "artist": "Dave",
+    "ms": 441385,
+    "plays": 3,
+    "hours": 0.12
+  },
+  {
+    "artist": "Sharon Jones & The Dap-Kings",
+    "ms": 438965,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Madcon",
+    "ms": 432292,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "kent",
+    "ms": 440206,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Bing Crosby",
+    "ms": 429573,
+    "plays": 3,
+    "hours": 0.12
+  },
+  {
+    "artist": "Orchestre Touria",
+    "ms": 422869,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Tash Sultana",
+    "ms": 428292,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Goss",
+    "ms": 448301,
+    "plays": 4,
+    "hours": 0.12
+  },
+  {
+    "artist": "Brian Elliot",
+    "ms": 419299,
+    "plays": 3,
+    "hours": 0.12
+  },
+  {
+    "artist": "liv",
+    "ms": 436941,
+    "plays": 3,
+    "hours": 0.12
+  },
+  {
+    "artist": "Steve Forbert",
+    "ms": 424931,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Janis Joplin",
+    "ms": 438247,
+    "plays": 2,
+    "hours": 0.12
+  },
+  {
+    "artist": "Ten Years After",
+    "ms": 440667,
+    "plays": 3,
+    "hours": 0.12
+  },
+  {
+    "artist": "Arlo Parks",
+    "ms": 433866,
+    "plays": 3,
+    "hours": 0.12
+  },
+  {
+    "artist": "Rihanna",
+    "ms": 408480,
+    "plays": 3,
+    "hours": 0.11
+  },
+  {
+    "artist": "Shigeru Suzuki",
+    "ms": 396750,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "Finding Neo",
+    "ms": 403504,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "INXS",
+    "ms": 392296,
+    "plays": 3,
+    "hours": 0.11
+  },
+  {
+    "artist": "The Zombies",
+    "ms": 413280,
+    "plays": 3,
+    "hours": 0.11
+  },
+  {
+    "artist": "Julee Cruise",
+    "ms": 411103,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "ZZ Top",
+    "ms": 395976,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "Lole Y Manuel",
+    "ms": 384018,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "Vassendgutane",
+    "ms": 408706,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "deLillos",
+    "ms": 384440,
+    "plays": 3,
+    "hours": 0.11
+  },
+  {
+    "artist": "Finn Kalvik",
+    "ms": 396758,
+    "plays": 4,
+    "hours": 0.11
+  },
+  {
+    "artist": "Russ",
+    "ms": 395522,
+    "plays": 3,
+    "hours": 0.11
+  },
+  {
+    "artist": "Jorge Ben Jor",
+    "ms": 383333,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "Garren Sean",
+    "ms": 386223,
+    "plays": 3,
+    "hours": 0.11
+  },
+  {
+    "artist": "Liam Gallagher",
+    "ms": 383796,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "Kent Nishimura",
+    "ms": 403715,
+    "plays": 3,
+    "hours": 0.11
+  },
+  {
+    "artist": "Joe Hisaishi",
+    "ms": 392466,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "Tora",
+    "ms": 398524,
+    "plays": 3,
+    "hours": 0.11
+  },
+  {
+    "artist": "DJ Khaled",
+    "ms": 408346,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "ViVii",
+    "ms": 412204,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "Journey",
+    "ms": 413120,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "Gioachino Rossini",
+    "ms": 382186,
+    "plays": 1,
+    "hours": 0.11
+  },
+  {
+    "artist": "Shirley Bassey",
+    "ms": 396393,
+    "plays": 4,
+    "hours": 0.11
+  },
+  {
+    "artist": "Guns N' Roses",
+    "ms": 412754,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "YoungBoy Never Broke Again",
+    "ms": 408257,
+    "plays": 3,
+    "hours": 0.11
+  },
+  {
+    "artist": "Kaskade",
+    "ms": 395761,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "The Clash",
+    "ms": 389466,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "Naughty Boy",
+    "ms": 410130,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "Fabich",
+    "ms": 394795,
+    "plays": 3,
+    "hours": 0.11
+  },
+  {
+    "artist": "Samantha Sang",
+    "ms": 381548,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "Sticky Fingers",
+    "ms": 404372,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "D'Angelo",
+    "ms": 382333,
+    "plays": 1,
+    "hours": 0.11
+  },
+  {
+    "artist": "Justin Hurwitz",
+    "ms": 392141,
+    "plays": 4,
+    "hours": 0.11
+  },
+  {
+    "artist": "Steam",
+    "ms": 412311,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "Kamal Keila",
+    "ms": 391000,
+    "plays": 1,
+    "hours": 0.11
+  },
+  {
+    "artist": "Kelly Clarkson",
+    "ms": 403734,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "Last Dinosaurs",
+    "ms": 399260,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "Astrud Gilberto",
+    "ms": 402392,
+    "plays": 3,
+    "hours": 0.11
+  },
+  {
+    "artist": "Lola Young",
+    "ms": 384079,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "Béla Bartók",
+    "ms": 403380,
+    "plays": 1,
+    "hours": 0.11
+  },
+  {
+    "artist": "The Blue Nile",
+    "ms": 391078,
+    "plays": 1,
+    "hours": 0.11
+  },
+  {
+    "artist": "Israel Nash",
+    "ms": 402168,
+    "plays": 1,
+    "hours": 0.11
+  },
+  {
+    "artist": "Groove Armada",
+    "ms": 393415,
+    "plays": 1,
+    "hours": 0.11
+  },
+  {
+    "artist": "Tedeschi Trucks Band",
+    "ms": 408618,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "Minnie Riperton",
+    "ms": 398813,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "Bill LaBounty",
+    "ms": 413460,
+    "plays": 2,
+    "hours": 0.11
+  },
+  {
+    "artist": "Al Stewart",
+    "ms": 398316,
+    "plays": 1,
+    "hours": 0.11
+  },
+  {
+    "artist": "The Midnight",
+    "ms": 389094,
+    "plays": 1,
+    "hours": 0.11
+  },
+  {
+    "artist": "The Chordettes",
+    "ms": 371119,
+    "plays": 3,
+    "hours": 0.1
+  },
+  {
+    "artist": "Benjamin Ingrosso",
+    "ms": 374168,
+    "plays": 3,
+    "hours": 0.1
+  },
+  {
+    "artist": "THE ANXIETY",
+    "ms": 373390,
+    "plays": 3,
+    "hours": 0.1
+  },
+  {
+    "artist": "Grandma's Tea Party",
+    "ms": 345725,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "fun.",
+    "ms": 360527,
+    "plays": 3,
+    "hours": 0.1
+  },
+  {
+    "artist": "セキトオ・シゲオ",
+    "ms": 367138,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Pilot",
+    "ms": 363025,
+    "plays": 3,
+    "hours": 0.1
+  },
+  {
+    "artist": "Sergio Mendes & Brasil '66",
+    "ms": 357766,
+    "plays": 3,
+    "hours": 0.1
+  },
+  {
+    "artist": "Carla Thomas",
+    "ms": 371198,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Andy Sheppard",
+    "ms": 361062,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Kaptein Sabeltann",
+    "ms": 377649,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "A/DA 阿達",
+    "ms": 371570,
+    "plays": 3,
+    "hours": 0.1
+  },
+  {
+    "artist": "Johnny Nash",
+    "ms": 357440,
+    "plays": 1,
+    "hours": 0.1
+  },
+  {
+    "artist": "The Paper Kites",
+    "ms": 361156,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Dillistone",
+    "ms": 363637,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Eduardo di Capua",
+    "ms": 346472,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Calpurnia",
+    "ms": 357249,
+    "plays": 3,
+    "hours": 0.1
+  },
+  {
+    "artist": "Roger Voudouris",
+    "ms": 375015,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Scott McKenzie",
+    "ms": 357012,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Elias Terval Orchestra",
+    "ms": 355306,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Dover",
+    "ms": 359892,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Hajaj",
+    "ms": 367257,
+    "plays": 3,
+    "hours": 0.1
+  },
+  {
+    "artist": "The Shadows",
+    "ms": 348372,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "The Flying Stars Of Brooklyn NY",
+    "ms": 350984,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Ingebjørg Bratland",
+    "ms": 358059,
+    "plays": 3,
+    "hours": 0.1
+  },
+  {
+    "artist": "DVRST",
+    "ms": 359943,
+    "plays": 4,
+    "hours": 0.1
+  },
+  {
+    "artist": "George Ezra",
+    "ms": 377920,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "blink-182",
+    "ms": 358909,
+    "plays": 3,
+    "hours": 0.1
+  },
+  {
+    "artist": "Tommy Körberg",
+    "ms": 375880,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Theophilus London",
+    "ms": 370198,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Jean-Paul-Égide Martini",
+    "ms": 347892,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Jordan Adetunji",
+    "ms": 367080,
+    "plays": 3,
+    "hours": 0.1
+  },
+  {
+    "artist": "Sabrina Starke",
+    "ms": 354392,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Nicholas Britell",
+    "ms": 356666,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Black Coffee",
+    "ms": 353061,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Twenty One Pilots",
+    "ms": 345376,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Percy Sledge",
+    "ms": 347732,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Def Leppard",
+    "ms": 357540,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Edwin Birdsong",
+    "ms": 355890,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Olly Alexander (Years & Years)",
+    "ms": 351177,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Hiatus Kaiyote",
+    "ms": 342426,
+    "plays": 1,
+    "hours": 0.1
+  },
+  {
+    "artist": "A36",
+    "ms": 347026,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Miel De Montagne",
+    "ms": 350786,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Piero Umiliani",
+    "ms": 363806,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Amnesty",
+    "ms": 351697,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Still Corners",
+    "ms": 350970,
+    "plays": 1,
+    "hours": 0.1
+  },
+  {
+    "artist": "Rigmor",
+    "ms": 350720,
+    "plays": 3,
+    "hours": 0.1
+  },
+  {
+    "artist": "Søren Huss",
+    "ms": 371466,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Bigbang",
+    "ms": 355752,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Boz Scaggs",
+    "ms": 361896,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Sanford Townsend Band",
+    "ms": 366847,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Marc Jordan",
+    "ms": 342731,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Hjálmar",
+    "ms": 349720,
+    "plays": 1,
+    "hours": 0.1
+  },
+  {
+    "artist": "Salvatore Cardillo",
+    "ms": 355651,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "The Brian Jonestown Massacre",
+    "ms": 373754,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Jennifer Warnes",
+    "ms": 376386,
+    "plays": 2,
+    "hours": 0.1
+  },
+  {
+    "artist": "Joshua Jaswon Octet",
+    "ms": 366177,
+    "plays": 1,
+    "hours": 0.1
+  },
+  {
+    "artist": "Ramón",
+    "ms": 335022,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "MOTEL CLUB",
+    "ms": 338342,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "Dillon Francis",
+    "ms": 327714,
+    "plays": 3,
+    "hours": 0.09
+  },
+  {
+    "artist": "King Krule",
+    "ms": 339386,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "Katie Melua",
+    "ms": 306039,
+    "plays": 1,
+    "hours": 0.09
+  },
+  {
+    "artist": "Sigma",
+    "ms": 322474,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "LXNGVX",
+    "ms": 308704,
+    "plays": 4,
+    "hours": 0.09
+  },
+  {
+    "artist": "Nancy Sinatra",
+    "ms": 319578,
+    "plays": 3,
+    "hours": 0.09
+  },
+  {
+    "artist": "Li Yugang",
+    "ms": 333012,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "Kennedy Mengesha",
+    "ms": 322266,
+    "plays": 1,
+    "hours": 0.09
+  },
+  {
+    "artist": "Boris Gardiner",
+    "ms": 329740,
+    "plays": 3,
+    "hours": 0.09
+  },
+  {
+    "artist": "Bobby Womack",
+    "ms": 310528,
+    "plays": 3,
+    "hours": 0.09
+  },
+  {
+    "artist": "Eric Carmen",
+    "ms": 306780,
+    "plays": 1,
+    "hours": 0.09
+  },
+  {
+    "artist": "Makoto Matsushita",
+    "ms": 307796,
+    "plays": 1,
+    "hours": 0.09
+  },
+  {
+    "artist": "Matthew Wilder",
+    "ms": 334645,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "Firefall",
+    "ms": 328880,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "draken",
+    "ms": 322257,
+    "plays": 4,
+    "hours": 0.09
+  },
+  {
+    "artist": "VALLO!",
+    "ms": 307802,
+    "plays": 4,
+    "hours": 0.09
+  },
+  {
+    "artist": "Sonder",
+    "ms": 333699,
+    "plays": 3,
+    "hours": 0.09
+  },
+  {
+    "artist": "Benjamin Britten",
+    "ms": 334555,
+    "plays": 1,
+    "hours": 0.09
+  },
+  {
+    "artist": "Amber Mark",
+    "ms": 318179,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "DOPE LEMON",
+    "ms": 341309,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "The Platters",
+    "ms": 314720,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "The Black Mamba",
+    "ms": 307349,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "Thomas Dybdahl",
+    "ms": 324950,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "Maribou State",
+    "ms": 332489,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "Smash Mouth",
+    "ms": 319179,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "Amilcare Ponchielli",
+    "ms": 316280,
+    "plays": 1,
+    "hours": 0.09
+  },
+  {
+    "artist": "Lesley Gore",
+    "ms": 334466,
+    "plays": 3,
+    "hours": 0.09
+  },
+  {
+    "artist": "Black Sabbath",
+    "ms": 330558,
+    "plays": 3,
+    "hours": 0.09
+  },
+  {
+    "artist": "Alex Blue",
+    "ms": 311542,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "Cris Mj",
+    "ms": 312000,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "Mildlife",
+    "ms": 324219,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "Luigi Denza",
+    "ms": 332800,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "Dusty Springfield",
+    "ms": 331216,
+    "plays": 3,
+    "hours": 0.09
+  },
+  {
+    "artist": "Sister Nancy",
+    "ms": 330060,
+    "plays": 3,
+    "hours": 0.09
+  },
+  {
+    "artist": "Rogér Fakhr",
+    "ms": 329041,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "Good Neighbours",
+    "ms": 314995,
+    "plays": 3,
+    "hours": 0.09
+  },
+  {
+    "artist": "Vinícius de Moraes",
+    "ms": 316333,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "Vinskvetten",
+    "ms": 311532,
+    "plays": 3,
+    "hours": 0.09
+  },
+  {
+    "artist": "Kevin MacLeod",
+    "ms": 333524,
+    "plays": 1,
+    "hours": 0.09
+  },
+  {
+    "artist": "Clean Bandit",
+    "ms": 312172,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "Broken Bells",
+    "ms": 317904,
+    "plays": 1,
+    "hours": 0.09
+  },
+  {
+    "artist": "Jessie Ware",
+    "ms": 334546,
+    "plays": 1,
+    "hours": 0.09
+  },
+  {
+    "artist": "My Morning Jacket",
+    "ms": 333344,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "Cabbage Patch Kids",
+    "ms": 318495,
+    "plays": 2,
+    "hours": 0.09
+  },
+  {
+    "artist": "G.E.M.",
+    "ms": 311185,
+    "plays": 1,
+    "hours": 0.09
+  },
+  {
+    "artist": "Odetta",
+    "ms": 307013,
+    "plays": 1,
+    "hours": 0.09
+  },
+  {
+    "artist": "Madeleine Peyroux",
+    "ms": 309800,
+    "plays": 1,
+    "hours": 0.09
+  },
+  {
+    "artist": "Miriam Netti",
+    "ms": 308817,
+    "plays": 1,
+    "hours": 0.09
+  },
+  {
+    "artist": "María Esteban Quintet",
+    "ms": 317800,
+    "plays": 1,
+    "hours": 0.09
+  },
+  {
+    "artist": "Carol Welsman",
+    "ms": 306246,
+    "plays": 1,
+    "hours": 0.09
+  },
+  {
+    "artist": "Daniel Allan",
+    "ms": 272341,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Jenevieve",
+    "ms": 299837,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Frankie Valli",
+    "ms": 281254,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Rauw Alejandro",
+    "ms": 302180,
+    "plays": 4,
+    "hours": 0.08
+  },
+  {
+    "artist": "Max Richter",
+    "ms": 291894,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Galt MacDermot",
+    "ms": 279031,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Kim Carnes",
+    "ms": 285589,
+    "plays": 3,
+    "hours": 0.08
+  },
+  {
+    "artist": "MAX",
+    "ms": 270360,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Jack White",
+    "ms": 279122,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Ralph McTell",
+    "ms": 288191,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Francis Bebey",
+    "ms": 305466,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Vazelina Bilopphøggers",
+    "ms": 286091,
+    "plays": 3,
+    "hours": 0.08
+  },
+  {
+    "artist": "Bas",
+    "ms": 293399,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Donald Byrd",
+    "ms": 277333,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Okean Elzy",
+    "ms": 270782,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Siri Nilsen",
+    "ms": 285800,
+    "plays": 3,
+    "hours": 0.08
+  },
+  {
+    "artist": "MFSB",
+    "ms": 288480,
+    "plays": 3,
+    "hours": 0.08
+  },
+  {
+    "artist": "Peabo Bryson",
+    "ms": 280112,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Lillebjørn Nilsen",
+    "ms": 288078,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Mark Ambor",
+    "ms": 296634,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Aviram",
+    "ms": 301401,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Sean Nicholas Savage",
+    "ms": 287123,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Mezzoforte",
+    "ms": 291926,
+    "plays": 3,
+    "hours": 0.08
+  },
+  {
+    "artist": "Kevin Boine",
+    "ms": 298417,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Lavinia Meijer",
+    "ms": 279653,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Héloïse de Jenlis",
+    "ms": 273809,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Mura Masa",
+    "ms": 299900,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Bonobo",
+    "ms": 274693,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Cocteau Twins",
+    "ms": 293684,
+    "plays": 3,
+    "hours": 0.08
+  },
+  {
+    "artist": "Eddy Grant",
+    "ms": 300825,
+    "plays": 3,
+    "hours": 0.08
+  },
+  {
+    "artist": "WILLIS",
+    "ms": 271884,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "RAKEL",
+    "ms": 304007,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "The Doors",
+    "ms": 283606,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Marlena Shaw",
+    "ms": 298167,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "WITCH",
+    "ms": 303602,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Creedence Clearwater Revival",
+    "ms": 300906,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Rascal Flatts",
+    "ms": 275640,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Young Thug",
+    "ms": 280899,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Sun Rai",
+    "ms": 300805,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Jonathan Johansson",
+    "ms": 291893,
+    "plays": 3,
+    "hours": 0.08
+  },
+  {
+    "artist": "Susanna",
+    "ms": 271148,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Alan Silvestri",
+    "ms": 283004,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Ms. Lauryn Hill",
+    "ms": 293266,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "The xx",
+    "ms": 289276,
+    "plays": 3,
+    "hours": 0.08
+  },
+  {
+    "artist": "Maya",
+    "ms": 271587,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Azymuth",
+    "ms": 282090,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Astrid S",
+    "ms": 287686,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Cigarettes After Sex",
+    "ms": 290600,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Bill Medley",
+    "ms": 290333,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "George McCrae",
+    "ms": 287687,
+    "plays": 3,
+    "hours": 0.08
+  },
+  {
+    "artist": "Peter Frampton",
+    "ms": 281066,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Johnny Yin",
+    "ms": 272136,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Essential Nature Sounds",
+    "ms": 281618,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Ibrahim Hesnawi",
+    "ms": 279250,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Amy Grant",
+    "ms": 302018,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Wizzard",
+    "ms": 278927,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "The Chemical Brothers",
+    "ms": 288904,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Åge Aleksandersen",
+    "ms": 289490,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Quarteto do Rio",
+    "ms": 293314,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Evan Blix",
+    "ms": 283977,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Frode Barth",
+    "ms": 298603,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Sergei Prokofiev",
+    "ms": 289513,
+    "plays": 6,
+    "hours": 0.08
+  },
+  {
+    "artist": "Santo & Johnny",
+    "ms": 290666,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Blood Orange",
+    "ms": 288133,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Common Saints",
+    "ms": 289330,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Bisse",
+    "ms": 291166,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Atlanta Rhythm Section",
+    "ms": 289544,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Totally Enormous Extinct Dinosaurs",
+    "ms": 275779,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Grimes",
+    "ms": 304142,
+    "plays": 2,
+    "hours": 0.08
+  },
+  {
+    "artist": "Dick Van Dyke",
+    "ms": 286618,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Christina Perri",
+    "ms": 285120,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Jane Monheit",
+    "ms": 299213,
+    "plays": 1,
+    "hours": 0.08
+  },
+  {
+    "artist": "Marion Ravn",
+    "ms": 240360,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "The Marshall Project",
+    "ms": 235858,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "美秀集團",
+    "ms": 245333,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Bakar",
+    "ms": 247022,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Noisettes",
+    "ms": 250379,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Povl Dissing & Benny Andersen",
+    "ms": 250372,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Movie Sounds Unlimited",
+    "ms": 237944,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "The Proclaimers",
+    "ms": 256116,
+    "plays": 3,
+    "hours": 0.07
+  },
+  {
+    "artist": "John Olav Nilsen",
+    "ms": 241348,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Osman İşmen",
+    "ms": 265624,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Sezen Aksu",
+    "ms": 241207,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Barry White",
+    "ms": 238664,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Gladys Knight & The Pips",
+    "ms": 254928,
+    "plays": 3,
+    "hours": 0.07
+  },
+  {
+    "artist": "Gotye",
+    "ms": 244884,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Halvdan Sivertsen",
+    "ms": 264020,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "No Doubt",
+    "ms": 263560,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Tate McRae",
+    "ms": 256303,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Bobby Darin",
+    "ms": 254344,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "The Nerves",
+    "ms": 241572,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Justice",
+    "ms": 266493,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Jim James",
+    "ms": 241911,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Hovvdy",
+    "ms": 248088,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Ylvis",
+    "ms": 250092,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Myd",
+    "ms": 252065,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Percy Faith",
+    "ms": 244826,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Poolside",
+    "ms": 234493,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Ultimo",
+    "ms": 269396,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Powfu",
+    "ms": 239617,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Anna Leone",
+    "ms": 239053,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Roy Woods",
+    "ms": 251859,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "DXRYL",
+    "ms": 258904,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "B'look",
+    "ms": 248503,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Hellbillies",
+    "ms": 243973,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Mansour",
+    "ms": 253160,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Mark Knight",
+    "ms": 249787,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Mariah Carey",
+    "ms": 249807,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Alphaville",
+    "ms": 262168,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Kaah",
+    "ms": 269894,
+    "plays": 3,
+    "hours": 0.07
+  },
+  {
+    "artist": "Noah Cyrus",
+    "ms": 267603,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "bel canto",
+    "ms": 248066,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Andrea Bocelli",
+    "ms": 250983,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Roy Hargrove",
+    "ms": 258564,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Erykah Badu",
+    "ms": 250707,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Vantage",
+    "ms": 246167,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Captain & Tennille",
+    "ms": 240338,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Freddie Hubbard",
+    "ms": 258330,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Nikki Yanofsky",
+    "ms": 268625,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Styx",
+    "ms": 265973,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Cymande",
+    "ms": 251400,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Poison",
+    "ms": 260224,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Faith Hill",
+    "ms": 250546,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Domenique Dumont",
+    "ms": 247317,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Evinha",
+    "ms": 257806,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Adrianne Lenker",
+    "ms": 258990,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Culture Club",
+    "ms": 252760,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Christina Aguilera",
+    "ms": 248802,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Britney Spears",
+    "ms": 255379,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Pauline",
+    "ms": 256786,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Whatever Happens Don´t Be Yourself!",
+    "ms": 238106,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Natasha Bedingfield",
+    "ms": 259333,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Martina McBride",
+    "ms": 243160,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Bobby Russell",
+    "ms": 264672,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Meltt",
+    "ms": 243560,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Yellow House",
+    "ms": 239640,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Dmitri Shostakovich",
+    "ms": 249645,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "White Town",
+    "ms": 259893,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "TRY",
+    "ms": 257768,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "The Hepburns",
+    "ms": 262799,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "T. Rex",
+    "ms": 262613,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Ziggy Katz",
+    "ms": 241237,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Lola Marsh",
+    "ms": 268856,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "The Embassy",
+    "ms": 234240,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Christine and the Queens",
+    "ms": 260876,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Little River Band",
+    "ms": 257756,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Westerman",
+    "ms": 258266,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Gary Wright",
+    "ms": 246466,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Tom Scott",
+    "ms": 268360,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Amy Holland",
+    "ms": 238866,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Bill Champlin",
+    "ms": 235896,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Celeste",
+    "ms": 256190,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Patrick Simmons",
+    "ms": 240040,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Faragher Brothers",
+    "ms": 241705,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Glamour Hammer",
+    "ms": 238365,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Madrugada",
+    "ms": 263315,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Lord Echo",
+    "ms": 268742,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Mayer Hawthorne",
+    "ms": 258559,
+    "plays": 2,
+    "hours": 0.07
+  },
+  {
+    "artist": "Air",
+    "ms": 268306,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "The Avalanches",
+    "ms": 262840,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "FKA twigs",
+    "ms": 247547,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Sinéad O'Connor",
+    "ms": 267360,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Alanis Morissette",
+    "ms": 249493,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Jane Irving",
+    "ms": 241866,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Halie Loren",
+    "ms": 249266,
+    "plays": 1,
+    "hours": 0.07
+  },
+  {
+    "artist": "Bare Andy",
+    "ms": 204166,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Lynyrd Skynyrd",
+    "ms": 199563,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "SEATBELTS",
+    "ms": 210333,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Soul For Real",
+    "ms": 202490,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Boney M.",
+    "ms": 216607,
+    "plays": 2,
+    "hours": 0.06
+  },
+  {
+    "artist": "Mr. Fingers",
+    "ms": 222751,
+    "plays": 2,
+    "hours": 0.06
+  },
+  {
+    "artist": "Fountains Of Wayne",
+    "ms": 228870,
+    "plays": 2,
+    "hours": 0.06
+  },
+  {
+    "artist": "Soulja Boy",
+    "ms": 221933,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Herb Alpert",
+    "ms": 204690,
+    "plays": 2,
+    "hours": 0.06
+  },
+  {
+    "artist": "UB40",
+    "ms": 231733,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "AURORA",
+    "ms": 222674,
+    "plays": 2,
+    "hours": 0.06
+  },
+  {
+    "artist": "Kashmere Stage Band",
+    "ms": 206133,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Webert Sicot",
+    "ms": 221266,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Spirit",
+    "ms": 217572,
+    "plays": 2,
+    "hours": 0.06
+  },
+  {
+    "artist": "Tiësto",
+    "ms": 222133,
+    "plays": 5,
+    "hours": 0.06
+  },
+  {
+    "artist": "Amanda Ginsburg",
+    "ms": 221226,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "The Cardigans",
+    "ms": 218504,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Crystal Fighters",
+    "ms": 230763,
+    "plays": 2,
+    "hours": 0.06
+  },
+  {
+    "artist": "Jack Stauber",
+    "ms": 208026,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Albert Hammond",
+    "ms": 233506,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "ILLIT",
+    "ms": 205389,
+    "plays": 2,
+    "hours": 0.06
+  },
+  {
+    "artist": "Roc Boyz",
+    "ms": 202746,
+    "plays": 2,
+    "hours": 0.06
+  },
+  {
+    "artist": "Tetanuz",
+    "ms": 214435,
+    "plays": 4,
+    "hours": 0.06
+  },
+  {
+    "artist": "Alf Prøysen",
+    "ms": 222844,
+    "plays": 3,
+    "hours": 0.06
+  },
+  {
+    "artist": "Oracle Sisters",
+    "ms": 202489,
+    "plays": 2,
+    "hours": 0.06
+  },
+  {
+    "artist": "Kristian Torgalsen",
+    "ms": 199933,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Anna Ternheim",
+    "ms": 233516,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Ulrik Munther",
+    "ms": 215546,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "The Fratellis",
+    "ms": 215306,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "The White Stripes",
+    "ms": 232106,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Jules Massenet",
+    "ms": 204133,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Travis Mills",
+    "ms": 213722,
+    "plays": 2,
+    "hours": 0.06
+  },
+  {
+    "artist": "Lyrical Lemonade",
+    "ms": 217384,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Avicii",
+    "ms": 233070,
+    "plays": 2,
+    "hours": 0.06
+  },
+  {
+    "artist": "REZZMAU5",
+    "ms": 209205,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Sparkee",
+    "ms": 219062,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Grelo",
+    "ms": 203337,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "The Kid LAROI",
+    "ms": 210975,
+    "plays": 3,
+    "hours": 0.06
+  },
+  {
+    "artist": "Tiger",
+    "ms": 203000,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Got Rhythm",
+    "ms": 216999,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "BTS",
+    "ms": 199053,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Anne Grete Preus",
+    "ms": 233566,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Carin Leon",
+    "ms": 209493,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "JuntunenPhD",
+    "ms": 208451,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Boyz II Men",
+    "ms": 221740,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Shuggie Otis",
+    "ms": 214723,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Charles Wright & The Watts 103rd Street Rhythm Band",
+    "ms": 233613,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "The Real Thing",
+    "ms": 208840,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Mr. Big",
+    "ms": 207200,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Elvis Costello",
+    "ms": 204533,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "The Righteous Brothers",
+    "ms": 218013,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Mike Yung",
+    "ms": 198157,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Rain",
+    "ms": 202000,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Chō",
+    "ms": 208000,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Ogień",
+    "ms": 208000,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Tono",
+    "ms": 216062,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Cortex",
+    "ms": 209760,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Gábor Szabó",
+    "ms": 198000,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Gal Costa",
+    "ms": 215440,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "The Free Music",
+    "ms": 230025,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Tough Crowd",
+    "ms": 202292,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Cab Calloway",
+    "ms": 233376,
+    "plays": 2,
+    "hours": 0.06
+  },
+  {
+    "artist": "Eartha Kitt",
+    "ms": 206069,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Mud",
+    "ms": 213154,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Trans-Siberian Orchestra",
+    "ms": 205329,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Meghan Trainor",
+    "ms": 219720,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Destiny's Child",
+    "ms": 209367,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Avril Lavigne",
+    "ms": 204000,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Stealers Wheel",
+    "ms": 208946,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "4 Non Blondes",
+    "ms": 222305,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Hether",
+    "ms": 201697,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Husbands",
+    "ms": 212666,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Feng Suave",
+    "ms": 222122,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "flipturn",
+    "ms": 227213,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Butter Bath",
+    "ms": 199060,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "The Japanese House",
+    "ms": 208280,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Del Water Gap",
+    "ms": 199232,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "url",
+    "ms": 204688,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Soppgirobygget",
+    "ms": 232293,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Maysa",
+    "ms": 201724,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "The Jeremy Spencer Band",
+    "ms": 206053,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Taco",
+    "ms": 220687,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Saem Millward",
+    "ms": 203643,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "DNA",
+    "ms": 227763,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Daniel Gum",
+    "ms": 205150,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "KØDE",
+    "ms": 211668,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Caterina Valente",
+    "ms": 204602,
+    "plays": 2,
+    "hours": 0.06
+  },
+  {
+    "artist": "LeBlanc And Carr",
+    "ms": 226693,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Bonnie Raitt",
+    "ms": 223133,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "The Pointer Sisters",
+    "ms": 199253,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Jesper Lindell",
+    "ms": 233886,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Patrick El-Hag",
+    "ms": 229213,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Asaf Avidan",
+    "ms": 215186,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Karen Dalton",
+    "ms": 203190,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Blue Öyster Cult",
+    "ms": 210546,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Kokoroko",
+    "ms": 199342,
+    "plays": 2,
+    "hours": 0.06
+  },
+  {
+    "artist": "Jawsh 685",
+    "ms": 201981,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Balthazar",
+    "ms": 205680,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Van Morrison",
+    "ms": 205613,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Simple Minds",
+    "ms": 218370,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Shakira",
+    "ms": 218093,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Emma Smith",
+    "ms": 209043,
+    "plays": 1,
+    "hours": 0.06
+  },
+  {
+    "artist": "Gus Polden",
+    "ms": 173624,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "The Carters",
+    "ms": 186986,
+    "plays": 2,
+    "hours": 0.05
+  },
+  {
+    "artist": "Blueburn",
+    "ms": 184668,
+    "plays": 3,
+    "hours": 0.05
+  },
+  {
+    "artist": "張國祥",
+    "ms": 188866,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "The Kingsmen",
+    "ms": 165381,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "ISSI belle",
+    "ms": 165133,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Rev. James Cleveland and The Gospel Music Worshop of America",
+    "ms": 187745,
+    "plays": 3,
+    "hours": 0.05
+  },
+  {
+    "artist": "Tim Maia",
+    "ms": 173171,
+    "plays": 2,
+    "hours": 0.05
+  },
+  {
+    "artist": "ShadowStep",
+    "ms": 193045,
+    "plays": 2,
+    "hours": 0.05
+  },
+  {
+    "artist": "K.A.D",
+    "ms": 172408,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Caden",
+    "ms": 197839,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Branford Marsalis Quartet",
+    "ms": 196062,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Vladimir Cauchemar",
+    "ms": 173443,
+    "plays": 2,
+    "hours": 0.05
+  },
+  {
+    "artist": "Jahn Teigen",
+    "ms": 174373,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "The Kids",
+    "ms": 180901,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Nico & Vinz",
+    "ms": 165488,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Ina Wroldsen",
+    "ms": 173360,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Chief Commander Ebenezer Obey",
+    "ms": 162323,
+    "plays": 2,
+    "hours": 0.05
+  },
+  {
+    "artist": "Emahoy Tsege Mariam Gebru",
+    "ms": 178306,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Ben E. King",
+    "ms": 188657,
+    "plays": 2,
+    "hours": 0.05
+  },
+  {
+    "artist": "J Dilla",
+    "ms": 174080,
+    "plays": 2,
+    "hours": 0.05
+  },
+  {
+    "artist": "Brittany Howard",
+    "ms": 191395,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Hasse Alfredson",
+    "ms": 162466,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Jørn Hoel",
+    "ms": 165676,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Men At Work",
+    "ms": 182029,
+    "plays": 2,
+    "hours": 0.05
+  },
+  {
+    "artist": "Looking Glass",
+    "ms": 186826,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "HM Kongens Gardes Musikkorps",
+    "ms": 176029,
+    "plays": 3,
+    "hours": 0.05
+  },
+  {
+    "artist": "Admiral P",
+    "ms": 187840,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "admo",
+    "ms": 162500,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Tim Bernardes",
+    "ms": 166706,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Matt Corby",
+    "ms": 190726,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Second Sun",
+    "ms": 172018,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Klyne",
+    "ms": 170615,
+    "plays": 2,
+    "hours": 0.05
+  },
+  {
+    "artist": "Zimmer90",
+    "ms": 173802,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Kazy Lambist",
+    "ms": 170868,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Dagny",
+    "ms": 178213,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Iris Caltwait",
+    "ms": 177320,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "The Foundations",
+    "ms": 174640,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Real Ones",
+    "ms": 176472,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "bby",
+    "ms": 162469,
+    "plays": 2,
+    "hours": 0.05
+  },
+  {
+    "artist": "Glass Animals",
+    "ms": 171810,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Rock Aid Armenia",
+    "ms": 189273,
+    "plays": 2,
+    "hours": 0.05
+  },
+  {
+    "artist": "Morten Myklebust",
+    "ms": 178746,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Afroman",
+    "ms": 197760,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Noah Kahan",
+    "ms": 182346,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "O-Zone",
+    "ms": 162566,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Howard Shore",
+    "ms": 175042,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Ennio Morricone",
+    "ms": 162116,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Major Lazer",
+    "ms": 173951,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Fools Garden",
+    "ms": 191026,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "MIKA",
+    "ms": 187733,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "grentperez",
+    "ms": 176208,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Townes Van Zandt",
+    "ms": 181003,
+    "plays": 2,
+    "hours": 0.05
+  },
+  {
+    "artist": "Kacey Musgraves",
+    "ms": 182946,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Denzel Curry",
+    "ms": 189974,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Go-Jo",
+    "ms": 183873,
+    "plays": 2,
+    "hours": 0.05
+  },
+  {
+    "artist": "skoomy",
+    "ms": 189503,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Bruno Major",
+    "ms": 162797,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Louis Theroux",
+    "ms": 194416,
+    "plays": 2,
+    "hours": 0.05
+  },
+  {
+    "artist": "yioku",
+    "ms": 165019,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "347aidan",
+    "ms": 180138,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Silja Sol",
+    "ms": 188884,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Sonny & Cher",
+    "ms": 190080,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Neil Diamond",
+    "ms": 195400,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Extreme",
+    "ms": 190540,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "The Isley Brothers",
+    "ms": 172733,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Harry Nilsson",
+    "ms": 163586,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "The Partridge Family",
+    "ms": 175306,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "John Travolta",
+    "ms": 169840,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "KISS",
+    "ms": 165666,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Lil Wayne",
+    "ms": 184410,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "The Spinners",
+    "ms": 192760,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Jean Knight",
+    "ms": 164560,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Drip-Drop",
+    "ms": 164000,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Tornadoez",
+    "ms": 171867,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Noise and Nature",
+    "ms": 170000,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Sleep, Study, Focus",
+    "ms": 196000,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Dozy Sounds",
+    "ms": 184000,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Ahmed Malek",
+    "ms": 163000,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Zé Roberto",
+    "ms": 180490,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Blue Iverson",
+    "ms": 176234,
+    "plays": 2,
+    "hours": 0.05
+  },
+  {
+    "artist": "Eduardo Mateo",
+    "ms": 165998,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Adiga Music Band",
+    "ms": 180155,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Al Massrieen",
+    "ms": 170000,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "NAV",
+    "ms": 179773,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Becky and the Birds",
+    "ms": 175481,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Hare Squead",
+    "ms": 181998,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Robin Gibb",
+    "ms": 186373,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Car Seat Headrest",
+    "ms": 187924,
+    "plays": 2,
+    "hours": 0.05
+  },
+  {
+    "artist": "Sid Vicious",
+    "ms": 196842,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "The Ronettes",
+    "ms": 181266,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Bellini",
+    "ms": 168444,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Luke Combs",
+    "ms": 169441,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Ben Harper And The Innocent Criminals",
+    "ms": 188420,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Navos",
+    "ms": 188260,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "The Notorious B.I.G.",
+    "ms": 180175,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Cher",
+    "ms": 162836,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Boyscott",
+    "ms": 192542,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "okaywill",
+    "ms": 165000,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "ODIE",
+    "ms": 162376,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "BETWEEN FRIENDS",
+    "ms": 179144,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "RAC",
+    "ms": 165477,
+    "plays": 2,
+    "hours": 0.05
+  },
+  {
+    "artist": "Gustav Holst",
+    "ms": 164604,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Gilberto Gil",
+    "ms": 195190,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Nara Leão",
+    "ms": 187096,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "ANOTR",
+    "ms": 192150,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "DJ burgerhead",
+    "ms": 183618,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "ROSÉ",
+    "ms": 167142,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "The YD",
+    "ms": 171040,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Eddy Mitchell",
+    "ms": 179760,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Razorlight",
+    "ms": 193073,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Tower Of Power",
+    "ms": 164588,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "The Kooks",
+    "ms": 174860,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Yola",
+    "ms": 180902,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "The Last Shadow Puppets",
+    "ms": 186320,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Tingsek",
+    "ms": 178533,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "brenn.",
+    "ms": 169531,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "James Blake",
+    "ms": 174043,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Gnarls Barkley",
+    "ms": 177933,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Steve Perry",
+    "ms": 179286,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Stephen Bishop",
+    "ms": 181900,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Dane Donohue",
+    "ms": 181550,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Jefferson Starship",
+    "ms": 194895,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Bat For Lashes",
+    "ms": 178680,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Suzanne Vega",
+    "ms": 187040,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "LaRombé",
+    "ms": 196565,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Playboi Carti",
+    "ms": 181237,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "6ix9ine",
+    "ms": 163086,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Chris Montez",
+    "ms": 162280,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Cyrille Aimee",
+    "ms": 171949,
+    "plays": 1,
+    "hours": 0.05
+  },
+  {
+    "artist": "Myra",
+    "ms": 140428,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Bølgen",
+    "ms": 153416,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "OnklP",
+    "ms": 133714,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "sped up 8282",
+    "ms": 145200,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Ivor Cutler",
+    "ms": 159221,
+    "plays": 3,
+    "hours": 0.04
+  },
+  {
+    "artist": "Lewis Hanton",
+    "ms": 156169,
+    "plays": 2,
+    "hours": 0.04
+  },
+  {
+    "artist": "Bjelleklang",
+    "ms": 139626,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Lil Kleine",
+    "ms": 145978,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Thomas Tvedt",
+    "ms": 134010,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Bendik Brænne",
+    "ms": 142973,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Breno Mello",
+    "ms": 135697,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Megan Thee Stallion",
+    "ms": 155497,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Barão Vermelho",
+    "ms": 145350,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "KALEO",
+    "ms": 132246,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Françoise Hardy",
+    "ms": 148506,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Patrick Carney",
+    "ms": 148861,
+    "plays": 3,
+    "hours": 0.04
+  },
+  {
+    "artist": "Marius Müller",
+    "ms": 138450,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Trond-Viggo Torgersen",
+    "ms": 149659,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Mads Hansen",
+    "ms": 159447,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Donkeyboy",
+    "ms": 137485,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Donald Beavers",
+    "ms": 128241,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Freddie Gibbs",
+    "ms": 147297,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Ernest Ranglin",
+    "ms": 151000,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Dimitri Vegas & Like Mike",
+    "ms": 135404,
+    "plays": 2,
+    "hours": 0.04
+  },
+  {
+    "artist": "VC Barre",
+    "ms": 139034,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Terence Boylan",
+    "ms": 156738,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Howle",
+    "ms": 144961,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Gizmo Varillas",
+    "ms": 156464,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "French 79",
+    "ms": 127236,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Σtella",
+    "ms": 158359,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Jason Derulo",
+    "ms": 127694,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Kurt Weill",
+    "ms": 127066,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "George Gershwin",
+    "ms": 145200,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Charlie Cunningham",
+    "ms": 132310,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "RM",
+    "ms": 153477,
+    "plays": 2,
+    "hours": 0.04
+  },
+  {
+    "artist": "Moddi",
+    "ms": 153820,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Giacomo Meyerbeer",
+    "ms": 129540,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Kabin Crew",
+    "ms": 156155,
+    "plays": 2,
+    "hours": 0.04
+  },
+  {
+    "artist": "The Turtles",
+    "ms": 160640,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Sugaray Rayford",
+    "ms": 128358,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Aktiv Dödshjelp",
+    "ms": 133020,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Trueno",
+    "ms": 145342,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Blessd",
+    "ms": 157453,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Peso Pluma",
+    "ms": 130614,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Bonnie Tyler",
+    "ms": 140920,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Yann Tiersen",
+    "ms": 140725,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Danny Elfman",
+    "ms": 158340,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "West Dylan Thordson",
+    "ms": 127115,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Jasha Klebe",
+    "ms": 151918,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "The Jack Moves",
+    "ms": 130822,
+    "plays": 2,
+    "hours": 0.04
+  },
+  {
+    "artist": "Sarah Vaughan",
+    "ms": 153666,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Ole Paus",
+    "ms": 130621,
+    "plays": 2,
+    "hours": 0.04
+  },
+  {
+    "artist": "Tito Double P",
+    "ms": 145473,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "John Philip Sousa",
+    "ms": 147653,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "A.J. & Big Justice",
+    "ms": 150434,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Jelly House",
+    "ms": 143199,
+    "plays": 2,
+    "hours": 0.04
+  },
+  {
+    "artist": "Johann Strauss I",
+    "ms": 129476,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Soul Dog",
+    "ms": 131136,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Luude",
+    "ms": 140795,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Mazde",
+    "ms": 127481,
+    "plays": 2,
+    "hours": 0.04
+  },
+  {
+    "artist": "Michael Hunter",
+    "ms": 129635,
+    "plays": 2,
+    "hours": 0.04
+  },
+  {
+    "artist": "Bostweeds",
+    "ms": 143732,
+    "plays": 2,
+    "hours": 0.04
+  },
+  {
+    "artist": "The Darkness",
+    "ms": 149160,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Camille Yarbrough",
+    "ms": 153570,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Jacques Offenbach",
+    "ms": 161746,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Andrew Bird",
+    "ms": 126225,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Joe Cocker",
+    "ms": 159640,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Zacari",
+    "ms": 127826,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Harmonious Nature",
+    "ms": 132124,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Vanessa Storm",
+    "ms": 127802,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Sounds Caused By Lightning",
+    "ms": 136719,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Distantic",
+    "ms": 153065,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Tamba 4",
+    "ms": 157973,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Dorothy Ashby",
+    "ms": 157186,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Rachel Chinouriri",
+    "ms": 151560,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Johann Pachelbel",
+    "ms": 159340,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Jewel Akens",
+    "ms": 151966,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Brenda Lee",
+    "ms": 126241,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Gene Autry",
+    "ms": 150268,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Seth MacFarlane",
+    "ms": 146193,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Andy Williams",
+    "ms": 151919,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Ramones",
+    "ms": 151960,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Jordan Rakei",
+    "ms": 158145,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Bone Thugs-N-Harmony",
+    "ms": 144525,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Prebz Og Dennis",
+    "ms": 133284,
+    "plays": 2,
+    "hours": 0.04
+  },
+  {
+    "artist": "The Pogues",
+    "ms": 150257,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Tupperwave",
+    "ms": 135720,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Olivia Rodrigo",
+    "ms": 142052,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Cauby Peixoto",
+    "ms": 157419,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Quarteto Jobim-Morelenbaum",
+    "ms": 156507,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Paula Sergio",
+    "ms": 150612,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Lithe",
+    "ms": 129523,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "The Bucketheads",
+    "ms": 158572,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "The Supermen Lovers",
+    "ms": 160016,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Silje Nergaard",
+    "ms": 134012,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "McFly",
+    "ms": 127574,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Duffy",
+    "ms": 131054,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Rupert Holmes",
+    "ms": 148915,
+    "plays": 2,
+    "hours": 0.04
+  },
+  {
+    "artist": "Rumer",
+    "ms": 128336,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Valkyrien Allstars",
+    "ms": 127552,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Gerald Moore",
+    "ms": 155706,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "England Dan & John Ford Coley",
+    "ms": 159106,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Matt Monro",
+    "ms": 155840,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "The Orb",
+    "ms": 138937,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "612",
+    "ms": 136700,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Tracy Chapman",
+    "ms": 161600,
+    "plays": 1,
+    "hours": 0.04
+  },
+  {
+    "artist": "Dean Lewis",
+    "ms": 102039,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Pete Drake",
+    "ms": 103907,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Doctorfunk",
+    "ms": 91111,
+    "plays": 2,
+    "hours": 0.03
+  },
+  {
+    "artist": "Richard In Your Mind",
+    "ms": 91790,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "deadman 死人",
+    "ms": 113548,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Shahram Shabpareh",
+    "ms": 104362,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Billy Preston",
+    "ms": 120418,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Henri Texier",
+    "ms": 113762,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Jokke & Valentinerne",
+    "ms": 107562,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Orleans",
+    "ms": 116667,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Martin Garrix",
+    "ms": 109846,
+    "plays": 2,
+    "hours": 0.03
+  },
+  {
+    "artist": "Øneheart",
+    "ms": 94333,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Zupermaria",
+    "ms": 118773,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Domo Genesis",
+    "ms": 107011,
+    "plays": 2,
+    "hours": 0.03
+  },
+  {
+    "artist": "Durand Jones & The Indications",
+    "ms": 103417,
+    "plays": 2,
+    "hours": 0.03
+  },
+  {
+    "artist": "Michael Nau",
+    "ms": 125348,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "METTE",
+    "ms": 100609,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Black Pumas",
+    "ms": 123565,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Wenche Myhre",
+    "ms": 92457,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "The Cheeky Girls",
+    "ms": 120627,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "H.E.R.",
+    "ms": 107610,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Harold López-Nussa",
+    "ms": 113939,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Top1Records",
+    "ms": 116935,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Debby Boone",
+    "ms": 98219,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "SUICIDAL-IDOL",
+    "ms": 119120,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Mon Rovîa",
+    "ms": 120082,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "The Jam",
+    "ms": 113053,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Linkin Park",
+    "ms": 113127,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Johan Halvorsen",
+    "ms": 98107,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Nazareth",
+    "ms": 118011,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Joni Mitchell",
+    "ms": 123080,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "The Scorpions",
+    "ms": 101356,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Triste Janero",
+    "ms": 122031,
+    "plays": 2,
+    "hours": 0.03
+  },
+  {
+    "artist": "Haruna Fields",
+    "ms": 120000,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Eva Poured",
+    "ms": 121115,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Amida Nature Sounds",
+    "ms": 122000,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Piero Piccioni",
+    "ms": 121200,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Okay Kaya",
+    "ms": 93737,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Maston",
+    "ms": 93882,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Vladimir Cosma",
+    "ms": 110760,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Ruby Haunt",
+    "ms": 101739,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Kate Nash",
+    "ms": 92649,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Kesha",
+    "ms": 125183,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Perry Como",
+    "ms": 111757,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "David Guetta",
+    "ms": 97618,
+    "plays": 2,
+    "hours": 0.03
+  },
+  {
+    "artist": "R.E.M.",
+    "ms": 107284,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Fivio Foreign",
+    "ms": 102073,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "The Dare",
+    "ms": 119558,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Earthquake Lights",
+    "ms": 104964,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Crazy Town",
+    "ms": 110059,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Busta Rhymes",
+    "ms": 108636,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Business Mends",
+    "ms": 121220,
+    "plays": 2,
+    "hours": 0.03
+  },
+  {
+    "artist": "Sleigh Bells",
+    "ms": 104410,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Ludacris",
+    "ms": 96479,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Charlotte Audestad",
+    "ms": 114680,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Klovner I Kamp",
+    "ms": 125496,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Ashes To Amber",
+    "ms": 90749,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Toquinho",
+    "ms": 120818,
+    "plays": 2,
+    "hours": 0.03
+  },
+  {
+    "artist": "Armin van Buuren",
+    "ms": 123598,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "AWOLNATION",
+    "ms": 105125,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "KATSEYE",
+    "ms": 120588,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "My Chemical Romance",
+    "ms": 122784,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Hypesx",
+    "ms": 115949,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Chase & Status",
+    "ms": 116820,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "andreas odbjerg",
+    "ms": 92325,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "George Thorogood & The Destroyers",
+    "ms": 123132,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Vladimir Horowitz",
+    "ms": 92062,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Oscuro",
+    "ms": 90140,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Fantastikku.",
+    "ms": 93584,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Players",
+    "ms": 105652,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Love Shop",
+    "ms": 95461,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Pure Prairie League",
+    "ms": 97407,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Dan Fogelberg",
+    "ms": 94550,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Palace",
+    "ms": 110851,
+    "plays": 2,
+    "hours": 0.03
+  },
+  {
+    "artist": "Fieh",
+    "ms": 122870,
+    "plays": 2,
+    "hours": 0.03
+  },
+  {
+    "artist": "Nielsen & Pearson",
+    "ms": 97391,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Deportees",
+    "ms": 103988,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Lil Nas X",
+    "ms": 101324,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "DEGrande",
+    "ms": 90859,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Buddy Holly",
+    "ms": 108416,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Sam Cooke & The Soul Stirrers",
+    "ms": 119822,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Iggy Azalea",
+    "ms": 94201,
+    "plays": 1,
+    "hours": 0.03
+  },
+  {
+    "artist": "Mahogni",
+    "ms": 81101,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "That Chick Angel",
+    "ms": 80400,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Engelwood",
+    "ms": 56641,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Philip Emilio",
+    "ms": 82812,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Geek Music",
+    "ms": 54180,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "鳳飛飛",
+    "ms": 64057,
+    "plays": 2,
+    "hours": 0.02
+  },
+  {
+    "artist": "Motörhead",
+    "ms": 73710,
+    "plays": 2,
+    "hours": 0.02
+  },
+  {
+    "artist": "Anita Mui",
+    "ms": 64341,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "The Bangles",
+    "ms": 72219,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Bruce Springsteen",
+    "ms": 85934,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Maggie Rogers",
+    "ms": 84144,
+    "plays": 2,
+    "hours": 0.02
+  },
+  {
+    "artist": "Tigergutt101",
+    "ms": 57019,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Matt Maltese",
+    "ms": 79989,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Porter Robinson",
+    "ms": 75666,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Blomst",
+    "ms": 81591,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Girma Wolde Michael",
+    "ms": 71701,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Bausa",
+    "ms": 72720,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Jens Book-Jenssen",
+    "ms": 64077,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Macabre Plaza",
+    "ms": 69565,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Franz Ferdinand",
+    "ms": 75388,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Johnny Hodges",
+    "ms": 70078,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "SYML",
+    "ms": 55717,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Ginne Marker",
+    "ms": 63779,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Per Bredhammar",
+    "ms": 56726,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Ginger Root",
+    "ms": 85630,
+    "plays": 2,
+    "hours": 0.02
+  },
+  {
+    "artist": "José José",
+    "ms": 89965,
+    "plays": 2,
+    "hours": 0.02
+  },
+  {
+    "artist": "Ice Spice",
+    "ms": 68577,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Delara",
+    "ms": 73134,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Vera",
+    "ms": 65361,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Immortal Technique",
+    "ms": 66127,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Richy Mitch & The Coal Miners",
+    "ms": 87000,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Metallica",
+    "ms": 82028,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "DJ MøMø",
+    "ms": 82374,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Huey Lewis & The News",
+    "ms": 58494,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Sunnan",
+    "ms": 64473,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "LE SSERAFIM",
+    "ms": 86537,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "tigerstate",
+    "ms": 81323,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Markella",
+    "ms": 69225,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Rupert Gregson-Williams",
+    "ms": 75840,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Cascada",
+    "ms": 87046,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Blaue Blume",
+    "ms": 58200,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "The Cleaners From Venus",
+    "ms": 56204,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Richard Wagner",
+    "ms": 85007,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Redbone",
+    "ms": 86703,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Chris Brown",
+    "ms": 68480,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Shivaree",
+    "ms": 79677,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Jóhann Jóhannsson",
+    "ms": 65040,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "POKMINDSET",
+    "ms": 69030,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Atlantic Starr",
+    "ms": 80826,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Gil Scott-Heron",
+    "ms": 62070,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "R3SPAWN",
+    "ms": 60336,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Ciclo del Agua",
+    "ms": 58120,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Celestial Noise",
+    "ms": 55170,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Rain Recordings",
+    "ms": 66588,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Mateus E. Dadinho",
+    "ms": 76946,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Menahan Street Band",
+    "ms": 67720,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "aupinard",
+    "ms": 89596,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Ali Hassan Kuban",
+    "ms": 79965,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Tom MacDonald",
+    "ms": 69752,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Buena Vista Social Club",
+    "ms": 59889,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Leona Lewis",
+    "ms": 89389,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Flo Rida",
+    "ms": 67421,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Julie Ellinor",
+    "ms": 87956,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "J. Paul Jr.",
+    "ms": 87457,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Morten Abel",
+    "ms": 61819,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Curtis Mayfield",
+    "ms": 78141,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Timbaland",
+    "ms": 59843,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Gwen Stefani",
+    "ms": 60479,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "CYRIL",
+    "ms": 65461,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "ZOID LAND",
+    "ms": 58053,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Pages",
+    "ms": 76308,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Turbolens",
+    "ms": 64641,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Solo Fernández",
+    "ms": 69597,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "David Gray",
+    "ms": 88621,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Bronski Beat",
+    "ms": 81986,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Salah Ragab",
+    "ms": 59797,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "The La's",
+    "ms": 76231,
+    "plays": 1,
+    "hours": 0.02
+  },
+  {
+    "artist": "Chaka Khan",
+    "ms": 48566,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "DJ Didilong",
+    "ms": 37259,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Eline Roa",
+    "ms": 36509,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "El Papi",
+    "ms": 44514,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "UNDERGRUNN",
+    "ms": 32265,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "The Soggy Bottom Boys",
+    "ms": 34463,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Breakwater",
+    "ms": 42353,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "The Crusaders",
+    "ms": 36290,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "The Rare Occasions",
+    "ms": 35141,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Humle",
+    "ms": 36853,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Søte og Rare Gutter",
+    "ms": 39970,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Kansas",
+    "ms": 47151,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Philip Bailey",
+    "ms": 36998,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Issam Alnajjar",
+    "ms": 46275,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Szymon",
+    "ms": 42561,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Yumi Zouma",
+    "ms": 41425,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Stanley Myers",
+    "ms": 37453,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Philip Glass",
+    "ms": 47215,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Big Fox",
+    "ms": 50859,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Lucy Dacus",
+    "ms": 30224,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "The Shapeshifters",
+    "ms": 49386,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Dominic Fike",
+    "ms": 31690,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Jennifer Lopez",
+    "ms": 38218,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Maisak",
+    "ms": 43852,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "OMI",
+    "ms": 37832,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "RÜ",
+    "ms": 38548,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Halsey",
+    "ms": 39203,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Central Cee",
+    "ms": 30537,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Hush Moss",
+    "ms": 31978,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Lucy Lu",
+    "ms": 35687,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Gunna",
+    "ms": 45136,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Stephen Sanchez",
+    "ms": 44186,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Fergie",
+    "ms": 32013,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Tomaso Albinoni",
+    "ms": 46458,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Gloria Gaynor",
+    "ms": 52449,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "楊燕",
+    "ms": 47153,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "BROCKHAMPTON",
+    "ms": 50976,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Hal Walker",
+    "ms": 36702,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Pino D'Angiò",
+    "ms": 36134,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Flight of the Conchords",
+    "ms": 35118,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "NxWorries",
+    "ms": 31120,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Rebecca Black",
+    "ms": 51359,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Zhao Qun",
+    "ms": 31391,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Linda Vidala",
+    "ms": 50024,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "ROSALÍA",
+    "ms": 36200,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Dr. Andrew Huberman",
+    "ms": 38467,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Akira The Don",
+    "ms": 47371,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Petit Ocean",
+    "ms": 34447,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "RH",
+    "ms": 38065,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Barenaked Ladies",
+    "ms": 51994,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Thor Farlov",
+    "ms": 44324,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Pat Benatar",
+    "ms": 35245,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Ohio Players",
+    "ms": 50237,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "B*Witched",
+    "ms": 37691,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Dwight Yoakam",
+    "ms": 39380,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "黄婉婷",
+    "ms": 46685,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "TIX",
+    "ms": 41859,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Zach Bryan",
+    "ms": 43038,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Vikingarna",
+    "ms": 48890,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Mai Yamane",
+    "ms": 48655,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Lil Ones",
+    "ms": 44096,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "The Marvelettes",
+    "ms": 36653,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Jackie DeShannon",
+    "ms": 30183,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Spin Doctors",
+    "ms": 30412,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Azealia Banks",
+    "ms": 32991,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Ace of Base",
+    "ms": 32579,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Lipps Inc.",
+    "ms": 33532,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "MC Hammer",
+    "ms": 51783,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "The Kinks",
+    "ms": 34711,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Vampire Weekend",
+    "ms": 43744,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Nena",
+    "ms": 37340,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Midlake",
+    "ms": 39416,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Luigi Boccherini",
+    "ms": 53488,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Tyla",
+    "ms": 45071,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Isak Øvrevold",
+    "ms": 46081,
+    "plays": 1,
+    "hours": 0.01
+  },
+  {
+    "artist": "Jarl Goli",
+    "ms": 35588,
+    "plays": 1,
+    "hours": 0.01
   }
 ]

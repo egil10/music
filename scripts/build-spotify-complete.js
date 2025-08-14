@@ -8,9 +8,9 @@ const OUT_DIR = "docs/data";
 
 // Manual exclusion list - tracks/artists to always filter out
 const MANUAL_EXCLUSIONS = {
-  artists: ["Pilt!", "Unknown Artist"],
-  tracks: ["mary plays the piano", "unknown track"],
-  keywords: ["test", "demo", "sample"]
+  artists: ["Pilt!", "Unknown Artist", "unknown artist", "Unknown"],
+  tracks: ["mary plays the piano", "unknown track", "Unknown Track"],
+  keywords: ["test", "demo", "sample", "unknown"]
 };
 
 // Outlier detection settings
@@ -24,7 +24,7 @@ const OUTLIER_SETTINGS = {
 // Helpers to read fields across Spotify variants
 function pick(obj, keys, fallback = undefined) {
   for (const k of keys) {
-    if (obj && obj[k] !== undefined && obj[k] !== null) return obj[k];
+    if (obj && obj[k] !== undefined && obj[k] !== null && obj[k] !== "") return obj[k];
   }
   return fallback;
 }
@@ -54,6 +54,85 @@ function toDayOfWeek(dateStr) {
   return d.isValid() ? d.day() : null; // 0 = Sunday, 6 = Saturday
 }
 
+// Improved artist/track name extraction
+function extractArtistName(item) {
+  const artist = pick(item, [
+    "artistName", 
+    "master_metadata_artist_name", 
+    "artist",
+    "artist_name"
+  ], "");
+  
+  // Clean up the artist name
+  let cleanArtist = artist.trim();
+  
+  // Remove common prefixes/suffixes that indicate unknown data
+  cleanArtist = cleanArtist.replace(/^(unknown|Unknown|UNKNOWN)\s*/i, "");
+  cleanArtist = cleanArtist.replace(/\s*(unknown|Unknown|UNKNOWN)$/i, "");
+  
+  // If it's still empty or just whitespace, return null
+  if (!cleanArtist || cleanArtist.trim() === "") {
+    return null;
+  }
+  
+  return cleanArtist;
+}
+
+function extractTrackName(item) {
+  const track = pick(item, [
+    "trackName", 
+    "master_metadata_track_name", 
+    "track",
+    "track_name"
+  ], "");
+  
+  // Clean up the track name
+  let cleanTrack = track.trim();
+  
+  // Remove common prefixes/suffixes that indicate unknown data
+  cleanTrack = cleanTrack.replace(/^(unknown|Unknown|UNKNOWN)\s*/i, "");
+  cleanTrack = cleanTrack.replace(/\s*(unknown|Unknown|UNKNOWN)$/i, "");
+  
+  // If it's still empty or just whitespace, return null
+  if (!cleanTrack || cleanTrack.trim() === "") {
+    return null;
+  }
+  
+  return cleanTrack;
+}
+
+function extractAlbumName(item) {
+  const album = pick(item, [
+    "albumName",
+    "master_metadata_album_album_name",
+    "album",
+    "album_name"
+  ], "");
+  
+  return album.trim() || null;
+}
+
+// Determine if this is music or podcast
+function isPodcast(item) {
+  const episodeName = pick(item, ["episodeName", "episode_name"], "");
+  const showName = pick(item, ["showName", "show_name"], "");
+  const episodeUri = pick(item, ["episodeUri", "episode_uri"], "");
+  const showUri = pick(item, ["showUri", "show_uri"], "");
+  
+  // Check if any podcast-specific fields are present
+  if (episodeName || showName || episodeUri || showUri) {
+    return true;
+  }
+  
+  // Check if the URI indicates podcast
+  const uri = pick(item, ["spotify_track_uri", "track_uri", "uri"], "");
+  if (uri && uri.includes("episode")) {
+    return true;
+  }
+  
+  return false;
+}
+
 // Statistical functions for outlier detection
 function calculateStats(values) {
   const n = values.length;
@@ -80,29 +159,39 @@ function isOutlier(value, mean, std, threshold = OUTLIER_SETTINGS.zScoreThreshol
   return Math.abs(zScore) > threshold;
 }
 
-// Filtering functions
+// Improved filtering functions
 function shouldExcludeTrack(item) {
-  const artist = pick(item, ["artistName", "master_metadata_artist_name", "artist"], "").toLowerCase();
-  const track = pick(item, ["trackName", "master_metadata_track_name", "track"], "").toLowerCase();
+  const artist = extractArtistName(item);
+  const track = extractTrackName(item);
   const ms = Number(pick(item, ["msPlayed", "ms_played", "ms_played_sum", "durationMs", "duration_ms"], 0)) || 0;
   
+  // If we can't extract valid artist or track names, exclude
+  if (!artist || !track) {
+    return { excluded: true, reason: "invalid_metadata" };
+  }
+  
+  const artistLower = artist.toLowerCase();
+  const trackLower = track.toLowerCase();
+  
   // Manual exclusions
-  if (MANUAL_EXCLUSIONS.artists.some(ex => artist.includes(ex.toLowerCase()))) {
+  if (MANUAL_EXCLUSIONS.artists.some(ex => artistLower.includes(ex.toLowerCase()))) {
     return { excluded: true, reason: "manual_artist_exclusion" };
   }
   
-  if (MANUAL_EXCLUSIONS.tracks.some(ex => track.includes(ex.toLowerCase()))) {
+  if (MANUAL_EXCLUSIONS.tracks.some(ex => trackLower.includes(ex.toLowerCase()))) {
     return { excluded: true, reason: "manual_track_exclusion" };
   }
   
   if (MANUAL_EXCLUSIONS.keywords.some(keyword => 
-    artist.includes(keyword.toLowerCase()) || track.includes(keyword.toLowerCase())
+    artistLower.includes(keyword.toLowerCase()) || trackLower.includes(keyword.toLowerCase())
   )) {
     return { excluded: true, reason: "manual_keyword_exclusion" };
   }
   
-  // Unknown track/artist exclusions
-  if (artist.includes("unknown") || track.includes("unknown")) {
+  // Unknown track/artist exclusions (more comprehensive)
+  if (artistLower.includes("unknown") || trackLower.includes("unknown") ||
+      artistLower === "unknown" || trackLower === "unknown" ||
+      artistLower === "unknown artist" || trackLower === "unknown track") {
     return { excluded: true, reason: "unknown_metadata" };
   }
   
@@ -172,7 +261,7 @@ async function main() {
   if (fs.existsSync(accountDataDir)) {
     const files = fs.readdirSync(accountDataDir);
     files.forEach(file => {
-      if (file.includes('StreamingHistory_music')) {
+      if (file.includes('StreamingHistory_music') || file.includes('StreamingHistory_podcast')) {
         streamingFiles.push(path.join(accountDataDir, file));
       }
     });
@@ -196,45 +285,56 @@ async function main() {
 
   console.log(`\nTotal streaming history items: ${allStreamingHistory.length}`);
 
-  // Remove duplicates (same track, artist, and timestamp)
-  const uniqueItems = new Map();
+  // Separate music and podcast data
+  const musicData = [];
+  const podcastData = [];
+  
   allStreamingHistory.forEach(item => {
-    const endTime = pick(item, ["endTime", "ts", "eventTime", "time"], null);
-    const artist = pick(item, ["artistName", "master_metadata_artist_name", "artist"], "Unknown Artist");
-    const track = pick(item, ["trackName", "master_metadata_track_name", "track"], "Unknown Track");
-    
-    const key = `${endTime}::${artist}::${track}`;
-    if (!uniqueItems.has(key)) {
-      uniqueItems.set(key, item);
+    if (isPodcast(item)) {
+      podcastData.push(item);
+    } else {
+      musicData.push(item);
     }
   });
+  
+  console.log(`Music items: ${musicData.length}`);
+  console.log(`Podcast items: ${podcastData.length}`);
 
-  const streamingHistory = Array.from(uniqueItems.values());
-  console.log(`After removing duplicates: ${streamingHistory.length} items`);
+  // Remove duplicates from music data (same track, artist, and timestamp)
+  const uniqueMusicItems = new Map();
+  musicData.forEach(item => {
+    const artist = extractArtistName(item);
+    const track = extractTrackName(item);
+    const timestamp = pick(item, ["endTime", "ts", "eventTime", "time"]);
+    
+    if (artist && track && timestamp) {
+      const key = `${artist}::${track}::${timestamp}`;
+      if (!uniqueMusicItems.has(key)) {
+        uniqueMusicItems.set(key, item);
+      }
+    }
+  });
+  
+  const musicHistory = Array.from(uniqueMusicItems.values());
+  console.log(`After removing duplicates: ${musicHistory.length} music items`);
 
   // Sort by date for proper timeline analysis
-  streamingHistory.sort((a, b) => {
-    const aTime = pick(a, ["endTime", "ts", "eventTime", "time"], "");
-    const bTime = pick(b, ["endTime", "ts", "eventTime", "time"], "");
-    return aTime.localeCompare(bTime);
+  musicHistory.sort((a, b) => {
+    const dateA = pick(a, ["endTime", "ts", "eventTime", "time"]);
+    const dateB = pick(b, ["endTime", "ts", "eventTime", "time"]);
+    return new Date(dateA) - new Date(dateB);
   });
 
   // Pre-filtering and outlier detection
   console.log("\n🔍 Performing outlier detection and filtering...");
-  
-  const playTimes = streamingHistory.map(item => 
+
+  const playTimes = musicHistory.map(item =>
     Number(pick(item, ["msPlayed", "ms_played", "ms_played_sum", "durationMs", "duration_ms"], 0)) || 0
   ).filter(ms => ms > 0);
-  
+
   const stats = calculateStats(playTimes);
   const percentile95 = playTimes.sort((a, b) => a - b)[Math.floor(playTimes.length * 0.95)];
   const percentile99 = playTimes.sort((a, b) => a - b)[Math.floor(playTimes.length * 0.99)];
-  
-  console.log(`📊 Play time statistics:`);
-  console.log(`  - Mean: ${(stats.mean / 1000 / 60).toFixed(2)} minutes`);
-  console.log(`  - Std Dev: ${(stats.std / 1000 / 60).toFixed(2)} minutes`);
-  console.log(`  - 95th percentile: ${(percentile95 / 1000 / 60).toFixed(2)} minutes`);
-  console.log(`  - 99th percentile: ${(percentile99 / 1000 / 60).toFixed(2)} minutes`);
 
   // Filter items and collect exclusion statistics
   const filteredHistory = [];
@@ -243,39 +343,34 @@ async function main() {
     manual_track_exclusion: 0,
     manual_keyword_exclusion: 0,
     unknown_metadata: 0,
+    invalid_metadata: 0,
     too_short: 0,
     too_long: 0,
     outlier_zscore: 0,
     outlier_percentile: 0
   };
 
-  streamingHistory.forEach(item => {
+  musicHistory.forEach(item => {
     const ms = Number(pick(item, ["msPlayed", "ms_played", "ms_played_sum", "durationMs", "duration_ms"], 0)) || 0;
-    
-    // Apply manual exclusions and basic filters
+
     const exclusion = shouldExcludeTrack(item);
     if (exclusion.excluded) {
       exclusionStats[exclusion.reason]++;
       return;
     }
-    
-    // Outlier detection using Z-score
+
     if (isOutlier(ms, stats.mean, stats.std)) {
       exclusionStats.outlier_zscore++;
       return;
     }
-    
-    // Outlier detection using percentile
+
     if (ms > percentile99) {
       exclusionStats.outlier_percentile++;
       return;
     }
-    
-    // Apply percentile capping (normalize extreme values)
+
     const cappedMs = Math.min(ms, percentile99);
     const normalizedItem = { ...item };
-    
-    // Update the ms value in the item (find the correct field)
     const msFields = ["msPlayed", "ms_played", "ms_played_sum", "durationMs", "duration_ms"];
     for (const field of msFields) {
       if (item[field] !== undefined) {
@@ -283,193 +378,193 @@ async function main() {
         break;
       }
     }
-    
     filteredHistory.push(normalizedItem);
   });
 
   console.log(`\n📈 Filtering results:`);
-  console.log(`  - Original items: ${streamingHistory.length}`);
-  console.log(`  - Filtered items: ${filteredHistory.length}`);
-  console.log(`  - Excluded items: ${streamingHistory.length - filteredHistory.length}`);
-  
+  console.log(`  Original items: ${musicHistory.length}`);
+  console.log(`  Filtered items: ${filteredHistory.length}`);
+  console.log(`  Excluded items: ${musicHistory.length - filteredHistory.length}`);
+  console.log(`  Exclusion breakdown:`);
   Object.entries(exclusionStats).forEach(([reason, count]) => {
     if (count > 0) {
-      console.log(`    - ${reason}: ${count} items`);
+      console.log(`    ${reason}: ${count}`);
     }
   });
 
-  // Enhanced aggregates for all the new features
-  const byYear = {};                    // year -> { ms: number, plays: number }
-  const artistsByYear = {};             // year -> Map(artist -> { ms, plays, firstPlay, lastPlay })
-  const tracksByYear = {};              // year -> Map(trackKey -> { artist, track, ms, plays, firstPlay, lastPlay })
-  const byDay = new Map();              // "YYYY-MM-DD" -> { ms, plays }
-  const byMonth = new Map();            // "YYYY-MM" -> { ms, plays }
-  const byHour = {};                    // hour -> { ms, plays }
-  const byDayOfWeek = {};               // dayOfWeek -> { ms, plays }
-  const byArtist = new Map();           // artist -> { ms, plays, firstPlay, lastPlay, tracks: Set }
-  const byTrack = new Map();            // trackKey -> { artist, track, ms, plays, firstPlay, lastPlay }
-  const byAlbum = new Map();            // album -> { ms, plays, artist, tracks: Set }
-  const byGenre = new Map();            // genre -> { ms, plays, artists: Set }
-  const listeningSessions = [];         // Array of session objects for binge analysis
-  const deviceUsage = {};               // device -> { ms, plays }
-  const playlistAdditions = new Map();  // trackKey -> { addedToPlaylists: [], totalPlays }
+  console.log("\nAggregating data with enhanced features...");
+
+  // Initialize aggregation objects
+  const byYear = {};
+  const byMonth = [];
+  const byHour = [];
+  const byDayOfWeek = [];
+  const byArtist = new Map();
+  const byTrack = new Map();
+  const byAlbum = new Map();
+  const byGenre = new Map();
+  const byDevice = new Map();
+  const listeningSessions = [];
   
   let totalMs = 0, totalPlays = 0;
   let currentSession = null;
+  const sessionThreshold = 30 * 60 * 1000; // 30 minutes
 
-  console.log("\nAggregating data with enhanced features...");
-
+  // Process each item
   filteredHistory.forEach((item, index) => {
-    if (index % 10000 === 0) {
-      console.log(`  Processed ${index} items...`);
-    }
+    const artist = extractArtistName(item);
+    const track = extractTrackName(item);
+    const album = extractAlbumName(item);
+    const ms = Number(pick(item, ["msPlayed", "ms_played", "ms_played_sum", "durationMs", "duration_ms"], 0)) || 0;
+    const endTime = pick(item, ["endTime", "ts", "eventTime", "time"]);
+    const device = pick(item, ["platform", "device", "conn_country"], "Unknown");
+    const uri = pick(item, ["spotify_track_uri", "track_uri", "uri"], "");
 
-    // Common field names across exports
-    const endTime = pick(item, ["endTime", "ts", "eventTime", "time"], null);
-    const artist = pick(item, ["artistName", "master_metadata_artist_name", "artist"], "Unknown Artist");
-    const track = pick(item, ["trackName", "master_metadata_track_name", "track"], "Unknown Track");
-    const album = pick(item, ["albumName", "master_metadata_album_album_name", "album"], "Unknown Album");
-    const ms = Number(
-      pick(item, ["msPlayed", "ms_played", "ms_played_sum", "durationMs", "duration_ms"], 0)
-    ) || 0;
-    const device = pick(item, ["platform", "device", "userAgent"], "Unknown Device");
-    const genre = pick(item, ["genre", "master_metadata_album_album_name"], "Unknown Genre");
+    if (!artist || !track || !endTime || ms === 0) return;
 
-    const year = endTime ? toYear(endTime) : "unknown";
-    const day = endTime ? toDate(endTime) : null;
-    const month = endTime ? toMonth(endTime) : null;
-    const hour = endTime ? toHour(endTime) : null;
-    const dayOfWeek = endTime ? toDayOfWeek(endTime) : null;
-
-    // Skip items with no play time
-    if (ms <= 0) return;
-
-    // totals
     totalMs += ms;
     totalPlays += 1;
 
-    // by year
+    const year = toYear(endTime);
+    const month = toMonth(endTime);
+    const hour = toHour(endTime);
+    const dayOfWeek = toDayOfWeek(endTime);
+    const date = toDate(endTime);
+
+    // Year aggregation
     if (!byYear[year]) byYear[year] = { ms: 0, plays: 0 };
     byYear[year].ms += ms;
     byYear[year].plays += 1;
 
-    // artists per year
-    if (!artistsByYear[year]) artistsByYear[year] = new Map();
-    const aEntry = artistsByYear[year].get(artist) || { ms: 0, plays: 0, firstPlay: endTime, lastPlay: endTime };
-    aEntry.ms += ms; 
-    aEntry.plays += 1;
-    if (endTime && (!aEntry.firstPlay || endTime < aEntry.firstPlay)) aEntry.firstPlay = endTime;
-    if (endTime && (!aEntry.lastPlay || endTime > aEntry.lastPlay)) aEntry.lastPlay = endTime;
-    artistsByYear[year].set(artist, aEntry);
-
-    // tracks per year
-    if (!tracksByYear[year]) tracksByYear[year] = new Map();
-    const tKey = `${artist}::${track}`;
-    const tEntry = tracksByYear[year].get(tKey) || { artist, track, ms: 0, plays: 0, firstPlay: endTime, lastPlay: endTime };
-    tEntry.ms += ms; 
-    tEntry.plays += 1;
-    if (endTime && (!tEntry.firstPlay || endTime < tEntry.firstPlay)) tEntry.firstPlay = endTime;
-    if (endTime && (!tEntry.lastPlay || endTime > tEntry.lastPlay)) tEntry.lastPlay = endTime;
-    tracksByYear[year].set(tKey, tEntry);
-
-    // daily series
-    if (day) {
-      const dEntry = byDay.get(day) || { ms: 0, plays: 0 };
-      dEntry.ms += ms; dEntry.plays += 1;
-      byDay.set(day, dEntry);
-    }
-
-    // monthly series
+    // Month aggregation
     if (month) {
-      const mEntry = byMonth.get(month) || { ms: 0, plays: 0 };
-      mEntry.ms += ms; mEntry.plays += 1;
-      byMonth.set(month, mEntry);
+      const monthEntry = byMonth.find(m => m.month === month);
+      if (monthEntry) {
+        monthEntry.ms += ms;
+        monthEntry.plays += 1;
+      } else {
+        byMonth.push({ month, ms, plays: 1 });
+      }
     }
 
-    // hourly analysis
+    // Hour aggregation
     if (hour !== null) {
-      if (!byHour[hour]) byHour[hour] = { ms: 0, plays: 0 };
-      byHour[hour].ms += ms;
-      byHour[hour].plays += 1;
+      const hourEntry = byHour.find(h => h.hour === hour);
+      if (hourEntry) {
+        hourEntry.ms += ms;
+        hourEntry.plays += 1;
+      } else {
+        byHour.push({ hour, ms, plays: 1 });
+      }
     }
 
-    // day of week analysis
+    // Day of week aggregation
     if (dayOfWeek !== null) {
-      if (!byDayOfWeek[dayOfWeek]) byDayOfWeek[dayOfWeek] = { ms: 0, plays: 0 };
-      byDayOfWeek[dayOfWeek].ms += ms;
-      byDayOfWeek[dayOfWeek].plays += 1;
+      const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      const dayEntry = byDayOfWeek.find(d => d.day === dayOfWeek);
+      if (dayEntry) {
+        dayEntry.ms += ms;
+        dayEntry.plays += 1;
+      } else {
+        byDayOfWeek.push({ day: dayOfWeek, dayName: dayNames[dayOfWeek], ms, plays: 1 });
+      }
     }
 
-    // artist analysis
-    const artistEntry = byArtist.get(artist) || { ms: 0, plays: 0, firstPlay: endTime, lastPlay: endTime, tracks: new Set() };
+    // Artist aggregation
+    const artistEntry = byArtist.get(artist) || { artist, ms: 0, plays: 0 };
     artistEntry.ms += ms;
     artistEntry.plays += 1;
-    artistEntry.tracks.add(track);
-    if (endTime && (!artistEntry.firstPlay || endTime < artistEntry.firstPlay)) artistEntry.firstPlay = endTime;
-    if (endTime && (!artistEntry.lastPlay || endTime > artistEntry.lastPlay)) artistEntry.lastPlay = endTime;
     byArtist.set(artist, artistEntry);
 
-    // track analysis
-    const trackEntry = byTrack.get(tKey) || { artist, track, ms: 0, plays: 0, firstPlay: endTime, lastPlay: endTime };
+    // Track aggregation
+    const trackKey = `${artist}::${track}`;
+    const trackEntry = byTrack.get(trackKey) || { artist, track, ms: 0, plays: 0 };
     trackEntry.ms += ms;
     trackEntry.plays += 1;
-    if (endTime && (!trackEntry.firstPlay || endTime < trackEntry.firstPlay)) trackEntry.firstPlay = endTime;
-    if (endTime && (!trackEntry.lastPlay || endTime > trackEntry.lastPlay)) trackEntry.lastPlay = endTime;
-    byTrack.set(tKey, trackEntry);
+    byTrack.set(trackKey, trackEntry);
 
-    // album analysis
-    const albumKey = `${artist}::${album}`;
-    const albumEntry = byAlbum.get(albumKey) || { artist, album, ms: 0, plays: 0, tracks: new Set() };
-    albumEntry.ms += ms;
-    albumEntry.plays += 1;
-    albumEntry.tracks.add(track);
-    byAlbum.set(albumKey, albumEntry);
+    // Album aggregation
+    if (album) {
+      const albumKey = `${artist}::${album}`;
+      const albumEntry = byAlbum.get(albumKey) || { artist, album, ms: 0, plays: 0 };
+      albumEntry.ms += ms;
+      albumEntry.plays += 1;
+      byAlbum.set(albumKey, albumEntry);
+    }
 
-    // genre analysis
-    const genreEntry = byGenre.get(genre) || { ms: 0, plays: 0, artists: new Set() };
-    genreEntry.ms += ms;
-    genreEntry.plays += 1;
-    genreEntry.artists.add(artist);
-    byGenre.set(genre, genreEntry);
+    // Device aggregation
+    const deviceEntry = byDevice.get(device) || { device, ms: 0, plays: 0 };
+    deviceEntry.ms += ms;
+    deviceEntry.plays += 1;
+    byDevice.set(device, deviceEntry);
 
-    // device usage
-    if (!deviceUsage[device]) deviceUsage[device] = { ms: 0, plays: 0 };
-    deviceUsage[device].ms += ms;
-    deviceUsage[device].plays += 1;
-
-    // Listening session analysis (binge detection)
-    if (currentSession && endTime) {
-      const timeDiff = dayjs(endTime).diff(dayjs(currentSession.lastPlay), 'minute');
-      if (timeDiff <= 30) { // 30 minute gap = same session
-        currentSession.tracks.push({ artist, track, ms, endTime });
+    // Listening session detection
+    if (currentSession) {
+      const timeDiff = new Date(endTime) - new Date(currentSession.lastTime);
+      if (timeDiff <= sessionThreshold) {
         currentSession.totalMs += ms;
-        currentSession.lastPlay = endTime;
+        currentSession.trackCount += 1;
+        currentSession.lastTime = endTime;
       } else {
-        // End current session and start new one
-        if (currentSession.tracks.length > 1) {
-          listeningSessions.push(currentSession);
-        }
+        // End current session
+        listeningSessions.push(currentSession);
         currentSession = {
           startTime: endTime,
-          lastPlay: endTime,
-          tracks: [{ artist, track, ms, endTime }],
-          totalMs: ms
+          lastTime: endTime,
+          totalMs: ms,
+          trackCount: 1
         };
       }
     } else {
       currentSession = {
         startTime: endTime,
-        lastPlay: endTime,
-        tracks: [{ artist, track, ms, endTime }],
-        totalMs: ms
+        lastTime: endTime,
+        totalMs: ms,
+        trackCount: 1
       };
     }
   });
 
-  // Add final session
-  if (currentSession && currentSession.tracks.length > 1) {
+  // Add the last session
+  if (currentSession) {
     listeningSessions.push(currentSession);
   }
+
+  // Convert hours and sort
+  byMonth.forEach(m => m.hours = +(m.ms / 1000 / 3600).toFixed(2));
+  byMonth.sort((a, b) => a.month.localeCompare(b.month));
+
+  byHour.forEach(h => h.hours = +(h.ms / 1000 / 3600).toFixed(2));
+  byHour.sort((a, b) => a.hour - b.hour);
+
+  byDayOfWeek.forEach(d => d.hours = +(d.ms / 1000 / 3600).toFixed(2));
+  byDayOfWeek.sort((a, b) => a.day - b.day);
+
+  // Convert to arrays and sort
+  const topArtistsAllTime = Array.from(byArtist.values())
+    .map(a => ({ ...a, hours: +(a.ms / 1000 / 3600).toFixed(2) }))
+    .sort((a, b) => b.hours - a.hours);
+
+  const topTracksAllTime = Array.from(byTrack.values())
+    .map(t => ({ ...t, hours: +(t.ms / 1000 / 3600).toFixed(2) }))
+    .sort((a, b) => b.hours - a.hours);
+
+  const topAlbums = Array.from(byAlbum.values())
+    .map(a => ({ ...a, hours: +(a.ms / 1000 / 3600).toFixed(2) }))
+    .sort((a, b) => b.hours - a.hours);
+
+  const deviceUsage = Array.from(byDevice.values())
+    .map(d => ({ ...d, hours: +(d.ms / 1000 / 3600).toFixed(2) }))
+    .sort((a, b) => b.hours - a.hours);
+
+  // Process binge sessions
+  const bingeSessions = listeningSessions
+    .map(session => ({
+      ...session,
+      totalHours: +(session.totalMs / 1000 / 3600).toFixed(2),
+      duration: new Date(session.lastTime) - new Date(session.startTime)
+    }))
+    .sort((a, b) => b.totalHours - a.totalHours);
 
   console.log("\nWriting enhanced outputs...");
 
@@ -478,24 +573,24 @@ async function main() {
     total_ms: totalMs,
     total_hours: +(totalMs / 1000 / 3600).toFixed(2),
     total_plays: totalPlays,
-    years: Object.keys(byYear).filter(y => y !== "unknown").sort(),
+    years: Object.keys(byYear).sort(),
     data_sources: streamingFiles.length,
     date_range: {
-      earliest: filteredHistory.length > 0 ? 
+      earliest: filteredHistory.length > 0 ?
         dayjs(pick(filteredHistory[0], ["endTime", "ts", "eventTime", "time"])).format("YYYY-MM-DD") : "Unknown",
-      latest: filteredHistory.length > 0 ? 
+      latest: filteredHistory.length > 0 ?
         dayjs(pick(filteredHistory[filteredHistory.length - 1], ["endTime", "ts", "eventTime", "time"])).format("YYYY-MM-DD") : "Unknown"
     },
     unique_artists: byArtist.size,
     unique_tracks: byTrack.size,
     unique_albums: byAlbum.size,
     listening_sessions: listeningSessions.length,
-    longest_session_hours: listeningSessions.length > 0 ? 
+    longest_session_hours: listeningSessions.length > 0 ?
       +(Math.max(...listeningSessions.map(s => s.totalMs)) / 1000 / 3600).toFixed(2) : 0,
     filtering_stats: {
-      original_items: streamingHistory.length,
+      original_items: musicHistory.length,
       filtered_items: filteredHistory.length,
-      excluded_items: streamingHistory.length - filteredHistory.length,
+      excluded_items: musicHistory.length - filteredHistory.length,
       exclusion_breakdown: exclusionStats
     },
     outlier_detection: {
@@ -503,11 +598,17 @@ async function main() {
       std_dev_minutes: +(stats.std / 1000 / 60).toFixed(2),
       percentile_95_minutes: +(percentile95 / 1000 / 60).toFixed(2),
       percentile_99_minutes: +(percentile99 / 1000 / 60).toFixed(2)
+    },
+    podcast_stats: {
+      total_items: podcastData.length,
+      unique_shows: new Set(podcastData.map(item => 
+        pick(item, ["showName", "show_name"], "Unknown Show")
+      )).size
     }
   };
   await fse.writeJson(path.join(OUT_DIR, "summary.json"), summary, { spaces: 2 });
 
-  // 2) Per-year rollups
+  // 2) Per-year data
   const perYear = Object.fromEntries(
     Object.entries(byYear).sort(([a], [b]) => a.localeCompare(b)).map(([y, v]) => {
       const hours = +(v.ms / 1000 / 3600).toFixed(2);
@@ -516,148 +617,52 @@ async function main() {
   );
   await fse.writeJson(path.join(OUT_DIR, "listening_by_year.json"), perYear, { spaces: 2 });
 
-  // 3) Enhanced top artists & tracks per year
-  const topArtistsByYear = {};
-  const topTracksByYear = {};
-  for (const y of Object.keys(artistsByYear)) {
-    topArtistsByYear[y] = [...artistsByYear[y].entries()]
-      .map(([artist, v]) => ({ 
-        artist, 
-        plays: v.plays, 
-        hours: +(v.ms / 1000 / 3600).toFixed(2),
-        firstPlay: v.firstPlay,
-        lastPlay: v.lastPlay
-      }))
-      .sort((a, b) => b.hours - a.hours)
-      .slice(0, 50);
+  // 3) Monthly data
+  await fse.writeJson(path.join(OUT_DIR, "listening_by_month.json"), byMonth, { spaces: 2 });
 
-    topTracksByYear[y] = [...tracksByYear[y].values()]
-      .map(v => ({ 
-        artist: v.artist, 
-        track: v.track, 
-        plays: v.plays, 
-        hours: +(v.ms / 1000 / 3600).toFixed(2),
-        firstPlay: v.firstPlay,
-        lastPlay: v.lastPlay
-      }))
-      .sort((a, b) => b.hours - a.hours)
-      .slice(0, 50);
-  }
-  await fse.writeJson(path.join(OUT_DIR, "top_artists_by_year.json"), topArtistsByYear, { spaces: 2 });
-  await fse.writeJson(path.join(OUT_DIR, "top_tracks_by_year.json"), topTracksByYear, { spaces: 2 });
+  // 4) Hourly data
+  await fse.writeJson(path.join(OUT_DIR, "listening_by_hour.json"), byHour, { spaces: 2 });
 
-  // 4) Daily time series CSV
-  const dailyRows = [["date", "hours", "plays"]];
-  [...byDay.entries()].sort(([a], [b]) => a.localeCompare(b)).forEach(([date, v]) => {
-    dailyRows.push([date, (v.ms / 1000 / 3600).toFixed(3), v.plays]);
-  });
-  fs.writeFileSync(
-    path.join(OUT_DIR, "listening_daily.csv"),
-    dailyRows.map(r => r.join(",")).join("\n"),
-    "utf8"
-  );
+  // 5) Day of week data
+  await fse.writeJson(path.join(OUT_DIR, "listening_by_day_of_week.json"), byDayOfWeek, { spaces: 2 });
 
-  // 5) Monthly time series
-  const monthlyData = [...byMonth.entries()].sort(([a], [b]) => a.localeCompare(b)).map(([month, v]) => ({
-    month,
-    hours: +(v.ms / 1000 / 3600).toFixed(2),
-    plays: v.plays
-  }));
-  await fse.writeJson(path.join(OUT_DIR, "listening_by_month.json"), monthlyData, { spaces: 2 });
+  // 6) Top artists all time
+  await fse.writeJson(path.join(OUT_DIR, "top_artists_all_time.json"), topArtistsAllTime, { spaces: 2 });
 
-  // 6) Hourly analysis
-  const hourlyData = Object.entries(byHour).sort(([a], [b]) => parseInt(a) - parseInt(b)).map(([hour, v]) => ({
-    hour: parseInt(hour),
-    hours: +(v.ms / 1000 / 3600).toFixed(2),
-    plays: v.plays
-  }));
-  await fse.writeJson(path.join(OUT_DIR, "listening_by_hour.json"), hourlyData, { spaces: 2 });
+  // 7) Top tracks all time
+  await fse.writeJson(path.join(OUT_DIR, "top_tracks_all_time.json"), topTracksAllTime, { spaces: 2 });
 
-  // 7) Day of week analysis
-  const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-  const dayOfWeekData = Object.entries(byDayOfWeek).sort(([a], [b]) => parseInt(a) - parseInt(b)).map(([day, v]) => ({
-    day: parseInt(day),
-    dayName: dayNames[parseInt(day)],
-    hours: +(v.ms / 1000 / 3600).toFixed(2),
-    plays: v.plays
-  }));
-  await fse.writeJson(path.join(OUT_DIR, "listening_by_day_of_week.json"), dayOfWeekData, { spaces: 2 });
-
-  // 8) All-time top artists
-  const allTimeTopArtists = [...byArtist.entries()]
-    .map(([artist, v]) => ({
-      artist,
-      plays: v.plays,
-      hours: +(v.ms / 1000 / 3600).toFixed(2),
-      uniqueTracks: v.tracks.size,
-      firstPlay: v.firstPlay,
-      lastPlay: v.lastPlay
-    }))
-    .sort((a, b) => b.hours - a.hours)
-    .slice(0, 100);
-  await fse.writeJson(path.join(OUT_DIR, "top_artists_all_time.json"), allTimeTopArtists, { spaces: 2 });
-
-  // 9) All-time top tracks
-  const allTimeTopTracks = [...byTrack.entries()]
-    .map(([key, v]) => ({
-      artist: v.artist,
-      track: v.track,
-      plays: v.plays,
-      hours: +(v.ms / 1000 / 3600).toFixed(2),
-      firstPlay: v.firstPlay,
-      lastPlay: v.lastPlay
-    }))
-    .sort((a, b) => b.hours - a.hours)
-    .slice(0, 100);
-  await fse.writeJson(path.join(OUT_DIR, "top_tracks_all_time.json"), allTimeTopTracks, { spaces: 2 });
-
-  // 10) Top albums
-  const topAlbums = [...byAlbum.entries()]
-    .map(([key, v]) => ({
-      artist: v.artist,
-      album: v.album,
-      plays: v.plays,
-      hours: +(v.ms / 1000 / 3600).toFixed(2),
-      uniqueTracks: v.tracks.size
-    }))
-    .sort((a, b) => b.hours - a.hours)
-    .slice(0, 50);
+  // 8) Top albums
   await fse.writeJson(path.join(OUT_DIR, "top_albums.json"), topAlbums, { spaces: 2 });
 
-  // 11) Genre breakdown
-  const genreBreakdown = [...byGenre.entries()]
-    .map(([genre, v]) => ({
-      genre,
-      plays: v.plays,
-      hours: +(v.ms / 1000 / 3600).toFixed(2),
-      uniqueArtists: v.artists.size
-    }))
-    .sort((a, b) => b.hours - a.hours);
-  await fse.writeJson(path.join(OUT_DIR, "genre_breakdown.json"), genreBreakdown, { spaces: 2 });
+  // 9) Device usage
+  await fse.writeJson(path.join(OUT_DIR, "device_usage.json"), deviceUsage, { spaces: 2 });
 
-  // 12) Device usage
-  const deviceUsageData = Object.entries(deviceUsage).map(([device, v]) => ({
-    device,
-    plays: v.plays,
-    hours: +(v.ms / 1000 / 3600).toFixed(2)
-  })).sort((a, b) => b.hours - a.hours);
-  await fse.writeJson(path.join(OUT_DIR, "device_usage.json"), deviceUsageData, { spaces: 2 });
-
-  // 13) Listening sessions (binge analysis)
-  const bingeSessions = listeningSessions
-    .map(session => ({
-      startTime: session.startTime,
-      endTime: session.lastPlay,
-      durationMinutes: dayjs(session.lastPlay).diff(dayjs(session.startTime), 'minute'),
-      totalHours: +(session.totalMs / 1000 / 3600).toFixed(2),
-      trackCount: session.tracks.length,
-      tracks: session.tracks.map(t => ({ artist: t.artist, track: t.track }))
-    }))
-    .sort((a, b) => b.totalHours - a.totalHours)
-    .slice(0, 20);
+  // 10) Binge sessions
   await fse.writeJson(path.join(OUT_DIR, "binge_sessions.json"), bingeSessions, { spaces: 2 });
 
-  // 14) Filtering configuration for UI
+  // 11) Complete library data for table view
+  const libraryData = topTracksAllTime.map(track => ({
+    artist: track.artist,
+    track: track.track,
+    album: topAlbums.find(a => a.artist === track.artist)?.album || "Unknown Album",
+    hours: track.hours,
+    plays: track.plays,
+    avg_play_time: +(track.ms / track.plays / 1000 / 60).toFixed(1)
+  }));
+  await fse.writeJson(path.join(OUT_DIR, "library_data.json"), libraryData, { spaces: 2 });
+
+  // 12) Artist library data
+  const artistLibraryData = topArtistsAllTime.map(artist => ({
+    artist: artist.artist,
+    hours: artist.hours,
+    plays: artist.plays,
+    tracks: topTracksAllTime.filter(t => t.artist === artist.artist).length,
+    avg_play_time: +(artist.ms / artist.plays / 1000 / 60).toFixed(1)
+  }));
+  await fse.writeJson(path.join(OUT_DIR, "artist_library_data.json"), artistLibraryData, { spaces: 2 });
+
+  // 13) Filtering configuration for UI
   const filteringConfig = {
     manual_exclusions: MANUAL_EXCLUSIONS,
     outlier_settings: OUTLIER_SETTINGS,
@@ -670,47 +675,45 @@ async function main() {
   };
   await fse.writeJson(path.join(OUT_DIR, "filtering_config.json"), filteringConfig, { spaces: 2 });
 
-  console.log(`\n✅ Done! Enhanced files in ${OUT_DIR}/:
-  - summary.json (${summary.total_hours} hours, ${summary.total_plays} plays across ${summary.years.length} years)
-  - listening_by_year.json
-  - listening_by_month.json
-  - listening_by_hour.json
-  - listening_by_day_of_week.json
-  - top_artists_by_year.json
-  - top_tracks_by_year.json
-  - top_artists_all_time.json
-  - top_tracks_all_time.json
-  - top_albums.json
-  - genre_breakdown.json
-  - device_usage.json
-  - binge_sessions.json
-  - filtering_config.json
-  - listening_daily.csv (${dailyRows.length - 1} days of data)
-  
-📊 Enhanced Data Summary:
-  - Total Hours: ${summary.total_hours.toLocaleString()}
-  - Total Plays: ${summary.total_plays.toLocaleString()}
-  - Years: ${summary.years.join(', ')}
-  - Date Range: ${summary.date_range.earliest} to ${summary.date_range.latest}
-  - Data Sources: ${summary.data_sources} files processed
-  - Unique Artists: ${summary.unique_artists.toLocaleString()}
-  - Unique Tracks: ${summary.unique_tracks.toLocaleString()}
-  - Unique Albums: ${summary.unique_albums.toLocaleString()}
-  - Listening Sessions: ${summary.listening_sessions.toLocaleString()}
-  - Longest Session: ${summary.longest_session_hours} hours
+  // 14) Podcast data (separate from music)
+  if (podcastData.length > 0) {
+    const podcastSummary = {
+      total_items: podcastData.length,
+      unique_shows: new Set(podcastData.map(item => 
+        pick(item, ["showName", "show_name"], "Unknown Show")
+      )).size,
+      total_hours: +(podcastData.reduce((sum, item) => 
+        sum + (Number(pick(item, ["msPlayed", "ms_played", "ms_played_sum", "durationMs", "duration_ms"], 0)) || 0), 0
+      ) / 1000 / 3600).toFixed(2)
+    };
+    await fse.writeJson(path.join(OUT_DIR, "podcast_summary.json"), podcastSummary, { spaces: 2 });
+  }
 
-🔍 Filtering Results:
-  - Original Items: ${summary.filtering_stats.original_items.toLocaleString()}
-  - Filtered Items: ${summary.filtering_stats.filtered_items.toLocaleString()}
-  - Excluded Items: ${summary.filtering_stats.excluded_items.toLocaleString()}
-  - Manual Exclusions: ${exclusionStats.manual_artist_exclusion + exclusionStats.manual_track_exclusion + exclusionStats.manual_keyword_exclusion}
-  - Unknown Metadata: ${exclusionStats.unknown_metadata}
-  - Outliers (Z-score): ${exclusionStats.outlier_zscore}
-  - Outliers (Percentile): ${exclusionStats.outlier_percentile}
-  `);
+  console.log(`\n✅ Done! Enhanced files in ${OUT_DIR}/:`);
+  console.log(`  - summary.json (${summary.total_plays} plays, ${summary.total_hours}h)`);
+  console.log(`  - listening_by_year.json (${Object.keys(byYear).length} years)`);
+  console.log(`  - listening_by_month.json (${byMonth.length} months)`);
+  console.log(`  - listening_by_hour.json (${byHour.length} hours)`);
+  console.log(`  - listening_by_day_of_week.json (${byDayOfWeek.length} days)`);
+  console.log(`  - top_artists_all_time.json (${topArtistsAllTime.length} artists)`);
+  console.log(`  - top_tracks_all_time.json (${topTracksAllTime.length} tracks)`);
+  console.log(`  - top_albums.json (${topAlbums.length} albums)`);
+  console.log(`  - device_usage.json (${deviceUsage.length} devices)`);
+  console.log(`  - binge_sessions.json (${bingeSessions.length} sessions)`);
+  console.log(`  - library_data.json (${libraryData.length} tracks for table)`);
+  console.log(`  - artist_library_data.json (${artistLibraryData.length} artists for table)`);
+  console.log(`  - filtering_config.json (filtering settings)`);
+  if (podcastData.length > 0) {
+    console.log(`  - podcast_summary.json (${podcastData.length} podcast items)`);
+  }
+  
+  console.log(`\n📊 Summary:`);
+  console.log(`  Total listening time: ${summary.total_hours} hours`);
+  console.log(`  Total plays: ${summary.total_plays.toLocaleString()}`);
+  console.log(`  Unique artists: ${summary.unique_artists.toLocaleString()}`);
+  console.log(`  Unique tracks: ${summary.unique_tracks.toLocaleString()}`);
+  console.log(`  Date range: ${summary.date_range.earliest} to ${summary.date_range.latest}`);
+  console.log(`  Data retention: ${((summary.filtering_stats.filtered_items / summary.filtering_stats.original_items) * 100).toFixed(1)}%`);
 }
 
-main().catch(e => {
-  console.error(e);
-  process.exit(1);
-});
+main().catch(e => { console.error(e); process.exit(1); });

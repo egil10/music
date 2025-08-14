@@ -771,6 +771,115 @@
       color: var(--spotify-green);
       font-weight: 600;
     }
+
+    /* Library Table Styles */
+    .library-table-container {
+      background: var(--spotify-light);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--spotify-lighter);
+      margin-top: 2rem;
+    }
+
+    .table-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .table-select, .table-filter {
+      padding: 10px 15px;
+      border: 2px solid var(--spotify-gray);
+      border-radius: 12px;
+      background: var(--glass-bg);
+      color: var(--spotify-white);
+      font-size: 14px;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+
+    .table-select:focus, .table-filter:focus {
+      outline: none;
+      border-color: var(--spotify-green);
+      box-shadow: 0 0 0 3px rgba(30, 215, 96, 0.1);
+    }
+
+    .table-select {
+      min-width: 150px;
+    }
+
+    .export-button {
+      background: var(--gradient-primary);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .export-button:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+    }
+
+    .library-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .library-table th, .library-table td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid var(--spotify-lighter);
+    }
+
+    .library-table th {
+      background: var(--spotify-dark);
+      color: var(--spotify-text-secondary);
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    .library-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .library-table tr:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .library-table .sort-asc, .library-table .sort-desc {
+      background-repeat: no-repeat;
+      background-position: right center;
+      padding-right: 20px;
+    }
+
+    .library-table .sort-asc {
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23B3B3B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 14 5 5 5-5"/><path d="m7 10 5-5 5 5"/></svg>');
+    }
+
+    .library-table .sort-desc {
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23B3B3B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 10 5 5 5-5"/><path d="m7 14 5-5 5 5"/></svg>');
+    }
   </style>
 </head>
 <body>
@@ -975,6 +1084,37 @@
               <i class="fas fa-search"></i>
             </button>
           </div>
+          
+          <!-- Library Table -->
+          <div class="library-table-container">
+            <div class="table-controls">
+              <select id="tableType" class="table-select">
+                <option value="tracks">Tracks</option>
+                <option value="artists">Artists</option>
+              </select>
+              <input type="text" id="tableFilter" placeholder="Filter table..." class="table-filter">
+              <button id="exportTable" class="export-button">
+                <i class="fas fa-download"></i> Export
+              </button>
+            </div>
+            <div class="table-wrapper">
+              <table id="libraryTable" class="library-table">
+                <thead>
+                  <tr>
+                    <th data-sort="artist">Artist</th>
+                    <th data-sort="track">Track/Album</th>
+                    <th data-sort="hours">Hours</th>
+                    <th data-sort="plays">Plays</th>
+                    <th data-sort="avg_time">Avg Time</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+                  <!-- Table data will be populated here -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
           <div id="searchResults" class="search-results"></div>
         </div>
       </section>
@@ -1031,36 +1171,36 @@
           `;
         }, 15000); // 15 second timeout
 
-        // Load all data files
-        const [
-          summary,
-          byYear,
-          byMonth,
-          byHour,
-          byDayOfWeek,
-          topArtistsByYear,
-          topTracksByYear,
-          topArtistsAllTime,
-          topTracksAllTime,
-          topAlbums,
-          genreBreakdown,
-          deviceUsage,
-          bingeSessions
-        ] = await Promise.all([
-          getJSON("./data/summary.json"),
-          getJSON("./data/listening_by_year.json"),
-          getJSON("./data/listening_by_month.json"),
-          getJSON("./data/listening_by_hour.json"),
-          getJSON("./data/listening_by_day_of_week.json"),
-          getJSON("./data/top_artists_by_year.json"),
-          getJSON("./data/top_tracks_by_year.json"),
-          getJSON("./data/top_artists_all_time.json"),
-          getJSON("./data/top_tracks_all_time.json"),
-          getJSON("./data/top_albums.json"),
-          getJSON("./data/genre_breakdown.json"),
-          getJSON("./data/device_usage.json"),
-          getJSON("./data/binge_sessions.json")
-        ]);
+                 // Load all data files
+         const [
+           summary,
+           byYear,
+           byMonth,
+           byHour,
+           byDayOfWeek,
+           topArtistsAllTime,
+           topTracksAllTime,
+           topAlbums,
+           deviceUsage,
+           bingeSessions,
+           libraryData,
+           artistLibraryData,
+           filteringConfig
+         ] = await Promise.all([
+           getJSON("./data/summary.json"),
+           getJSON("./data/listening_by_year.json"),
+           getJSON("./data/listening_by_month.json"),
+           getJSON("./data/listening_by_hour.json"),
+           getJSON("./data/listening_by_day_of_week.json"),
+           getJSON("./data/top_artists_all_time.json"),
+           getJSON("./data/top_tracks_all_time.json"),
+           getJSON("./data/top_albums.json"),
+           getJSON("./data/device_usage.json"),
+           getJSON("./data/binge_sessions.json"),
+           getJSON("./data/library_data.json"),
+           getJSON("./data/artist_library_data.json"),
+           getJSON("./data/filtering_config.json")
+         ]);
 
         console.log("Loaded complete data:", { 
           summary, byYear, byMonth, byHour, byDayOfWeek, 
@@ -1101,27 +1241,28 @@
         // Create year selector
         createYearSelector(summary.years);
 
-        // Create charts
-        createHoursByYearChart(byYear);
-        createTopArtistsChart(topArtistsAllTime);
-        createHourlyChart(byHour);
-        createDayOfWeekChart(byDayOfWeek);
-        createMonthlyChart(byMonth);
-        createTopTracksChart(topTracksAllTime);
+                 // Create charts
+         createHoursByYearChart(byYear);
+         createTopArtistsChart(topArtistsAllTime);
+         createHourlyChart(byHour);
+         createDayOfWeekChart(byDayOfWeek);
+         createMonthlyChart(byMonth);
+         createTopTracksChart(topTracksAllTime);
 
-        // Create advanced charts
-        createGenreTreemapChart(genreBreakdown);
-        createListeningPyramidChart(byYear);
-        createPeakHoursPolarChart(byHour);
-        createBingeSessionsHistogram(bingeSessions);
-        createArtistLongevityChart(topArtistsByYear);
-        createMoodQuadrantChart(topTracksAllTime);
+         // Create advanced charts
+         createListeningPyramidChart(byYear);
+         createPeakHoursPolarChart(byHour);
+         createBingeSessionsHistogram(bingeSessions);
+         createMoodQuadrantChart(topTracksAllTime);
 
-            // Initialize search functionality
-    initializeSearch(topArtistsAllTime, topTracksAllTime, topAlbums);
+         // Initialize search functionality
+         initializeSearch(topArtistsAllTime, topTracksAllTime, topAlbums);
 
-    // Initialize outlier analysis and filtering controls
-    initializeOutlierAnalysis(summary);
+         // Initialize library table
+         initializeLibraryTable(libraryData, artistLibraryData);
+
+         // Initialize outlier analysis and filtering controls
+         initializeOutlierAnalysis(summary, filteringConfig);
 
         // Smooth scroll to dashboard
         document.querySelector('.dashboard').scrollIntoView({ 
@@ -1945,73 +2086,164 @@
     searchResults.innerHTML = '<p>Enter a search term to find artists, tracks, or albums...</p>';
   }
 
-  // Outlier Analysis and Filtering Functions
-  function initializeOutlierAnalysis(summary) {
-    const outlierStats = document.getElementById('outlier-stats');
-    
-    if (!summary.filtering_stats) {
-      outlierStats.innerHTML = '<p>No filtering data available</p>';
-      return;
-    }
+     // Library Table Functions
+   function initializeLibraryTable(libraryData, artistLibraryData) {
+     const tableType = document.getElementById('tableType');
+     const tableFilter = document.getElementById('tableFilter');
+     const tableBody = document.getElementById('tableBody');
+     const exportButton = document.getElementById('exportTable');
+     
+     let currentData = libraryData;
+     let currentType = 'tracks';
+     
+     function renderTable(data, type) {
+       const tbody = document.getElementById('tableBody');
+       tbody.innerHTML = '';
+       
+       data.forEach(item => {
+         const row = document.createElement('tr');
+         
+         if (type === 'tracks') {
+           row.innerHTML = `
+             <td>${item.artist}</td>
+             <td>${item.track}</td>
+             <td>${item.hours.toFixed(2)}h</td>
+             <td>${item.plays.toLocaleString()}</td>
+             <td>${item.avg_play_time}min</td>
+           `;
+         } else {
+           row.innerHTML = `
+             <td>${item.artist}</td>
+             <td>${item.tracks} tracks</td>
+             <td>${item.hours.toFixed(2)}h</td>
+             <td>${item.plays.toLocaleString()}</td>
+             <td>${item.avg_play_time}min</td>
+           `;
+         }
+         
+         tbody.appendChild(row);
+       });
+     }
+     
+     function filterTable() {
+       const filterValue = tableFilter.value.toLowerCase();
+       const filteredData = currentData.filter(item => 
+         item.artist.toLowerCase().includes(filterValue) ||
+         (item.track && item.track.toLowerCase().includes(filterValue)) ||
+         (item.album && item.album.toLowerCase().includes(filterValue))
+       );
+       renderTable(filteredData, currentType);
+     }
+     
+     function exportTable() {
+       const filterValue = tableFilter.value.toLowerCase();
+       const dataToExport = currentData.filter(item => 
+         item.artist.toLowerCase().includes(filterValue) ||
+         (item.track && item.track.toLowerCase().includes(filterValue)) ||
+         (item.album && item.album.toLowerCase().includes(filterValue))
+       );
+       
+       const csv = [
+         ['Artist', currentType === 'tracks' ? 'Track' : 'Tracks', 'Hours', 'Plays', 'Avg Time (min)'],
+         ...dataToExport.map(item => [
+           item.artist,
+           currentType === 'tracks' ? item.track : item.tracks,
+           item.hours.toFixed(2),
+           item.plays,
+           item.avg_play_time
+         ])
+       ].map(row => row.join(',')).join('\n');
+       
+       const blob = new Blob([csv], { type: 'text/csv' });
+       const url = window.URL.createObjectURL(blob);
+       const a = document.createElement('a');
+       a.href = url;
+       a.download = `spotify_${currentType}_${new Date().toISOString().split('T')[0]}.csv`;
+       a.click();
+       window.URL.revokeObjectURL(url);
+     }
+     
+     // Event listeners
+     tableType.addEventListener('change', (e) => {
+       currentType = e.target.value;
+       currentData = currentType === 'tracks' ? libraryData : artistLibraryData;
+       renderTable(currentData, currentType);
+     });
+     
+     tableFilter.addEventListener('input', filterTable);
+     exportButton.addEventListener('click', exportTable);
+     
+     // Initial render
+     renderTable(libraryData, 'tracks');
+   }
 
-    const stats = summary.filtering_stats;
-    const outlierData = summary.outlier_detection;
+   // Outlier Analysis and Filtering Functions
+   function initializeOutlierAnalysis(summary, filteringConfig) {
+     const outlierStats = document.getElementById('outlier-stats');
+     
+     if (!summary.filtering_stats) {
+       outlierStats.innerHTML = '<p>No filtering data available</p>';
+       return;
+     }
 
-    outlierStats.innerHTML = `
-      <div class="outlier-stat-card">
-        <div class="outlier-stat-value">${stats.original_items.toLocaleString()}</div>
-        <div class="outlier-stat-label">Original Items</div>
-        <div class="outlier-stat-detail">Total streaming entries</div>
-      </div>
-      <div class="outlier-stat-card">
-        <div class="outlier-stat-value">${stats.filtered_items.toLocaleString()}</div>
-        <div class="outlier-stat-label">Filtered Items</div>
-        <div class="outlier-stat-detail">After outlier removal</div>
-      </div>
-      <div class="outlier-stat-card">
-        <div class="outlier-stat-value">${stats.excluded_items.toLocaleString()}</div>
-        <div class="outlier-stat-label">Excluded Items</div>
-        <div class="outlier-stat-detail">Removed as outliers</div>
-      </div>
-      <div class="outlier-stat-card">
-        <div class="outlier-stat-value">${((stats.filtered_items / stats.original_items) * 100).toFixed(1)}%</div>
-        <div class="outlier-stat-label">Data Retention</div>
-        <div class="outlier-stat-detail">Percentage kept</div>
-      </div>
-      <div class="outlier-stat-card">
-        <div class="outlier-stat-value">${outlierData.mean_play_time_minutes}</div>
-        <div class="outlier-stat-label">Mean Play Time</div>
-        <div class="outlier-stat-detail">Minutes per track</div>
-      </div>
-      <div class="outlier-stat-card">
-        <div class="outlier-stat-value">${outlierData.percentile_99_minutes}</div>
-        <div class="outlier-stat-label">99th Percentile</div>
-        <div class="outlier-stat-detail">Cap threshold (min)</div>
-      </div>
-    `;
+     const stats = summary.filtering_stats;
+     const outlierData = summary.outlier_detection;
 
-    // Add exclusion breakdown
-    const exclusionBreakdown = document.createElement('div');
-    exclusionBreakdown.className = 'exclusion-breakdown';
-    exclusionBreakdown.innerHTML = `
-      <h4>Exclusion Breakdown</h4>
-      <div class="exclusion-list">
-        ${Object.entries(stats.exclusion_breakdown)
-          .filter(([reason, count]) => count > 0)
-          .map(([reason, count]) => `
-            <div class="exclusion-item">
-              <span class="exclusion-reason">${formatExclusionReason(reason)}</span>
-              <span class="exclusion-count">${count.toLocaleString()}</span>
-            </div>
-          `).join('')}
-      </div>
-    `;
-    
-    outlierStats.appendChild(exclusionBreakdown);
+     outlierStats.innerHTML = `
+       <div class="outlier-stat-card">
+         <div class="outlier-stat-value">${stats.original_items.toLocaleString()}</div>
+         <div class="outlier-stat-label">Original Items</div>
+         <div class="outlier-stat-detail">Total streaming entries</div>
+       </div>
+       <div class="outlier-stat-card">
+         <div class="outlier-stat-value">${stats.filtered_items.toLocaleString()}</div>
+         <div class="outlier-stat-label">Filtered Items</div>
+         <div class="outlier-stat-detail">After outlier removal</div>
+       </div>
+       <div class="outlier-stat-card">
+         <div class="outlier-stat-value">${stats.excluded_items.toLocaleString()}</div>
+         <div class="outlier-stat-label">Excluded Items</div>
+         <div class="outlier-stat-detail">Removed as outliers</div>
+       </div>
+       <div class="outlier-stat-card">
+         <div class="outlier-stat-value">${((stats.filtered_items / stats.original_items) * 100).toFixed(1)}%</div>
+         <div class="outlier-stat-label">Data Retention</div>
+         <div class="outlier-stat-detail">Percentage kept</div>
+       </div>
+       <div class="outlier-stat-card">
+         <div class="outlier-stat-value">${outlierData.mean_play_time_minutes}</div>
+         <div class="outlier-stat-label">Mean Play Time</div>
+         <div class="outlier-stat-detail">Minutes per track</div>
+       </div>
+       <div class="outlier-stat-card">
+         <div class="outlier-stat-value">${outlierData.percentile_99_minutes}</div>
+         <div class="outlier-stat-label">99th Percentile</div>
+         <div class="outlier-stat-detail">Cap threshold (min)</div>
+       </div>
+     `;
 
-    // Initialize filtering controls
-    initializeFilteringControls();
-  }
+     // Add exclusion breakdown
+     const exclusionBreakdown = document.createElement('div');
+     exclusionBreakdown.className = 'exclusion-breakdown';
+     exclusionBreakdown.innerHTML = `
+       <h4>Exclusion Breakdown</h4>
+       <div class="exclusion-list">
+         ${Object.entries(stats.exclusion_breakdown)
+           .filter(([reason, count]) => count > 0)
+           .map(([reason, count]) => `
+             <div class="exclusion-item">
+               <span class="exclusion-reason">${formatExclusionReason(reason)}</span>
+               <span class="exclusion-count">${count.toLocaleString()}</span>
+             </div>
+           `).join('')}
+       </div>
+     `;
+     
+     outlierStats.appendChild(exclusionBreakdown);
+
+     // Initialize filtering controls
+     initializeFilteringControls(filteringConfig);
+   }
 
   function formatExclusionReason(reason) {
     const reasons = {
@@ -2027,51 +2259,163 @@
     return reasons[reason] || reason.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
   }
 
-  function initializeFilteringControls() {
-    const showOutliers = document.getElementById('showOutliers');
-    const excludeUnknown = document.getElementById('excludeUnknown');
-    const applyZScore = document.getElementById('applyZScore');
-    const resetFilters = document.getElementById('resetFilters');
+     function initializeFilteringControls(filteringConfig) {
+     const showOutliers = document.getElementById('showOutliers');
+     const excludeUnknown = document.getElementById('excludeUnknown');
+     const applyZScore = document.getElementById('applyZScore');
+     const resetFilters = document.getElementById('resetFilters');
 
-    // Load saved preferences from localStorage
-    const savedFilters = JSON.parse(localStorage.getItem('spotifyFilters') || '{}');
-    showOutliers.checked = savedFilters.showOutliers !== false;
-    excludeUnknown.checked = savedFilters.excludeUnknown !== false;
-    applyZScore.checked = savedFilters.applyZScore !== false;
+     // Load saved preferences from localStorage
+     const savedFilters = JSON.parse(localStorage.getItem('spotifyFilters') || '{}');
+     showOutliers.checked = savedFilters.showOutliers !== false;
+     excludeUnknown.checked = savedFilters.excludeUnknown !== false;
+     applyZScore.checked = savedFilters.applyZScore !== false;
 
-    // Save preferences when changed
-    function saveFilters() {
-      const filters = {
-        showOutliers: showOutliers.checked,
-        excludeUnknown: excludeUnknown.checked,
-        applyZScore: applyZScore.checked
-      };
-      localStorage.setItem('spotifyFilters', JSON.stringify(filters));
-    }
+     // Save preferences when changed
+     function saveFilters() {
+       const filters = {
+         showOutliers: showOutliers.checked,
+         excludeUnknown: excludeUnknown.checked,
+         applyZScore: applyZScore.checked
+       };
+       localStorage.setItem('spotifyFilters', JSON.stringify(filters));
+       
+       // Show feedback
+       const feedback = document.createElement('div');
+       feedback.style.cssText = `
+         position: fixed;
+         top: 20px;
+         right: 20px;
+         background: var(--spotify-green);
+         color: white;
+         padding: 12px 20px;
+         border-radius: 8px;
+         font-weight: 600;
+         z-index: 1000;
+         animation: slideIn 0.3s ease;
+       `;
+       feedback.textContent = 'Filters saved!';
+       document.body.appendChild(feedback);
+       
+       setTimeout(() => {
+         feedback.style.animation = 'slideOut 0.3s ease';
+         setTimeout(() => document.body.removeChild(feedback), 300);
+       }, 2000);
+     }
 
-    showOutliers.addEventListener('change', saveFilters);
-    excludeUnknown.addEventListener('change', saveFilters);
-    applyZScore.addEventListener('change', saveFilters);
+     // Add CSS animations
+     if (!document.getElementById('filter-animations')) {
+       const style = document.createElement('style');
+       style.id = 'filter-animations';
+       style.textContent = `
+         @keyframes slideIn {
+           from { transform: translateX(100%); opacity: 0; }
+           to { transform: translateX(0); opacity: 1; }
+         }
+         @keyframes slideOut {
+           from { transform: translateX(0); opacity: 1; }
+           to { transform: translateX(100%); opacity: 0; }
+         }
+       `;
+       document.head.appendChild(style);
+     }
 
-    // Reset filters
-    resetFilters.addEventListener('click', () => {
-      showOutliers.checked = true;
-      excludeUnknown.checked = true;
-      applyZScore.checked = true;
-      saveFilters();
-      
-      // Show confirmation
-      const button = resetFilters;
-      const originalText = button.innerHTML;
-      button.innerHTML = '<i class="fas fa-check"></i> Filters Reset!';
-      button.style.background = 'var(--gradient-primary)';
-      
-      setTimeout(() => {
-        button.innerHTML = originalText;
-        button.style.background = 'var(--gradient-secondary)';
-      }, 2000);
-    });
-  }
+     showOutliers.addEventListener('change', saveFilters);
+     excludeUnknown.addEventListener('change', saveFilters);
+     applyZScore.addEventListener('change', saveFilters);
+
+     // Reset filters
+     resetFilters.addEventListener('click', () => {
+       showOutliers.checked = true;
+       excludeUnknown.checked = true;
+       applyZScore.checked = true;
+       saveFilters();
+       
+       // Show confirmation
+       const button = resetFilters;
+       const originalText = button.innerHTML;
+       button.innerHTML = '<i class="fas fa-check"></i> Filters Reset!';
+       button.style.background = 'var(--gradient-primary)';
+       
+       setTimeout(() => {
+         button.innerHTML = originalText;
+         button.style.background = 'var(--gradient-secondary)';
+       }, 2000);
+     });
+
+     // Add info about current filtering settings
+     if (filteringConfig) {
+       const infoDiv = document.createElement('div');
+       infoDiv.className = 'filtering-info';
+       infoDiv.innerHTML = `
+         <h4>Current Filtering Settings</h4>
+         <div class="filtering-info-grid">
+           <div class="info-item">
+             <span class="info-label">Z-Score Threshold:</span>
+             <span class="info-value">${filteringConfig.outlier_settings?.zScoreThreshold || 3.0}</span>
+           </div>
+           <div class="info-item">
+             <span class="info-label">Percentile Cap:</span>
+             <span class="info-value">${filteringConfig.outlier_settings?.percentileCap || 99.5}%</span>
+           </div>
+           <div class="info-item">
+             <span class="info-label">Min Play Time:</span>
+             <span class="info-value">${(filteringConfig.outlier_settings?.minPlayTime || 30000) / 1000}s</span>
+           </div>
+           <div class="info-item">
+             <span class="info-label">Max Play Time:</span>
+             <span class="info-value">${(filteringConfig.outlier_settings?.maxPlayTime || 3600000) / 1000 / 60}min</span>
+           </div>
+         </div>
+       `;
+       
+       // Add CSS for the info section
+       const infoStyle = document.createElement('style');
+       infoStyle.textContent = `
+         .filtering-info {
+           background: var(--spotify-light);
+           border-radius: 12px;
+           padding: 1.5rem;
+           margin-top: 1rem;
+           border: 1px solid var(--spotify-lighter);
+         }
+         .filtering-info h4 {
+           color: var(--spotify-text);
+           margin-bottom: 1rem;
+           font-size: 1.1rem;
+           font-weight: 600;
+         }
+         .filtering-info-grid {
+           display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+           gap: 0.75rem;
+         }
+         .info-item {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 0.5rem;
+           background: rgba(255, 255, 255, 0.05);
+           border-radius: 6px;
+         }
+         .info-label {
+           color: var(--spotify-text-secondary);
+           font-size: 0.9rem;
+         }
+         .info-value {
+           color: var(--spotify-green);
+           font-weight: 600;
+         }
+       `;
+       document.head.appendChild(infoStyle);
+       
+       // Find the filtering controls container and add the info
+       const controlsContainer = document.querySelector('.filtering-controls');
+       if (controlsContainer) {
+         controlsContainer.appendChild(infoDiv);
+       }
+     }
+   }
 
   // Start the dashboard
   loadDashboard();
